@@ -1,0 +1,64 @@
+.:
+total 28K
+drwxrwxr-x 2 ashish ashish 4.0K Mar 20 16:19 Car Repair Shops
+drwxrwxr-x 2 ashish ashish 4.0K Mar 20 16:19 Cars
+drwxrwxr-x 2 ashish ashish 4.0K Mar 20 16:19 Cows
+drwxrwxr-x 2 ashish ashish 4.0K Mar 20 16:19 Litter
+-rw-rw-r-- 1 ashish ashish    0 Mar 20 16:23 log.txt
+drwxrwxr-x 2 ashish ashish 4.0K Mar 20 16:19 Naalaa
+drwxrwxr-x 3 ashish ashish 4.0K Mar 20 16:19 Organizations and Associations
+drwxrwxr-x 2 ashish ashish 4.0K Mar 20 16:19 Temples
+
+./Car Repair Shops:
+total 11M
+-rw-rw-r-- 1 ashish ashish 2.8M Mar 20 16:19 car repair (1).jpg
+-rw-rw-r-- 1 ashish ashish 3.1M Mar 20 16:19 car repair (2).jpg
+-rw-rw-r-- 1 ashish ashish 2.2M Mar 20 16:19 car repair (3).jpg
+-rw-rw-r-- 1 ashish ashish 3.0M Mar 20 16:19 car repair (4).jpg
+
+./Cars:
+total 17M
+-rw-rw-r-- 1 ashish ashish 3.1M Mar 20 16:19 cars (1).jpg
+-rw-rw-r-- 1 ashish ashish 3.0M Mar 20 16:19 cars (2).jpg
+-rw-rw-r-- 1 ashish ashish 2.4M Mar 20 16:19 cars (3).jpg
+-rw-rw-r-- 1 ashish ashish 2.0M Mar 20 16:19 cars (4).jpg
+-rw-rw-r-- 1 ashish ashish 2.9M Mar 20 16:19 cars (5).jpg
+-rw-rw-r-- 1 ashish ashish 3.3M Mar 20 16:19 cars (6).jpg
+
+./Cows:
+total 19M
+-rw-rw-r-- 1 ashish ashish 3.4M Mar 20 16:19 Cows (1).jpg
+-rw-rw-r-- 1 ashish ashish 3.1M Mar 20 16:19 Cows (2).jpg
+-rw-rw-r-- 1 ashish ashish 2.3M Mar 20 16:19 Cows (3).jpg
+-rw-rw-r-- 1 ashish ashish 4.1M Mar 20 16:19 Cows (4).jpg
+-rw-rw-r-- 1 ashish ashish 2.5M Mar 20 16:19 Cows (5).jpg
+-rw-rw-r-- 1 ashish ashish 3.8M Mar 20 16:19 Cows (6).jpg
+
+./Litter:
+total 3.8M
+-rw-rw-r-- 1 ashish ashish 3.8M Mar 20 16:19 litter (3).jpg
+
+./Naalaa:
+total 9.3M
+-rw-rw-r-- 1 ashish ashish 1.8M Mar 20 16:19 IMG_20201218_080205.jpg
+-rw-rw-r-- 1 ashish ashish 2.3M Mar 20 16:19 IMG_20201218_080222.jpg
+-rw-rw-r-- 1 ashish ashish 2.3M Mar 20 16:19 IMG_20201218_080229.jpg
+-rw-rw-r-- 1 ashish ashish 2.9M Mar 20 16:19 IMG_20201218_080244.jpg
+
+./Organizations and Associations:
+total 8.6M
+-rw-rw-r-- 1 ashish ashish 2.5M Mar 20 16:19 IMG_20201218_075557.jpg
+-rw-rw-r-- 1 ashish ashish 3.2M Mar 20 16:19 IMG_20201218_080643.jpg
+-rw-rw-r-- 1 ashish ashish 2.9M Mar 20 16:19 IMG_20201218_081752.jpg
+drwxrwxr-x 2 ashish ashish 4.0K Mar 20 16:19 Manju Sharma
+
+./Organizations and Associations/Manju Sharma:
+total 6.9M
+-rw-rw-r-- 1 ashish ashish 2.5M Mar 20 16:19 IMG_20201218_075638.jpg
+-rw-rw-r-- 1 ashish ashish 2.6M Mar 20 16:19 IMG_20201218_075659.jpg
+-rw-rw-r-- 1 ashish ashish 1.9M Mar 20 16:19 IMG_20201218_081126.jpg
+
+./Temples:
+total 5.0M
+-rw-rw-r-- 1 ashish ashish 2.6M Mar 20 16:19 IMG_20201218_080125.jpg
+-rw-rw-r-- 1 ashish ashish 2.4M Mar 20 16:19 Prachin Shitla Mata Mandir.jpg
