@@ -1,0 +1,524 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                success: function (result) {
+                    let grouplink = JSON.parse(result)['current book club'];
+                    $("#customWhatsAppGroupLinkWrapper").html(
+                        `
+                        <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                            <span>Join us on:</span>
+                            <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                            </a>
+                        </h2>
+                        `
+                    );
+                }
+            });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+    </style>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .dot {
+            height: 12px;
+            width: 12px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .arrow {
+            border: solid black;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+        }
+
+        .right {
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+        }
+
+        .left {
+            transform: rotate(135deg);
+            -webkit-transform: rotate(135deg);
+        }
+
+        .up {
+            transform: rotate(-135deg);
+            -webkit-transform: rotate(-135deg);
+        }
+
+        .down {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        h2 {
+            padding: 5px 0px;
+        }
+
+        .customTable2 td:first-child{
+            width: 15px;
+        }
+
+        .customTable2 td:nth-child(2){
+            width: 100px;
+        }
+    </style>
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+<br>
+
+<div class="separator" style="clear: both;"><a
+        href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicHoz4KUBfyFmmHn9hbyjz33f31E6Mr-nnqlk5N2SElzX3vo6qBml9rLW29WnFKJpiJo1stmnqIua5-nur4ELQNyz3Xs4K-DaTSvpf1b7NQwH2yDA-lxD5oI8z870bR_iuMsV-ixnAE3H-Mr4vq_zlbEK4JDGcgmkzGkVtyh7mShZLMv-fvlRz8JasZ_Qo/s500/mumbai%20delhi%20chennai%20kolkata.jpg"
+        style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600"
+            data-original-height="232" data-original-width="500"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicHoz4KUBfyFmmHn9hbyjz33f31E6Mr-nnqlk5N2SElzX3vo6qBml9rLW29WnFKJpiJo1stmnqIua5-nur4ELQNyz3Xs4K-DaTSvpf1b7NQwH2yDA-lxD5oI8z870bR_iuMsV-ixnAE3H-Mr4vq_zlbEK4JDGcgmkzGkVtyh7mShZLMv-fvlRz8JasZ_Qo/s600/mumbai%20delhi%20chennai%20kolkata.jpg" /></a>
+</div>
+
+<br>
+
+<h2>Richest Cities by Number of Billionaires</h2>
+
+<b>Here are the top 10 richest cities in India, as of 2024:</b>
+
+<table class="css-g3m580" border="1">
+    <tbody>
+        <tr>
+            <td style="width: 9.04605%"><strong>#</strong></td>
+            <td style="width: 16.6118%"><strong>Indian city</strong></td>
+            <td style="width: 20.5479%"><strong>No. of billionaires in 2024</strong></td>
+            <td style="width: 44.0812%"><strong>Richest individual in the city</strong></td>
+        </tr>
+        <tr>
+            <td style="width: 9.04605%">1</td>
+            <td style="width: 16.6118%">Mumbai</td>
+            <td style="width: 20.5479%">386</td>
+            <td style="width: 44.0812%">Mukesh Ambani &amp; family</td>
+        </tr>
+        <tr>
+            <td style="width: 9.04605%">2</td>
+            <td style="width: 16.6118%">New Delhi</td>
+            <td style="width: 20.5479%">217</td>
+            <td style="width: 44.0812%">Shiv Nadar &amp; family</td>
+        </tr>
+        <tr>
+            <td style="width: 9.04605%">3</td>
+            <td style="width: 16.6118%">Hyderabad</td>
+            <td style="width: 20.5479%">104</td>
+            <td style="width: 44.0812%">Murali Divi &amp; family</td>
+        </tr>
+        <tr>
+            <td style="width: 9.04605%">4</td>
+            <td style="width: 16.6118%">Bengaluru</td>
+            <td style="width: 20.5479%">100</td>
+            <td style="width: 44.0812%">Azim Premji &amp; family</td>
+        </tr>
+        <tr>
+            <td style="width: 9.04605%">5</td>
+            <td style="width: 16.6118%">Chennai</td>
+            <td style="width: 20.5479%">82</td>
+            <td style="width: 44.0812%">Venu Srinivasan</td>
+        </tr>
+        <tr>
+            <td style="width: 9.04605%">6</td>
+            <td style="width: 16.6118%">Kolkata</td>
+            <td style="width: 20.5479%">69</td>
+            <td style="width: 44.0812%">Benu Gopal Bangur &amp; family</td>
+        </tr>
+        <tr>
+            <td style="width: 9.04605%">7</td>
+            <td style="width: 16.6118%">Ahmedabad</td>
+            <td style="width: 20.5479%">67</td>
+            <td style="width: 44.0812%">Gautam Adani &amp; family</td>
+        </tr>
+        <tr>
+            <td style="width: 9.04605%">8</td>
+            <td style="width: 16.6118%"><a rel="noamphtml" class="keywordtourl"
+                    href="https://indianexpress.com/section/cities/pune/">Pune</a></td>
+            <td style="width: 20.5479%">53</td>
+            <td style="width: 44.0812%">Cyrus S Poonawalla &amp; family</td>
+        </tr>
+        <tr>
+            <td style="width: 9.04605%">9</td>
+            <td style="width: 16.6118%"><a rel="noamphtml" class="keywordtourl"
+                    href="https://indianexpress.com/section/cities/surat/">Surat</a></td>
+            <td style="width: 20.5479%">28</td>
+            <td style="width: 44.0812%">Ashwin Desai &amp; family</td>
+        </tr>
+        <tr>
+            <td style="width: 9.04605%">10</td>
+            <td style="width: 16.6118%">Gurugram</td>
+            <td style="width: 20.5479%">23</td>
+            <td style="width: 44.0812%">Nirmal Kumar Minda &amp; family</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Richest States by Number of Billionaires</h2>
+
+Here are the top 10 richest states in India, as of 2024:
+
+<table class="css-g3m580" border="1">
+    <tbody>
+        <tr style="height: 47px">
+            <td style="width: 3.01281%;height: 47px"><strong>#</strong></td>
+            <td style="width: 21.6677%;height: 47px"><strong>Indian State</strong></td>
+            <td style="width: 39.2817%;height: 47px"><strong>No. of billionaires in 2024</strong></td>
+        </tr>
+        <tr style="height: 23px">
+            <td style="width: 3.01281%;height: 23px">1</td>
+            <td style="width: 21.6677%;height: 23px">Maharashtra</td>
+            <td style="width: 39.2817%;height: 23px">470</td>
+        </tr>
+        <tr style="height: 23px">
+            <td style="width: 3.01281%;height: 23px">2</td>
+            <td style="width: 21.6677%;height: 23px">Delhi</td>
+            <td style="width: 39.2817%;height: 23px">213</td>
+        </tr>
+        <tr style="height: 23px">
+            <td style="width: 3.01281%;height: 23px">3</td>
+            <td style="width: 21.6677%;height: 23px">Gujarat</td>
+            <td style="width: 39.2817%;height: 23px">129</td>
+        </tr>
+        <tr style="height: 23px">
+            <td style="width: 3.01281%;height: 23px">4</td>
+            <td style="width: 21.6677%;height: 23px"><a rel="noamphtml" class="keywordtourl"
+                    href="https://indianexpress.com/article/when-is/tamil-nadu-lok-sabha-elections-2024-schedule-phase-seats-candidates-results-and-all-you-need-to-know-about-tamil-nadu-general-elections-9161414/">Tamil
+                    Nadu</a></td>
+            <td style="width: 39.2817%;height: 23px">119</td>
+        </tr>
+        <tr style="height: 23px">
+            <td style="width: 3.01281%;height: 23px">5</td>
+            <td style="width: 21.6677%;height: 23px"><a rel="noamphtml" class="keywordtourl"
+                    href="https://indianexpress.com/article/when-is/telangana-lok-sabha-elections-2024-schedule-phase-seats-candidates-and-all-you-need-to-know-about-telangana-general-elections-9162957/">Telangana</a>
+            </td>
+            <td style="width: 39.2817%;height: 23px">109</td>
+        </tr>
+        <tr style="height: 23px">
+            <td style="width: 3.01281%;height: 23px">6</td>
+            <td style="width: 21.6677%;height: 23px"><a rel="noamphtml" class="keywordtourl"
+                    href="https://indianexpress.com/article/when-is/karnataka-lok-sabha-elections-2024-schedule-phase-seats-candidates-results-and-all-you-need-to-know-about-karnataka-general-elections-9162484/">Karnataka</a>
+            </td>
+            <td style="width: 39.2817%;height: 23px">108</td>
+        </tr>
+        <tr style="height: 23px">
+            <td style="width: 3.01281%;height: 23px">7</td>
+            <td style="width: 21.6677%;height: 23px"><a rel="noamphtml" class="keywordtourl"
+                    href="https://indianexpress.com/article/when-is/west-bengal-lok-sabha-elections-2024-schedule-phase-seats-candidates-results-and-all-you-need-to-know-about-west-bengal-general-elections-9160889/">West
+                    Bengal</a></td>
+            <td style="width: 39.2817%;height: 23px">70</td>
+        </tr>
+        <tr style="height: 23px">
+            <td style="width: 3.01281%;height: 23px">8</td>
+            <td style="width: 21.6677%;height: 23px">Haryana</td>
+            <td style="width: 39.2817%;height: 23px">40</td>
+        </tr>
+        <tr style="height: 23px">
+            <td style="width: 3.01281%;height: 23px">9</td>
+            <td style="width: 21.6677%;height: 23px"><a rel="noamphtml" class="keywordtourl"
+                    href="https://indianexpress.com/article/when-is/uttar-pradesh-lok-sabha-elections-schedule-phase-seats-candidates-results-and-all-you-need-to-know-about-uttar-pradesh-general-elections-2024-9160791/">Uttar
+                    Pradesh</a></td>
+            <td style="width: 39.2817%;height: 23px">36</td>
+        </tr>
+        <tr style="height: 23px">
+            <td style="width: 3.01281%;height: 23px">10</td>
+            <td style="width: 21.6677%;height: 23px"><a rel="noamphtml" class="keywordtourl"
+                    href="https://indianexpress.com/article/when-is/rajasthan-lok-sabha-elections-2024-schedule-phase-seats-candidates-results-and-all-you-need-to-know-about-rajasthan-general-elections-9162504/">Rajasthan</a>
+            </td>
+            <td style="width: 39.2817%;height: 23px">28</td>
+        </tr>
+    </tbody>
+</table>
+
+Source: Hurun Rich List 2024
+<a href="https://indianexpress.com/article/trending/top-10-listing/top-10-richest-cities-in-india-2024-9541232/"
+    target="_blank">Source: indianexpress</a>
+
+<h2>Richest Citities by GDP</h2>
+
+List Of Top 10 Richest Cities in India 2024
+
+<table class="has-fixed-layout">
+    <tbody>
+        <tr>
+            <td><strong>City&nbsp;</strong></td>
+            <td><strong>GDP (in $)</strong></td>
+            <td><strong>INR Per Sq Ft</strong></td>
+        </tr>
+        <tr>
+            <td>Mumbai&nbsp;</td>
+            <td>310 billion</td>
+            <td>₹18,708</td>
+        </tr>
+        <tr>
+            <td>Delhi&nbsp;</td>
+            <td>293.6 billion</td>
+            <td>₹4,666</td>
+        </tr>
+        <tr>
+            <td>Kolkata&nbsp;</td>
+            <td>150 billion</td>
+            <td>₹5,570</td>
+        </tr>
+        <tr>
+            <td>Bengaluru&nbsp;</td>
+            <td>110 billion</td>
+            <td>₹4,666</td>
+        </tr>
+        <tr>
+            <td>Chennai&nbsp;</td>
+            <td>66 billion</td>
+            <td>₹4,666</td>
+        </tr>
+        <tr>
+            <td>Hyderabad&nbsp;</td>
+            <td>58 billion</td>
+            <td>₹5,250</td>
+        </tr>
+        <tr>
+            <td>Pune&nbsp;</td>
+            <td>55 billion</td>
+            <td>₹7,000</td>
+        </tr>
+        <tr>
+            <td>Ahmedabad&nbsp;</td>
+            <td>47 billion</td>
+            <td>₹3,500</td>
+        </tr>
+        <tr>
+            <td>Surat&nbsp;</td>
+            <td>45 billion</td>
+            <td>₹3,250</td>
+        </tr>
+        <tr>
+            <td>Visakhapatnam</td>
+            <td>40 billion</td>
+            <td>₹4,000</td>
+        </tr>
+    </tbody>
+</table>
+
+<a href="https://www.nobroker.in/blog/richest-cities-in-india/" target="_blank">Source: nobroker</a>
+<br>
+<h2>Top 10 richest states in India by GDSP and GDP per capita, as of 2024</h2>
+<br>
+<table class="customTable2" border="1">
+    <tbody>
+        <tr data-amp-original-style="height: 30px" class="amp-wp-0dc08e8">
+            <td class="amp-wp-6aa1be0"><strong>#</strong></td>
+            <td data-amp-original-style="width: 16.7649%;height: 10px" class="amp-wp-ee6bfd9"><strong>State</strong>
+            </td>
+            <td data-amp-original-style="width: 21.6475%;height: 10px" class="amp-wp-2df0d6d"><strong>Projected GSDP (in
+                    INR, lakh crore; FY 2024-25)</strong></td>
+            <td data-amp-original-style="width: 29.675%;height: 10px" class="amp-wp-e3dd721"><strong>GDP per capita net
+                    state domestic product (in INR, lakh; FY 2022-23)</strong></td>
+            <td data-amp-original-style="width: 24.7779%;height: 10px" class="amp-wp-5430735"><strong>State share of
+                    national GDP (%)</strong></td>
+        </tr>
+        <tr data-amp-original-style="height: 10px" class="amp-wp-b20ad8d">
+            <td class="amp-wp-6aa1be0">1</td>
+            <td data-amp-original-style="width: 16.7649%;height: 10px" class="amp-wp-ee6bfd9"><a rel="noamphtml"
+                    class="keywordtourl"
+                    href="https://indianexpress.com/article/when-is/maharashtra-lok-sabha-elections-2024-schedule-phase-seats-candidates-results-and-all-you-need-to-know-about-maharashtra-general-elections-9161187/">Maharashtra</a>
+            </td>
+            <td data-amp-original-style="width: 21.6475%;height: 10px" class="amp-wp-2df0d6d">42.67</td>
+            <td data-amp-original-style="width: 29.675%;height: 10px" class="amp-wp-e3dd721">2.89</td>
+            <td data-amp-original-style="width: 24.7779%;height: 10px" class="amp-wp-5430735">13.30%</td>
+        </tr>
+        <tr data-amp-original-style="height: 10px" class="amp-wp-b20ad8d">
+            <td class="amp-wp-6aa1be0">2</td>
+            <td data-amp-original-style="width: 16.7649%;height: 10px" class="amp-wp-ee6bfd9"><a rel="noamphtml"
+                    class="keywordtourl"
+                    href="https://indianexpress.com/article/when-is/tamil-nadu-lok-sabha-elections-2024-schedule-phase-seats-candidates-results-and-all-you-need-to-know-about-tamil-nadu-general-elections-9161414/">Tamil
+                    Nadu</a></td>
+            <td data-amp-original-style="width: 21.6475%;height: 10px" class="amp-wp-2df0d6d">31.55</td>
+            <td data-amp-original-style="width: 29.675%;height: 10px" class="amp-wp-e3dd721">3.50 (2023-24)</td>
+            <td data-amp-original-style="width: 24.7779%;height: 10px" class="amp-wp-5430735">8.90%</td>
+        </tr>
+        <tr data-amp-original-style="height: 10px" class="amp-wp-b20ad8d">
+            <td class="amp-wp-6aa1be0">3</td>
+            <td data-amp-original-style="width: 16.7649%;height: 10px" class="amp-wp-ee6bfd9"><a rel="noamphtml"
+                    class="keywordtourl"
+                    href="https://indianexpress.com/article/when-is/karnataka-lok-sabha-elections-2024-schedule-phase-seats-candidates-results-and-all-you-need-to-know-about-karnataka-general-elections-9162484/">Karnataka</a>
+            </td>
+            <td data-amp-original-style="width: 21.6475%;height: 10px" class="amp-wp-2df0d6d">28.09</td>
+            <td data-amp-original-style="width: 29.675%;height: 10px" class="amp-wp-e3dd721">3.31</td>
+            <td data-amp-original-style="width: 24.7779%;height: 10px" class="amp-wp-5430735">8.20%</td>
+        </tr>
+        <tr data-amp-original-style="height: 10px" class="amp-wp-b20ad8d">
+            <td class="amp-wp-6aa1be0">4</td>
+            <td data-amp-original-style="width: 16.7649%;height: 10px" class="amp-wp-ee6bfd9">Gujarat</td>
+            <td data-amp-original-style="width: 21.6475%;height: 10px" class="amp-wp-2df0d6d">27.9</td>
+            <td data-amp-original-style="width: 29.675%;height: 10px" class="amp-wp-e3dd721">3.13</td>
+            <td data-amp-original-style="width: 24.7779%;height: 10px" class="amp-wp-5430735">8.10%</td>
+        </tr>
+        <tr data-amp-original-style="height: 10px" class="amp-wp-b20ad8d">
+            <td class="amp-wp-6aa1be0">5</td>
+            <td data-amp-original-style="width: 16.7649%;height: 10px" class="amp-wp-ee6bfd9"><a rel="noamphtml"
+                    class="keywordtourl"
+                    href="https://indianexpress.com/article/when-is/uttar-pradesh-lok-sabha-elections-schedule-phase-seats-candidates-results-and-all-you-need-to-know-about-uttar-pradesh-general-elections-2024-9160791/">Uttar
+                    Pradesh</a></td>
+            <td data-amp-original-style="width: 21.6475%;height: 10px" class="amp-wp-2df0d6d">24.99</td>
+            <td data-amp-original-style="width: 29.675%;height: 10px" class="amp-wp-e3dd721">0.96</td>
+            <td data-amp-original-style="width: 24.7779%;height: 10px" class="amp-wp-5430735">8.40%</td>
+        </tr>
+        <tr data-amp-original-style="height: 10px" class="amp-wp-b20ad8d">
+            <td class="amp-wp-6aa1be0">6</td>
+            <td data-amp-original-style="width: 16.7649%;height: 10px" class="amp-wp-ee6bfd9"><a rel="noamphtml"
+                    class="keywordtourl"
+                    href="https://indianexpress.com/article/when-is/west-bengal-lok-sabha-elections-2024-schedule-phase-seats-candidates-results-and-all-you-need-to-know-about-west-bengal-general-elections-9160889/">West
+                    Bengal</a></td>
+            <td data-amp-original-style="width: 21.6475%;height: 10px" class="amp-wp-2df0d6d">18.8</td>
+            <td data-amp-original-style="width: 29.675%;height: 10px" class="amp-wp-e3dd721">1.57</td>
+            <td data-amp-original-style="width: 24.7779%;height: 10px" class="amp-wp-5430735">5.60%</td>
+        </tr>
+        <tr data-amp-original-style="height: 10px" class="amp-wp-b20ad8d">
+            <td class="amp-wp-6aa1be0">7</td>
+            <td data-amp-original-style="width: 16.7649%;height: 10px" class="amp-wp-ee6bfd9"><a rel="noamphtml"
+                    class="keywordtourl"
+                    href="https://indianexpress.com/article/when-is/rajasthan-lok-sabha-elections-2024-schedule-phase-seats-candidates-results-and-all-you-need-to-know-about-rajasthan-general-elections-9162504/">Rajasthan</a>
+            </td>
+            <td data-amp-original-style="width: 21.6475%;height: 10px" class="amp-wp-2df0d6d">17.8</td>
+            <td data-amp-original-style="width: 29.675%;height: 10px" class="amp-wp-e3dd721">1.67 (2023-24)</td>
+            <td data-amp-original-style="width: 24.7779%;height: 10px" class="amp-wp-5430735">5%</td>
+        </tr>
+        <tr data-amp-original-style="height: 10px" class="amp-wp-b20ad8d">
+            <td class="amp-wp-6aa1be0">8</td>
+            <td data-amp-original-style="width: 16.7649%;height: 10px" class="amp-wp-ee6bfd9"><a rel="noamphtml"
+                    class="keywordtourl"
+                    href="https://indianexpress.com/article/when-is/telangana-lok-sabha-elections-2024-schedule-phase-seats-candidates-and-all-you-need-to-know-about-telangana-general-elections-9162957/">Telangana</a>
+            </td>
+            <td data-amp-original-style="width: 21.6475%;height: 10px" class="amp-wp-2df0d6d">16.5</td>
+            <td data-amp-original-style="width: 29.675%;height: 10px" class="amp-wp-e3dd721">3.83 (2023-24)</td>
+            <td data-amp-original-style="width: 24.7779%;height: 10px" class="amp-wp-5430735">4.90%</td>
+        </tr>
+        <tr data-amp-original-style="height: 10px" class="amp-wp-b20ad8d">
+            <td class="amp-wp-6aa1be0">9</td>
+            <td data-amp-original-style="width: 16.7649%;height: 10px" class="amp-wp-ee6bfd9"><a rel="noamphtml"
+                    class="keywordtourl"
+                    href="https://indianexpress.com/article/when-is/andhra-pradesh-lok-sabha-elections-2024-schedule-phase-seats-candidates-results-and-all-you-need-to-know-about-andhra-pradesh-general-elections-9162519/">Andhra
+                    Pradesh</a></td>
+            <td data-amp-original-style="width: 21.6475%;height: 10px" class="amp-wp-2df0d6d">15.89</td>
+            <td data-amp-original-style="width: 29.675%;height: 10px" class="amp-wp-e3dd721">2.7</td>
+            <td data-amp-original-style="width: 24.7779%;height: 10px" class="amp-wp-5430735">4.70%</td>
+        </tr>
+        <tr data-amp-original-style="height: 10px" class="amp-wp-b20ad8d">
+            <td class="amp-wp-6aa1be0">10</td>
+            <td data-amp-original-style="width: 16.7649%;height: 10px" class="amp-wp-ee6bfd9"><a rel="noamphtml"
+                    class="keywordtourl"
+                    href="https://indianexpress.com/article/when-is/madhya-pradesh-lok-sabha-elections-2024-schedule-phase-seats-candidates-results-and-all-you-need-to-know-about-madhya-pradesh-general-elections-9161565/">Madhya
+                    Pradesh</a></td>
+            <td data-amp-original-style="width: 21.6475%;height: 10px" class="amp-wp-2df0d6d">15.22</td>
+            <td data-amp-original-style="width: 29.675%;height: 10px" class="amp-wp-e3dd721">1.56 (2023-24)</td>
+            <td data-amp-original-style="width: 24.7779%;height: 10px" class="amp-wp-5430735">4.50%</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<b><i>It’s also noteworthy to mention that India’s capital city, New Delhi, ranks 13th with a projected Gross State
+        Domestic Product (GSDP) of INR 11.07 lakh crore for FY 2024-25, contributing approximately 3.6% to the national
+        economy.</i></b>
+
+<span style="display: none;">Tags: Investment,Indian Politics,</span>
