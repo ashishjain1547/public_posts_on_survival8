@@ -80,6 +80,26 @@
 <span class="customLink toggleBtn">Toggle All Sections</span>
 <br>
 
+<h2 class="customNewsByRavishKumarHeader">
+<span class="arrow up"></span> News By Ravish Kumar</h2>
+<div id="customNewsByRavishKumar">
+    <ol>
+<li>
+    <a href="https://survival8.blogspot.com/2025/10/bihar-jobs-and-ai-mirage-missing-debate.html" target="_blank">Bihar, Jobs, and the AI Mirage: A Missing Debate in a Changing World</a>
+</li>
+
+<li>
+    <a href="https://survival8.blogspot.com/2025/10/reel-vs-rozgaar-illusion-of-digital.html" target="_blank">Reel vs Rozgaar: The Illusion of Digital Employment in Bihar</a>
+</li>
+
+<li>
+    <a href="https://survival8.blogspot.com/2025/10/the-factory-of-development-that.html" target="_blank">The Factory of Development That Produces Poverty : Bihar’s 20-Year Paradox</a>
+</li>
+
+</ol>
+</div>
+
+
 
 <h2 class="customPoliticalNewsHeader">
 <span class="arrow up"></span> Political News</h2>
@@ -1022,6 +1042,12 @@
 </div>
 
 <script>
+    
+    $('h2.customNewsByRavishKumarHeader').click(function () {
+        $("div#customNewsByRavishKumar").fadeToggle();
+        $("h2.customNewsByRavishKumarHeader > .arrow").toggleClass('up').toggleClass('down');
+    });
+
     $('h2.customPoliticalNewsHeader').click(function () {
         $("div#customPoliticalNews").fadeToggle();
         $("h2.customPoliticalNewsHeader > .arrow").toggleClass('up').toggleClass('down');
