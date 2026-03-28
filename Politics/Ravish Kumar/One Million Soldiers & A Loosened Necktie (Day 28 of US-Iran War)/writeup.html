@@ -1,0 +1,1083 @@
+<head>
+  <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <!-- Google AdSense Using Machine Learning Code -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-3071098372371409",
+      enable_page_level_ads: true
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $.ajax({
+        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+        success: function (result) {
+          let grouplink = JSON.parse(result)['current book club'];
+          $("#customWhatsAppGroupLinkWrapper").html(
+            `
+                        <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                            <span>Join us on:</span>
+                            <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                            </a>
+                        </h2>
+                        `
+          );
+        }
+      });
+    });
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    pre {
+      white-space: pre-wrap;
+      white-space: -moz-pre-wrap;
+      white-space: -pre-wrap;
+      white-space: -o-pre-wrap;
+      word-wrap: break-word;
+    }
+
+    .customLink {
+      background-color: #4CAF50;
+      border: none;
+      color: white !important;
+      padding: 8px 13px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+    .customLink:hover {
+      text-decoration: none;
+    }
+
+    div.code-block-decoration.footer {
+      display: none;
+    }
+
+    button.export-sheets-button-wrapper {
+      display: none;
+    }
+  </style>
+
+  <style>
+    .custom_link_h2 a {
+      color: black;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .custom_link_h2 a:hover {
+      color: black;
+    }
+
+    .custom_link_h2 a:active {
+      color: black;
+    }
+
+    .custom_link_h2 span {
+      translate: 0px -5px;
+      display: inline-block;
+    }
+
+    .custom_link_h2 img {
+      width: 100px;
+      padding: 0px;
+      border: none;
+      box-shadow: none;
+    }
+
+    .customul {
+      list-style: none;
+    }
+
+    [aria-hidden='true'] {
+      display: none;
+    }
+  </style>
+
+  <style>
+    pre {
+      white-space: pre-wrap;
+      white-space: -moz-pre-wrap;
+      white-space: -pre-wrap;
+      white-space: -o-pre-wrap;
+      word-wrap: break-word;
+    }
+
+    .dot {
+      height: 12px;
+      width: 12px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .arrow {
+      border: solid black;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+    }
+
+    .right {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
+
+    .left {
+      transform: rotate(135deg);
+      -webkit-transform: rotate(135deg);
+    }
+
+    .up {
+      transform: rotate(-135deg);
+      -webkit-transform: rotate(-135deg);
+    }
+
+    .down {
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
+
+    .custom_iframe {
+      width: 100%;
+      height: 305px;
+    }
+
+    button {
+      display: none;
+    }
+  </style>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Face of War Has Gone Missing | Ravish Kumar</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:ital,wght@0,300;0,400;1,300&display=swap"
+    rel="stylesheet" />
+
+  <style>
+    /* ─── Reset only within the wrapper scope ─── */
+    div.customOuterWrapper *,
+    div.customOuterWrapper *::before,
+    div.customOuterWrapper *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ─── Wrapper ─── */
+    div.customOuterWrapper {
+      --ink: #1a1209;
+      --paper: #f5f0e8;
+      --accent: #b5260e;
+      --muted: #7a6e61;
+      --rule: #c9bfaf;
+      --highlight: #fffbe6;
+      --cite-bg: #f0ebe0;
+
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-weight: 300;
+      font-size: 1.08rem;
+      line-height: 1.85;
+      color: var(--ink);
+      background-color: var(--paper);
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 3.5rem 2.2rem 5rem;
+      position: relative;
+    }
+
+    /* ─── Eyebrow / dateline ─── */
+    div.customOuterWrapper .eyebrow {
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.72rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    /* ─── Main title ─── */
+    div.customOuterWrapper h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(1.9rem, 4vw, 2.8rem);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--ink);
+      margin-bottom: 0.5rem;
+    }
+
+    div.customOuterWrapper h1 em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    /* ─── Subtitle / deck ─── */
+    div.customOuterWrapper .deck {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.05rem;
+      color: var(--muted);
+      border-left: 3px solid var(--accent);
+      padding-left: 1rem;
+      margin: 1.2rem 0 0.5rem;
+      line-height: 1.6;
+    }
+
+    /* ─── Byline ─── */
+    div.customOuterWrapper .byline {
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-top: 1rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1.5px solid var(--rule);
+    }
+
+    div.customOuterWrapper .byline strong {
+      color: var(--ink);
+      font-weight: 400;
+    }
+
+    /* ─── Section headings ─── */
+    div.customOuterWrapper h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-top: 3rem;
+      margin-bottom: 0.7rem;
+      padding-top: 0.4rem;
+      border-top: 1.5px solid var(--rule);
+    }
+
+    /* ─── Body paragraphs ─── */
+    div.customOuterWrapper p {
+      margin-bottom: 1.3rem;
+    }
+
+    /* ─── Pull-quote / blockquote ─── */
+    div.customOuterWrapper blockquote {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.15rem;
+      color: var(--accent);
+      border-left: 4px solid var(--accent);
+      background: var(--highlight);
+      margin: 2rem 0;
+      padding: 1rem 1.5rem;
+      line-height: 1.65;
+    }
+
+    /* ─── Citation / source callout ─── */
+    div.customOuterWrapper .citation {
+      background: var(--cite-bg);
+      border-left: 3px solid var(--muted);
+      font-size: 0.85rem;
+      color: var(--muted);
+      padding: 0.6rem 1rem;
+      margin: 1rem 0 1.5rem;
+      font-style: italic;
+    }
+
+    div.customOuterWrapper .citation a {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    /* ─── Name list (journalists) ─── */
+    div.customOuterWrapper .name-list {
+      font-size: 0.92rem;
+      color: var(--muted);
+      font-style: italic;
+      padding-left: 1.2rem;
+      border-left: 2px dotted var(--rule);
+      margin: 1rem 0 1.5rem;
+      line-height: 2;
+    }
+
+    /* ─── Fact / Criticism section cards ─── */
+    div.customOuterWrapper .section-card {
+      margin-top: 3rem;
+      padding: 1.5rem 1.8rem;
+      border: 1.5px solid var(--rule);
+      background: var(--cite-bg);
+    }
+
+    div.customOuterWrapper .section-card h2 {
+      border-top: none;
+      margin-top: 0;
+      font-size: 1.1rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding-top: 0;
+      margin-bottom: 1rem;
+    }
+
+    div.customOuterWrapper .section-card.criticism {
+      background: #fff5f3;
+      border-color: #e0b0a8;
+    }
+
+    div.customOuterWrapper .section-card.criticism h2 {
+      color: var(--accent);
+    }
+
+    /* ─── Fact / criticism items ─── */
+    div.customOuterWrapper .fact-item,
+    div.customOuterWrapper .criticism-item {
+      padding: 0.7rem 0;
+      border-bottom: 1px solid var(--rule);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    div.customOuterWrapper .fact-item:last-child,
+    div.customOuterWrapper .criticism-item:last-child {
+      border-bottom: none;
+    }
+
+    div.customOuterWrapper .fact-item strong,
+    div.customOuterWrapper .criticism-item strong {
+      font-weight: 400;
+      color: var(--ink);
+    }
+
+    /* ─── Footer note ─── */
+    div.customOuterWrapper .footer-note {
+      margin-top: 3.5rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+      border-top: 1px solid var(--rule);
+      padding-top: 1rem;
+    }
+
+    /* ─── Drop cap on first paragraph ─── */
+    div.customOuterWrapper .drop-cap::first-letter {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.6rem;
+      font-weight: 700;
+      float: left;
+      line-height: 0.78;
+      margin-right: 0.1em;
+      margin-top: 0.1em;
+      color: var(--accent);
+    }
+
+    /* ─── Emphasis helper ─── */
+    div.customOuterWrapper em.key {
+      font-style: normal;
+      color: var(--accent);
+      font-weight: 400;
+    }
+
+    /* ─── Horizontal rule ─── */
+    div.customOuterWrapper hr {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 2.5rem 0;
+    }
+
+    /* ─── Responsive ─── */
+    @media (max-width: 540px) {
+      div.customOuterWrapper {
+        padding: 2rem 1.2rem 3.5rem;
+      }
+    }
+  </style>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet" />
+</head>
+<div id="customWhatsAppGroupLinkWrapper"></div>
+<br>
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#customNewsByRavishKumarHeader"
+  target="_blank">See All News by Ravish Kumar</a>
+<br>
+<a href="https://survival8.blogspot.com/2026/03/the-illusion-of-power-trumps-retreat.html" target="_blank" class="customLink">&lt;&lt;&lt; Previously</a> &nbsp;&nbsp; <a href="https://survival8.blogspot.com/2026/03/the-war-everyone-unsees.html" target="_blank" class="customLink">Next &gt;&gt;&gt;</a>
+<br>
+
+
+<body>
+  <div class="separator" style="clear: both;"><a
+      href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhTy43K9E77iSyaMPlQxM42KFEZHR_zqUS_HD_qX-TZJlAqnCdKJcqFMdXQmMoOYBqJ7y5DXVvDcOkBMuCmx4sLCjBU5cjTI1bKark63FscORcpxvqbrAX_X7jN8sBFW_lOeS_Qdg7a8qBhp4w_xCewL4_rEjzz_F3bQ5Df5mmY6YYMoXfDQuBBAdCz6Sq/s600/ChatGPT%20Image%20Mar%2028,%202026,%2009_49_11%20PM.png"
+      style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600"
+        data-original-height="400" data-original-width="600"
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhTy43K9E77iSyaMPlQxM42KFEZHR_zqUS_HD_qX-TZJlAqnCdKJcqFMdXQmMoOYBqJ7y5DXVvDcOkBMuCmx4sLCjBU5cjTI1bKark63FscORcpxvqbrAX_X7jN8sBFW_lOeS_Qdg7a8qBhp4w_xCewL4_rEjzz_F3bQ5Df5mmY6YYMoXfDQuBBAdCz6Sq/s600/ChatGPT%20Image%20Mar%2028,%202026,%2009_49_11%20PM.png" /></a>
+  </div>
+
+  <br>
+
+  <iframe class="custom_iframe" src="https://www.youtube.com/embed/YdtU776vL6U"
+    title="दस लाख लड़ाके क्यों भर्ती कर रहा है ईरान, ट्रंप ने डेडलाइन क्यों बढ़ा दी?" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  <br>
+
+  <div class="customOuterWrapper">
+
+    <div class="customOuterWrapper__header">
+      <div class="customOuterWrapper__kicker">WAR DIARY · MARCH 27, 2026 · DAY 28</div>
+      <h1 class="customOuterWrapper__headline">
+        Iran Is Recruiting One Million Soldiers.<br />
+        <em>Trump Just Changed His Deadline.</em>
+      </h1>
+      <p class="customOuterWrapper__subhead">
+        While missiles rain on cities and markets bleed, the man ordering the strikes is worried about when his statue
+        will be unveiled in Venezuela.
+      </p>
+      <div class="customOuterWrapper__byline">By Ravish Kumar</div>
+      <div class="customOuterWrapper__rule"></div>
+    </div>
+
+    <!-- SECTION 1 -->
+    <div class="customOuterWrapper__section">
+      <h2 class="customOuterWrapper__sectionTitle">The Most Relaxed Man in the Room</h2>
+      <p>
+        Watch how a president conducts himself in a cabinet meeting while bombs fall on other people's homes, while
+        hospital machines run out of helium and go silent, while families queue for cooking gas cylinders that may never
+        arrive. Donald Trump sits there, cracking jokes, swapping one-liners with his cabinet. Someone mentions that a
+        statue of Trump is about to be unveiled in Venezuela — and the man lights up. "Tell me about the statue first,"
+        he says, waving off any talk of oil prices. Everyone laughs.
+      </p>
+      <p>
+        That laughter tells you everything. On a map, many countries call themselves sovereign. But on this earth, if
+        anyone is truly free — free to bomb, to sanction, to extend deadlines and revoke them by breakfast — it is one
+        man. And that man is wearing a different tie every day, its knot freshly knotted, perfectly tight. His
+        statements, like those knots, change just as easily.
+      </p>
+      <p>
+        Trump himself announced that energy plants would not be targeted until March 27. Then, in the same breath, said
+        Iran had "requested" this pause — a claim Iran has not confirmed. As the poet Prakaash Mehra once wrote: <span
+          class="customOuterWrapper__quote">"Apni toh jaise taise kat jaayegi — aapka kya hoga, Janaabe-e-Aali?"</span>
+        His tie will keep changing. His days will keep passing. Yours, well — that depends on where you live.
+      </p>
+    </div>
+
+    <!-- PULL QUOTE -->
+    <div class="customOuterWrapper__pullQuote">
+      "On a map, every country calls itself free. On this earth, if anyone is truly free — free to bomb, to sanction, to
+      move deadlines at will — it is one man."
+    </div>
+
+    <!-- SECTION 2 -->
+    <div class="customOuterWrapper__section">
+      <h2 class="customOuterWrapper__sectionTitle">What the Numbers Actually Say</h2>
+      <p>
+        The Israeli newspaper <em>Haaretz</em> has reported that Iran has breached Israel's protective shield — its
+        interceptors are thinning, their effectiveness diminishing with each wave of fire. In twenty-five days, Iran
+        fired over 400 missiles at Israel. There was a brief lull, but the tempo has returned with a vengeance. The IDF
+        itself has reported that 35 cluster missiles broke through Israeli air defenses entirely, with 190 urban zones
+        affected by these strikes. Israel has reported more than 5,000 people wounded.
+      </p>
+      <p>
+        The <em>Times of Israel</em> has reported something even more telling: Israel's own military chief has warned
+        the cabinet that manpower is running dangerously low. If things continue at this pace, the army will be unable
+        to complete its missions — it will, in the chief's own words, hollow out from within. This is not the Iranian
+        military saying this. This is Israel's own Army Chief, warning his own government, in a cabinet briefing.
+      </p>
+      <p>
+        The website <em>Drop Site</em> has reported that Iran struck a white phosphorus weapons manufacturing unit in
+        the Negev desert. The use of white phosphorus in warfare is prohibited. Israel has used it in Gaza and Lebanon.
+        That inconvenient detail tends to get buried under other headlines.
+      </p>
+      <p>
+        Iran has also confirmed — though without an official statement — the death of IRGC Naval Commander Ali Reza
+        Tangsiri. The <em>New York Times</em> reported that Tangsiri was leading the planning to shut down the Strait of
+        Hormuz. With his death, a critical node in Iran's naval strategy has gone dark. Israel claimed responsibility.
+        The United States confirmed it.
+      </p>
+    </div>
+
+    <!-- STAT BAR -->
+    <div class="customOuterWrapper__statBar">
+      <div class="customOuterWrapper__stat">
+        <span class="customOuterWrapper__statNum">400+</span>
+        <span class="customOuterWrapper__statLabel">Missiles fired at Israel in 25 days</span>
+      </div>
+      <div class="customOuterWrapper__statDivider"></div>
+      <div class="customOuterWrapper__stat">
+        <span class="customOuterWrapper__statNum">35</span>
+        <span class="customOuterWrapper__statLabel">Missiles that broke through Israeli air defenses</span>
+      </div>
+      <div class="customOuterWrapper__statDivider"></div>
+      <div class="customOuterWrapper__stat">
+        <span class="customOuterWrapper__statNum">5,000+</span>
+        <span class="customOuterWrapper__statLabel">Reported wounded in Israel</span>
+      </div>
+      <div class="customOuterWrapper__statDivider"></div>
+      <div class="customOuterWrapper__stat">
+        <span class="customOuterWrapper__statNum">600</span>
+        <span class="customOuterWrapper__statLabel">Schools attacked in Iran</span>
+      </div>
+    </div>
+
+    <!-- SECTION 3 -->
+    <div class="customOuterWrapper__section">
+      <h2 class="customOuterWrapper__sectionTitle">One Million Soldiers — And a Mountain War</h2>
+      <p>
+        Reports across media suggest that Iran's Islamic Revolutionary Guard Corps is now actively recruiting up to one
+        million soldiers. This is not a rhetorical gesture. It is preparation. Several videos released by Iran show its
+        forces announcing: "We are ready. We are waiting for the American soldiers to arrive." Iran's Parliament Speaker
+        Ghalibaf said on March 25 that he has intelligence that there are plans to seize Iranian islands. He warned that
+        if any line is crossed, all the infrastructure of the region will be destroyed — and the attacks will be
+        relentless.
+      </p>
+      <p>
+        American members of Congress have said they will not support a ground operation. But that has not stopped the
+        flow of reports — some of them, Iran claims, deliberately planted by Israel — that a strike could come at any
+        moment, keeping Iran on edge, keeping troop deployments active, keeping the psychological pressure high. Iran
+        has already been encircled for months. Whether the deployment is real or a pressure tactic, the effect is the
+        same: Iran must stay mobilized. And a mobilized Iran, dug into its mountain geography, means any ground war
+        would be extraordinarily long.
+      </p>
+    </div>
+
+    <!-- SECTION 4 -->
+    <div class="customOuterWrapper__section">
+      <h2 class="customOuterWrapper__sectionTitle">The Gulf Fractures: UAE Picks a Side, Qatar Steps Back</h2>
+      <p>
+        The United Arab Emirates is no longer hiding its position. On March 25, the UAE Ambassador to the United States
+        published a piece in the <em>Wall Street Journal</em> making the country's intentions explicit: the war must end
+        in a way that permanently eliminates Iran's nuclear program, drone capability, missile networks, terror proxies,
+        and blockade threat. The ambassador wrote that the UAE had intercepted 2,180 Iranian missiles and drones,
+        absorbing attacks on its airports, seaports, energy infrastructure, theme parks, and fertilizer shipments.
+        Australia has already sent air defense systems to help UAE. The UAE's own navy is preparing to deploy.
+      </p>
+      <p>
+        Turkey's President Erdoğan issued a sharp warning: UAE must not enter this war. After it is over, he said,
+        America will simply leave you to be Iran's punching bag and walk away. It is a warning with historical weight —
+        and one the UAE ambassador's <em>WSJ</em> piece seemed to deliberately dismiss.
+      </p>
+      <p>
+        Qatar has taken a starkly different position. Its foreign ministry spokesperson said clearly: Qatar wants an
+        immediate ceasefire but will not be part of any US-Iran negotiations. Since 2023, Qatar has been warning that if
+        regional tensions are not de-escalated, the entire Gulf will be engulfed. Today, that is exactly what is
+        happening. The contrast is sharp: Qatar has distanced itself from the mediation table entirely — a decision that
+        surprised many observers, given Qatar's central role in previous ceasefires. Analysts recall that the last time
+        Qatar pushed for talks, Israel struck Doha during the negotiations.
+      </p>
+      <p>
+        Iran's Foreign Minister Araghchi has issued a warning to Gulf states: hotels in the Gulf will now be targeted
+        because they are sheltering American soldiers — and using ordinary civilians as human shields. Kuwait's Mubarak
+        Al Kabeer Port was hit by drones and missiles. The Shuwaikh Port was struck. <em>Al Jazeera</em> reported six
+        missiles landing near Riyadh, Saudi Arabia's capital. The war is no longer contained. It is spreading like water
+        through cracks.
+      </p>
+    </div>
+
+    <!-- PULL QUOTE 2 -->
+    <div class="customOuterWrapper__pullQuote">
+      "The war is no longer contained. It is spreading like water through cracks — Riyadh, Kuwait, Beirut. The Gulf is
+      no longer a spectator."
+    </div>
+
+    <!-- SECTION 5 -->
+    <div class="customOuterWrapper__section">
+      <h2 class="customOuterWrapper__sectionTitle">India's Silent Stake: ₹33 Lakh Crore and Counting</h2>
+      <p>
+        In the early days of this conflict, the argument offered for India's silence was strategic autonomy — India sees
+        all sides, tells none of them what to do, and minds its own interests. Very well. Then let us ask: what are
+        India's interests, and how are they being served?
+      </p>
+      <p>
+        Since the war began, Indian investors have lost ₹33 lakh crore. On the morning of March 27 alone, ₹8 lakh crore
+        evaporated within a few hours of trading. Mid-cap shares have fallen between 25 and 45 percent. The rupee has
+        fallen to ₹94.80 to the dollar — with analysts predicting it could slide to ₹98. Every rupee the currency loses
+        means more expensive imports, a heavier burden on the government treasury, and eventually — inevitably — the
+        weight lands on ordinary people.
+      </p>
+      <p>
+        Petroleum Minister Hardeep Singh Puri has acknowledged that Indian oil companies are losing ₹24 per litre on
+        petrol and ₹30 per litre on diesel. He has assured the public that prices will not be raised — the government
+        will absorb the loss. He even praised the government for not raising prices for four years. What the Minister
+        did not mention is that during those same four years, the crude oil price had also fallen sharply — and India
+        bought Russian oil at steep discounts. The windfall was not passed to the consumer. Now that there is a loss,
+        the government's restraint is being packaged as generosity.
+      </p>
+      <p>
+        The Minister also quietly reduced excise duty on petrol and diesel by ₹10 each. The reduction, however, will not
+        make fuel cheaper at the pump. It will only provide marginal relief to oil marketing companies. Rating agencies
+        have already begun forecasting a drop in India's GDP. A one-percentage-point fall in GDP means thousands of jobs
+        lost, lakhs without work, and three to four years of recovery. And still, India has not said loudly: <em>this
+          war is hurting our people, stop it.</em>
+      </p>
+      <p>
+        Why? Perhaps because five states — West Bengal, Assam, Tamil Nadu, Kerala, and Puducherry — are in the middle of
+        elections, and no government wants to be seen raising fuel prices before a vote. The crisis is real. The
+        response is electoral.
+      </p>
+    </div>
+
+    <!-- SECTION 6 -->
+    <div class="customOuterWrapper__section">
+      <h2 class="customOuterWrapper__sectionTitle">The Silence of the Powerful — And the Few Who Spoke</h2>
+      <p>
+        When Israel bombed Gaza, the streets of London and Berlin filled with protesters. This time — with Iran under
+        sustained attack, schools and hospitals bombed, 600 educational institutions struck, water and oil
+        infrastructure destroyed — those same streets are quiet. The silence of the people is perhaps understandable.
+        But the silence of governments is deliberate.
+      </p>
+      <p>
+        European Central Bank chief Christine Lagarde has warned that an economic shock larger than anything currently
+        anticipated is on its way. Russia's President Putin said plainly that this war is not happening in West Asia —
+        it has arrived in everyone's home. The Philippines has warned it has only 30 to 40 days of petroleum reserves
+        left.
+      </p>
+      <p>
+        In this landscape of averted eyes, Spain's Prime Minister Pedro Sánchez — a name that does not appear on any
+        list of "world leaders" crafted in Delhi or Washington — refused to allow American forces to use Spanish
+        military bases for strikes on Iran. He condemned the attack. He does not have India's GDP, nor America's nuclear
+        arsenal. But he said what needed to be said. Brazil's President Lula was blunt: "I am angry. Whoever has power
+        thinks they own the world."
+      </p>
+      <p>
+        Meanwhile, the American Embassy in India tweeted an old photograph — Trump and Modi, smiling, a year-old image
+        with an old quote about India being an "important friend." Why now? Is it to compensate for the attention being
+        showered on Pakistan as a diplomatic interlocutor in the Iran-US channel? If so, it treats ordinary Indians as
+        people too unsophisticated to notice the difference between a year-old photo and present-day policy.
+      </p>
+      <p>
+        A small group of people — with ties that change every day and statements that change with the ties — is herding
+        the world's population like sheep. Religion and nationalism serve one purpose in this arrangement: to win
+        elections. The real business of war, the real calculus of power, speaks an entirely different language. Some
+        countries still speak the language of resistance. Most have chosen the comfort of silence.
+      </p>
+      <p>
+        The question is: for how long?
+      </p>
+    </div>
+
+    <!-- FACTS SECTION -->
+    <div class="customOuterWrapper__factBox">
+      <div class="customOuterWrapper__factBoxTitle">FACTS</div>
+      <ul class="customOuterWrapper__factList">
+        <li>Iran fired over 400 missiles at Israel in 25 days, with the pace accelerating after a brief lull, according
+          to the Israeli newspaper <em>Haaretz</em>.</li>
+        <li>35 cluster missiles broke through Israeli air defenses entirely; 190 urban zones have been affected, per IDF
+          reports.</li>
+        <li>Israel's military chief warned the cabinet that ground manpower is critically low and that the army risks
+          failure to complete its missions if the situation continues.</li>
+        <li>Iran is reportedly recruiting up to one million soldiers into the IRGC, according to multiple media reports.
+        </li>
+        <li>IRGC Naval Commander Ali Reza Tangsiri was killed; he was leading planning to close the Strait of Hormuz.
+          The US confirmed his death.</li>
+        <li>Iran struck a white phosphorus weapons manufacturing unit in the Negev. White phosphorus use in warfare is
+          prohibited under international law.</li>
+        <li>The UAE intercepted 2,180 Iranian drones and missiles, according to the UAE Ambassador's <em>Wall Street
+            Journal</em> op-ed dated March 25.</li>
+        <li>Kuwait's ports and Saudi Arabia's capital Riyadh were struck by missiles and drones during this period.</li>
+        <li>Indian investors have lost ₹33 lakh crore since the war began; ₹8 lakh crore was wiped out on March 27
+          morning alone.</li>
+        <li>Indian oil companies are losing ₹24/litre on petrol and ₹30/litre on diesel, as confirmed by Petroleum
+          Minister Hardeep Singh Puri.</li>
+        <li>The central excise duty on petrol in India rose from ₹9.48/litre in 2014 to ₹19.90/litre currently — a
+          near-doubling under the present government.</li>
+        <li>Spain's PM Pedro Sánchez refused to allow US military use of Spanish bases for strikes on Iran and publicly
+          condemned the attack.</li>
+        <li>The Philippines has warned it has only 30–40 days of petroleum reserves remaining and has declared a state
+          of emergency.</li>
+        <li>ECB Chief Christine Lagarde warned that an economic shock far larger than current forecasts is imminent.
+        </li>
+        <li>Iran's Foreign Minister Araghchi stated before a UN Human Rights Committee that the US and Israel are
+          conducting a war of genocide against Iran, with 600 schools, hospitals, water infrastructure, and oil sites
+          attacked.</li>
+      </ul>
+    </div>
+
+    <!-- CRITICISMS SECTION -->
+    <div class="customOuterWrapper__criticismBox">
+      <div class="customOuterWrapper__criticismTitle">CRITICISMS</div>
+
+      <div class="customOuterWrapper__criticismGroup">
+        <div class="customOuterWrapper__criticismSubject">Donald Trump / United States</div>
+        <ul class="customOuterWrapper__criticismList">
+          <li>Trump announced a pause on energy plant strikes, attributing it to an Iranian "request" — a claim Iran
+            never confirmed, illustrating the pattern of issuing statements with no factual basis.</li>
+          <li>The cabinet meeting footage reveals a president entirely unbothered by civilian suffering, laughing about
+            commodity markets and statues while his military strikes hospitals and schools.</li>
+          <li>Trump claimed Iran was two to four weeks away from a nuclear bomb — a claim contradicted by his own
+            National Intelligence Director Tulsi Gabbard and Counter-Terrorism Director Joe Kent, who testified Iran had
+            no nuclear weapon.</li>
+          <li>The US is actively working with Israel on plans to assassinate Iranian political leadership — including
+            the foreign minister and parliament speaker — in violation of international law.</li>
+          <li>US military bases across the Gulf are being used to coordinate and support strikes, while the
+            administration portrays the war as a self-defense operation rather than a coordinated aggression.</li>
+        </ul>
+      </div>
+
+      <div class="customOuterWrapper__criticismGroup">
+        <div class="customOuterWrapper__criticismSubject">Israel</div>
+        <ul class="customOuterWrapper__criticismList">
+          <li>Israel used white phosphorus in Gaza and Lebanon — a chemical weapon banned in warfare — and its
+            manufacturing facility in the Negev remained active until recently targeted.</li>
+          <li>Israel's military spokesperson openly stated that assassinations of Iranian leaders will continue, a
+            declaration that constitutes a public endorsement of targeted killings in violation of international
+            humanitarian law.</li>
+          <li>Israel has sabotaged multiple ceasefire attempts, including one in Doha where it struck the city during
+            active negotiations.</li>
+          <li>Spreading fabricated reports that an attack on Iran is imminent serves as a psychological pressure tactic
+            — a form of information warfare designed to keep Iran militarily destabilized without bearing diplomatic
+            consequences.</li>
+        </ul>
+      </div>
+
+      <div class="customOuterWrapper__criticismGroup">
+        <div class="customOuterWrapper__criticismSubject">Indian Government / Modi Administration</div>
+        <ul class="customOuterWrapper__criticismList">
+          <li>India has chosen silence while its citizens lose ₹33 lakh crore, the rupee collapses, and fuel subsidies
+            bleed the treasury — calling this "strategic autonomy" is a euphemism for indifference to the public.</li>
+          <li>The central excise duty on petrol nearly doubled between 2014 and today — from ₹9.48 to ₹19.90 per litre —
+            yet the government presents its decision not to raise prices further as extraordinary largesse.</li>
+          <li>When crude prices fell and India bought discounted Russian oil, the savings were absorbed by the
+            government rather than passed on to consumers. Now that costs are rising, the government calls its restraint
+            a favor.</li>
+          <li>The excise duty reduction of ₹10 per litre will not reduce pump prices — it only partially covers the
+            losses of oil marketing companies. Framing this as "relief to the public" is deliberately misleading.</li>
+          <li>The decision to keep fuel prices unchanged through five state elections makes the motivation transparent:
+            electoral management, not public welfare.</li>
+        </ul>
+      </div>
+
+      <div class="customOuterWrapper__criticismGroup">
+        <div class="customOuterWrapper__criticismSubject">Mainstream Media / Global Information Environment</div>
+        <ul class="customOuterWrapper__criticismList">
+          <li>The near-absence of mass street protests in London, Berlin, and other Western cities — unlike during the
+            Gaza bombings — suggests that the same populations are selectively engaged, mobilized by media framing
+            rather than consistent moral principle.</li>
+          <li>The planting of false intelligence — that an attack on Iran is coming at any moment — goes largely
+            uncritiqued by mainstream media, which amplifies the pressure without interrogating its manufactured nature.
+          </li>
+        </ul>
+      </div>
+
+      <div class="customOuterWrapper__criticismGroup">
+        <div class="customOuterWrapper__criticismSubject">UAE</div>
+        <ul class="customOuterWrapper__criticismList">
+          <li>The UAE's <em>Wall Street Journal</em> op-ed by its US Ambassador is a lobbying document for war
+            continuation, not peace — framed as self-defense but functionally calling for the permanent dismantlement of
+            the Iranian state.</li>
+          <li>The UAE's decision to deploy its navy while claiming civilian neutrality exposes the gap between Dubai's
+            carefully cultivated cosmopolitan image and the geopolitical role it is actively choosing to play.</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div><!-- end customOuterWrapper -->
+
+  <style>
+    div.customOuterWrapper {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 3rem 2rem 5rem;
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-weight: 300;
+      color: #1a1208;
+      background: #faf7f2;
+      position: relative;
+    }
+
+    div.customOuterWrapper::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #c0392b, #8b1a1a, #c0392b);
+      z-index: 100;
+    }
+
+    div.customOuterWrapper__header {
+      border-bottom: 2px solid #1a1208;
+      padding-bottom: 2rem;
+      margin-bottom: 2.5rem;
+    }
+
+    div.customOuterWrapper__kicker {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #c0392b;
+      margin-bottom: 1rem;
+    }
+
+    h1.customOuterWrapper__headline {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 900;
+      line-height: 1.12;
+      color: #0d0806;
+      margin: 0 0 1.2rem;
+      letter-spacing: -0.02em;
+    }
+
+    h1.customOuterWrapper__headline em {
+      font-style: italic;
+      color: #c0392b;
+    }
+
+    p.customOuterWrapper__subhead {
+      font-family: 'Source Serif 4', serif;
+      font-size: 1.15rem;
+      font-style: italic;
+      font-weight: 400;
+      color: #4a3728;
+      line-height: 1.6;
+      margin: 0 0 1rem;
+      border-left: 3px solid #c0392b;
+      padding-left: 1rem;
+    }
+
+    div.customOuterWrapper__byline {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #7a6050;
+      margin-top: 1rem;
+    }
+
+    div.customOuterWrapper__rule {
+      display: none;
+    }
+
+    div.customOuterWrapper__section {
+      margin-bottom: 2.8rem;
+    }
+
+    h2.customOuterWrapper__sectionTitle {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #0d0806;
+      margin: 0 0 0.9rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid #d4c5b0;
+      letter-spacing: -0.01em;
+    }
+
+    div.customOuterWrapper__section p {
+      font-size: 1.05rem;
+      line-height: 1.85;
+      margin: 0 0 1.2rem;
+      color: #2a1e14;
+    }
+
+    div.customOuterWrapper__section p em {
+      font-style: italic;
+    }
+
+    span.customOuterWrapper__quote {
+      font-style: italic;
+      color: #7a3020;
+      font-family: 'Playfair Display', serif;
+    }
+
+    div.customOuterWrapper__pullQuote {
+      margin: 2.5rem -1.5rem;
+      padding: 1.8rem 2.5rem;
+      background: #1a1208;
+      color: #f5ede0;
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.1rem, 3vw, 1.5rem);
+      font-style: italic;
+      line-height: 1.5;
+      position: relative;
+    }
+
+    div.customOuterWrapper__pullQuote::before {
+      content: '\201C';
+      font-size: 5rem;
+      color: #c0392b;
+      line-height: 0;
+      position: absolute;
+      top: 2.2rem;
+      left: 1rem;
+      font-family: 'Playfair Display', serif;
+    }
+
+    div.customOuterWrapper__statBar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0;
+      margin: 2.5rem 0;
+      border: 1.5px solid #1a1208;
+    }
+
+    div.customOuterWrapper__stat {
+      flex: 1 1 140px;
+      padding: 1.2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 0.4rem;
+    }
+
+    div.customOuterWrapper__stat:not(:last-child) {
+      border-right: 1.5px solid #1a1208;
+    }
+
+    span.customOuterWrapper__statNum {
+      font-family: 'Playfair Display', serif;
+      font-weight: 900;
+      font-size: 2rem;
+      color: #c0392b;
+      line-height: 1;
+    }
+
+    span.customOuterWrapper__statLabel {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.58rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #4a3728;
+      line-height: 1.4;
+    }
+
+    div.customOuterWrapper__statDivider {
+      display: none;
+    }
+
+    div.customOuterWrapper__factBox {
+      margin-top: 3rem;
+      padding: 2rem;
+      background: #f0ebe2;
+      border-top: 3px solid #1a1208;
+    }
+
+    div.customOuterWrapper__factBoxTitle {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #c0392b;
+      margin-bottom: 1rem;
+    }
+
+    ul.customOuterWrapper__factList {
+      margin: 0;
+      padding-left: 1.2rem;
+      list-style: none;
+    }
+
+    ul.customOuterWrapper__factList li {
+      font-size: 0.92rem;
+      line-height: 1.75;
+      color: #2a1e14;
+      margin-bottom: 0.6rem;
+      padding-left: 1rem;
+      position: relative;
+    }
+
+    ul.customOuterWrapper__factList li::before {
+      content: '--';
+      position: absolute;
+      left: -0.2rem;
+      color: #c0392b;
+      font-weight: 700;
+    }
+
+    ul.customOuterWrapper__factList li em {
+      font-style: italic;
+    }
+
+    div.customOuterWrapper__criticismBox {
+      margin-top: 2.5rem;
+      padding: 2rem;
+      background: #1a1208;
+      color: #e8ddd0;
+    }
+
+    div.customOuterWrapper__criticismTitle {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #c0392b;
+      margin-bottom: 1.5rem;
+    }
+
+    div.customOuterWrapper__criticismGroup {
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid #3a2e20;
+    }
+
+    div.customOuterWrapper__criticismGroup:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    div.customOuterWrapper__criticismSubject {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #f5ede0;
+      margin-bottom: 0.8rem;
+      letter-spacing: 0.02em;
+    }
+
+    ul.customOuterWrapper__criticismList {
+      margin: 0;
+      padding-left: 1rem;
+      list-style: none;
+    }
+
+    ul.customOuterWrapper__criticismList li {
+      font-size: 0.92rem;
+      line-height: 1.75;
+      color: #c9bfb0;
+      margin-bottom: 0.6rem;
+      padding-left: 1.2rem;
+      position: relative;
+    }
+
+    ul.customOuterWrapper__criticismList li::before {
+      content: '$';
+      position: absolute;
+      left: 0;
+      color: #c0392b;
+      font-size: 0.75rem;
+      top: 0.15rem;
+    }
+
+    @media (max-width: 600px) {
+      div.customOuterWrapper {
+        padding: 2rem 1.2rem 4rem;
+      }
+
+      div.customOuterWrapper__pullQuote {
+        margin: 2rem -0.8rem;
+        padding: 1.5rem 1.8rem;
+      }
+
+      div.customOuterWrapper__stat:not(:last-child) {
+        border-right: none;
+        border-bottom: 1.5px solid #1a1208;
+      }
+    }
+  </style>
+
+</body>

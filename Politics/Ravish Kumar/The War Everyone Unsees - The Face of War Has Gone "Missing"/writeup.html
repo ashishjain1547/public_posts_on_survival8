@@ -1,0 +1,799 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                success: function (result) {
+                    let grouplink = JSON.parse(result)['current book club'];
+                    $("#customWhatsAppGroupLinkWrapper").html(
+                        `
+                        <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                            <span>Join us on:</span>
+                            <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                            </a>
+                        </h2>
+                        `
+                    );
+                }
+            });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+    </style>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .dot {
+            height: 12px;
+            width: 12px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .arrow {
+            border: solid black;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+        }
+
+        .right {
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+        }
+
+        .left {
+            transform: rotate(135deg);
+            -webkit-transform: rotate(135deg);
+        }
+
+        .up {
+            transform: rotate(-135deg);
+            -webkit-transform: rotate(-135deg);
+        }
+
+        .down {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        button { display: none; }
+    </style>
+
+      <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Face of War Has Gone Missing | Ravish Kumar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ─── Reset only within the wrapper scope ─── */
+    div.customOuterWrapper *,
+    div.customOuterWrapper *::before,
+    div.customOuterWrapper *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ─── Wrapper ─── */
+    div.customOuterWrapper {
+      --ink:        #1a1209;
+      --paper:      #f5f0e8;
+      --accent:     #b5260e;
+      --muted:      #7a6e61;
+      --rule:       #c9bfaf;
+      --highlight:  #fffbe6;
+      --cite-bg:    #f0ebe0;
+
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-weight: 300;
+      font-size: 1.08rem;
+      line-height: 1.85;
+      color: var(--ink);
+      background-color: var(--paper);
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 3.5rem 2.2rem 5rem;
+      position: relative;
+    }
+
+    /* ─── Eyebrow / dateline ─── */
+    div.customOuterWrapper .eyebrow {
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.72rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    /* ─── Main title ─── */
+    div.customOuterWrapper h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(1.9rem, 4vw, 2.8rem);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--ink);
+      margin-bottom: 0.5rem;
+    }
+
+    div.customOuterWrapper h1 em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    /* ─── Subtitle / deck ─── */
+    div.customOuterWrapper .deck {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.05rem;
+      color: var(--muted);
+      border-left: 3px solid var(--accent);
+      padding-left: 1rem;
+      margin: 1.2rem 0 0.5rem;
+      line-height: 1.6;
+    }
+
+    /* ─── Byline ─── */
+    div.customOuterWrapper .byline {
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-top: 1rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1.5px solid var(--rule);
+    }
+
+    div.customOuterWrapper .byline strong {
+      color: var(--ink);
+      font-weight: 400;
+    }
+
+    /* ─── Section headings ─── */
+    div.customOuterWrapper h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-top: 3rem;
+      margin-bottom: 0.7rem;
+      padding-top: 0.4rem;
+      border-top: 1.5px solid var(--rule);
+    }
+
+    /* ─── Body paragraphs ─── */
+    div.customOuterWrapper p {
+      margin-bottom: 1.3rem;
+    }
+
+    /* ─── Pull-quote / blockquote ─── */
+    div.customOuterWrapper blockquote {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.15rem;
+      color: var(--accent);
+      border-left: 4px solid var(--accent);
+      background: var(--highlight);
+      margin: 2rem 0;
+      padding: 1rem 1.5rem;
+      line-height: 1.65;
+    }
+
+    /* ─── Citation / source callout ─── */
+    div.customOuterWrapper .citation {
+      background: var(--cite-bg);
+      border-left: 3px solid var(--muted);
+      font-size: 0.85rem;
+      color: var(--muted);
+      padding: 0.6rem 1rem;
+      margin: 1rem 0 1.5rem;
+      font-style: italic;
+    }
+
+    div.customOuterWrapper .citation a {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    /* ─── Name list (journalists) ─── */
+    div.customOuterWrapper .name-list {
+      font-size: 0.92rem;
+      color: var(--muted);
+      font-style: italic;
+      padding-left: 1.2rem;
+      border-left: 2px dotted var(--rule);
+      margin: 1rem 0 1.5rem;
+      line-height: 2;
+    }
+
+    /* ─── Fact / Criticism section cards ─── */
+    div.customOuterWrapper .section-card {
+      margin-top: 3rem;
+      padding: 1.5rem 1.8rem;
+      border: 1.5px solid var(--rule);
+      background: var(--cite-bg);
+    }
+
+    div.customOuterWrapper .section-card h2 {
+      border-top: none;
+      margin-top: 0;
+      font-size: 1.1rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding-top: 0;
+      margin-bottom: 1rem;
+    }
+
+    div.customOuterWrapper .section-card.criticism {
+      background: #fff5f3;
+      border-color: #e0b0a8;
+    }
+
+    div.customOuterWrapper .section-card.criticism h2 {
+      color: var(--accent);
+    }
+
+    /* ─── Fact / criticism items ─── */
+    div.customOuterWrapper .fact-item,
+    div.customOuterWrapper .criticism-item {
+      padding: 0.7rem 0;
+      border-bottom: 1px solid var(--rule);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    div.customOuterWrapper .fact-item:last-child,
+    div.customOuterWrapper .criticism-item:last-child {
+      border-bottom: none;
+    }
+
+    div.customOuterWrapper .fact-item strong,
+    div.customOuterWrapper .criticism-item strong {
+      font-weight: 400;
+      color: var(--ink);
+    }
+
+    /* ─── Footer note ─── */
+    div.customOuterWrapper .footer-note {
+      margin-top: 3.5rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+      border-top: 1px solid var(--rule);
+      padding-top: 1rem;
+    }
+
+    /* ─── Drop cap on first paragraph ─── */
+    div.customOuterWrapper .drop-cap::first-letter {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.6rem;
+      font-weight: 700;
+      float: left;
+      line-height: 0.78;
+      margin-right: 0.1em;
+      margin-top: 0.1em;
+      color: var(--accent);
+    }
+
+    /* ─── Emphasis helper ─── */
+    div.customOuterWrapper em.key {
+      font-style: normal;
+      color: var(--accent);
+      font-weight: 400;
+    }
+
+    /* ─── Horizontal rule ─── */
+    div.customOuterWrapper hr {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 2.5rem 0;
+    }
+
+    /* ─── Responsive ─── */
+    @media (max-width: 540px) {
+      div.customOuterWrapper {
+        padding: 2rem 1.2rem 3.5rem;
+      }
+    }
+  </style>
+</head>
+<div id="customWhatsAppGroupLinkWrapper"></div>
+<br>
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#customNewsByRavishKumarHeader" target="_blank">See All News by Ravish Kumar</a>
+<br>
+<a href="https://survival8.blogspot.com/2026/03/one-million-soldiers-loosened-necktie.html" target="_blank" class="customLink">&lt;&lt;&lt; Previously</a> 
+<br>
+
+<body>
+<div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVqCViLyXnggPEaNhUJmh2U1HgfmiKeA64NAhxxtaN1LIm9DHyxc9qEEoY6cP0kWKn29bzRe-gWQtIDJBqy59d4YCwFKO7jnuvo1p1dp1wvf46TYinFCoFjRN7ETl0Mp_h_puA0Q1QB_ojudB8vgMGaFWeRx04o31lb_yDu0ZGzWv64S5-GyAkOB5DRfWv/s600/ChatGPT%20Image%20Mar%2028,%202026,%2009_12_01%20PM.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600" data-original-height="400" data-original-width="600" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVqCViLyXnggPEaNhUJmh2U1HgfmiKeA64NAhxxtaN1LIm9DHyxc9qEEoY6cP0kWKn29bzRe-gWQtIDJBqy59d4YCwFKO7jnuvo1p1dp1wvf46TYinFCoFjRN7ETl0Mp_h_puA0Q1QB_ojudB8vgMGaFWeRx04o31lb_yDu0ZGzWv64S5-GyAkOB5DRfWv/s600/ChatGPT%20Image%20Mar%2028,%202026,%2009_12_01%20PM.png"/></a></div>
+
+
+<iframe class="custom_iframe" src="https://www.youtube.com/embed/tjNcU8gyVzg" title="F-35 गिरा, हेडलाइन, 2000 मरे, ख़बर ही नहीं, युद्ध की ख़बरों से ग़ायब होते लोग" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<div class="customOuterWrapper">
+
+  <p class="eyebrow">War &amp; Media &nbsp;·&nbsp; March 28, 2025</p>
+
+  <h1>The Face of War Has Gone <em>Missing</em></h1>
+
+  <p class="deck">
+    Over 2,000 people died in Iran. More than 250 journalists were killed in Gaza. 
+    And yet, on your screen, there were only missile launchers, fighter jets, and defence ministers 
+    giving press conferences. Somewhere along the way, the human being quietly vanished from the war.
+  </p>
+
+  <p class="byline"><strong>Ravish Kumar</strong> &nbsp;|&nbsp; Translated &amp; Adapted</p>
+
+  <h2>Where Did the People Go?</h2>
+
+  <p class="drop-cap">
+    On February 28, America and Israel launched strikes on Iran. In the days and weeks that followed, 
+    you could find no shortage of footage — fighter jets taking off from carriers, warships cutting through 
+    oceans, missile systems painting streaks across night skies. Armies pressed their own videos into the 
+    world's news feeds, and those videos became the accepted truth of the war.
+  </p>
+
+  <p>
+    But here is what you did not see: the places where those jets dropped their bombs. The people underneath. 
+    The screaming. The running. The faces of mothers outside a school that no longer existed.
+  </p>
+
+  <p>
+    One month into the conflict, it is worth pausing to ask why. Was it an accident of logistics? 
+    A failure of access? Or was it a deliberate, systematic effort to make sure you felt nothing — 
+    that you remained unmoved, uninvested, unbothered — even as thousands of lives were being shattered 
+    in a country far away?
+  </p>
+
+  <blockquote>
+    "A careful effort was made so that, no matter what else you worried about — the cost of cooking gas, 
+    the queue at the ration office — you would feel no sympathy for those being killed."
+  </blockquote>
+
+
+  <!-- ═══════════════════════════════════ -->
+  <h2>250 Journalists Killed. Most of Their Names You Never Heard.</h2>
+
+  <p>
+    Before talking about the faceless dead in Iran, it is worth remembering another category of 
+    the missing: the journalists of Gaza. <em>The Guardian</em> newspaper built a dedicated page on its 
+    website for them — every name, every photograph. Where there was no photograph, a bullet-proof 
+    press vest stood in its place. A press vest as gravestone.
+  </p>
+
+  <div class="citation">
+    Source: The Committee to Protect Journalists (CPJ) — over 250 journalists have been killed in Gaza 
+    since the conflict began. Between 2023 and 2025, CPJ documented 203 journalist killings attributed 
+    to Israel. <a href="https://cpj.org" target="_blank">cpj.org</a>
+  </div>
+
+  <p>
+    These were the people who stood among Gaza's unarmed civilians and reported what was happening. 
+    They were the only reason the world knew anything at all — knew the names of families wiped out 
+    in a single strike, recognised the faces of children who would not see another week. 
+    They reported until bombs fell on them too.
+  </p>
+
+  <div class="name-list">
+    Ansal Sharif &nbsp;·&nbsp; Hamza Mustafa &nbsp;·&nbsp; Thuraya Fatima &nbsp;·&nbsp; Husam al-Masri 
+    &nbsp;·&nbsp; Maryam Abu Daqqa &nbsp;·&nbsp; Muhammad Salama &nbsp;·&nbsp; and 244 more.
+  </div>
+
+  <p>
+    Israel barred international journalists from entering Gaza from the very beginning. Those who were 
+    inside — local, Palestinian, freelance — were the only witnesses. And then they were killed too. 
+    Not one by one, but two hundred and fifty times over. And still, none of their photographs was shown 
+    repeatedly, insistently, the way the face of a single soldier from one side tends to be.
+  </p>
+
+
+  <!-- ═══════════════════════════════════ -->
+  <h2>Iran's 2,000 Dead, and the Names We Were Never Given</h2>
+
+  <p>
+    Iran released photographs of the girls killed in Minab. It made posters. The incident was 
+    genuinely horrific. But those images — and the deaths of nine sailors — were made to stand in for 
+    the entire Iranian civilian toll. A nation-sized tragedy reduced to a handful of photographs.
+  </p>
+
+  <p>
+    Over 2,000 people were killed in Iran during this conflict. Their stories, their names, the 
+    neighbourhoods they lived in — none of it reached us. The families of the Minab girls were not 
+    permitted to speak publicly. No journalist walked through the rubble of their homes. Instead, 
+    Iran's own state media repeatedly released <em class="key">AI-generated videos</em> depicting 
+    how Trump might attack, how devastation would unfold — synthetic grief in place of documented grief.
+  </p>
+
+  <p>
+    Iran struck a steel plant. Iran's food supply chain was attacked — a vegetable market in Larestan 
+    was bombed, reportedly to starve the population into rebellion. Medical services in cities like 
+    Mashhad and Shiraz were reportedly disrupted. We do not know the true scale. There is no ground 
+    report. There is almost no image.
+  </p>
+
+  <div class="citation">
+    Iran is the world's tenth-largest steel producer. Targeting its industrial and food infrastructure 
+    alongside military sites is a documented tactic of economic warfare. No independent media 
+    verification of civilian casualty figures has been possible due to access restrictions.
+  </div>
+
+
+  <!-- ═══════════════════════════════════ -->
+  <h2>Humanize. Dehumanize. The Oldest Game in War.</h2>
+
+  <p>
+    There are two words that define how war is communicated to the public: <em>humanize</em> and 
+    <em>dehumanize</em>. In every conflict, the side with greater media power works to dehumanize 
+    those being bombed — to ensure that viewers feel no connection to the people dying, feel no 
+    instinct to oppose the war. And a handful of courageous journalists work to humanize — to bring 
+    back the human stories that states want erased.
+  </p>
+
+  <p>
+    During the Vietnam War, media scholar Daniel Hallin documented in his book 
+    <em>The Uncensored War: The Media and Vietnam</em> how American television coverage actively 
+    promoted the war effort. Enemies were called "vermin," described in terms that stripped them of 
+    human identity. The purpose was precisely this: to prevent the television audience from forming 
+    any emotional bond with those being killed — and to instead breed the appetite for their killing.
+  </p>
+
+  <div class="citation">
+    Daniel C. Hallin, <em>The Uncensored War: The Media and Vietnam</em> (1986). Hallin's research 
+    analysed network scripts and broadcasts to show systematic dehumanisation of Vietnamese civilians 
+    and the enemy in American TV news.
+  </div>
+
+  <p>
+    One exception stands out: in August 1965, CBS correspondent Morley Safer travelled with American 
+    marines to Cam Ne village. What he broadcast — soldiers setting fire to thatched homes while 
+    elderly villagers and children remained inside — became a landmark in war journalism. "Burning of 
+    Cam Ne" is still available on YouTube. It was almost singular in its honesty. A later comprehensive 
+    analysis of all major US network coverage found that while hundreds of South Vietnamese villages 
+    were destroyed, almost none had their stories reported.
+  </p>
+
+  <blockquote>
+    When the public is dehumanized enough, it stops being citizens and becomes a crowd — willing to 
+    cheer for bombing runs the way it cheers for a cricket match.
+  </blockquote>
+
+
+  <!-- ═══════════════════════════════════ -->
+  <h2>The Embedded Journalist and the Asset Balance Sheet</h2>
+
+  <p>
+    During the Iraq War, the Pentagon's "embedded journalist" programme placed reporters inside 
+    military units, riding tanks to the front lines. Television news from inside those tanks turned 
+    war into spectacle — America's firepower showcased like product advertising. That war was waged on 
+    the premise that Saddam Hussein possessed chemical weapons. That premise was never proven. Hundreds 
+    of thousands of Iraqis were killed. The embedded journalists were reporting military prowess while 
+    the foundational lie went largely unchallenged.
+  </p>
+
+  <p>
+    A journalist from the <em>Boston Herald</em>, writing about his experience embedded with a US unit, 
+    described identifying three Iraqi soldiers who were then shot dead by a sniper nearby. The account 
+    raised a question that has never been satisfactorily answered: can a journalist embedded with one 
+    side of a war report that war with any neutrality at all?
+  </p>
+
+  <div class="citation">
+    Source: Nieman Lab, Harvard University — analysis of embedded journalism ethics and the Pentagon 
+    Embed Program (2003–2004). 
+    <a href="https://niemanlab.org" target="_blank">niemanlab.org</a>
+  </div>
+
+  <p>
+    On March 26, the <em>Wall Street Journal</em> published a report on American military assets 
+    damaged or destroyed in the conflict — billions of dollars of equipment catalogued with concern. 
+    The human beings at the other end of those assets did not receive a comparable accounting. 
+    When Fox News asked Trump whether Iranians had food and water, he responded by telling the 
+    anchor she was beautiful and reminiscing about a lunch they once shared. That exchange, 
+    too, became news.
+  </p>
+
+
+  <!-- ═══════════════════════════════════ -->
+  <h2>The Missing Ground Report</h2>
+
+  <p>
+    What are people eating in Tehran, in Beirut, in the cities of southern Iran right now? 
+    What do the streets of Mashhad look like today? How overwhelmed are the hospitals? 
+    Which neighbourhoods have lost power, or water, or both? Is there a ground report — any 
+    ground report — answering these questions? There is not.
+  </p>
+
+  <p>
+    In Gaza, when children began dying of malnutrition and starvation, the press was denied entry. 
+    The world learned of it through the same Palestinian journalists who were being killed one by 
+    one. At Harvard University, students knelt in the cold and read aloud the names of dead 
+    Gazan children onto plastic sheets. That act of naming — that insistence on the human — 
+    generated global sympathy and protests across dozens of cities. That is precisely why 
+    the naming is withheld. Naming is dangerous to those who are bombing.
+  </p>
+
+  <p>
+    In Gulf states hosting American military bases, people who filmed the aftermath of strikes 
+    were arrested. Meanwhile, the American Secretary of Defense stood before cameras to teach 
+    journalists how to write headlines. "Be patriotic press," he said. "Take pride in your country."
+  </p>
+
+
+  <!-- ═══════════════════════════════════ -->
+  <h2>India's Press: A Study in Voluntary Silence</h2>
+
+  <p>
+    In 2024, American journalist Tucker Carlson — an unlikely figure in this story — released 
+    a documentary called <em>The Bibi Files</em>, directed by Alexis Bloom. Originally produced 
+    inside Israel, the film investigates corruption allegations against Prime Minister Netanyahu 
+    and raises pointed questions about how Hamas managed to breach one of the world's most surveilled 
+    borders on October 7. Carlson, hardly a progressive voice, nonetheless asked the questions.
+  </p>
+
+  <p>
+    No Indian news channel would broadcast this film. Even if Carlson offered it for free. 
+    There would not be the courage. In a country of 1.4 billion people, with one of the largest 
+    and most historically vibrant press traditions in the world, the media's role in covering 
+    this war — in documenting war crimes, civilian casualties, or even asking basic questions — 
+    has been negligible. Turn the pages of any mainstream Indian newspaper from the past month. 
+    Count how many ground reports there are. Count how many names of Iranian dead appear.
+  </p>
+
+  <p>
+    What you will find instead is wall-to-wall coverage of leaders: Trump on the aeroplane steps, 
+    Trump before boarding, Trump after landing. A defence secretary. A foreign minister. An 
+    analysis of geopolitical implications. The Indian press has become a kirtan recital — 
+    devotional performance for those in power, with no room for the voices underneath the bombs.
+  </p>
+
+  <blockquote>
+    The press abandoned its purpose. And so the public abandoned the press. 
+    Both now serve someone other than the truth.
+  </blockquote>
+
+
+  <!-- ═══════════════════════════════════ -->
+  <h2>The Question We Must Sit With</h2>
+
+  <p>
+    Many people who consume war coverage daily consider themselves compassionate. Sensitive. 
+    They feel sorrow at personal losses, tenderness toward animals, outrage at individual cruelty. 
+    And yet, when it comes to the bombing of a country they cannot locate on a map — 2,000 dead, 
+    5,000 wounded — they feel nothing. They discuss it with the detachment of a stock market 
+    bulletin.
+  </p>
+
+  <p>
+    This is not a failure of character. It is the outcome of a system — media and state together — 
+    that has very carefully ensured you never saw a face, never heard a name, never had the chance 
+    to feel anything. The dehumanization was not accidental. It was administered.
+  </p>
+
+  <p>
+    Animals, for all the contempt the word carries when applied to humans in war, do not drop bombs. 
+    In that specific sense, they remain more humane than we have allowed ourselves to become.
+  </p>
+
+  <hr />
+
+  <!-- ═══════════════════════════════════ FACTS -->
+  <div class="section-card">
+    <h2>Facts</h2>
+
+    <div class="fact-item">
+      The United States and Israel conducted strikes on Iran beginning February 28, 2025. This article 
+      was written one month into the conflict, on March 28, 2025.
+    </div>
+
+    <div class="fact-item">
+      According to the Committee to Protect Journalists (CPJ), more than <strong>250 journalists 
+      have been killed in Gaza</strong> since the conflict began. CPJ documented 203 of those 
+      killings as attributable to Israel between 2023 and 2025.
+    </div>
+
+    <div class="fact-item">
+      <em>The Guardian</em> newspaper built a dedicated memorial page on its website for journalists 
+      killed in Gaza, listing names and photographs. Where no photograph existed, a bullet-proof 
+      press vest was used as a placeholder.
+    </div>
+
+    <div class="fact-item">
+      Israel did not permit international journalists to enter Gaza from the outset of the conflict, 
+      leaving local Palestinian journalists as the primary — and most endangered — witnesses.
+    </div>
+
+    <div class="fact-item">
+      Iran reported over <strong>2,000 civilian deaths</strong> as a result of American and Israeli 
+      strikes. Independent verification of this figure has not been possible due to media access 
+      restrictions inside Iran.
+    </div>
+
+    <div class="fact-item">
+      Iran is the <strong>world's tenth-largest steel producer</strong>. Strikes reportedly targeted 
+      its steel plant and a food-supply market in Larestan, alongside military infrastructure.
+    </div>
+
+    <div class="fact-item">
+      Daniel Hallin's 1986 academic work <em>The Uncensored War: The Media and Vietnam</em> 
+      documented how American TV news systematically dehumanised the Vietnamese enemy and civilian 
+      population during the Vietnam War.
+    </div>
+
+    <div class="fact-item">
+      Morley Safer's 1965 CBS report "The Burning of Cam Ne" — showing US marines setting fire 
+      to Vietnamese village homes while elderly residents remained inside — remains one of the few 
+      honest ground reports from that conflict. A subsequent comprehensive network study found 
+      that hundreds of destroyed South Vietnamese villages received no coverage.
+    </div>
+
+    <div class="fact-item">
+      The Pentagon's embedded journalist programme during the 2003 Iraq War placed reporters 
+      inside military units. The war's stated justification — Iraqi chemical weapons — was 
+      never verified.
+    </div>
+
+    <div class="fact-item">
+      On March 26, 2025, the <em>Wall Street Journal</em> published a report cataloguing 
+      American military assets destroyed or damaged in the Iran conflict, framing losses 
+      in billions of dollars of equipment.
+    </div>
+
+    <div class="fact-item">
+      <em>The Bibi Files</em> (2024), directed by Alexis Bloom and released on Tucker Carlson's 
+      platform, investigates corruption allegations against Israeli Prime Minister Benjamin 
+      Netanyahu and questions the security lapses of October 7.
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════ CRITICISMS -->
+  <div class="section-card criticism">
+    <h2>Criticisms</h2>
+
+    <div class="criticism-item">
+      <strong>Israeli government and military:</strong> Over 250 journalists were killed in Gaza 
+      — a toll that defies the logic of accident. Barring international press from entering Gaza 
+      from the start ensured that the scale of civilian destruction would remain invisible to the 
+      world. This was not a policy of caution; it was a policy of concealment.
+    </div>
+
+    <div class="criticism-item">
+      <strong>The Iranian government:</strong> In January 2023, the Iranian state killed thousands 
+      of its own citizens during popular protests and systematically hid the death toll. Today, 
+      the same government presents itself as a victim of unjust bombardment — and it is right 
+      to do so — but its credibility is fatally compromised by its own record of silencing families 
+      who lost children in state violence.
+    </div>
+
+    <div class="criticism-item">
+      <strong>The American government and Trump administration:</strong> Bombs funded by American 
+      taxpayers are destroying Iranian homes and Iranian lives. When a journalist asked President 
+      Trump whether Iranians had access to food and water, he responded with a compliment about 
+      her appearance. This is not eccentricity. It is the studied contempt of a leader who has 
+      concluded that human consequences carry no political cost.
+    </div>
+
+    <div class="criticism-item">
+      <strong>Western mainstream media:</strong> A month of coverage produced almost no ground 
+      reports from inside Iran, no sustained accounting of the 2,000 dead, no hospital photographs, 
+      no footage from destroyed neighbourhoods. The same outlets that loudly championed civil 
+      liberties inside Iran during the 2022 protests went largely silent once Western bombs 
+      started falling. The hypocrisy is structural, not incidental.
+    </div>
+
+    <div class="criticism-item">
+      <strong>Indian news media:</strong> In a country of 1.4 billion people, not a single 
+      mainstream television channel or major newspaper produced meaningful ground reporting on 
+      civilian casualties in this war. Coverage consisted almost entirely of government statements 
+      and geopolitical commentary. The Indian press has traded independent journalism for proximity 
+      to power, and in doing so has rendered itself useless to its audience on the most consequential 
+      stories of the era.
+    </div>
+
+    <div class="criticism-item">
+      <strong>Military and state information apparatus broadly:</strong> Military officials from 
+      multiple countries walked through bombed sites performing the role of journalists — naming 
+      cities, describing threats, drawing comparisons — while actual journalists were barred from 
+      those same locations. This is not press management. This is the state replacing the press.
+    </div>
+  </div>
+</div>
+
+</body>
