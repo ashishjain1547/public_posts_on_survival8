@@ -1,0 +1,978 @@
+<head>
+  <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <!-- Google AdSense Using Machine Learning Code -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-3071098372371409",
+      enable_page_level_ads: true
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $.ajax({
+        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+        success: function (result) {
+          let grouplink = JSON.parse(result)['current book club'];
+          $("#customWhatsAppGroupLinkWrapper").html(
+            `
+                        <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                            <span>Join us on:</span>
+                            <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                            </a>
+                        </h2>
+                        `
+          );
+        }
+      });
+    });
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    pre {
+      white-space: pre-wrap;
+      white-space: -moz-pre-wrap;
+      white-space: -pre-wrap;
+      white-space: -o-pre-wrap;
+      word-wrap: break-word;
+    }
+
+    .customLink {
+      background-color: #4CAF50;
+      border: none;
+      color: white !important;
+      padding: 8px 13px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+    .customLink:hover {
+      text-decoration: none;
+    }
+
+    div.code-block-decoration.footer {
+      display: none;
+    }
+
+    button.export-sheets-button-wrapper {
+      display: none;
+    }
+  </style>
+
+  <style>
+    .custom_link_h2 a {
+      color: black;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .custom_link_h2 a:hover {
+      color: black;
+    }
+
+    .custom_link_h2 a:active {
+      color: black;
+    }
+
+    .custom_link_h2 span {
+      translate: 0px -5px;
+      display: inline-block;
+    }
+
+    .custom_link_h2 img {
+      width: 100px;
+      padding: 0px;
+      border: none;
+      box-shadow: none;
+    }
+
+    .customul {
+      list-style: none;
+    }
+
+    [aria-hidden='true'] {
+      display: none;
+    }
+  </style>
+
+  <style>
+    pre {
+      white-space: pre-wrap;
+      white-space: -moz-pre-wrap;
+      white-space: -pre-wrap;
+      white-space: -o-pre-wrap;
+      word-wrap: break-word;
+    }
+
+    .dot {
+      height: 12px;
+      width: 12px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .arrow {
+      border: solid black;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+    }
+
+    .right {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
+
+    .left {
+      transform: rotate(135deg);
+      -webkit-transform: rotate(135deg);
+    }
+
+    .up {
+      transform: rotate(-135deg);
+      -webkit-transform: rotate(-135deg);
+    }
+
+    .down {
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
+
+    .custom_iframe {
+      width: 100%;
+      height: 305px;
+    }
+
+    button {
+      display: none;
+    }
+  </style>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Face of War Has Gone Missing | Ravish Kumar</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:ital,wght@0,300;0,400;1,300&display=swap"
+    rel="stylesheet" />
+
+  <style>
+    /* ─── Reset only within the wrapper scope ─── */
+    div.customOuterWrapper *,
+    div.customOuterWrapper *::before,
+    div.customOuterWrapper *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ─── Wrapper ─── */
+    div.customOuterWrapper {
+      --ink: #1a1209;
+      --paper: #f5f0e8;
+      --accent: #b5260e;
+      --muted: #7a6e61;
+      --rule: #c9bfaf;
+      --highlight: #fffbe6;
+      --cite-bg: #f0ebe0;
+
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-weight: 300;
+      font-size: 1.08rem;
+      line-height: 1.85;
+      color: var(--ink);
+      background-color: var(--paper);
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 3.5rem 2.2rem 5rem;
+      position: relative;
+    }
+
+    /* ─── Eyebrow / dateline ─── */
+    div.customOuterWrapper .eyebrow {
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.72rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    /* ─── Main title ─── */
+    div.customOuterWrapper h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(1.9rem, 4vw, 2.8rem);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--ink);
+      margin-bottom: 0.5rem;
+    }
+
+    div.customOuterWrapper h1 em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    /* ─── Subtitle / deck ─── */
+    div.customOuterWrapper .deck {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.05rem;
+      color: var(--muted);
+      border-left: 3px solid var(--accent);
+      padding-left: 1rem;
+      margin: 1.2rem 0 0.5rem;
+      line-height: 1.6;
+    }
+
+    /* ─── Byline ─── */
+    div.customOuterWrapper .byline {
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-top: 1rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1.5px solid var(--rule);
+    }
+
+    div.customOuterWrapper .byline strong {
+      color: var(--ink);
+      font-weight: 400;
+    }
+
+    /* ─── Section headings ─── */
+    div.customOuterWrapper h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-top: 3rem;
+      margin-bottom: 0.7rem;
+      padding-top: 0.4rem;
+      border-top: 1.5px solid var(--rule);
+    }
+
+    /* ─── Body paragraphs ─── */
+    div.customOuterWrapper p {
+      margin-bottom: 1.3rem;
+    }
+
+    /* ─── Pull-quote / blockquote ─── */
+    div.customOuterWrapper blockquote {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.15rem;
+      color: var(--accent);
+      border-left: 4px solid var(--accent);
+      background: var(--highlight);
+      margin: 2rem 0;
+      padding: 1rem 1.5rem;
+      line-height: 1.65;
+    }
+
+    /* ─── Citation / source callout ─── */
+    div.customOuterWrapper .citation {
+      background: var(--cite-bg);
+      border-left: 3px solid var(--muted);
+      font-size: 0.85rem;
+      color: var(--muted);
+      padding: 0.6rem 1rem;
+      margin: 1rem 0 1.5rem;
+      font-style: italic;
+    }
+
+    div.customOuterWrapper .citation a {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    /* ─── Name list (journalists) ─── */
+    div.customOuterWrapper .name-list {
+      font-size: 0.92rem;
+      color: var(--muted);
+      font-style: italic;
+      padding-left: 1.2rem;
+      border-left: 2px dotted var(--rule);
+      margin: 1rem 0 1.5rem;
+      line-height: 2;
+    }
+
+    /* ─── Fact / Criticism section cards ─── */
+    div.customOuterWrapper .section-card {
+      margin-top: 3rem;
+      padding: 1.5rem 1.8rem;
+      border: 1.5px solid var(--rule);
+      background: var(--cite-bg);
+    }
+
+    div.customOuterWrapper .section-card h2 {
+      border-top: none;
+      margin-top: 0;
+      font-size: 1.1rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding-top: 0;
+      margin-bottom: 1rem;
+    }
+
+    div.customOuterWrapper .section-card.criticism {
+      background: #fff5f3;
+      border-color: #e0b0a8;
+    }
+
+    div.customOuterWrapper .section-card.criticism h2 {
+      color: var(--accent);
+    }
+
+    /* ─── Fact / criticism items ─── */
+    div.customOuterWrapper .fact-item,
+    div.customOuterWrapper .criticism-item {
+      padding: 0.7rem 0;
+      border-bottom: 1px solid var(--rule);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    div.customOuterWrapper .fact-item:last-child,
+    div.customOuterWrapper .criticism-item:last-child {
+      border-bottom: none;
+    }
+
+    div.customOuterWrapper .fact-item strong,
+    div.customOuterWrapper .criticism-item strong {
+      font-weight: 400;
+      color: var(--ink);
+    }
+
+    /* ─── Footer note ─── */
+    div.customOuterWrapper .footer-note {
+      margin-top: 3.5rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+      border-top: 1px solid var(--rule);
+      padding-top: 1rem;
+    }
+
+    /* ─── Drop cap on first paragraph ─── */
+    div.customOuterWrapper .drop-cap::first-letter {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.6rem;
+      font-weight: 700;
+      float: left;
+      line-height: 0.78;
+      margin-right: 0.1em;
+      margin-top: 0.1em;
+      color: var(--accent);
+    }
+
+    /* ─── Emphasis helper ─── */
+    div.customOuterWrapper em.key {
+      font-style: normal;
+      color: var(--accent);
+      font-weight: 400;
+    }
+
+    /* ─── Horizontal rule ─── */
+    div.customOuterWrapper hr {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 2.5rem 0;
+    }
+
+    /* ─── Responsive ─── */
+    @media (max-width: 540px) {
+      div.customOuterWrapper {
+        padding: 2rem 1.2rem 3.5rem;
+      }
+    }
+  </style>
+
+  <style>
+    div.customOuterWrapper {
+      --ink: #1a1208;
+      --paper: #f5f0e8;
+      --accent: #b5251c;
+      --accent-muted: #7a1a14;
+      --rule: #c8b89a;
+      --pullquote-bg: #ece6d8;
+      --tag-bg: #1a1208;
+      --tag-fg: #f5f0e8;
+      --mono: 'JetBrains Mono', monospace;
+      --serif: 'Crimson Pro', Georgia, serif;
+      --display: 'Playfair Display', Georgia, serif;
+
+      background-color: var(--paper);
+      color: var(--ink);
+      font-family: var(--serif);
+      font-size: 1.15rem;
+      line-height: 1.75;
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 3rem 2.5rem 5rem;
+      position: relative;
+      border-left: 1px solid var(--rule);
+      border-right: 1px solid var(--rule);
+    }
+
+    div.customOuterWrapper::before {
+      content: '';
+      display: block;
+      height: 6px;
+      background: linear-gradient(90deg, var(--accent) 60%, var(--ink) 100%);
+      margin-bottom: 2.5rem;
+    }
+
+    div.customOuterWrapper .meta-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 0.75rem;
+      margin-bottom: 2rem;
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent-muted);
+    }
+
+    div.customOuterWrapper .meta-bar .byline {
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    div.customOuterWrapper h1 {
+      font-family: var(--display);
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 900;
+      line-height: 1.12;
+      margin: 0 0 0.6rem;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+    }
+
+    div.customOuterWrapper h1 em {
+      color: var(--accent);
+      font-style: italic;
+    }
+
+    div.customOuterWrapper .deck {
+      font-family: var(--display);
+      font-style: italic;
+      font-size: 1.22rem;
+      color: #5a4a3a;
+      border-left: 3px solid var(--accent);
+      padding-left: 1rem;
+      margin: 1.2rem 0 2rem;
+      line-height: 1.55;
+    }
+
+    div.customOuterWrapper hr.section-rule {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 2.2rem 0;
+    }
+
+    div.customOuterWrapper h2 {
+      font-family: var(--display);
+      font-size: 1.52rem;
+      font-weight: 700;
+      margin: 2.5rem 0 0.8rem;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+      position: relative;
+      padding-left: 1.1rem;
+    }
+
+    div.customOuterWrapper h2::before {
+      content: '$';
+      font-family: var(--display);
+      color: var(--accent);
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 1.1rem;
+      line-height: 1.9;
+    }
+
+    div.customOuterWrapper p {
+      margin: 0 0 1.3rem;
+      font-weight: 300;
+    }
+
+    div.customOuterWrapper strong {
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    div.customOuterWrapper .pullquote {
+      background: var(--pullquote-bg);
+      border-left: 4px solid var(--accent);
+      margin: 2rem -1rem;
+      padding: 1.4rem 1.8rem;
+      font-family: var(--display);
+      font-style: italic;
+      font-size: 1.28rem;
+      line-height: 1.5;
+      color: #2a1e10;
+    }
+
+    div.customOuterWrapper .pullquote cite {
+      display: block;
+      margin-top: 0.7rem;
+      font-size: 0.8rem;
+      font-style: normal;
+      font-family: var(--mono);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--accent-muted);
+    }
+
+    div.customOuterWrapper .stat-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1px;
+      margin: 1.8rem 0;
+      border: 1px solid var(--rule);
+    }
+
+    div.customOuterWrapper .stat-box {
+      flex: 1 1 140px;
+      padding: 1rem 1.2rem;
+      background: var(--pullquote-bg);
+      border-right: 1px solid var(--rule);
+    }
+
+    div.customOuterWrapper .stat-box:last-child {
+      border-right: none;
+    }
+
+    div.customOuterWrapper .stat-box .num {
+      font-family: var(--display);
+      font-weight: 900;
+      font-size: 1.7rem;
+      color: var(--accent);
+      line-height: 1.1;
+    }
+
+    div.customOuterWrapper .stat-box .label {
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: #6a5a48;
+      margin-top: 0.25rem;
+    }
+
+    div.customOuterWrapper .tag {
+      display: inline-block;
+      background: var(--tag-bg);
+      color: var(--tag-fg);
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.2em 0.6em;
+      margin-right: 0.4rem;
+      margin-bottom: 0.4rem;
+    }
+
+    div.customOuterWrapper .facts-block,
+    div.customOuterWrapper .criticisms-block {
+      margin-top: 3rem;
+      border-top: 3px solid var(--ink);
+      padding-top: 1.5rem;
+    }
+
+    div.customOuterWrapper .facts-block h2,
+    div.customOuterWrapper .criticisms-block h2 {
+      font-family: var(--mono);
+      font-size: 0.85rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--ink);
+      padding-left: 0;
+      margin-bottom: 1.2rem;
+    }
+
+    div.customOuterWrapper .facts-block h2::before,
+    div.customOuterWrapper .criticisms-block h2::before {
+      display: none;
+    }
+
+    div.customOuterWrapper .criticisms-block h2 {
+      color: var(--accent);
+    }
+
+    div.customOuterWrapper ol.facts-list,
+    div.customOuterWrapper ul.crit-list {
+      padding-left: 1.5rem;
+      margin: 0;
+    }
+
+    div.customOuterWrapper ol.facts-list li,
+    div.customOuterWrapper ul.crit-list li {
+      margin-bottom: 0.85rem;
+      font-size: 1.05rem;
+      font-weight: 300;
+      line-height: 1.65;
+    }
+
+    div.customOuterWrapper ul.crit-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    div.customOuterWrapper ul.crit-list li {
+      padding-left: 1.4rem;
+      position: relative;
+      color: var(--ink);
+    }
+
+    div.customOuterWrapper ul.crit-list li::before {
+      content: '>>';
+      color: var(--accent);
+      position: absolute;
+      left: 0;
+      font-style: normal;
+      font-family: var(--mono);
+    }
+
+    div.customOuterWrapper .butterfly-note {
+      font-family: var(--display);
+      font-style: italic;
+      font-size: 0.98rem;
+      color: #6a5a48;
+      text-align: center;
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      padding: 1rem 0;
+      margin: 2rem 0;
+    }
+
+    div.customOuterWrapper .footer-sig {
+      margin-top: 3.5rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--rule);
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.07em;
+      color: #8a7a68;
+      text-align: right;
+    }
+
+    @media (max-width: 600px) {
+      div.customOuterWrapper {
+        padding: 1.5rem 1.2rem 3rem;
+      }
+
+      div.customOuterWrapper .pullquote {
+        margin: 1.5rem 0;
+      }
+    }
+  </style>
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+<br>
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#customNewsByRavishKumarHeader"
+  target="_blank">See All News by Ravish Kumar</a>
+<br>
+<a href="https://survival8.blogspot.com/2026/03/the-war-everyone-unsees.html" target="_blank"
+  class="customLink">&lt;&lt;&lt; Previously</a> <!-- &nbsp;&nbsp; <a
+  href="" target="_blank" class="customLink">Next
+  &gt;&gt;&gt;</a> -->
+<br>
+  <div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkhFir6SsSj6LJDqvCciuJ2K7749_NzQbT-DHpGjiqRR3HIvbdluGNZW9nR1YTOkdTM3XwNREmVyOCWqneh7USEu2m-EUxY65qruSpiWuB0da63WMtKwWQYIcOlKXChVx-yeXKV18eDzUVHZ8Y1ie2ge24Z6R8denh6Y3A0bonAywDY8Fh4Aufp2_10AlB/s600/ChatGPT%20Image%20Mar%2030,%202026,%2009_15_27%20PM.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600" data-original-height="338" data-original-width="600" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkhFir6SsSj6LJDqvCciuJ2K7749_NzQbT-DHpGjiqRR3HIvbdluGNZW9nR1YTOkdTM3XwNREmVyOCWqneh7USEu2m-EUxY65qruSpiWuB0da63WMtKwWQYIcOlKXChVx-yeXKV18eDzUVHZ8Y1ie2ge24Z6R8denh6Y3A0bonAywDY8Fh4Aufp2_10AlB/s600/ChatGPT%20Image%20Mar%2030,%202026,%2009_15_27%20PM.png"/></a></div>
+
+  <br>
+
+  <iframe class="custom_iframe" src="https://www.youtube.com/embed/TtKPoxeO5VY"
+    title="ईरान का इस्राईल से लेकर कुवैत पर हमला, लाखों लोग क्यों उतर गए ट्रंप के विरोध में" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  <div class="customOuterWrapper">
+
+    <div class="meta-bar">
+      <span><span class="byline">Ravish Kumar</span> &nbsp;|&nbsp; Analysis &amp; Commentary</span>
+      <span>
+        <span class="tag">Iran–Israel War</span>
+        <span class="tag">Week 5</span>
+        <span class="tag">No Kings Protest</span>
+      </span>
+    </div>
+
+    <h1>Eight Million People, <em>No Kings</em>, and the War That Won't End</h1>
+    <p class="deck">While Washington wages war and New Delhi preaches unity, the streets of America ask the question
+      that governments have stopped answering: who benefits when bombs keep falling?</p>
+
+    <hr class="section-rule" />
+
+    <p>Namaskar. I am Ravish Kumar. We are now into the fifth week of this war. Every week, a new hope is manufactured —
+      a ceasefire rumour, a backchannel whisper, a diplomatic deadline — and every week, the war grows more savage. The
+      hope is the real weapon of mass distraction. The bombs are just the punctuation.</p>
+
+    <p>Let us begin where the powerful least expected it: with the people.</p>
+
+    <h2>The Streets Answered Back</h2>
+
+    <p>On 28 March, in all 50 states, across 3,300 locations, more than <strong>eight million Americans</strong> walked
+      out into the streets to say: not in our name. This was not a fringe gathering of activists in coastal cities.
+      Organisers reported that nearly half the protest sites were in areas considered Republican strongholds — Trump
+      country, if you will. Journalists, retired military officers, film stars, and ordinary working people marched
+      shoulder to shoulder. Even some of Trump's own voters showed up, holding signs against a war their president chose
+      without asking them.</p>
+
+    <div class="stat-row">
+      <div class="stat-box">
+        <div class="num">8M+</div>
+        <div class="label">Americans protested</div>
+      </div>
+      <div class="stat-box">
+        <div class="num">3,300</div>
+        <div class="label">Locations, all 50 states</div>
+      </div>
+      <div class="stat-box">
+        <div class="num">+60%</div>
+        <div class="label">Larger than June's No Kings protest</div>
+      </div>
+      <div class="stat-box">
+        <div class="num">~50%</div>
+        <div class="label">Events in Republican areas</div>
+      </div>
+    </div>
+
+    <p>This movement began as <em>No Kings</em> — a protest against Trump's crackdowns on immigrants. But Iran changed
+      everything. When American missiles began falling on Iranian universities, the protest absorbed a new fury. The
+      numbers jumped sixty percent compared to June's demonstration. The message expanded from "stop the deportations"
+      to "stop the war."</p>
+
+    <div class="pullquote">
+      "I am tired of old men dreaming up wars for young men to fight."
+      <cite>— U.S. Senator, during the Vietnam War era</cite>
+    </div>
+
+    <p>Trump is 80 years old. He is not dreaming of one war. He is dreaming of several. And now, once again, it is
+      American soldiers being sent to the front.</p>
+
+    <p>The White House's response? Press secretary Karoline Leavitt dismissed the entire protest as <em>"Trump
+        Derangement Therapy Sessions."</em> In other words, if you object to your president's war, you are mentally
+      unwell. The protester is the patient. The government is the doctor. This is the language of autocracy, dressed in
+      a press briefing.</p>
+
+    <h2>The Monarch Butterfly and What It Knows</h2>
+
+    <div class="butterfly-note">🦋 &nbsp; The Monarch butterfly migrates 5,000 kilometres. Grandmother begins the
+      journey. Daughter continues. Granddaughter completes it. They navigate by watching the sun. &nbsp; 🦋</div>
+
+    <p>In the Rio Grande Valley of southern Texas — land that borders Mexico, land where ICE agents have been making
+      arrests — protesters did something remarkable. At every spot where an immigrant had been detained, they put up a
+      banner bearing the image of the Monarch butterfly. The butterfly whose migration route is now disrupted by Trump's
+      border wall.</p>
+
+    <p>This is what political imagination looks like. No banner of outrage, no slogan of fury — just a butterfly. A
+      creature that crosses borders by nature, that cannot be stopped by walls, that carries the journey of its
+      ancestors in its wings. Without this kind of imagination, there is no public. Without a public, there is no
+      democracy.</p>
+
+    <p>Think of this when you are told that dissent is anti-national. Think of the butterfly.</p>
+
+    <p>And since we are speaking of things destroyed: in Gaza, Israel has bombed millions of olive trees. Not by
+      accident. The olive tree is the Palestinian economy, culture, and memory condensed into bark and root. Destroying
+      the tree is destroying the continuity of a people. This too is a kind of war — slower, quieter, and almost never
+      on the front page.</p>
+
+    <h2>The Economy Is Already a Casualty</h2>
+
+    <p>While the military counts its missiles, let us count what the rest of us are losing.</p>
+
+    <p>Crude oil has crossed <strong>$115 per barrel</strong>, up three percent in a single news cycle, after Yemen's
+      Houthis declared they would fight on Iran's side — meaning disruption not only at the Strait of Hormuz but also at
+      the Bab-el-Mandeb Strait. Two chokepoints. One war. Every country that imports oil is now paying the price of this
+      conflict in its petrol pumps and grocery bills.</p>
+
+    <div class="stat-row">
+      <div class="stat-box">
+        <div class="num">$115</div>
+        <div class="label">Crude oil per barrel</div>
+      </div>
+      <div class="stat-box">
+        <div class="num">$200</div>
+        <div class="label">Possible peak (Goldman Sachs)</div>
+      </div>
+      <div class="stat-box">
+        <div class="num">10,000</div>
+        <div class="label">US jobs lost monthly (Goldman Sachs)</div>
+      </div>
+      <div class="stat-box">
+        <div class="num">$3B+</div>
+        <div class="label">Estimated US aircraft losses</div>
+      </div>
+    </div>
+
+    <p>Bloomberg and The Economist have both published analyses warning of two to three years of global economic
+      disruption. Goldman Sachs estimates the war is costing the United States 10,000 jobs every month. Israel has
+      separately proposed an additional <strong>$10 billion</strong> in its defence budget — a signal, analysts say,
+      that it is preparing for a long war, not a short one.</p>
+
+    <p>For India, the numbers are equally grim. Foreign investors have been withdrawing more capital than they invest
+      for the past five months. The rupee is under pressure. Banks are strained from dollar sales. Eight Indian
+      nationals have already lost their lives in this conflict. And yet, in much of India's media, the question being
+      asked is not "what does this cost us?" — but "how do we stay united behind the narrative?"</p>
+
+    <h2>Iran's Mathematics of War</h2>
+
+    <p>Iran's strategy is neither reckless nor irrational. It is methodical. Iran has struck Israel, Kuwait, Saudi
+      Arabia, the UAE, Bahrain, Iraq, and Jordan — simultaneously. Kuwait's water plant, which reportedly supplies forty
+      percent of the country's water, was targeted. Kuwait's airport has been hit twice in one week: once in a tanker
+      explosion, once with damage to radar systems.</p>
+
+    <p>In Saudi Arabia, at Prince Sultan Air Base, Iran destroyed what is reported to be an <strong>E-3 Sentry</strong>
+      aircraft — the "flying radar" worth approximately $300 million, capable of detecting aircraft across vast
+      distances. America deployed six such aircraft to the Gulf before the war began. The Pentagon has not confirmed the
+      loss. But multiple news organisations and weapons analysts have reported it. Pentagon press briefings have been
+      suspended for several days now. The same Pentagon that, during Vietnam, was proven to have systematically
+      concealed the truth from the American public.</p>
+
+    <p>Iran has also struck the UAE's aluminium infrastructure, reportedly tied to American aerospace contracts.
+      Emirates Global Aluminium acknowledged significant damage to its Al-Tabila site. UAE stock markets have shed
+      <strong>$120 billion</strong> in value since the war began. The Dubai index has fallen sixteen percent. Over
+      18,400 flights have been cancelled.</p>
+
+    <p>And yet: Iran's own economy is not unscathed. A temporary lifting of oil sanctions has doubled its daily oil
+      revenues. But its steel sector — shut down amid the conflict — could cost it <strong>$7 billion</strong>.
+      US-Israeli airstrikes have struck two Iranian universities — Tehran University of Science and Technology and
+      Isfahan University of Technology. In retaliation, Iran has threatened to target American university campuses
+      across the Middle East.</p>
+
+    <p>Inside Iran's parliament, a bill has been tabled to withdraw from the Nuclear Non-Proliferation Treaty (NPT). The
+      head of the National Security Commission, Ibrahim Rezaei, has publicly written that remaining in the NPT has
+      brought Iran no benefit. If this escalates to nuclear posturing, every calculus changes — for everyone.</p>
+
+    <h2>The Vietnam Lesson No One Wants to Learn</h2>
+
+    <p>During the Vietnam War, American citizens were told for months that their country was winning. The media obliged.
+      Then journalists like Walter Cronkite, Gloria Emerson, David Halberstam, Frances FitzGerald, and Seymour Hersh
+      began reporting what they actually saw. The public learned the government had been lying. People filled the
+      streets. President Lyndon B. Johnson ultimately chose not to seek re-election.</p>
+
+    <p>Those who protested the Vietnam War were called traitors. History proved they were the more patriotic ones.</p>
+
+    <p>Hersh is the subject of an excellent documentary on Netflix — worth watching, especially now.</p>
+
+    <p>Today, Trump attacks the press for reporting on the war's failures, threatens to revoke broadcast licences, and
+      calls journalists enemies of the state. His Defence Secretary Pete Hegseth, rather than holding a press briefing,
+      led a prayer session at the Pentagon — asking, reportedly, for divine sanction against those who deserve no mercy.
+      The Pope, meanwhile, has been speaking plainly: those who start wars have blood on their hands, and Jesus does not
+      hear their prayers. Whether or not one is religious, the moral clarity is striking.</p>
+
+    <h2>The Unity Trap</h2>
+
+    <p>In India, as this war unfolds, a familiar argument is being deployed: this is not the time for questions. Stay
+      united. Do not rock the boat. Trust the government. The media is obligingly falling into line — channels shut,
+      Twitter accounts suspended, YouTube channels taken down. No one knows whose platform will disappear next.</p>
+
+    <p>Eight million people marched in America while their government threatened them, surveilled them, and dismissed
+      them as mentally ill. They marched anyway. In India, the mere imagination of such a protest — carrying banners
+      against a government's war on public streets — is becoming difficult. If you cannot even imagine it, you have
+      already separated yourself from the democratic imagination. A democracy without imagination is just a schedule of
+      elections.</p>
+
+    <p>"Unity" is being used here to mean silence. "Patience" is being used to mean: absorb the crisis without
+      complaint. This is not unity. This is managed consent.</p>
+
+    <p>I will say again to the people of this country: let us face this crisis with calm minds, with solidarity, with
+      care for one another. But not with closed eyes. The crisis is real. The cost is real. You deserve to know, and you
+      deserve to speak.</p>
+
+    <hr class="section-rule" />
+
+    <div class="facts-block">
+      <h2>Facts</h2>
+      <ol class="facts-list">
+        <li>Over 8 million Americans protested across 3,300 locations in all 50 states on 28 March, with participation
+          in the "No Kings" protest rising more than 60% compared to June's demonstrations. Approximately half of all
+          protest events occurred in Republican-leaning areas.</li>
+        <li>Crude oil has risen approximately 3% to $115 per barrel, driven by Houthi entry into the conflict and
+          threats to both the Strait of Hormuz and the Bab-el-Mandeb Strait.</li>
+        <li>Goldman Sachs estimates the war is costing the US economy 10,000 jobs per month, with oil potentially
+          reaching $200 per barrel under worst-case scenarios.</li>
+        <li>Israel has proposed an additional $10 billion in its defence budget, signalling preparations for a prolonged
+          war.</li>
+        <li>Iran struck an E-3 Sentry "flying radar" aircraft (valued at approximately $300 million) at Prince Sultan
+          Air Base in Saudi Arabia. Multiple weapons analysts corroborate the strike; the Pentagon has not confirmed it.
+        </li>
+        <li>UAE markets have lost approximately $120 billion in value; the Dubai index is down 16%; over 18,400 flights
+          have been cancelled. In one month, UAE intercepted 429 missiles and 1,914 drones.</li>
+        <li>Kuwait's water treatment plant — reportedly supplying 40% of the country's water — was targeted; one Indian
+          national was killed in the attack.</li>
+        <li>Iran struck Tehran University and Isfahan University of Technology. The Iranian parliament is considering a
+          bill to withdraw from the Nuclear Non-Proliferation Treaty (NPT).</li>
+        <li>Iran's temporary oil sanction relief has doubled its daily oil revenues, though steel plant shutdowns may
+          cost it around $7 billion.</li>
+        <li>Emirates Global Aluminium confirmed significant damage to its Al-Tabila site following Iranian missile
+          strikes on UAE infrastructure.</li>
+        <li>During the Vietnam War, journalists including Walter Cronkite, Seymour Hersh, and Gloria Emerson exposed
+          government deception, contributing to the reversal of public opinion. President Johnson declined to seek
+          re-election.</li>
+        <li>Foreign institutional investors have been withdrawing more capital from India than they are investing for
+          five consecutive months.</li>
+      </ol>
+    </div>
+
+    <div class="criticisms-block">
+      <h2>Criticisms</h2>
+      <ul class="crit-list">
+        <li>The Trump administration's characterisation of the 28 March protest as "Trump Derangement Therapy Sessions"
+          is a deliberate attempt to pathologise democratic dissent — to reframe political opposition as mental illness
+          and delegitimise it before it can be taken seriously.</li>
+        <li>The Pentagon's suspension of press briefings during an active war, combined with its refusal to confirm or
+          deny losses of American aircraft, follows the same pattern of institutional deception that was proven during
+          the Vietnam War. The public is being managed, not informed.</li>
+        <li>Defence Secretary Pete Hegseth holding a prayer session at the Pentagon — calling for ferocious violence
+          against those "deserving no mercy" — while refusing to hold a press briefing is a substitution of religious
+          theatre for democratic accountability.</li>
+        <li>Trump's threats to revoke television broadcast licences and his routine attacks on the press as enemies of
+          the state are direct assaults on the free press infrastructure that made Vietnam-era accountability possible
+          in the first place.</li>
+        <li>Israel's systematic targeting of Palestinian olive trees — millions of them — is not collateral damage. It
+          is an economic and cultural siege designed to sever a people from their land, livelihood, and memory. It
+          barely registers in mainstream coverage.</li>
+        <li>The Indian government's repeated invocation of "national unity" as a reason to suppress questions about the
+          war's economic consequences — falling markets, straining banks, dead citizens — is a misuse of patriotism to
+          avoid accountability.</li>
+        <li>India's media ecosystem — channels shut, social media accounts suspended, YouTube pages taken down — has
+          created a climate where citizens cannot access critical information about a war that directly affects their
+          economy and their countrymen's lives abroad.</li>
+        <li>The framing of "unity" in India as meaning silence, and "patience" as meaning unquestioning endurance,
+          inverts the democratic function of both concepts. Unity built on suppressed dissent is not unity — it is
+          compliance enforced by fear of consequence.</li>
+        <li>Governments and media that reduce war coverage to missile counts and military hardware systematically
+          obscure the human and economic cost borne by citizens who had no say in starting the war. The economy is a
+          front line too — and it is largely invisible in dominant coverage.</li>
+        <li>Trump's construction of a $300 million ballroom and an adjacent drone-proof bunker — while American jobs are
+          lost to a war his administration chose — exemplifies how power insulates itself from consequence while
+          manufacturing spectacle to distract attention from it.</li>
+      </ul>
+    </div>
+
+    <div class="footer-sig">
+      Namaskar. &nbsp;—&nbsp; Ravish Kumar
+    </div>
+
+  </div>
