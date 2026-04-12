@@ -1,0 +1,667 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                success: function (result) {
+                    let grouplink = JSON.parse(result)['current book club'];
+                    $("#customWhatsAppGroupLinkWrapper").html(
+                        `
+                        <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                            <span>Join us on:</span>
+                            <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                            </a>
+                        </h2>
+                        `
+                    );
+                }
+            });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+    </style>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .dot {
+            height: 12px;
+            width: 12px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .arrow {
+            border: solid black;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+        }
+
+        .right {
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+        }
+
+        .left {
+            transform: rotate(135deg);
+            -webkit-transform: rotate(135deg);
+        }
+
+        .up {
+            transform: rotate(-135deg);
+            -webkit-transform: rotate(-135deg);
+        }
+
+        .down {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+    </style>
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+<br>
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#customTEDTalksOnDeathHeader" target="_blank">Other Articles on Death</a> 
+&nbsp;&nbsp; 
+<a href="https://survival8.blogspot.com/2025/06/remember-death-memento-mori.html" target="_blank" class="customLink">&lt;&lt;&lt; Previously</a> 
+<!-- &nbsp;&nbsp; <a href="" target="_blank" class="customLink"></a> -->
+
+<br>
+
+<div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIqsynj4xRj-nwM93HCpTr_UHwRW3tfXoHofUZFzR4aPJRQNOFH8WVQSWrSdIN0iN2nXceVBxemoR3cT_pDc747lnJTalVlDlcI7W7ShJrKzpLQVcuOkNozcKmxBVkzfbuMBYBw49ygZ6JlH-AdpTXq3ccsegZcFMMIvbWw5XQPpyuLpMjqfOEsu9tXIRM/s600/ChatGPT%20Image%20Apr%2012,%202026,%2007_55_01%20PM.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600" data-original-height="400" data-original-width="600" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIqsynj4xRj-nwM93HCpTr_UHwRW3tfXoHofUZFzR4aPJRQNOFH8WVQSWrSdIN0iN2nXceVBxemoR3cT_pDc747lnJTalVlDlcI7W7ShJrKzpLQVcuOkNozcKmxBVkzfbuMBYBw49ygZ6JlH-AdpTXq3ccsegZcFMMIvbWw5XQPpyuLpMjqfOEsu9tXIRM/s600/ChatGPT%20Image%20Apr%2012,%202026,%2007_55_01%20PM.png"/></a></div>
+
+<br>
+
+<iframe class="custom_iframe" src="https://www.youtube.com/embed/BZocQ0kJC7k" title="Why you should make a will—today | Todd Mazenko | TEDxEustis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br>
+
+<div class="customOuterWrapper">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-eyebrow"><span>Estate Planning &amp; Legacy</span></div>
+    <h1 class="hero-title">Planning for the <em>Inevitable</em>:<br>Why Writing Your Will Cannot Wait</h1>
+    <div class="hero-rule"></div>
+    <p class="hero-sub">The greatest act of love you can give your family isn't a gift or a memory — it's a plan.</p>
+    <div class="hero-meta">Personal Finance &nbsp;·&nbsp; Legal Planning &nbsp;·&nbsp; 8 min read</div>
+  </div>
+
+  <!-- BODY -->
+  <div class="body-wrap">
+
+    <!-- Intro -->
+    <p class="drop-cap">There are moments in life when time slows to a halt and the fragility of everything becomes undeniable. Most of us brush past those moments, grateful to have survived them, and quietly return to the ordinary business of living. But some experiences refuse to let you go quite so easily — they reshape the way you think about tomorrow, and more importantly, about the people you'd leave behind if tomorrow never came.</p>
+
+    <p>I've spent years working with families — in legal practice, in financial planning, in personal loss — and one truth has emerged with striking consistency: the most responsible thing any adult can do is to plan for the inevitable. Not because death is something to dwell on, but because the people who love us deserve to be protected when we're no longer here to protect them ourselves.</p>
+
+    <div class="pull-quote">
+      <p>Planning for your death is not a morbid exercise in pessimism. It is one of the most profound acts of love a person can perform for the people they cherish most.</p>
+    </div>
+
+    <!-- Near death -->
+    <div class="section">
+      <div class="section-label">When It Almost Ends</div>
+      <h2>The Moments That Remind Us How Fragile Life Truly Is</h2>
+
+      <p>On October 12, 2000, the USS Cole was docked in the port of Aden, Yemen, for a routine refuelling stop. A young naval officer had been awake all night, guiding the ship safely into port. Once secured, he prepared the navigation charts needed for departure later that day. Exhausted, he considered grabbing lunch in the mess hall — but something made him pause. He decided, on a whim, to skip the meal and sleep instead.</p>
+
+      <p>Minutes after he lay down, a catastrophic blast threw him from his bunk. The ship had been bombed. Scrambling through smoke-filled corridors — one passageway completely blocked, another leading into a scene of devastating human wreckage — he and his crewmates fought desperately to save as many lives as possible. By the end of that day, 37 sailors had been injured and 17 young lives were lost. Most of them had been sitting in the mess hall where he would have been eating lunch.</p>
+
+      <p>The randomness of that moment never left him. A skipped meal. A few hours of sleep. The difference between being alive and being one of seventeen names carved in memory. It is the kind of experience that strips away every comfortable illusion about time — about the idea that we always have more of it.</p>
+
+      <p>Life does not wait for us to be ready. It changes, or ends, in an instant. And when it does, the question is never whether we were loved — it's whether the people we loved were left with any sense of security, stability, or certainty in the storm of grief that follows.</p>
+    </div>
+
+    <div class="ornament-divider"><span>✦</span></div>
+
+    <!-- Cases without a will -->
+    <div class="section">
+      <div class="section-label">Cautionary Accounts</div>
+      <h2>When There Was No Plan: Three Stories That Should Give Us All Pause</h2>
+
+      <p>Abstract warnings about estate planning rarely move people to action. But real stories do. Below are three accounts of lives upended not by tragedy alone, but by the absence of something as straightforward as a written will.</p>
+
+      <div class="case-card">
+        <div class="case-tag">Case Study 01 — The Young Husband</div>
+        <h3>A Motorcycle Accident and a Business Left in Limbo</h3>
+        <p>A couple in their twenties were doing what most young people do: building their future one day at a time, too busy dreaming to pause and plan. The husband ran a small business. It wasn't a fortune, but it was theirs — the foundation of the life they were building together. Then, without warning, he was killed in a motorcycle accident.</p>
+        <p>The wife assumed she would inherit his business. In the absence of a will, however, the law had other ideas. She was legally required to split the business with the husband's eleven-year-old son from a previous relationship. The financial arrangement was devastating. Her future — already shattered by grief — was thrown into further turmoil by a legal outcome that could have been avoided entirely with a single documented decision.</p>
+        <div class="outcome"><strong>Lesson:</strong> A will is not just for the elderly or the wealthy. It is for anyone who has something to leave behind — and someone they want to leave it to.</div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-tag">Case Study 02 — A Lifetime of Love, Legally Invisible</div>
+        <h3>Fifty-Five Years Together. Legally, Strangers.</h3>
+        <p>They spent 55 years building a life together. Every shared memory, every sacrifice, every quiet morning and ordinary evening — 55 years of love and commitment. They simply never formalised it with marriage. In many places, long-term partnerships are recognised under common law. In Florida, they are not.</p>
+        <p>When the man passed away, his estate — worth millions — went entirely to his estranged son, a person with whom he had virtually no relationship in the final decades of his life. His partner, the woman who had shared everything with him, was left with nothing. Not a fraction. Not a keepsake with legal standing. Nothing.</p>
+        <div class="outcome"><strong>Lesson:</strong> Emotional commitment and legal protection are not the same thing. A will, or a trust, is the document that closes the gap between the two.</div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-tag">Case Study 03 — A Friend in His Thirties</div>
+        <h3>Plans for Every Milestone — Except the One That Mattered Most</h3>
+        <p>He was vibrant, deeply committed to his family, and full of plans. He had mapped out vacations, worked towards promotions, and celebrated every milestone. He was, by any measure, a man who took life seriously. But he never got around to planning for what would happen after his death.</p>
+        <p>When he died unexpectedly in his thirties, his family was left to navigate not only the unbearable weight of losing him, but also legal battles, financial uncertainty, and the kind of procedural chaos that compounds grief into something almost unbearable. His oversight wasn't a character flaw — it was the same assumption most of us make: that there will be time for this later.</p>
+        <div class="outcome"><strong>Lesson:</strong> There is no "later" on a guaranteed schedule. Planning is not about expecting the worst — it is about ensuring your absence doesn't compound the pain of those who loved you.</div>
+      </div>
+    </div>
+
+    <div class="ornament-divider"><span>✦</span></div>
+
+    <!-- Children & guardianship -->
+    <div class="section">
+      <div class="section-label">Parents Take Note</div>
+      <h2>Who Raises Your Children If You're Gone?</h2>
+
+      <p>For parents of young children, the stakes of estate planning extend far beyond financial assets. Consider, for a moment, what happens if both you and your partner are killed unexpectedly. Who raises your children?</p>
+
+      <p>Without a legal document naming a guardian, the answer is: a judge you've never met, applying laws you may not fully understand, in a process that can draw multiple competing families into a painful custody dispute. Four sets of grandparents — each with their own love, their own values, their own geography — could all claim equal standing. Children could be separated, placed in different cities or different states, growing up apart from the siblings who are their most constant anchor.</p>
+
+      <p>A will that names a guardian doesn't just assign legal responsibility. It is the clearest possible statement of how you wanted your children's lives to unfold — a decision made by the people who loved them most, not delegated to a courtroom.</p>
+    </div>
+
+    <!-- Incapacity -->
+    <div class="section">
+      <div class="section-label">It's Not Just About Death</div>
+      <h2>What Happens When You Can No Longer Speak for Yourself?</h2>
+
+      <p>Estate planning is often framed as preparation for death, but one of its most critical functions has nothing to do with dying at all. It's about what happens when you are alive — but incapacitated.</p>
+
+      <p>Imagine an eighteen-year-old, freshly enrolled in university, who is involved in a serious car accident and falls into a coma. Who pays the bills? Who makes the medical decisions? Who communicates with the doctors and insurance providers?</p>
+
+      <p>The answer, without proper documentation, is often: nobody with legal authority — including the parents. Once a person turns eighteen, parents lose the automatic legal right to act on their behalf, access their accounts, or direct their medical care. Without a <strong>Durable Power of Attorney</strong> and a <strong>Healthcare Surrogate Designation</strong>, even the most devoted family members can find themselves locked out at precisely the moment they are needed most.</p>
+
+      <p>These are not documents reserved for old age. They are safeguards for anyone who wants to ensure that the right person is empowered to act on their behalf when they no longer can — regardless of age.</p>
+    </div>
+
+    <div class="ornament-divider"><span>✦</span></div>
+
+    <!-- Benefits -->
+    <div class="section">
+      <div class="section-label">Why It Matters</div>
+      <h2>The Concrete Benefits of Having a Will — and a Plan</h2>
+
+      <p>A will is not merely a legal formality. It is a comprehensive act of care, with practical consequences that touch every member of your family. Here is what proper estate planning actually gives you:</p>
+
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <div class="benefit-num">01</div>
+          <h4>Control Over Your Assets</h4>
+          <p>You decide who receives what. Without a will, the law decides — and its defaults may bear no resemblance to your wishes.</p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-num">02</div>
+          <h4>Protection for Your Partner</h4>
+          <p>Whether married or not, a will ensures the person you've built your life with is legally recognised as your intended beneficiary.</p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-num">03</div>
+          <h4>Guardianship for Your Children</h4>
+          <p>You name who raises your children — and ensure that decision is made with love, not left to a courtroom.</p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-num">04</div>
+          <h4>Reduced Family Conflict</h4>
+          <p>A clear legal document significantly reduces the risk of disputes between relatives during an already painful time.</p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-num">05</div>
+          <h4>Incapacity Planning</h4>
+          <p>Powers of attorney and healthcare directives ensure someone you trust can act on your behalf if you are unable to.</p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-num">06</div>
+          <h4>Peace of Mind — for Everyone</h4>
+          <p>For you, and for the people who love you. Knowing there is a plan removes a weight that most people don't realise they're carrying.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Conclusion -->
+    <div class="section">
+      <div class="section-label">A Final Word</div>
+      <h2>The Greatest Gift Is a Plan</h2>
+
+      <p>None of us knows how long we have. We could be dancing at ninety, or we could be gone before the week is out. That uncertainty is not morbid — it is simply the condition of being alive. What we do with it, however, is entirely within our control.</p>
+
+      <p>Planning for the inevitable is not an act of pessimism. It is not an admission that life is short, or that tragedy is coming, or that you are somehow inviting misfortune by acknowledging that it exists. It is, at its core, an act of love. It is the way you say — clearly, legally, and permanently — <em>I thought about you. I wanted things to be as easy as possible for you when I'm no longer here.</em></p>
+
+      <p>The stories in this piece are not hypotheticals. They are the lived experiences of real families, caught unprepared in moments of crisis. The grief was unavoidable. The legal chaos, the financial uncertainty, the custody disputes — those were not. Every one of those additional burdens could have been lifted with a few hours and a handful of documents.</p>
+
+      <p>You don't need to be old. You don't need to be wealthy. You just need to start.</p>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-block">
+      <h3>Start Today. Your Family Will Thank You.</h3>
+      <div class="cta-rule"></div>
+      <p>Consult an estate planning attorney about drafting a will, setting up a trust, and establishing the legal protections your family deserves. Don't wait for a reason — the absence of a crisis is the best time to prepare for one.</p>
+    </div>
+
+  </div><!-- /body-wrap -->
+</div><!-- /customOuterWrapper -->
+
+<style>
+  /* ── Reset ── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  /* ── Outer wrapper scope ── */
+  div.customOuterWrapper {
+    --ink:        #1a1714;
+    --paper:      #faf7f2;
+    --parchment:  #f0ead8;
+    --accent:     #9b4a1e;
+    --accent-lt:  #c4683a;
+    --rule:       #c8b89a;
+    --muted:      #6b5e4e;
+    --drop-cap-bg:#9b4a1e;
+
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Lora', Georgia, serif;
+    line-height: 1.78;
+    padding: 0;
+  }
+
+  /* ── Hero ── */
+  div.customOuterWrapper .hero {
+    position: relative;
+    background: var(--ink);
+    padding: 80px 40px 64px;
+    overflow: hidden;
+  }
+  div.customOuterWrapper .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 18px,
+        rgba(155,74,30,0.07) 18px,
+        rgba(155,74,30,0.07) 19px
+      );
+    pointer-events: none;
+  }
+  div.customOuterWrapper .hero-eyebrow {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--accent-lt);
+    margin-bottom: 24px;
+  }
+  div.customOuterWrapper .hero-eyebrow span {
+    display: inline-block;
+    border-top: 1px solid var(--accent);
+    border-bottom: 1px solid var(--accent);
+    padding: 5px 12px;
+  }
+  div.customOuterWrapper .hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.2rem, 5vw, 3.6rem);
+    font-weight: 700;
+    line-height: 1.12;
+    color: var(--paper);
+    max-width: 720px;
+  }
+  div.customOuterWrapper .hero-title em {
+    color: var(--accent-lt);
+    font-style: italic;
+  }
+  div.customOuterWrapper .hero-rule {
+    width: 64px;
+    height: 3px;
+    background: var(--accent);
+    margin: 28px 0;
+  }
+  div.customOuterWrapper .hero-sub {
+    font-family: 'Lora', serif;
+    font-size: 1.08rem;
+    color: #c8bfb0;
+    max-width: 600px;
+    font-style: italic;
+    line-height: 1.65;
+  }
+  div.customOuterWrapper .hero-meta {
+    margin-top: 36px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    color: #7a6e62;
+    text-transform: uppercase;
+  }
+
+  /* ── Body container ── */
+  div.customOuterWrapper .body-wrap {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 60px 40px 80px;
+  }
+
+  /* ── Drop cap ── */
+  div.customOuterWrapper .drop-cap::first-letter {
+    float: left;
+    font-family: 'Playfair Display', serif;
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 0.78;
+    color: var(--paper);
+    background: var(--drop-cap-bg);
+    padding: 10px 14px 6px;
+    margin: 4px 16px 0 0;
+  }
+
+  /* ── Paragraphs ── */
+  div.customOuterWrapper p {
+    font-size: 1.06rem;
+    margin-bottom: 1.55em;
+    color: #2e2720;
+  }
+  div.customOuterWrapper p:last-child { margin-bottom: 0; }
+
+  /* ── Section headings ── */
+  div.customOuterWrapper .section {
+    margin-top: 52px;
+  }
+  div.customOuterWrapper .section-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10.5px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 10px;
+  }
+  div.customOuterWrapper h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.55rem, 3vw, 2rem);
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.25;
+    margin-bottom: 20px;
+  }
+  div.customOuterWrapper h2 + p { margin-top: 0; }
+
+  /* ── Pull quote ── */
+  div.customOuterWrapper .pull-quote {
+    position: relative;
+    border-left: 4px solid var(--accent);
+    background: var(--parchment);
+    padding: 28px 32px 28px 36px;
+    margin: 44px 0;
+  }
+  div.customOuterWrapper .pull-quote::before {
+    content: '\201C';
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    color: var(--accent);
+    opacity: 0.25;
+    position: absolute;
+    top: -8px;
+    left: 12px;
+    line-height: 1;
+  }
+  div.customOuterWrapper .pull-quote p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.22rem;
+    font-style: italic;
+    color: var(--ink);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* ── Case study cards ── */
+  div.customOuterWrapper .case-card {
+    border: 1px solid var(--rule);
+    border-top: 3px solid var(--accent);
+    background: #fff;
+    padding: 30px 34px;
+    margin: 36px 0;
+  }
+  div.customOuterWrapper .case-card .case-tag {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 12px;
+  }
+  div.customOuterWrapper .case-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.18rem;
+    font-weight: 600;
+    margin-bottom: 14px;
+    color: var(--ink);
+  }
+  div.customOuterWrapper .case-card p {
+    font-size: 0.97rem;
+    color: #3c3028;
+    margin-bottom: 0;
+  }
+  div.customOuterWrapper .case-card .outcome {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px dashed var(--rule);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.875rem;
+    color: var(--muted);
+  }
+  div.customOuterWrapper .case-card .outcome strong {
+    color: var(--accent);
+    text-transform: uppercase;
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    margin-right: 6px;
+  }
+
+  /* ── Benefits list ── */
+  div.customOuterWrapper .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin: 32px 0;
+  }
+  div.customOuterWrapper .benefit-item {
+    background: var(--parchment);
+    padding: 22px 24px;
+    border-bottom: 3px solid var(--accent);
+  }
+  div.customOuterWrapper .benefit-item .benefit-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--accent);
+    opacity: 0.3;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  div.customOuterWrapper .benefit-item h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--ink);
+  }
+  div.customOuterWrapper .benefit-item p {
+    font-size: 0.9rem;
+    color: var(--muted);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* ── Divider ── */
+  div.customOuterWrapper .ornament-divider {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 48px 0;
+    color: var(--rule);
+  }
+  div.customOuterWrapper .ornament-divider::before,
+  div.customOuterWrapper .ornament-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--rule);
+  }
+  div.customOuterWrapper .ornament-divider span {
+    font-size: 1.1rem;
+    color: var(--accent);
+    opacity: 0.5;
+  }
+
+  /* ── Call to action ── */
+  div.customOuterWrapper .cta-block {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 44px 40px;
+    margin-top: 52px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  div.customOuterWrapper .cta-block::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      135deg,
+      transparent,
+      transparent 20px,
+      rgba(155,74,30,0.06) 20px,
+      rgba(155,74,30,0.06) 21px
+    );
+  }
+  div.customOuterWrapper .cta-block h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.65rem;
+    font-style: italic;
+    color: var(--paper);
+    margin-bottom: 16px;
+    position: relative;
+  }
+  div.customOuterWrapper .cta-block p {
+    font-size: 0.97rem;
+    color: #c0b5a8;
+    max-width: 480px;
+    margin: 0 auto;
+    position: relative;
+  }
+  div.customOuterWrapper .cta-rule {
+    width: 40px;
+    height: 2px;
+    background: var(--accent);
+    margin: 20px auto;
+    position: relative;
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 580px) {
+    div.customOuterWrapper .hero { padding: 52px 24px 44px; }
+    div.customOuterWrapper .body-wrap { padding: 44px 24px 60px; }
+    div.customOuterWrapper .pull-quote { padding: 22px 22px 22px 28px; }
+    div.customOuterWrapper .cta-block { padding: 36px 24px; }
+    div.customOuterWrapper .case-card { padding: 24px 22px; }
+  }
+</style>

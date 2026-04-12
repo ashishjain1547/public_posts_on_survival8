@@ -80,6 +80,24 @@
 <span class="customLink toggleBtn">Toggle All Sections</span>
 <br>
 <br>
+<h2 class="customTEDTalksOnDeathHeader" id="customTEDTalksOnDeathHeader">
+<span class="arrow up"></span> TED Talks On Death</h2>
+<div id="customTEDTalksOnDeath">
+    <ol>
+        <li>
+            <a href="https://survival8.blogspot.com/2026/04/why-you-should-make-willtoday.html" target="_blank">
+                Why you should make a will—today
+            </a>
+        </li>
+
+        <li>
+            <a href="https://survival8.blogspot.com/2025/06/remember-death-memento-mori.html" target="_blank">
+                Remember Death (Memento Mori)
+            </a>
+        </li>
+    </ol>
+</div>
+
 <h2 class="customNewsByRavishKumarHeader" id="customNewsByRavishKumarHeader">
 <span class="arrow up"></span> News By Ravish Kumar</h2>
 <div id="customNewsByRavishKumar">
@@ -1253,6 +1271,11 @@
 
 <script>
     
+    $('h2.customTEDTalksOnDeathHeader').click(function () {
+        $("div#customTEDTalksOnDeath").fadeToggle();
+        $("h2.customTEDTalksOnDeathHeader > .arrow").toggleClass('up').toggleClass('down');
+    });
+
     $('h2.customNewsByRavishKumarHeader').click(function () {
         $("div#customNewsByRavishKumar").fadeToggle();
         $("h2.customNewsByRavishKumarHeader > .arrow").toggleClass('up').toggleClass('down');
