@@ -1,0 +1,844 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                success: function (result) {
+                    let grouplink = JSON.parse(result)['current book club'];
+                    $("#customWhatsAppGroupLinkWrapper").html(
+                        `
+                        <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                            <span>Join us on:</span>
+                            <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                            </a>
+                        </h2>
+                        `
+                    );
+                }
+            });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+    </style>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .dot {
+            height: 12px;
+            width: 12px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .arrow {
+            border: solid black;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+        }
+
+        .right {
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+        }
+
+        .left {
+            transform: rotate(135deg);
+            -webkit-transform: rotate(135deg);
+        }
+
+        .up {
+            transform: rotate(-135deg);
+            -webkit-transform: rotate(-135deg);
+        }
+
+        .down {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+    </style>
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+<br>
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#customTEDTalksOnRetirementHeader" target="_blank">Other Articles on Retirement</a> 
+
+<!-- <a href="" target="_blank" class="customLink">&lt;&lt;&lt; Previously</a> &nbsp;&nbsp; <a href="" target="_blank" class="customLink"></a> -->
+
+<br>
+
+<div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTv2CDkq_CqdOXQ5fWhce-UfTHA3EzjQItpCQDja0GdRP2Cip70GduvSF016eIonjtedby2Ly-nHF4tYaqYzHk6DRmpBOBRIy3gBF_vq3V5xcnFkPugTo_3UQcT3tVewnCkhP1vpVvnyK_ms2lZi9iLpZ4Sa77KDt9uVuT675iYEqLNr0tXP8hgzVK30ap/s600/ChatGPT%20Image%20Apr%2012,%202026,%2008_47_23%20PM.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600" data-original-height="400" data-original-width="600" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTv2CDkq_CqdOXQ5fWhce-UfTHA3EzjQItpCQDja0GdRP2Cip70GduvSF016eIonjtedby2Ly-nHF4tYaqYzHk6DRmpBOBRIy3gBF_vq3V5xcnFkPugTo_3UQcT3tVewnCkhP1vpVvnyK_ms2lZi9iLpZ4Sa77KDt9uVuT675iYEqLNr0tXP8hgzVK30ap/s600/ChatGPT%20Image%20Apr%2012,%202026,%2008_47_23%20PM.png"/></a></div>
+
+<br>
+
+<iframe class="custom_iframe" src="https://www.youtube.com/embed/DMHMOQ_054U" title="The 4 phases of retirement | Dr. Riley Moynes | TEDxSurrey" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<div class="customOuterWrapper">
+
+  <!-- Hero -->
+  <header class="hero">
+    <span class="hero-eyebrow">Life After Work</span>
+    <h1 class="hero-title">The <em>Four Phases</em> of Retirement</h1>
+    <p class="hero-subtitle">Why leaving work is not the end — it's the beginning of a journey most people never see coming</p>
+    <div class="hero-divider"></div>
+  </header>
+
+  <!-- Phase index strip -->
+  <nav class="phase-index" aria-label="Phases at a glance">
+    <div class="phase-index-item">
+      <span class="phase-index-num">I</span>
+      <span class="phase-index-label">Vacation</span>
+    </div>
+    <div class="phase-index-item">
+      <span class="phase-index-num">II</span>
+      <span class="phase-index-label">Loss & Drift</span>
+    </div>
+    <div class="phase-index-item">
+      <span class="phase-index-num">III</span>
+      <span class="phase-index-label">Trial & Error</span>
+    </div>
+    <div class="phase-index-item">
+      <span class="phase-index-num">IV</span>
+      <span class="phase-index-label">Reinvention</span>
+    </div>
+  </nav>
+
+  <!-- Article body -->
+  <main class="article-body">
+
+    <!-- Introduction -->
+    <section class="intro-block">
+      <p>Retirement is the word we spend decades working toward — a glittering finish line we imagine as perpetual leisure, freedom, and peace. And yet, for millions of people who finally cross that line, the reality turns out to be far more complicated, and ultimately, far more rewarding than they ever expected.</p>
+
+      <p>After years of observing how people navigate life after the workforce, a clear pattern emerges — a framework of four distinct phases that most of us move through once we retire. These phases are not neatly scheduled. They don't arrive on a calendar. But they do follow a recognisable arc, and understanding that arc can make all the difference between a retirement that slowly dims and one that blazes with purpose.</p>
+
+      <p>What follows is an honest account of each phase — the joys, the shocks, and the quiet triumphs that await on the other side.</p>
+    </section>
+
+    <!-- Phase 1 -->
+    <section class="phase-section">
+      <div class="phase-header">
+        <div class="phase-number-badge">
+          <span class="badge-word">Phase</span>
+          <span class="badge-num">I</span>
+        </div>
+        <div class="phase-header-text">
+          <span class="phase-kicker">The Honeymoon</span>
+          <h2 class="phase-title">The <em>Vacation</em> Phase</h2>
+        </div>
+      </div>
+      <div class="phase-body">
+        <p>The first phase of retirement feels exactly like what it's called — a long, glorious, guilt-free vacation. You wake up when your body decides to, not when an alarm forces you. You fill your days as you please. There is no inbox to clear, no meetings to sit through, no performance reviews looming. For perhaps the first time in decades, your time belongs entirely to you.</p>
+
+        <div class="pull-quote">
+          <p>For most people, Phase One represents the retirement they always imagined — relaxing, sunny, unencumbered by obligation. And for a while, it is everything they hoped for.</p>
+        </div>
+
+        <p>This phase typically lasts around a year, though it can be shorter or longer depending on the person. During this window, retirement feels like the reward it was always supposed to be. Old hobbies get dusted off. Travel plans get executed. Sleep, at last, becomes a luxury rather than a necessity.</p>
+
+        <p>But then something strange begins to happen. Slowly, almost imperceptibly, the shine starts to fade. The absence of a routine — which once felt like freedom — starts to feel a little hollow. A quiet, unsettling question begins to surface: <em>Is this all there is?</em></p>
+
+        <p>That question is the signal. When it appears, you have already begun to cross into Phase Two.</p>
+      </div>
+    </section>
+
+    <!-- Phase 2 -->
+    <section class="phase-section">
+      <div class="phase-header">
+        <div class="phase-number-badge">
+          <span class="badge-word">Phase</span>
+          <span class="badge-num">II</span>
+        </div>
+        <div class="phase-header-text">
+          <span class="phase-kicker">The Reckoning</span>
+          <h2 class="phase-title">The Phase of <em>Loss & Drift</em></h2>
+        </div>
+      </div>
+      <div class="phase-body">
+        <p>Phase Two catches most retirees completely off guard. Nobody warns you about it. The farewell speeches, the cake, the gift vouchers — none of that prepares you for what comes next. Because in Phase Two, the losses arrive. And they arrive all at once.</p>
+
+        <div class="insight-box">
+          <span class="insight-box-label">The Five Hidden Losses of Retirement</span>
+          <ul class="loss-list" style="margin:0;padding:0;">
+            <li>A reliable daily <strong>routine</strong> that gave structure to life</li>
+            <li>A clear <strong>identity</strong> — the title, the role, the sense of professional self</li>
+            <li>The <strong>relationships</strong> built over years with colleagues and peers</li>
+            <li>A felt sense of <strong>purpose</strong> — of being needed, of contributing</li>
+            <li>For some, a sense of <strong>power</strong> or authority that came with the role</li>
+          </ul>
+        </div>
+
+        <p>None of these losses tend to announce themselves. They creep in quietly, and because they arrive simultaneously, the cumulative impact can be disorienting — even traumatic. Many retirees describe the feeling as being hit by a bus they never saw coming.</p>
+
+        <p>Phase Two is also when the so-called "three D's" become a very real threat: <strong>divorce</strong>, as couples suddenly find themselves sharing far more space and time than ever before; <strong>depression</strong>, as the absence of purpose and stimulation takes a psychological toll; and <strong>decline</strong> — both physical and cognitive — that can accelerate when people stop being actively engaged in meaningful work.</p>
+
+        <div class="pull-quote">
+          <p>Before you can appreciate the richness of what lies ahead, you will likely feel fear, anxiety, and perhaps a real brush with depression. That is simply the way it goes. Buckle up.</p>
+        </div>
+
+        <p>The good news — and there is very real good news — is that Phase Two is not permanent. For most people, a moment eventually comes when something shifts. A quiet resolution forms: <em>I cannot spend another 30 years feeling like this.</em> And in that moment, the corner is turned.</p>
+      </div>
+    </section>
+
+    <!-- Phase 3 -->
+    <section class="phase-section">
+      <div class="phase-header">
+        <div class="phase-number-badge">
+          <span class="badge-word">Phase</span>
+          <span class="badge-num">III</span>
+        </div>
+        <div class="phase-header-text">
+          <span class="phase-kicker">The Experiment</span>
+          <h2 class="phase-title">Trial, <em>Error &</em> Exploration</h2>
+        </div>
+      </div>
+      <div class="phase-body">
+        <p>Phase Three is messy. And that is perfectly fine — in fact, it is the point. This phase is characterised by active experimentation: trying things, abandoning things, picking up new interests, revisiting old ones, failing gracefully, and trying again.</p>
+
+        <p>The central question of Phase Three is: <em>How do I make my life feel meaningful again?</em> The answer rarely arrives in a single flash of insight. More often, it reveals itself through the act of searching.</p>
+
+        <p>You might join a committee and find it deeply unrewarding. You might explore a professional course and realise it takes you nowhere. You might launch a small project — a writing programme, a teaching venture, a creative pursuit — and meet with only modest success. None of this is failure. All of it is data.</p>
+
+        <div class="insight-box">
+          <span class="insight-box-label">A note on persistence</span>
+          <p>The risk in Phase Three is not failure — it is giving up. Those who abandon the search too early often slip back into Phase Two. Continued experimentation, even when results are mixed, is what keeps the momentum going forward, not backward.</p>
+        </div>
+
+        <p>The key is to keep moving, to keep trying, to remain curious. Because somewhere in the experimentation — perhaps in the tenth attempt rather than the first — lies the seed of something genuinely transformative. And that is what Phase Four is about.</p>
+      </div>
+    </section>
+
+    <!-- Phase 4 -->
+    <section class="phase-section">
+      <div class="phase-header">
+        <div class="phase-number-badge">
+          <span class="badge-word">Phase</span>
+          <span class="badge-num">IV</span>
+        </div>
+        <div class="phase-header-text">
+          <span class="phase-kicker">The Flourishing</span>
+          <h2 class="phase-title">Reinvention &amp; <em>Rewiring</em></h2>
+        </div>
+      </div>
+      <div class="phase-body">
+        <p>Not everyone reaches Phase Four. But those who do tend to be among the most alive, most engaged, most genuinely content people you will ever encounter. Phase Four is not about slowing down — it is about redirecting. It is about taking everything you have accumulated over a lifetime — skills, experience, wisdom, perspective — and pouring it into something that matters.</p>
+
+        <div class="pull-quote">
+          <p>The happiest retirees are not the ones who rest the most. They are the ones who find a way to serve — to contribute something real to the lives of others around them.</p>
+        </div>
+
+        <p>The most powerful catalyst for Phase Four, time and again, is service. Not service as obligation, but service as expression. It might be volunteering for a cause that has always moved you. It might be mentoring young people who could benefit from your decades of hard-won knowledge. It might be teaching — formally or informally — the things you know and love best.</p>
+
+        <p>Consider what happened when one group of retirees in a 55-plus community decided to make better use of the remarkable reservoir of skill and experience among their members. They began by asking a simple question: what do you know well enough to teach? The response was overwhelming. In the first year, nine programmes were offered, with 200 participants. The following year, 45 programmes attracted over 700. The year after that: more than 90 programmes and 2,100 registrations. Members taught each other to play bridge and Mahjong, to paint, to repair bicycles, to navigate smartphones. They set up English language programmes for newcomers. They tutored local children. They created book clubs, film clubs, and, yes, golf clubs.</p>
+
+        <p>Exhausting? Yes. But also exhilarating in a way that no amount of leisure could ever replicate.</p>
+
+        <p>And here is what makes Phase Four feel almost magical: every one of the five losses from Phase Two — the routine, the identity, the relationships, the purpose, the sense of contribution — is quietly, powerfully recovered. Not by accident, and not by going back to work, but by building something new and meaningful with the years that remain.</p>
+      </div>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="conclusion-block">
+      <h2>The Journey Is the Point</h2>
+
+      <p>Retirement is not a destination. It is a passage — one that leads through disorientation, discovery, and, for those who persist, a depth of fulfilment that many never experience during their working years.</p>
+
+      <p>Understanding these four phases does not make the journey easier. Phase Two will still sting. Phase Three will still involve fumbling in the dark. But knowing that there is a Phase Four — and that it is accessible to anyone willing to keep searching — changes everything.</p>
+
+      <div class="phase-recap">
+        <div class="recap-card">
+          <span class="recap-card-num">Phase I</span>
+          <span class="recap-card-name">The Vacation</span>
+          <span class="recap-card-note">Savour it fully. It is a well-earned rest.</span>
+        </div>
+        <div class="recap-card">
+          <span class="recap-card-num">Phase II</span>
+          <span class="recap-card-name">Loss &amp; Drift</span>
+          <span class="recap-card-note">Brace for it honestly. Knowing it's coming helps.</span>
+        </div>
+        <div class="recap-card">
+          <span class="recap-card-num">Phase III</span>
+          <span class="recap-card-name">Trial &amp; Error</span>
+          <span class="recap-card-note">Stay in motion. Experiment without fear of failure.</span>
+        </div>
+        <div class="recap-card">
+          <span class="recap-card-num">Phase IV</span>
+          <span class="recap-card-name">Reinvention</span>
+          <span class="recap-card-note">Squeeze every last drop of juice from this chapter.</span>
+        </div>
+      </div>
+
+      <p>The final chapter of life, approached with intentionality and a spirit of service, can be the most vivid one yet. That possibility is available to all of us — if we are willing to do the work to reach it.</p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="article-footer">
+    <div class="footer-rule"></div>
+    <p>Retirement &nbsp;·&nbsp; Life Transitions &nbsp;·&nbsp; Personal Reinvention</p>
+  </footer>
+
+</div>
+
+
+
+  <style>
+    div.customOuterWrapper {
+      --ink: #1a1a2e;
+      --parchment: #f7f3ed;
+      --gold: #c9a84c;
+      --gold-light: #e8c97a;
+      --gold-muted: #a8874a;
+      --navy: #0d1b3e;
+      --navy-mid: #162447;
+      --cream: #fdf8f0;
+      --text-primary: #2c2a26;
+      --text-secondary: #5a5248;
+      --text-muted: #8a8076;
+      --rule: rgba(201, 168, 76, 0.3);
+      --shadow-warm: rgba(201, 168, 76, 0.12);
+
+      font-family: 'Lora', Georgia, serif;
+      background-color: var(--cream);
+      color: var(--text-primary);
+      line-height: 1.85;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ── Hero ─────────────────────────────────────────────── */
+    div.customOuterWrapper .hero {
+      background: linear-gradient(160deg, var(--navy) 0%, #1c2d5e 55%, #2a3a72 100%);
+      min-height: 520px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 40px 72px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    div.customOuterWrapper .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 70% 50% at 50% 100%, rgba(201, 168, 76, 0.08) 0%, transparent 70%),
+        repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 59px,
+          rgba(201, 168, 76, 0.04) 60px
+        );
+      pointer-events: none;
+    }
+
+    div.customOuterWrapper .hero-eyebrow {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 28px;
+      position: relative;
+    }
+
+    div.customOuterWrapper .hero-eyebrow::before,
+    div.customOuterWrapper .hero-eyebrow::after {
+      content: '—';
+      margin: 0 14px;
+      opacity: 0.6;
+    }
+
+    div.customOuterWrapper .hero-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(2.4rem, 5.5vw, 4rem);
+      font-weight: 700;
+      line-height: 1.2;
+      color: #f0ead8;
+      margin: 0 0 12px;
+      max-width: 760px;
+      position: relative;
+    }
+
+    div.customOuterWrapper .hero-title em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+
+    div.customOuterWrapper .hero-subtitle {
+      font-family: 'Lora', serif;
+      font-size: 1.1rem;
+      font-style: italic;
+      color: rgba(240, 234, 216, 0.65);
+      margin-top: 20px;
+      max-width: 560px;
+      position: relative;
+    }
+
+    div.customOuterWrapper .hero-divider {
+      width: 60px;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      margin: 32px auto 0;
+      position: relative;
+    }
+
+    /* ── Phase index strip ───────────────────────────────── */
+    div.customOuterWrapper .phase-index {
+      background: var(--navy);
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      border-top: 1px solid rgba(201, 168, 76, 0.2);
+      border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+      overflow: hidden;
+    }
+
+    div.customOuterWrapper .phase-index-item {
+      flex: 1;
+      max-width: 200px;
+      padding: 18px 16px;
+      text-align: center;
+      border-right: 1px solid rgba(201, 168, 76, 0.12);
+      transition: background 0.25s;
+    }
+
+    div.customOuterWrapper .phase-index-item:last-child {
+      border-right: none;
+    }
+
+    div.customOuterWrapper .phase-index-item:hover {
+      background: rgba(201, 168, 76, 0.06);
+    }
+
+    div.customOuterWrapper .phase-index-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+      display: block;
+    }
+
+    div.customOuterWrapper .phase-index-label {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(240, 234, 216, 0.5);
+      display: block;
+      margin-top: 4px;
+    }
+
+    /* ── Article body ────────────────────────────────────── */
+    div.customOuterWrapper .article-body {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 70px 40px 80px;
+    }
+
+    div.customOuterWrapper .intro-block {
+      margin-bottom: 60px;
+    }
+
+    div.customOuterWrapper .intro-block p {
+      font-size: 1.13rem;
+      color: var(--text-primary);
+      margin: 0 0 22px;
+    }
+
+    div.customOuterWrapper .intro-block p:first-child {
+      font-size: 1.22rem;
+      font-weight: 500;
+      color: var(--navy-mid);
+    }
+
+    div.customOuterWrapper .intro-block p:first-child::first-letter {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      font-weight: 700;
+      float: left;
+      line-height: 0.8;
+      margin: 8px 10px 0 0;
+      color: var(--gold-muted);
+    }
+
+    /* ── Phase sections ──────────────────────────────────── */
+    div.customOuterWrapper .phase-section {
+      margin-bottom: 68px;
+      position: relative;
+    }
+
+    div.customOuterWrapper .phase-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 24px;
+      margin-bottom: 28px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    div.customOuterWrapper .phase-number-badge {
+      flex-shrink: 0;
+      width: 64px;
+      height: 64px;
+      background: linear-gradient(135deg, var(--navy), var(--navy-mid));
+      border: 1.5px solid rgba(201, 168, 76, 0.35);
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 18px rgba(13, 27, 62, 0.2);
+    }
+
+    div.customOuterWrapper .phase-number-badge .badge-word {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.58rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold-muted);
+      line-height: 1;
+    }
+
+    div.customOuterWrapper .phase-number-badge .badge-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      line-height: 1.1;
+    }
+
+    div.customOuterWrapper .phase-header-text {}
+
+    div.customOuterWrapper .phase-kicker {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--gold-muted);
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    div.customOuterWrapper .phase-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.85rem;
+      font-weight: 600;
+      line-height: 1.25;
+      color: var(--navy);
+      margin: 0;
+    }
+
+    div.customOuterWrapper .phase-title em {
+      font-style: italic;
+      color: var(--gold-muted);
+    }
+
+    div.customOuterWrapper .phase-body p {
+      font-size: 1.05rem;
+      line-height: 1.9;
+      color: var(--text-primary);
+      margin: 0 0 20px;
+    }
+
+    div.customOuterWrapper .phase-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Pull quote */
+    div.customOuterWrapper .pull-quote {
+      margin: 36px 0;
+      padding: 28px 36px 28px 44px;
+      border-left: 3px solid var(--gold);
+      background: linear-gradient(100deg, rgba(201, 168, 76, 0.05), transparent);
+      position: relative;
+    }
+
+    div.customOuterWrapper .pull-quote::before {
+      content: '\201C';
+      font-family: 'Playfair Display', serif;
+      font-size: 5rem;
+      color: var(--gold);
+      opacity: 0.25;
+      position: absolute;
+      top: -8px;
+      left: 10px;
+      line-height: 1;
+    }
+
+    div.customOuterWrapper .pull-quote p {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.18rem;
+      font-style: italic;
+      line-height: 1.7;
+      color: var(--navy);
+      margin: 0;
+    }
+
+    /* Insight boxes */
+    div.customOuterWrapper .insight-box {
+      background: var(--navy);
+      border: 1px solid rgba(201, 168, 76, 0.2);
+      border-radius: 4px;
+      padding: 6px;
+      margin: 32px 0;
+    }
+
+    div.customOuterWrapper .insight-box-label {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.68rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    div.customOuterWrapper .insight-box p {
+      font-size: 0.97rem;
+      color: rgba(240, 234, 216, 0.82);
+      margin: 0;
+      line-height: 1.75;
+    }
+
+    /* Loss list */
+    div.customOuterWrapper .loss-list {
+      list-style: none;
+      padding: 0;
+      margin: 24px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    div.customOuterWrapper .loss-list li {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 1rem;
+      color: var(--text-secondary);
+      padding: 10px 16px;
+      background: rgba(13, 27, 62, 0.04);
+      border-left: 2px solid var(--gold);
+    }
+
+    div.customOuterWrapper .loss-list li::before {
+      content: '$';
+      font-size: 0.45rem;
+      color: var(--gold-muted);
+      flex-shrink: 0;
+    }
+
+    /* ── Conclusion ──────────────────────────────────────── */
+    div.customOuterWrapper .conclusion-block {
+      border-top: 1px solid var(--rule);
+      padding-top: 52px;
+      margin-top: 20px;
+    }
+
+    div.customOuterWrapper .conclusion-block h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.65rem;
+      font-weight: 600;
+      color: var(--navy);
+      margin: 0 0 24px;
+    }
+
+    div.customOuterWrapper .conclusion-block p {
+      font-size: 1.05rem;
+      line-height: 1.9;
+      color: var(--text-primary);
+      margin: 0 0 20px;
+    }
+
+    div.customOuterWrapper .phase-recap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin: 36px 0;
+    }
+
+    div.customOuterWrapper .recap-card {
+      background: var(--navy);
+      border: 1px solid rgba(201, 168, 76, 0.18);
+      border-radius: 4px;
+      padding: 18px 20px;
+    }
+
+    div.customOuterWrapper .recap-card-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    div.customOuterWrapper .recap-card-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      font-weight: 500;
+      color: #f0ead8;
+      display: block;
+      margin-bottom: 6px;
+      letter-spacing: 0.02em;
+    }
+
+    div.customOuterWrapper .recap-card-note {
+      font-size: 0.88rem;
+      color: rgba(240, 234, 216, 0.55);
+      line-height: 1.5;
+    }
+
+    /* ── Footer strip ────────────────────────────────────── */
+    div.customOuterWrapper .article-footer {
+      background: var(--navy);
+      border-top: 1px solid rgba(201, 168, 76, 0.2);
+      text-align: center;
+      padding: 32px 40px;
+    }
+
+    div.customOuterWrapper .article-footer p {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.85rem;
+      letter-spacing: 0.1em;
+      color: rgba(240, 234, 216, 0.4);
+      margin: 0;
+    }
+
+    div.customOuterWrapper .article-footer .footer-rule {
+      width: 40px;
+      height: 1px;
+      background: rgba(201, 168, 76, 0.3);
+      margin: 0 auto 14px;
+    }
+
+    /* ── Responsive ──────────────────────────────────────── */
+    @media (max-width: 640px) {
+      div.customOuterWrapper .hero {
+        padding: 60px 24px 56px;
+      }
+      div.customOuterWrapper .article-body {
+        padding: 50px 24px 60px;
+      }
+      div.customOuterWrapper .phase-index {
+        flex-wrap: wrap;
+      }
+      div.customOuterWrapper .phase-index-item {
+        flex: 1 1 45%;
+        border-right: none;
+        border-bottom: 1px solid rgba(201, 168, 76, 0.1);
+      }
+      div.customOuterWrapper .phase-recap {
+        grid-template-columns: 1fr;
+      }
+      div.customOuterWrapper .pull-quote {
+        padding: 22px 20px 22px 28px;
+      }
+      div.customOuterWrapper .phase-title {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
