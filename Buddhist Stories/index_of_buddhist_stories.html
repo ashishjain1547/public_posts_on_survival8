@@ -1,5 +1,3 @@
-<html>
-
 <head>
     <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -91,6 +89,21 @@
 <br>
 <br>
 
+<h2 class="customCollectionOfBuddhistParablesHeader" id="customCollectionOfBuddhistParablesHeader">
+    <span class="arrow up"></span> Collection of Buddhist Parables
+</h2>
+
+<div id="customCollectionOfBuddhistParables">
+    <ol>
+        <li>
+            <a href="https://survival8.blogspot.com/2026/04/the-mustard-seed.html" target="_blank">
+                The Mustard Seed
+            </a>
+        </li>
+    </ol>
+</div>
+
+<br>
 <h2 class="customHindiHeader">
     <span class="arrow up"></span> With Video in Hindi
 </h2>
@@ -193,6 +206,7 @@
     </ol>
 </div>
 
+<br>
 
 <h2 class="customTEDBuddhismHeader" id="customTEDBuddhismHeader"><span class="arrow up"></span> TED Talks Around Buddhism / Buddhist Practice of Meditation</h2>
 <div id="customTEDBuddhism">
@@ -205,7 +219,7 @@
     </ol>
 </div>
 
-
+<br>
 <h2 class="customFromBooksHeader"><span class="arrow up"></span> Stories From Books</h2>
 <div id="customFromBooks">
     <ol>
@@ -234,6 +248,11 @@
     </ol>
 </div>
 <script>
+    $('h2.customCollectionOfBuddhistParablesHeader').click(function () {
+        $("div#customCollectionOfBuddhistParables").fadeToggle();
+        $("h2.customCollectionOfBuddhistParablesHeader > .arrow").toggleClass('up').toggleClass('down');
+    });
+
     $('h2.customHindiHeader').click(function () {
         $("div#customHindi").fadeToggle();
         $("h2.customHindiHeader > .arrow").toggleClass('up').toggleClass('down');
