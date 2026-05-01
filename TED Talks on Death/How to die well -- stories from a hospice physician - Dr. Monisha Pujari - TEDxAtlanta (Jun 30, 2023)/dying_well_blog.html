@@ -1,0 +1,718 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                success: function (result) {
+                    let grouplink = JSON.parse(result)['current book club'];
+                    $("#customWhatsAppGroupLinkWrapper").html(
+                        `
+                        <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                            <span>Join us on:</span>
+                            <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                            </a>
+                        </h2>
+                        `
+                    );
+                }
+            });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+    </style>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .dot {
+            height: 12px;
+            width: 12px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .arrow {
+            border: solid black;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+        }
+
+        .right {
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+        }
+
+        .left {
+            transform: rotate(135deg);
+            -webkit-transform: rotate(135deg);
+        }
+
+        .up {
+            transform: rotate(-135deg);
+            -webkit-transform: rotate(-135deg);
+        }
+
+        .down {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+    </style>
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+<br>
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#customTEDTalksOnDeathHeader" target="_blank">Other Articles on Death</a> 
+&nbsp;&nbsp; 
+<a href="https://survival8.blogspot.com/2026/04/what-death-teaches-living.html" target="_blank" class="customLink">&lt;&lt;&lt; Previously</a> 
+<!-- &nbsp;&nbsp; 
+<a href="" target="_blank" class="customLink"></a> -->
+
+<br>
+<div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPKIkEiImcvW3eq_o5QpHvvoPjvrAl8nWkrBzMOB9oFYeojnTDcryDpiTjsU69ZLPYtyX3z29-hZfcMfhKLwquK_WUEZzeBAWuQX_x875FmimM0RBSWZH-LzHjsrWPhg-HTvEaHuRUIq2vpsCQUOOib0Kbyyys7pfYILvWYkVWrPvIxfY337L5xynE3u23/s600/ChatGPT%20Image%20May%201,%202026,%2003_06_13%20PM.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600" data-original-height="338" data-original-width="600" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPKIkEiImcvW3eq_o5QpHvvoPjvrAl8nWkrBzMOB9oFYeojnTDcryDpiTjsU69ZLPYtyX3z29-hZfcMfhKLwquK_WUEZzeBAWuQX_x875FmimM0RBSWZH-LzHjsrWPhg-HTvEaHuRUIq2vpsCQUOOib0Kbyyys7pfYILvWYkVWrPvIxfY337L5xynE3u23/s600/ChatGPT%20Image%20May%201,%202026,%2003_06_13%20PM.png"/></a></div>
+
+<br>
+
+<iframe class="custom_iframe" src="https://www.youtube.com/embed/DVx8z0Oif8s" title="How to die well -- stories from a hospice physician | Dr. Monisha Pujari | TEDxAtlanta" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br>
+
+<div class="customOuterWrapper">
+
+  <div class="hero">
+    <span class="hero-label">Medicine &amp; Mortality</span>
+    <h1>What the Dying Teach Us<br>About <em>Living Well</em></h1>
+    <div class="hero-meta">Dr. Monisha Pujari &nbsp;·&nbsp; Hospice &amp; Palliative Medicine</div>
+    <div class="hero-rule"></div>
+  </div>
+
+  <div class="content-wrap">
+
+    <p class="lead">
+      We live as though death is optional — a distant abstraction we'll deal with later. But as a hospice physician who
+      has guided hundreds of patients through their final weeks and months, I've learned that death is not the enemy.
+      How we approach it is.
+    </p>
+
+    <p>Ask yourself: if you were to die today, would you be ready? No regrets. Nothing left unsaid. Totally at peace.
+      For most of us, the honest answer is no. And yet, we rarely sit with that discomfort long enough to do anything
+      about it. We tell ourselves we have time. We push off the difficult conversations, the unresolved relationships,
+      the things we've always meant to say.</p>
+
+    <p>Death, of course, is the ultimate deadline — and unlike any other, it cannot be extended. Over more than a decade
+      of practicing hospice and palliative medicine, I've had the privilege of sitting with people in their most
+      vulnerable moments. What I've witnessed has changed me. Because while dying can be harrowing, it can also — when
+      managed with intention and compassion — become one of the most profound and even beautiful chapters of a human
+      life.</p>
+
+    <div class="divider">
+      <div class="divider-diamond"></div>
+    </div>
+
+    <h2>
+      <span class="section-num">01 — The Taboo We Can't Afford</span>
+      Rethinking Our Relationship with Death
+    </h2>
+
+    <p>We've made death into a forbidden topic. We speak around it in hushed tones, avoid planning for it, and resist
+      any conversation that acknowledges it as inevitable. This cultural flinching costs us dearly. It means people
+      enter the dying process unprepared — emotionally, practically, and spiritually. It means families are blindsided.
+      It means precious time is lost to denial instead of devoted to meaning.</p>
+
+    <p>Birth and death are the two great milestones of every human life. We celebrate one with tremendous tenderness and
+      ritual; the other we treat as a failure, a thing to be postponed and, ultimately, hidden. But dying, when given
+      the same care and attention as birth, can be just as extraordinary. Just as worthy of our presence.</p>
+
+    <blockquote>
+      <p>Terminal illness is not the opposite of living. It is, often, its most concentrated and honest expression.</p>
+      <cite>On end-of-life care</cite>
+    </blockquote>
+
+    <p>This is the shift I want to invite: moving from the question of <em>how not to die</em> — which is, at its core,
+      a question rooted in denial — toward the far more honest and productive question of <em>how to die better</em>.
+      The difference between these two orientations is enormous. One keeps us turning away. The other asks us to turn
+      toward.</p>
+
+    <div class="divider">
+      <div class="divider-diamond"></div>
+    </div>
+
+    <h2>
+      <span class="section-num">02 — Three Lives, Three Lessons</span>
+      Stories from the Hospice Floor
+    </h2>
+
+    <p>The best way I know to make this real is through patients. Each of the following stories illuminates a different
+      dimension of what good end-of-life care actually looks like — and what it makes possible.</p>
+
+    <div class="patient-card" data-name="Michael">
+      <span class="lesson-tag">Lesson I — Pain Management</span>
+      <h3>Michael: The Freedom That Comes from Feeling Well</h3>
+      <p>Michael was an active man reduced, by the time we met him, to near-complete incapacitation. Cancer pain had
+        consumed him. We began, methodically, to build his symptom management from the ground up — each element
+        carefully selected, each medication calibrated to support the others. I think of it as a house of cards:
+        intricate, interdependent, fragile if disturbed.</p>
+      <p>The results were remarkable. Michael felt so well that he asked to revisit his oncologist to explore whether
+        further treatment had become possible. His oncologist, visibly astonished, told him he'd entered hospice
+        prematurely. Persuaded, Michael scaled back his regimen. The pain returned viciously. We had to rebuild
+        everything.</p>
+      <p>But what Michael taught me is indelible: <em>when you are in pain, you cannot think about anything else.</em>
+        Pain is totalizing. It erases everything — connection, conversation, the ability to say goodbye with a clear
+        mind. Good symptom management isn't a concession to death. It's a gift of presence to the dying person and to
+        everyone who loves them. With his pain finally under control, Michael spent his final days fully there — with
+        his wife, with himself.</p>
+    </div>
+
+    <div class="patient-card" data-name="Linda">
+      <span class="lesson-tag">Lesson II — Timely Hospice</span>
+      <h3>Linda: Knowing Where You Are</h3>
+      <p>Linda had ALS — amyotrophic lateral sclerosis. A disease that dismantles the body's ability to move, to speak,
+        eventually to breathe. It is terrifying in its trajectory, and Linda knew it. Her greatest fear was suffocation.
+        Her great act of courage was facing that fear directly.</p>
+      <p>She sought out a hospice team willing to manage her on a ventilator, and she found one. What followed was
+        months of remarkable care — a bond formed between Linda, her caregiver, and our team that transcended the
+        medical. When she passed peacefully on Christmas Day, we all felt the weight of what we had been entrusted with.
+      </p>
+      <p>Linda's story is about the power of <em>clarity</em>. She understood, without flinching, how serious her
+        illness was. That clarity allowed her to make decisions that gave her agency, dignity, and peace. Denial might
+        have felt safer. Clarity gave her so much more.</p>
+    </div>
+
+    <div class="patient-card" data-name="John">
+      <span class="lesson-tag">Lesson III — Honest Communication</span>
+      <h3>John: What No One Had Said</h3>
+      <p>John's story is harder. He had been sick for years, seen many doctors. One afternoon I received a call from his
+        daughter, who was frantic. Her father had been in severe pain for weeks. She had brought him to specialist after
+        specialist. Nobody had told her — told them — what was actually happening.</p>
+      <p>After listening carefully, I told her the truth: her father was dying, and he was in a pain crisis. He had days
+        to weeks. There was a long silence. She believed me. What she couldn't comprehend was how, after all those
+        appointments, after all those visits, no one had said it. No one had given them that map of where they were.</p>
+      <p>We brought John on to hospice immediately. We managed his pain. And he was able to spend several weeks of
+        genuine quality time with his family — present, peaceful, and known. His daughter told me that the right
+        information, given at the right moment, had made all the difference. It allowed them closure. It allowed them to
+        love him well in the time that remained.</p>
+      <p>This is the hardest part of what I do: telling people how much time is left. It is never easy. But it is
+        always, always worth it.</p>
+    </div>
+
+    <blockquote>
+      <p>Every moment is precious when you're nearing the end. Getting someone to breathe better, feel better, think
+        better — that can be pure bliss for them.</p>
+      <cite>On the texture of good end-of-life care</cite>
+    </blockquote>
+
+    <div class="divider">
+      <div class="divider-diamond"></div>
+    </div>
+
+    <h2>
+      <span class="section-num">03 — Grace &amp; The Big Moments</span>
+      When Medicine Becomes an Act of Love
+    </h2>
+
+    <p>Then there is Grace. Grace had metastatic cancer, had come home from the hospital, and had weeks to live. She had
+      one wish: to see her daughter's wedding.</p>
+
+    <p>We worked out how to make that possible. We essentially ran a hospital in the home — monitoring, adjusting,
+      coordinating — so that Grace could participate in her daughter's wedding from a hospital bed set up in the middle
+      of the celebration. By all accounts, she was beautiful.</p>
+
+    <p>This is what I mean when I say death, well-managed, creates opportunity. Not every family gets that moment. Not
+      every dying person has the medical support to make something like that happen. But when the pieces come together —
+      when good medicine and creative compassion align — extraordinary things become possible. Grace got to live that
+      moment. Her daughter got to have her mother there. Both of them will carry that forever.</p>
+
+    <div class="divider">
+      <div class="divider-diamond"></div>
+    </div>
+
+    <h2>
+      <span class="section-num">04 — What Good Dying Looks Like</span>
+      Four Pillars of End-of-Life Care
+    </h2>
+
+    <div class="lessons-grid">
+      <div class="lesson-item">
+        <div class="lesson-icon">🕯️</div>
+        <strong>Symptom Relief</strong>
+        <p>Pain erases presence. Managing it meticulously restores a person to themselves — and to their loved ones — in
+          the time that remains.</p>
+      </div>
+      <div class="lesson-item">
+        <div class="lesson-icon">🧭</div>
+        <strong>Honest Orientation</strong>
+        <p>Knowing where you are — medically, temporally — is not cruelty. It is the prerequisite for every meaningful
+          decision at the end of life.</p>
+      </div>
+      <div class="lesson-item">
+        <div class="lesson-icon">⏱️</div>
+        <strong>Timely Hospice</strong>
+        <p>Hospice is not surrender. Entered early, it provides the continuity and expertise that can genuinely
+          transform the dying experience.</p>
+      </div>
+      <div class="lesson-item">
+        <div class="lesson-icon">✨</div>
+        <strong>Creative Possibility</strong>
+        <p>Even in dying, the extraordinary is sometimes available. Good management clears the path for moments that
+          transcend the clinical.</p>
+      </div>
+    </div>
+
+    <p>Hospice, properly understood, is not a place you go to give up hope. It is a framework of specialized care that
+      allows someone to feel better, have quality of life, and find peace — with themselves, with the people they love,
+      and with the story of their life.</p>
+
+    <blockquote>
+      <p>When someone hears the word terminal, the next thought should not be there is no hope. It should be: hospice
+        will take care of me.</p>
+      <cite>On reframing hospice care</cite>
+    </blockquote>
+
+    <div class="divider">
+      <div class="divider-diamond"></div>
+    </div>
+
+    <div class="conclusion">
+      <p>Death is not the problem. Unexamined, unmanaged, unacknowledged death is the problem. When we bring the same
+        intention to dying that we bring to any other great transition in life, we find — sometimes to our astonishment
+        — that it can be not just endurable, but profound. The dying have so much left to teach us. We need only be
+        willing to listen.</p>
+      <div class="footer-rule"></div>
+    </div>
+
+  </div>
+</div>
+
+<style>
+  div.customOuterWrapper {
+    --bg: #0e0d0b;
+    --surface: #161411;
+    --card: #1c1a16;
+    --border: #2e2a22;
+    --gold: #c9a84c;
+    --gold-dim: #8a6f32;
+    --cream: #e8dfc8;
+    --muted: #9a907e;
+    --accent-red: #8c3a2e;
+    --text: #d4c9b0;
+    --text-strong: #ede5cc;
+
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Crimson Pro', Georgia, serif;
+    font-weight: 300;
+    font-size: 1.15rem;
+    line-height: 1.85;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+  }
+
+  div.customOuterWrapper * {
+    box-sizing: border-box;
+  }
+
+  div.customOuterWrapper .hero {
+    position: relative;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 80px 40px 60px;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  div.customOuterWrapper .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(ellipse at 50% 0%, rgba(201, 168, 76, 0.07) 0%, transparent 65%);
+    pointer-events: none;
+  }
+
+  div.customOuterWrapper .hero-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 28px;
+    display: block;
+  }
+
+  div.customOuterWrapper .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    font-weight: 900;
+    color: var(--text-strong);
+    line-height: 1.15;
+    margin: 0 0 24px;
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div.customOuterWrapper .hero h1 em {
+    font-style: italic;
+    color: var(--gold);
+  }
+
+  div.customOuterWrapper .hero-meta {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.78rem;
+    color: var(--muted);
+    letter-spacing: 0.06em;
+  }
+
+  div.customOuterWrapper .hero-rule {
+    width: 48px;
+    height: 2px;
+    background: var(--gold);
+    margin: 28px auto 0;
+  }
+
+  div.customOuterWrapper .content-wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 60px 32px 80px;
+  }
+
+  div.customOuterWrapper p {
+    margin: 0 0 1.5em;
+    color: var(--text);
+  }
+
+  div.customOuterWrapper .lead {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: var(--cream);
+    line-height: 1.7;
+    border-left: 3px solid var(--gold);
+    padding-left: 20px;
+    margin-bottom: 2.5em;
+  }
+
+  div.customOuterWrapper h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--text-strong);
+    margin: 3em 0 0.8em;
+    line-height: 1.3;
+  }
+
+  div.customOuterWrapper h2 .section-num {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold-dim);
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  div.customOuterWrapper .patient-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--gold);
+    border-radius: 2px;
+    padding: 32px 36px;
+    margin: 2.5em 0;
+    position: relative;
+  }
+
+  div.customOuterWrapper .patient-card::before {
+    content: attr(data-name);
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: rgba(201, 168, 76, 0.08);
+    position: absolute;
+    top: 12px;
+    right: 24px;
+    line-height: 1;
+    pointer-events: none;
+  }
+
+  div.customOuterWrapper .patient-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--gold);
+    margin: 0 0 14px;
+  }
+
+  div.customOuterWrapper .patient-card p {
+    margin-bottom: 1em;
+    font-size: 1.05rem;
+  }
+
+  div.customOuterWrapper .patient-card p:last-child {
+    margin-bottom: 0;
+  }
+
+  div.customOuterWrapper .patient-card .lesson-tag {
+    display: inline-block;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    border: 1px solid var(--gold-dim);
+    border-radius: 2px;
+    padding: 3px 10px;
+    margin-bottom: 16px;
+  }
+
+  div.customOuterWrapper blockquote {
+    margin: 2.8em 0;
+    padding: 0;
+    border: none;
+    text-align: center;
+    position: relative;
+  }
+
+  div.customOuterWrapper blockquote::before {
+    content: '\201C';
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    color: var(--gold-dim);
+    line-height: 0.6;
+    display: block;
+    margin-bottom: 14px;
+    opacity: 0.6;
+  }
+
+  div.customOuterWrapper blockquote p {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.45rem;
+    color: var(--cream);
+    line-height: 1.55;
+    max-width: 640px;
+    margin: 0 auto 16px;
+  }
+
+  div.customOuterWrapper blockquote cite {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-style: normal;
+  }
+
+  div.customOuterWrapper .divider {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 3em 0;
+  }
+
+  div.customOuterWrapper .divider::before,
+  div.customOuterWrapper .divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  div.customOuterWrapper .divider-diamond {
+    width: 6px;
+    height: 6px;
+    background: var(--gold-dim);
+    transform: rotate(45deg);
+  }
+
+  div.customOuterWrapper .lessons-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 1.8em 0 2.5em;
+  }
+
+  div.customOuterWrapper .lesson-item {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 20px 22px;
+    border-radius: 2px;
+  }
+
+  div.customOuterWrapper .lesson-item .lesson-icon {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+  }
+
+  div.customOuterWrapper .lesson-item strong {
+    display: block;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 6px;
+  }
+
+  div.customOuterWrapper .lesson-item p {
+    font-size: 0.95rem;
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  div.customOuterWrapper .conclusion {
+    margin-top: 3em;
+    padding: 36px 40px;
+    background: linear-gradient(135deg, rgba(201, 168, 76, 0.06) 0%, transparent 60%);
+    border: 1px solid var(--border);
+    border-top: 2px solid var(--gold);
+    border-radius: 2px;
+    text-align: center;
+  }
+
+  div.customOuterWrapper .conclusion p {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--cream);
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  div.customOuterWrapper .footer-rule {
+    width: 80px;
+    height: 1px;
+    background: var(--gold-dim);
+    margin: 24px auto 0;
+    opacity: 0.5;
+  }
+
+  @media (max-width: 600px) {
+    div.customOuterWrapper .lessons-grid {
+      grid-template-columns: 1fr;
+    }
+
+    div.customOuterWrapper .hero {
+      padding: 56px 24px 44px;
+    }
+
+    div.customOuterWrapper .content-wrap {
+      padding: 40px 20px 60px;
+    }
+
+    div.customOuterWrapper .patient-card {
+      padding: 24px 22px;
+    }
+  }
+</style>
+
+<br>
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#customTEDTalksOnDeathHeader" target="_blank">Other Articles on Death</a> 
+&nbsp;&nbsp; 
+<a href="https://survival8.blogspot.com/2026/04/what-death-teaches-living.html" target="_blank" class="customLink">&lt;&lt;&lt; Previously</a> 
+<!-- &nbsp;&nbsp; 
+<a href="" target="_blank" class="customLink"></a> -->
+
+<span style="opacity: 0;">Tags: Emotional Intelligence,Psychology,Video,</span>
