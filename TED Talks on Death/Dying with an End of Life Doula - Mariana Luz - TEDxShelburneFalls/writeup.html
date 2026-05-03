@@ -1,0 +1,628 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                success: function (result) {
+                    let grouplink = JSON.parse(result)['current book club'];
+                    $("#customWhatsAppGroupLinkWrapper").html(
+                        `
+                        <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                            <span>Join us on:</span>
+                            <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                            </a>
+                        </h2>
+                        `
+                    );
+                }
+            });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+    </style>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .dot {
+            height: 12px;
+            width: 12px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .arrow {
+            border: solid black;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+        }
+
+        .right {
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+        }
+
+        .left {
+            transform: rotate(135deg);
+            -webkit-transform: rotate(135deg);
+        }
+
+        .up {
+            transform: rotate(-135deg);
+            -webkit-transform: rotate(-135deg);
+        }
+
+        .down {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+    </style>
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+<br>
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#customTEDTalksOnDeathHeader" target="_blank">Other Articles on Death</a> 
+&nbsp;&nbsp; 
+<a href="https://survival8.blogspot.com/2026/05/what-dying-teach-us-about-living-well.html" target="_blank" class="customLink">&lt;&lt;&lt; Previously</a> 
+<!-- &nbsp;&nbsp; 
+<a href="" target="_blank" class="customLink"></a> -->
+
+<br>
+
+
+<div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhazjBi6Edno2TztvjE0zN2PRaQw66H0p8KsIx56TgBWi6JFwYmE4G9KZlGYIluvdff-Hn4VHcUMu3_T8v6fsiFmRjB7ki1kMM_IXcckabkPreP1yzd3fd3NaUXX0oxah4kqBJ6mkFkIAgBNiohecI95XfPHiFb9rjefVmtxPbxs57azHHocsWYKzuviwIp/s600/ChatGPT%20Image%20May%203,%202026,%2005_20_11%20PM.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="600" data-original-height="338" data-original-width="600" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhazjBi6Edno2TztvjE0zN2PRaQw66H0p8KsIx56TgBWi6JFwYmE4G9KZlGYIluvdff-Hn4VHcUMu3_T8v6fsiFmRjB7ki1kMM_IXcckabkPreP1yzd3fd3NaUXX0oxah4kqBJ6mkFkIAgBNiohecI95XfPHiFb9rjefVmtxPbxs57azHHocsWYKzuviwIp/s600/ChatGPT%20Image%20May%203,%202026,%2005_20_11%20PM.png"/></a></div>
+
+<br>
+
+<iframe class="custom_iframe" src="https://www.youtube.com/embed/EptDDTqna50" title="Dying with an End of Life Doula | Mariana Luz | TEDxShelburneFalls" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br>
+
+<div class="customOuterWrapper">
+
+  <!-- Header -->
+  <header class="cow-header">
+    <div class="cow-header-eyebrow">Reflections on Mortality</div>
+    <h1 class="cow-title">How to Accompany Someone <em>Home</em></h1>
+    <p class="cow-subtitle">On endings, presence, and the quiet art of accompanying someone home</p>
+    <div class="cow-divider">
+      <span></span><span class="cow-divider-icon">❧</span><span></span>
+    </div>
+  </header>
+
+  <!-- Body -->
+  <article class="cow-article">
+
+    <section class="cow-section">
+      <p class="cow-lead">We check our phones over a hundred times a day. Not because we are waiting for something important — but because we are running from something. The silence. The void. The strange, unsettling awareness that we are, at some level, alone. And beneath all of it, if we look honestly enough, there is a deeper fear: the fear of death.</p>
+
+      <p>This is not a morbid observation. It is an invitation. Buddhism has long taught that the root of human suffering is <em>attachment</em> — the relentless grasping for things to stay as they are when everything, by nature, changes. Our relationship with death is perhaps the starkest expression of this: we know it is coming, for every one of us, and yet we have arranged our entire culture around never having to look at it directly.</p>
+
+      <p>For most of human history, death was woven into the fabric of daily life. People died at home, surrounded by family, in the rooms where they had lived. But within just a few generations, that has changed profoundly. Today, death happens behind closed doors — in hospitals, in intensive care units, at the end of long corridors we are not invited to walk. Our elders move into care facilities. Emergency teams perform last-ditch procedures. The medical system, admirably trained to save lives, is rarely trained to let them end with grace.</p>
+
+      <p>The result? <strong>75% of people say they want to die at home. Only 25% actually do.</strong></p>
+
+      <p>And because death is no longer part of everyday life, we have stopped talking about it. It has become a stigma — something to be deferred, avoided, whispered. Yet there is another way.</p>
+    </section>
+
+    <!-- Pullquote 1 -->
+    <blockquote class="cow-quote">
+      <p>"If our end of life care were always lit by the sense of awe in the face of death — if we looked at life and death as an inseparable whole — and if we sought to make love and compassion the measure of our every act, what a revolution that would be."</p>
+      <cite>— Sogyal Rinpoche, <em>The Tibetan Book of Living and Dying</em></cite>
+    </blockquote>
+
+    <section class="cow-section">
+      <h2 class="cow-heading">The Doula at the Threshold</h2>
+      <p>The word <em>doula</em> comes from ancient Greek. Traditionally, it referred to a woman who helped another woman through childbirth — supporting the mother, caring for the newborn, tending to the family through the threshold of a new life. It is quietly profound that we are now using the same word at the other end of existence.</p>
+
+      <p>An end-of-life doula does not replace doctors or nurses. She does not perform procedures or prescribe medicine. What she offers is something the medical system rarely has time for: <strong>presence</strong>. Unhurried, compassionate, undistracted presence. She sits with someone who is dying. She adjusts pillows. She holds a hand. She makes sure there is no pain. She helps a person feel that they are not alone at the most solitary moment of their life.</p>
+
+      <p>The Dalai Lama has observed that when we arrive into this world as newborns, we are completely helpless — and it is the warmth and care of others that allows us to survive and flourish. The same is true when we leave. We become, once again, dependent. And in that dependence, what we need most is not a procedure. It is ease. It is the quiet reassurance of a human being who is not afraid to be there.</p>
+    </section>
+
+    <!-- Case 1 -->
+    <section class="cow-case">
+      <div class="cow-case-label">Patient Story I</div>
+      <h3 class="cow-case-heading">The Woman Who Needed Someone to Get It</h3>
+      <p>She was demanding. Exacting. She had strong opinions about how things should be done and she would tell you — repeatedly — exactly what they were. To outsiders, she could seem difficult. But underneath the sharpness was a woman who had done everything herself her entire life: raised a daughter alone, built a career, never once asked to be taken care of.</p>
+
+      <p>As she neared the end of her life and her body began to weaken, the thing she feared most was not death itself. It was the loss of control. The slow, humiliating retreat from independence. And she felt, profoundly, that no one around her truly understood what that felt like.</p>
+
+      <p>One afternoon, she said something unexpected: <em>"I feel very safe with you."</em></p>
+
+      <p>She was not saying she felt safe because everything was comfortable. She felt safe because she was not being managed. She was not being patronized. She had found someone who understood that her demands were not weakness — they were the last dignified expression of a woman who had always been in charge of her own life, now negotiating its ending on her own terms.</p>
+
+      <p>Sometimes the most powerful thing an end-of-life companion can offer is simply this: to see someone clearly, and not flinch.</p>
+    </section>
+
+    <!-- Pullquote 2 -->
+    <blockquote class="cow-quote cow-quote--light">
+      <p>"Just as a midwife guides a woman through birth, we can help guide someone through the end of their life — so they can be unafraid, so they can be comforted, so they can be at peace."</p>
+    </blockquote>
+
+    <!-- Case 2 -->
+    <section class="cow-case">
+      <div class="cow-case-label">Patient Story II</div>
+      <h3 class="cow-case-heading">The Woman Who Chose Her Own Goodbye</h3>
+      <p>She had a terminal illness. At some point, in consultation with her doctors, she made a decision: no more treatment. She was going home.</p>
+
+      <p>She had built a small cottage in her backyard — surrounded by trees, with a stream nearby, a little pond visible from the window, birds audible in the mornings. She moved into it and arranged her final chapter herself. Her art studio was nearby. Her pets were with her. Friends would come and visit; when she grew tired, they returned to the main house. Musicians came to play. The light through the trees was soft.</p>
+
+      <p>Her family wanted to be present — but as family, not as caregivers. They were already living through their own grief, their own anticipatory loss, and they did not want the logistics of physical care to replace the irreplaceable time they still had left with her. So they let someone else handle the practical, while they stayed fully human with the person they were about to lose.</p>
+
+      <p>At the very end, she chose to be with her sister. She had made her wishes known. Her affairs were in order. She had talked about everything that needed to be said. And she took her last breath quietly, without struggle, in a room filled with beauty — the fountain still running, the birds still singing outside.</p>
+
+      <p>This, too, is a way to die. And it is available to more people than we think — if only we begin the conversation early enough.</p>
+    </section>
+
+    <!-- The Veil Section -->
+    <section class="cow-section cow-section--interlude">
+      <h2 class="cow-heading">What Comes Through</h2>
+      <p>There is one more thing worth sharing — a moment stranger and more luminous than anything that can be easily explained.</p>
+
+      <p>In the final days of that same woman's life, she sat up suddenly in the night and looked around the room with an expression of pure delight. <em>"Who are these people?"</em> she asked. And then: <em>"Your family is here. They are so happy."</em></p>
+
+      <p>She described, in detail, a person who had died more than twenty years ago — describing his temperament, his presence, his gentleness — alongside children she had never met, depicted exactly as they had looked decades earlier. She was radiant. There were tears.</p>
+
+      <p>Whether one understands this as a neurological phenomenon or as something less explicable, what it offered in that moment was not confusion — it was comfort. A sense that the door between this world and whatever lies beyond it is, in the end, permeable. That we do not go alone into the dark.</p>
+    </section>
+
+    <!-- Practical Wisdom -->
+    <section class="cow-section">
+      <h2 class="cow-heading">The Conversations We Keep Avoiding</h2>
+      <p>There is a growing movement — sometimes gathered under the name <em>Death Over Dinner</em> — that encourages people to sit with their loved ones and speak openly about end-of-life wishes. Not morbidly. Not catastrophically. Just honestly.</p>
+
+      <p>There are things worth knowing about the people you love:</p>
+
+      <ul class="cow-list">
+        <li>Do they have a medical proxy — someone who knows their wishes and will advocate for them?</li>
+        <li>Have they made a will? Are their practical affairs in order?</li>
+        <li>What kind of medical intervention do they want, or not want, at the end?</li>
+        <li>Where do they want to be? Who do they want around them?</li>
+      </ul>
+
+      <p>These conversations are uncomfortable precisely because they are so important. And they become exponentially harder to have when the moment of crisis has already arrived. The gift of having them now — while there is time, while there is calm — is enormous. It is one of the most loving things you can do for someone.</p>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="cow-conclusion">
+      <div class="cow-divider">
+        <span></span><span class="cow-divider-icon">❧</span><span></span>
+      </div>
+      <p>It is my quiet conviction — my hope, really — that every person has the right to die with dignity: in the place they choose, surrounded by the people they love, and without fear. Death is not the opposite of life. It is the final act of it. And how we tend to it says everything about how fully we have learned to be human.</p>
+      <p>Next time you reach for your phone in an empty room, pause for just a moment. Sit with the silence. It is not as frightening as it seems.</p>
+    </section>
+
+  </article>
+
+</div>
+
+
+<br>
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#customTEDTalksOnDeathHeader" target="_blank">Other Articles on Death</a> 
+&nbsp;&nbsp; 
+<a href="https://survival8.blogspot.com/2026/05/what-dying-teach-us-about-living-well.html" target="_blank" class="customLink">&lt;&lt;&lt; Previously</a> 
+<!-- &nbsp;&nbsp; 
+<a href="" target="_blank" class="customLink"></a> -->
+
+<br>
+
+<span style="opacity: 0;">Tags: Video,Psychology,Emotional Intelligence,</span>
+
+<style>
+  div.customOuterWrapper {
+    --cow-bg: #111009;
+    --cow-surface: #1a1810;
+    --cow-surface-2: #231f17;
+    --cow-gold: #c9a84c;
+    --cow-gold-light: #e4c97a;
+    --cow-cream: #f5edd9;
+    --cow-muted: #8a806a;
+    --cow-text: #e8dfc8;
+    --cow-text-light: #f5edd9;
+    --cow-accent: #7a3a2e;
+
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--cow-bg);
+    color: var(--cow-text);
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+  }
+
+  div.customOuterWrapper * {
+    box-sizing: border-box;
+  }
+
+  /* ── HEADER ── */
+  div.customOuterWrapper .cow-header {
+    text-align: center;
+    padding: 80px 24px 60px;
+    max-width: 760px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  div.customOuterWrapper .cow-header::before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 60px;
+    background: linear-gradient(to bottom, transparent, var(--cow-gold));
+    margin: 0 auto 32px;
+  }
+
+  div.customOuterWrapper .cow-header-eyebrow {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--cow-gold);
+    margin-bottom: 24px;
+  }
+
+  div.customOuterWrapper .cow-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: clamp(2.8rem, 6vw, 4.8rem);
+    line-height: 1.1;
+    color: var(--cow-cream);
+    margin: 0 0 20px;
+    letter-spacing: -0.01em;
+  }
+
+  div.customOuterWrapper .cow-title em {
+    font-style: italic;
+    color: var(--cow-gold-light);
+  }
+
+  div.customOuterWrapper .cow-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--cow-muted);
+    font-weight: 300;
+    margin: 0 0 40px;
+    line-height: 1.5;
+  }
+
+  /* ── DIVIDER ── */
+  div.customOuterWrapper .cow-divider {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 40px auto;
+    max-width: 200px;
+  }
+
+  div.customOuterWrapper .cow-divider span:not(.cow-divider-icon) {
+    flex: 1;
+    height: 1px;
+    background: var(--cow-gold);
+    opacity: 0.4;
+  }
+
+  div.customOuterWrapper .cow-divider-icon {
+    color: var(--cow-gold);
+    font-size: 1.1rem;
+    opacity: 0.8;
+  }
+
+  /* ── ARTICLE ── */
+  div.customOuterWrapper .cow-article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 24px 100px;
+  }
+
+  /* ── SECTION ── */
+  div.customOuterWrapper .cow-section {
+    margin-bottom: 56px;
+  }
+
+  div.customOuterWrapper .cow-section--interlude {
+    background: var(--cow-surface);
+    border-left: 3px solid var(--cow-gold);
+    padding: 36px 40px;
+    border-radius: 2px;
+    margin-bottom: 56px;
+  }
+
+  /* ── TYPOGRAPHY ── */
+  div.customOuterWrapper .cow-lead {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    line-height: 1.7;
+    color: var(--cow-cream);
+    font-weight: 400;
+    margin-bottom: 28px;
+  }
+
+  div.customOuterWrapper p {
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: var(--cow-text);
+    margin: 0 0 22px;
+    font-weight: 300;
+  }
+
+  div.customOuterWrapper em {
+    font-style: italic;
+    color: var(--cow-cream);
+  }
+
+  div.customOuterWrapper strong {
+    font-weight: 500;
+    color: var(--cow-cream);
+  }
+
+  div.customOuterWrapper .cow-heading {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: 1.9rem;
+    color: var(--cow-cream);
+    margin: 0 0 24px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+
+  /* ── QUOTES ── */
+  div.customOuterWrapper .cow-quote {
+    border: none;
+    margin: 56px 0;
+    padding: 40px 48px;
+    background: var(--cow-surface-2);
+    position: relative;
+    border-radius: 2px;
+  }
+
+  div.customOuterWrapper .cow-quote::before {
+    content: '\201C';
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 8rem;
+    color: var(--cow-gold);
+    opacity: 0.25;
+    position: absolute;
+    top: -10px;
+    left: 16px;
+    line-height: 1;
+  }
+
+  div.customOuterWrapper .cow-quote p {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.45rem;
+    line-height: 1.65;
+    color: var(--cow-cream);
+    font-weight: 300;
+    margin: 0 0 16px;
+    position: relative;
+    z-index: 1;
+  }
+
+  div.customOuterWrapper .cow-quote cite {
+    font-size: 0.85rem;
+    color: var(--cow-muted);
+    font-style: normal;
+    letter-spacing: 0.04em;
+    display: block;
+  }
+
+  div.customOuterWrapper .cow-quote--light {
+    background: transparent;
+    border-top: 1px solid var(--cow-gold);
+    border-bottom: 1px solid var(--cow-gold);
+    border-left: none;
+    border-right: none;
+    padding: 32px 0;
+    margin: 48px 0;
+  }
+
+  div.customOuterWrapper .cow-quote--light::before {
+    display: none;
+  }
+
+  div.customOuterWrapper .cow-quote--light p {
+    text-align: center;
+    font-size: 1.35rem;
+    color: var(--cow-gold-light);
+  }
+
+  /* ── CASE STUDIES ── */
+  div.customOuterWrapper .cow-case {
+    background: var(--cow-surface);
+    padding: 44px 44px 40px;
+    margin-bottom: 56px;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  div.customOuterWrapper .cow-case::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, var(--cow-gold), var(--cow-accent));
+  }
+
+  div.customOuterWrapper .cow-case-label {
+    font-family: 'Cinzel', serif;
+    font-size: 9px;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--cow-gold);
+    margin-bottom: 12px;
+    opacity: 0.9;
+  }
+
+  div.customOuterWrapper .cow-case-heading {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: 1.7rem;
+    color: var(--cow-cream);
+    margin: 0 0 24px;
+    line-height: 1.25;
+  }
+
+  /* ── LIST ── */
+  div.customOuterWrapper .cow-list {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0;
+  }
+
+  div.customOuterWrapper .cow-list li {
+    padding: 12px 0 12px 28px;
+    border-bottom: 1px solid rgba(201, 168, 76, 0.12);
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.65;
+    color: var(--cow-text);
+  }
+
+  div.customOuterWrapper .cow-list li::before {
+    content: '>>';
+    position: absolute;
+    left: 0;
+    color: var(--cow-gold);
+    font-weight: 300;
+  }
+
+  /* ── CONCLUSION ── */
+  div.customOuterWrapper .cow-conclusion {
+    margin-top: 64px;
+    padding-top: 8px;
+  }
+
+  div.customOuterWrapper .cow-conclusion p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: var(--cow-cream);
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 600px) {
+    div.customOuterWrapper .cow-header {
+      padding: 60px 20px 40px;
+    }
+
+    div.customOuterWrapper .cow-article {
+      padding: 0 20px 60px;
+    }
+
+    div.customOuterWrapper .cow-quote {
+      padding: 28px 24px;
+    }
+
+    div.customOuterWrapper .cow-case {
+      padding: 32px 24px 28px;
+    }
+
+    div.customOuterWrapper .cow-section--interlude {
+      padding: 28px 24px;
+    }
+  }
+</style>
