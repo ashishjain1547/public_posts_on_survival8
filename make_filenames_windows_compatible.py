@@ -29,16 +29,19 @@ from pathlib import Path
 # Windows invalid filename characters
 INVALID_WINDOWS_CHARS = r'[<>:"/\\|?*]'
 MAX_FILENAME_LENGTH = 255
+MAX_PATH_LENGTH = 260  # Windows MAX_PATH limit
 
 
-def make_filename_windows_compatible(filename):
+def make_filename_windows_compatible(filename, dirpath=''):
     """
     Convert a filename to be Windows-compatible by:
     1. Replacing invalid characters with underscores
-    2. Truncating to 255 characters (including extension)
+    2. Truncating to 255 characters (filename only)
+    3. Ensuring full path doesn't exceed 260 characters (Windows MAX_PATH)
     
     Args:
         filename (str): The original filename
+        dirpath (str): The directory path (for full path validation)
         
     Returns:
         str: The Windows-compatible filename
@@ -46,7 +49,7 @@ def make_filename_windows_compatible(filename):
     # Replace invalid characters with underscores
     compatible_name = re.sub(INVALID_WINDOWS_CHARS, '_', filename)
     
-    # Handle length limitation (255 chars max including extension)
+    # Handle individual filename length limitation (255 chars max)
     if len(compatible_name) > MAX_FILENAME_LENGTH:
         # Split into name and extension
         name_parts = compatible_name.rsplit('.', 1)
@@ -59,6 +62,30 @@ def make_filename_windows_compatible(filename):
         else:
             # No extension, just truncate
             compatible_name = compatible_name[:MAX_FILENAME_LENGTH]
+    
+    # Handle full path length limitation (260 chars max for Windows)
+    if dirpath:
+        full_path = os.path.join(dirpath, compatible_name)
+        if len(full_path) > MAX_PATH_LENGTH:
+            # We need to truncate further
+            name_parts = compatible_name.rsplit('.', 1)
+            if len(name_parts) == 2:
+                name, ext = name_parts
+                ext = '.' + ext
+                # Calculate available space
+                prefix_len = len(dirpath) + 1  # +1 for separator
+                available = MAX_PATH_LENGTH - prefix_len - len(ext)
+                if available > 0:
+                    compatible_name = name[:available] + ext
+                else:
+                    # Last resort: very aggressive truncation
+                    compatible_name = name[:MAX_PATH_LENGTH - prefix_len - len(ext) - 1] + ext if ext else compatible_name[:available]
+            else:
+                # No extension
+                prefix_len = len(dirpath) + 1
+                available = MAX_PATH_LENGTH - prefix_len
+                if available > 0:
+                    compatible_name = compatible_name[:available]
     
     return compatible_name
 
@@ -83,8 +110,8 @@ def process_directory(root_dir='.'):
         for dirname in dirnames:
             items_processed += 1
             
-            # Get the compatible name
-            compatible_name = make_filename_windows_compatible(dirname)
+            # Get the compatible name (pass parent directory path for path length check)
+            compatible_name = make_filename_windows_compatible(dirname, dirpath)
             
             # Only rename if the name changed
             if dirname != compatible_name:
@@ -97,7 +124,7 @@ def process_directory(root_dir='.'):
                         print(f"⚠️  Skipped (target exists): {dirname}/ → {compatible_name}/")
                     else:
                         os.rename(old_path, new_path)
-                        print(f"✓ Renamed: {dirname}/ → {compatible_name}/")
+                        print(f"✓ Renamed: {dirname}/ → {compatible_name}/ (path: {len(new_path)} chars)")
                         items_renamed += 1
                 except Exception as e:
                     print(f"✗ Error renaming directory {dirname}: {e}")
@@ -106,8 +133,8 @@ def process_directory(root_dir='.'):
         for filename in filenames:
             items_processed += 1
             
-            # Get the compatible name
-            compatible_name = make_filename_windows_compatible(filename)
+            # Get the compatible name (pass directory path for full path validation)
+            compatible_name = make_filename_windows_compatible(filename, dirpath)
             
             # Only rename if the name changed
             if filename != compatible_name:
@@ -120,7 +147,7 @@ def process_directory(root_dir='.'):
                         print(f"⚠️  Skipped (target exists): {filename} → {compatible_name}")
                     else:
                         os.rename(old_path, new_path)
-                        print(f"✓ Renamed: {filename} → {compatible_name}")
+                        print(f"✓ Renamed: {filename} → {compatible_name} (path: {len(new_path)} chars)")
                         items_renamed += 1
                 except Exception as e:
                     print(f"✗ Error renaming {filename}: {e}")
