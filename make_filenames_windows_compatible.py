@@ -22,6 +22,7 @@ The script should output the modified filenames in the same directory, replacing
 import os
 import re
 import time
+import sys
 from pathlib import Path
 
 
@@ -64,22 +65,46 @@ def make_filename_windows_compatible(filename):
 
 def process_directory(root_dir='.'):
     """
-    Process all files in the directory and subdirectories,
+    Process all files and directories in the directory tree,
     renaming them to be Windows-compatible.
     
     Args:
         root_dir (str): The root directory to start from (default: current directory)
         
     Returns:
-        tuple: (files_processed, files_renamed)
+        tuple: (items_processed, items_renamed)
     """
-    files_processed = 0
-    files_renamed = 0
+    items_processed = 0
+    items_renamed = 0
     
-    # Walk through all directories and subdirectories
-    for dirpath, dirnames, filenames in os.walk(root_dir):
+    # Walk through all directories and subdirectories (bottom-up to handle renames)
+    for dirpath, dirnames, filenames in os.walk(root_dir, topdown=False):
+        # Process directories (bottom-up to avoid path issues)
+        for dirname in dirnames:
+            items_processed += 1
+            
+            # Get the compatible name
+            compatible_name = make_filename_windows_compatible(dirname)
+            
+            # Only rename if the name changed
+            if dirname != compatible_name:
+                old_path = os.path.join(dirpath, dirname)
+                new_path = os.path.join(dirpath, compatible_name)
+                
+                try:
+                    # Handle case where new directory already exists
+                    if os.path.exists(new_path) and old_path != new_path:
+                        print(f"⚠️  Skipped (target exists): {dirname}/ → {compatible_name}/")
+                    else:
+                        os.rename(old_path, new_path)
+                        print(f"✓ Renamed: {dirname}/ → {compatible_name}/")
+                        items_renamed += 1
+                except Exception as e:
+                    print(f"✗ Error renaming directory {dirname}: {e}")
+        
+        # Process files
         for filename in filenames:
-            files_processed += 1
+            items_processed += 1
             
             # Get the compatible name
             compatible_name = make_filename_windows_compatible(filename)
@@ -96,24 +121,32 @@ def process_directory(root_dir='.'):
                     else:
                         os.rename(old_path, new_path)
                         print(f"✓ Renamed: {filename} → {compatible_name}")
-                        files_renamed += 1
+                        items_renamed += 1
                 except Exception as e:
                     print(f"✗ Error renaming {filename}: {e}")
     
-    return files_processed, files_renamed
+    return items_processed, items_renamed
 
 
 def main():
-    """Main function to process the current directory."""
+    """Main function to process the current directory or specified directory."""
+    # Get target directory from command line or use current directory
+    target_dir = sys.argv[1] if len(sys.argv) > 1 else '.'
+    
+    # Validate the directory exists
+    if not os.path.isdir(target_dir):
+        print(f"Error: Directory '{target_dir}' does not exist.")
+        sys.exit(1)
+    
     start_time = time.time()
     
     print("=" * 70)
     print("Windows-Compatible Filename Converter")
     print("=" * 70)
-    print(f"Starting scan of: {os.path.abspath('.')}\n")
+    print(f"Starting scan of: {os.path.abspath(target_dir)}\n")
     
     # Process the directory
-    files_processed, files_renamed = process_directory('.')
+    items_processed, items_renamed = process_directory(target_dir)
     
     end_time = time.time()
     elapsed_time = end_time - start_time
@@ -122,8 +155,8 @@ def main():
     print("\n" + "=" * 70)
     print("RESULTS")
     print("=" * 70)
-    print(f"Files Processed: {files_processed}")
-    print(f"Files Renamed: {files_renamed}")
+    print(f"Items Processed: {items_processed}")
+    print(f"Items Renamed: {items_renamed}")
     print(f"Time taken: {elapsed_time:.2f} seconds")
     print("=" * 70)
 
