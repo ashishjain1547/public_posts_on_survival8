@@ -2,7 +2,7 @@
 Spin the attached transcript off as blog post in English
 
 # WORD LIMIT
-1500 words 
+2000 words 
 
 # TRANSCRIPT LANGUAGE (INPUT)
 Hindi
@@ -12,7 +12,7 @@ English
 
 # DESIGN / DATA REPRESENTATION
 - You can use tabular format to summarize data better.
-- Some simple representations using pie plot, bar graph, line plot, etc : *IF POSSIBLE*
+- Some simple representations using pie plot, bar graph, line plot, or whatever plot, etc.
 
 # OUTPUT FORMAT
 - Blog post should be formatted as a HTML.

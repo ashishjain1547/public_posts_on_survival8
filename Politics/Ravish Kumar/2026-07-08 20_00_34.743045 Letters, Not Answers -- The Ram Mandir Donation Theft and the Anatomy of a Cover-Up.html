@@ -1,0 +1,658 @@
+<head>
+  <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <!-- Google AdSense Using Machine Learning Code -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-3071098372371409",
+      enable_page_level_ads: true
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $.ajax({
+        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+        success: function (result) {
+          let grouplink = JSON.parse(result)['current book club'];
+          $("#customWhatsAppGroupLinkWrapper").html(
+            `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+          );
+        }
+      });
+    });
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    pre {
+      white-space: pre-wrap;
+      white-space: -moz-pre-wrap;
+      white-space: -pre-wrap;
+      white-space: -o-pre-wrap;
+      word-wrap: break-word;
+    }
+
+    .customLink {
+      background-color: #4CAF50;
+      border: none;
+      color: white !important;
+      padding: 8px 13px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+    .customLink:hover {
+      text-decoration: none;
+    }
+
+    div.code-block-decoration.footer {
+      display: none;
+    }
+
+    button.export-sheets-button-wrapper {
+      display: none;
+    }
+  </style>
+
+  <style>
+    .custom_link_h2 a {
+      color: black;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .custom_link_h2 a:hover {
+      color: black;
+    }
+
+    .custom_link_h2 a:active {
+      color: black;
+    }
+
+    .custom_link_h2 span {
+      translate: 0px -5px;
+      display: inline-block;
+    }
+
+    .custom_link_h2 img {
+      width: 100px;
+      padding: 0px;
+      border: none;
+      box-shadow: none;
+    }
+  </style>
+  <style>
+    .customul {
+      list-style: none;
+    }
+
+    [aria-hidden='true'] {
+      display: none;
+    }
+
+    .custom_iframe {
+      width: 100%;
+      height: 305px;
+    }
+
+    div.customOuterWrapper2018 i.ib {
+      color: #58a6ff;
+    }
+
+    div.customOuterWrapper2018 i.ig {
+      color: #3fb950;
+    }
+
+    div.customOuterWrapper2018 .customTable td {
+      padding: 2px;
+    }
+
+    div.customOuterWrapper2018 ol {
+      display: block;
+      list-style-type: decimal;
+      margin-block-start: 0em;
+      margin-block-end: 0em;
+      padding-inline-start: 18px;
+      unicode-bidi: isolate;
+    }
+
+    div.customOuterWrapper2018 ol li p {
+      padding: 0px;
+      margin: 0px;
+      display: inline;
+    }
+  </style>
+  <style>
+    /* ========== DARK THEME — Blog Content Wrapper ========== */
+    div.customOuterWrapper2018 {
+      background-color: #0d1117;
+      color: #c9d1d9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 2rem 2.5rem;
+      border-radius: 10px;
+      line-height: 1.85;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    div.customOuterWrapper2018 h1 {
+      color: #f0c040;
+      font-size: 1.9rem;
+      border-bottom: 2px solid #30363d;
+      padding-bottom: 0.5rem;
+      margin-top: 1.5rem;
+    }
+
+    div.customOuterWrapper2018 h2 {
+      color: #e3b341;
+      font-size: 1.4rem;
+      margin-top: 1.8rem;
+    }
+
+    div.customOuterWrapper2018 h3,
+    div.customOuterWrapper2018 h4 {
+      color: #d4a72c;
+    }
+
+    div.customOuterWrapper2018 p {
+      margin: 1rem 0;
+    }
+
+    div.customOuterWrapper2018 a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+
+    div.customOuterWrapper2018 a:hover {
+      text-decoration: underline;
+    }
+
+    div.customOuterWrapper2018 strong,
+    div.customOuterWrapper2018 b {
+      color: #f0c040;
+    }
+
+    div.customOuterWrapper2018 ul {
+      padding-left: 1.5rem;
+      margin: 0.8rem 0;
+    }
+
+    div.customOuterWrapper2018 li {
+      margin: 0.4rem 0;
+    }
+
+    div.customOuterWrapper2018 blockquote {
+      border-left: 4px solid #f0c040;
+      margin: 1.2rem 0;
+      padding: 0.6rem 1.2rem;
+      background: #161b22;
+      border-radius: 0 6px 6px 0;
+      font-style: italic;
+    }
+
+    /* ---- Table Styles ---- */
+    div.customOuterWrapper2018 table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 1.2rem 0;
+      font-size: 0.95rem;
+    }
+
+    div.customOuterWrapper2018 thead {
+      background-color: #1a2332;
+    }
+
+    div.customOuterWrapper2018 th {
+      color: #f0c040;
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 2px solid #30363d;
+    }
+
+    div.customOuterWrapper2018 td {
+      padding: 8px 12px;
+      border-bottom: 1px solid #21262d;
+    }
+
+    div.customOuterWrapper2018 tr:hover {
+      background-color: #161b22;
+    }
+
+    /* ---- Video embed ---- */
+    div.video-embed {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    /* ========== RESPONSIVE ========== */
+    @media (max-width: 768px) {
+      div.customOuterWrapper2018 {
+        padding: 1.2rem;
+        font-size: 14px;
+        border-radius: 4px;
+      }
+
+      div.customOuterWrapper2018 h1 {
+        font-size: 1.5rem;
+      }
+
+      div.customOuterWrapper2018 h2 {
+        font-size: 1.2rem;
+      }
+
+      .custom_iframe {
+        height: 220px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      div.customOuterWrapper2018 {
+        padding: 0.8rem;
+        font-size: 13px;
+      }
+
+      div.customOuterWrapper2018 h1 {
+        font-size: 1.3rem;
+      }
+
+      div.customOuterWrapper2018 h2 {
+        font-size: 1.1rem;
+      }
+
+      .custom_iframe {
+        height: 180px;
+      }
+    }
+  </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#CUSTOM_SECTION_ID"
+  target="_blank">See All Articles</a>
+<br>
+
+<div class="customOuterWrapper2018">
+
+  <div class="video-embed" style="text-align:center; margin-bottom:2rem;">
+    <iframe class="custom_iframe" src="https://www.youtube.com/embed/Fjmic8rNMZU" frameborder="0"
+      allowfullscreen></iframe>
+  </div>
+
+  <h1>Letters, Not Answers: The Ram Mandir Donation Theft and the Anatomy of a Cover-Up</h1>
+
+  <p>
+    Nearly four weeks have passed since the first faint hints of a monumental financial scandal at the Ram Mandir in
+    Ayodhya seeped into public discourse. What has followed is not a transparent probe, not a single press conference by
+    the trust, but a flurry of carefully worded, self-exculpatory letters. The treasurer of the Shri Ram Janmabhoomi
+    Teerth Kshetra Trust, Swami Govind Dev Giri, has now thrown his hands up, confessing that he never actually
+    discharged the duties of a treasurer. The trust chairman, Mahant Nritya Gopal Das, has issued an open letter placing
+    his complete faith in Prime Minister Narendra Modi and Uttar Pradesh Chief Minister Yogi Adityanath. Meanwhile, the
+    international president of the Vishva Hindu Parishad, Alok Kumar, dispatched a letter to the Ayodhya police,
+    demanding interrogation of opposition leaders for making allegations—while meticulously omitting the names of those
+    within the governing ecosystem who have admitted to large-scale theft and corruption.
+  </p>
+  <p>
+    This is an elaborate theatre of evasion. The central question—who stole the offerings of millions of Ram devotees,
+    and on whose watch—is being buried under layers of deflection, political intimidation, and manufactured moral
+    outrage. A closer reading of these letters unearths the fault lines inside the temple trust, and reveals how
+    political power is being deployed not to deliver justice but to shield insiders and punish critics.
+  </p>
+
+  <h2>The Treasurer’s Confession: A Nominal Post at the Heart of Power?</h2>
+
+  <p>
+    Swami Govind Dev Giri’s two-page letter, addressed to the devotees of Lord Ram, is a textbook in the art of
+    disowning responsibility without a shred of institutional accountability. For more than four years—since the trust’s
+    formation—he held the office of treasurer. Yet now he claims:
+  </p>
+  <ul>
+    <li>He is “not a signatory” on any bank instrument; all trust expenses go through direct bank transfers, which he
+      never handles.</li>
+    <li>He resides in Pune and has “from the beginning” had no connection with the place where devotees’ offerings are
+      counted.</li>
+    <li>Guidelines for counting temple offerings, supposedly framed in coordination with the SBI, were shown to him only
+      “last month for the first time.”</li>
+    <li>His own expenses are handled by a chartered accountant who visits Ayodhya for the last four or five days of each
+      month, leaving him “worry‑free” about the accounts.</li>
+    <li>He has personally received only two cash/donations in all these years—Rs 11,000 in cash and 1 kg of silver
+      bricks—and issued receipts for both.</li>
+  </ul>
+  <p>
+    The admission is staggering. A person entrusted with the financial custodianship of India’s most politically
+    consecrated temple says he neither counted the money, nor signed cheques, nor even saw the counting protocol until
+    the scandal broke. The letter then concludes with a grand moral pronouncement: “Stealing from offerings is a great
+    sin,” and demands that the guilty be punished regardless of their stature.
+  </p>
+  <p>
+    But here’s the contradiction that cannot be wished away. If the treasurer was merely a namesake, why did he remain
+    silent for over four years? Why did he accept the post if he could not perform even its basic functions? And why, as
+    photographs and video recordings from the grand inauguration on 22 January 2024 show, was he consistently positioned
+    at the very center of power—next to Prime Minister Modi, next to RSS chief Mohan Bhagwat, next to trust general
+    secretary Champat Rai?
+  </p>
+  <p>
+    Indeed, on the day of the consecration ceremony, it was Swami Govind Dev Giri who delivered the first speech,
+    framing the temple not merely as a religious structure but as the “identity and self-respect of the nation.” A
+    person who could connect the temple to national pride so centrally cannot, today, plead helplessness about the very
+    finances that sustain that edifice. He owes the public an explanation: when he had no real charge of the treasury,
+    why did he not resign? And when accusations of theft and commission‑taking first surfaced—pointed out by Akhilesh
+    Yadav on 7 June—why did he wait a full month before writing an open letter, a letter that pointedly avoids naming
+    any individual within the trust?
+  </p>
+  <p>
+    The optics also betray the claim. Photographs of the inauguration day show Swami Govind Dev Giri deeply engaged with
+    Champat Rai and Mohan Bhagwat. He belongs to the very inner circle that controls the trust. He cannot now portray
+    himself as an outsider who was kept in the dark. Either he was complicit in the negligence, or he was deliberately
+    sidelined—both scenarios demand his resignation, not a letter to the faithful.
+  </p>
+
+  <h2>The Chairman’s Appeal: Trust in Modi-Yogi, Not Accountability</h2>
+  <p>
+    While the treasurer was busy disowning his portfolio, the trust’s chairman, Mahant Nritya Gopal Das, broke his
+    silence with an open letter of his own. He wrote that he is “deeply hurt” by the theft of donations and that the
+    guilty must receive the strictest punishment. But the operative part came next: “I have full faith in Uttar Pradesh
+    Chief Minister Yogi Adityanath ji and Prime Minister Narendra Modi ji that they will ensure punishment to every
+    person involved in this sin.”
+  </p>
+  <p>
+    This is the language of political absolution, not institutional integrity. The trust was set up by a government
+    order; its key members were appointed largely by the central government. Yet when faced with a crisis of legitimacy,
+    the chairman appeals not to an independent judicial process but to the very political executive that placed them
+    there. It is an invitation to believe in the impartiality of those who have a direct stake in protecting the
+    reputational capital of the temple project.
+  </p>
+  <p>
+    The chairman further urged that “nobody should do politics for personal gains in this matter.” But it is precisely
+    because politics brought the issue to light that we are discussing it at all. Had Akhilesh Yadav not hinted at the
+    theft on 7 June, and had journalists not followed it up, the trust would likely have continued its silence. The
+    demand to keep “politics” out of the scandal is itself a political tactic—an attempt to delegitimise all questioning
+    and to frame critics as anti-Hindu or Ram‑drohi (traitors to Ram). It is a well‑worn strategy, and it is being
+    deployed with surgical precision.
+  </p>
+
+  <h2>VHP’s Selective Outrage: Interrogate the Critics, Protect the Insiders</h2>
+  <p>
+    The third letter, written by Vishva Hindu Parishad international president Alok Kumar to the Deputy Superintendent
+    of Police, Ashutosh Tiwari, takes the manipulation to a new level. The letter demands that the police summon and
+    interrogate:
+  </p>
+  <ul>
+    <li>Prof. Ram Gopal Yadav</li>
+    <li>Arvind Kejriwal</li>
+    <li>Priyanka Gandhi</li>
+    <li>Sanjay Singh</li>
+  </ul>
+  <p>
+    for allegedly making unsubstantiated claims about a Rs 1,000-crore loot. The letter argues that such statements
+    could spread “hatred” and calls for action against them.
+  </p>
+  <p>
+    But look at the names that the VHP chief omitted—deliberately and dishonestly:
+  </p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Person</th>
+        <th>Affiliation</th>
+        <th>Statement / Allegation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Brij Bhushan Sharan Singh</td>
+        <td>Sitting BJP MP (till recently) / Father of BJP MP Karan Bhushan</td>
+        <td>“In Ayodhya so much loot took place that I have not even gone for darshan till today… from the first day the
+          game was on.”</td>
+      </tr>
+      <tr>
+        <td>Nripendra Mishra</td>
+        <td>Chairman, Temple Construction Committee; former Principal Secretary to PM Modi</td>
+        <td>“There has not just been theft, there has been dacoity.” - reiterated in multiple interviews.</td>
+      </tr>
+      <tr>
+        <td>Engineer Mahipal Singh</td>
+        <td>Affiliated to VHP / RSS ecosystem</td>
+        <td>Alleged in 2020-21 that temple offerings were being stolen; accused Anil Mishra of taking 40% commission on
+          construction.</td>
+      </tr>
+      <tr>
+        <td>Kamal Nain Das</td>
+        <td>Successor designate of Mahant Nritya Gopal Das</td>
+        <td>Admitted that theft and corruption were rampant at the temple.</td>
+      </tr>
+      <tr>
+        <td>Vinay Katiyar</td>
+        <td>Former BJP MP</td>
+        <td>Publicly acknowledged “dishonesty and corruption” in temple affairs.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>
+    The VHP letter did not include any of these names. It did not ask the police to question Nripendra Mishra about his
+    “dacoity” remark. It did not summon the engineer who spoke of 40% commission. It did not even acknowledge that the
+    entire episode was first flagged internally in 2020-21. Instead, it trained its guns on the opposition, on those who
+    dared to amplify what insiders already knew.
+  </p>
+  <p>
+    This is not an investigation; it is a gag order wrapped in legal language. It is an attempt to criminalise dissent
+    while the trust’s own house burns. The true purpose of the letter is to send a chilling message: if you speak about
+    the loot, you will be deemed a spreader of hatred and face consequences. Meanwhile, the actual perpetrators—whoever
+    they may be—remain unnamed, unbowed, and protected.
+  </p>
+
+  <h2>The Grand Cover‑Up: No Press Conference, an Endlessly Extending SIT</h2>
+  <p>
+    In a functional institution, a theft of this magnitude would trigger an immediate press conference, suspension of
+    office‑bearers, and a forensic audit. The Ram Mandir Trust has done none of these. Not a single spokesperson has
+    faced the media. Instead, the trust has resorted to letter‑writing as a substitute for accountability, dispersing
+    blame and buying time.
+  </p>
+  <p>
+    The Uttar Pradesh government initially announced that a Special Investigation Team (SIT) would separate “milk from
+    water” within 15 days. Those 15 days expired, and the deadline was extended by another 15 days. Thirty days later,
+    there is no public report, no interim findings, no list of suspects beyond a few low‑level employees. The Chief
+    Minister, who visited Ayodhya on 19 June to celebrate the trust chairman’s birthday, used the occasion to declare
+    from the stage that “people associated with the Ram Mandir were never sold” and asked the faithful to have “faith.”
+    It was a certificate of integrity issued by a political authority to an institution under investigation—a gesture
+    that collapses the necessary distance between the investigator and the investigated.
+  </p>
+  <p>
+    Contrast this with the letter of the treasurer, who writes that he was never told about the counting process. If the
+    SIT were genuinely probing, one of its first tasks would be to establish why a statutory office‑bearer was kept in
+    the dark, and who actually signed the cheques. Yet we hear nothing. The silence is loud.
+  </p>
+
+  <h2>The Older Land Scams and Commission Charges</h2>
+  <p>
+    The focus on donated cash and silver is itself a diversion. The real scandal predates the consecration. Since 2021,
+    allegations of massive irregularities in land purchase by the trust have been raised repeatedly by Samajwadi Party
+    leader Pawan Pandey and others. Documents show a piece of land bought for Rs 2 crore being valued at Rs 18.5 crore
+    within minutes. The trust has never explained these transactions, nor has the SIT been tasked to probe them with the
+    same urgency seen in anti‑corruption cases elsewhere.
+  </p>
+  <p>
+    Add to this the sworn statement of engineer Mahipal Singh that construction work involved a 40% commission. With an
+    estimated total budget of Rs 2,000 crore, that would translate to Rs 800 crore in siphoned funds. And yet the VHP
+    letter, and the trust’s entire communications strategy, studiously avoid these figures. Instead, they fixate on
+    whether a few kilograms of silver were properly receipted—a disaster of priorities that points to a systemic effort
+    to contain the narrative.
+  </p>
+
+  <h2>The Faith Gambit: Weaponising Sentiment to Shut Down Questions</h2>
+  <p>
+    The moment critical voices grow louder, a familiar semantic shift occurs. The theft of offerings is recast not as a
+    law‑and‑order or governance failure, but as a “test of faith.” Any demand for transparency is branded an insult to
+    Hindu sentiments. Opposition leaders who skipped the temple visit are declared unworthy of speaking on the matter.
+    Images of them are juxtaposed with the temple to suggest they are “Ram‑drohi.”
+  </p>
+  <p>
+    This is the most dangerous aspect of the entire episode. When financial corruption inside a temple trust is turned
+    into a litmus test of religious identity, the state and its proxies grant themselves a licence to ignore
+    criminality. The public is told to “trust” the very political leadership that appointed the trust members, while
+    those who demand proof are threatened with police interrogation. The trust, the VHP, and the ruling party are
+    together manufacturing an environment where asking “Where is the missing money?” becomes an act of heresy.
+  </p>
+
+  <div class="criticism-section">
+    <h2>Criticisms</h2>
+    <ul>
+      <li>The Ram Mandir Trust functions as a closed cabal of ruling party‑affiliated figures; it has refused a single
+        press conference, opting instead for manipulative letters that shed responsibility without naming the powerful.
+      </li>
+      <li>Prime Minister Narendra Modi, who personally inaugurated the temple and stood shoulder‑to‑shoulder with the
+        very office‑bearers now under a cloud, has maintained a calculated silence, treating the theft of crore‑rupee
+        offerings as beneath his attention.</li>
+      <li>Uttar Pradesh Chief Minister Yogi Adityanath issues pre‑emptive certificates of integrity to trust members and
+        extends SIT deadlines indefinitely, turning a criminal investigation into a performance of administrative
+        busyness.</li>
+      <li>The BJP and its ideological affiliates indulge in intimidation—through letters to police threatening
+        opponents—while ignoring the damning statements of their own insiders and former office‑bearers who have
+        confirmed large‑scale theft and commission‑taking.</li>
+      <li>The mainstream media, often called “godī mīḍiyā,” amplifies the diversionary narratives of the VHP,
+        broadcasting videos of a recovered golden “Ramcharitmanas” without asking why the trust itself has not
+        authenticated them, or why the original donors were never given receipts.</li>
+      <li>By portraying every question about financial embezzlement as an attack on faith, the government and its
+        ecosystem convert a criminal matter into a communal loyalty test—silencing millions of genuine devotees who have
+        a right to know where their money and gifts vanished.</li>
+    </ul>
+  </div>
+
+</div>
+
+<style>
+  div.customOuterWrapper2018 {
+    background-color: #0b1120;
+    color: #d1d5db;
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.8;
+    padding: 2rem 2.5rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  }
+
+  div.customOuterWrapper2018 h1 {
+    font-size: 2.3rem;
+    color: #f0f4ff;
+    border-bottom: 2px solid #2d3a5c;
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+  }
+
+  div.customOuterWrapper2018 h2 {
+    font-size: 1.6rem;
+    color: #e0e7ff;
+    margin-top: 2.5rem;
+    border-left: 4px solid #3b5998;
+    padding-left: 1rem;
+  }
+
+  div.customOuterWrapper2018 h3 {
+    font-size: 1.25rem;
+    color: #cbd5e1;
+    margin-top: 1.8rem;
+  }
+
+  div.customOuterWrapper2018 p {
+    margin-bottom: 1.3rem;
+    text-align: justify;
+  }
+
+  div.customOuterWrapper2018 strong {
+    color: #facc15;
+  }
+
+  div.customOuterWrapper2018 em {
+    color: #94a3b8;
+  }
+
+  div.customOuterWrapper2018 ul {
+    list-style-type: none;
+    padding-left: 1.5rem;
+  }
+
+  div.customOuterWrapper2018 ul li::before {
+    content: "> ";
+    color: #facc15;
+    font-weight: bold;
+  }
+
+  div.customOuterWrapper2018 li {
+    margin-bottom: 0.7rem;
+  }
+
+  div.customOuterWrapper2018 table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0 1.5rem;
+    background-color: #0f172a;
+  }
+
+  div.customOuterWrapper2018 th {
+    background-color: #1e2a4a;
+    color: #e2e8f0;
+    padding: 0.8rem 0.5rem;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #2d3a5c;
+  }
+
+  div.customOuterWrapper2018 td {
+    border: 1px solid #2d3a5c;
+    padding: 0.7rem 0.5rem;
+    vertical-align: top;
+  }
+
+  div.customOuterWrapper2018 tr:nth-child(even) {
+    background-color: #151e32;
+  }
+
+  div.customOuterWrapper2018 blockquote {
+    border-left: 3px solid #facc15;
+    margin: 1.5rem 0;
+    padding: 0.5rem 1.2rem;
+    background: #131b2e;
+    font-style: italic;
+    color: #cbd5e1;
+  }
+
+  div.customOuterWrapper2018 .criticism-section {
+    background: #0d1421;
+    border: 1px solid #2a3657;
+    padding: 1.5rem;
+    border-radius: 6px;
+    margin-top: 2.5rem;
+  }
+
+  div.customOuterWrapper2018 .criticism-section h2 {
+    margin-top: 0;
+    color: #facc15;
+    border-left: none;
+    padding-left: 0;
+  }
+
+  div.customOuterWrapper2018 .criticism-section ul li::before {
+    content: ">> ";
+    color: #facc15;
+    font-size: 1.2rem;
+  }
+</style>

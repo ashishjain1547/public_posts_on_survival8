@@ -1,0 +1,440 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper1830 i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper1830 i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper1830 .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper1830 ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper1830 ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+    </style>
+    <style>
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper1830 {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 2rem 2.5rem;
+            border-radius: 10px;
+            line-height: 1.85;
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+        div.customOuterWrapper1830 h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper1830 h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper1830 h3,
+        div.customOuterWrapper1830 h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper1830 p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper1830 a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper1830 a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper1830 strong,
+        div.customOuterWrapper1830 b {
+            color: #f0c040;
+        }
+
+        div.customOuterWrapper1830 ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper1830 li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper1830 blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper1830 table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper1830 thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper1830 th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper1830 td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper1830 tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper1830 {
+                padding: 1.2rem;
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper1830 h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper1830 h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper1830 {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper1830 h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper1830 h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#CUSTOM_SECTION_ID" target="_blank">See All Articles</a>
+<br>
+
+<div class="customOuterWrapper1830">
+
+<div class="video-embed" style="text-align:center; margin-bottom:2rem;">
+<iframe class="custom_iframe" src="https://www.youtube.com/embed/Tr8jRLx8QDU" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<h1>The Great E-20 Imposition: When People’s Voices Become a Paid Lobby</h1>
+
+<p>The Republic of India, April 2025. With a stroke of bureaucratic ink, 20% ethanol‑blended petrol – E‑20 – became mandatory across the country. No alternative pump, no gradual phase‑in, no public awareness campaign worth the name. Just a diktat. And the moment citizens began reporting engine knock, fuel pump failures, and plummeting mileage, the government offered a diagnosis that was as convenient as it was insulting: the entire chorus of complaint was a paid campaign orchestrated by the “petroleum lobby”.</p>
+
+<p>This is not a story about ethanol blending per se. The environmental case for biofuels has merit. But the manner in which E‑20 has been forced down the throats of crores of vehicle owners, and the audacity with which legitimate grievances are being delegitimised, tells us far more about the architecture of power in today’s India than about octane ratings. It is a replay of the demonetisation playbook: decide first, consult never, and when the pain surfaces, blame invisible enemies.</p>
+
+<h2>The Complaint Dossier: Not a Whisper, a Howl</h2>
+
+<p>For months now, the digital public square has been filling with angry testimonials. On widely‑shared social media videos and community forums, vehicle owners – not bots, not influencers paid by Shell‑BP – have been detailing exactly what E‑20 has done to their machines. These are not anonymous trolls. They name their car models, their service centres, the exact repair bills.</p>
+
+<p>Take the new Maruti Suzuki Swift. A user named Gurdeep Singh Cheema wrote that his 2025 model broke down. The company allegedly told him “the petrol is bad.” He has already lost ₹20,000. Another Swift owner, Vibhor, spent ₹15,000 and had to change degraded fuel within a month. Pramod Pandey noted that his Maruti Brezza, which earlier returned 15‑16 km per litre in city conditions, now delivers barely 11‑11.5 km/l. Ravindra Kumar’s 2023 Maruti needed a fuel pump replacement – at a cost that no ordinary household budgets for.</p>
+
+<p>Hyundai’s i10 NIOS and i20 owners are telling a similar story. Mohan Lohar’s Grand i10 NIOS suffered a fuel‑pump failure and a mileage drop soon after E‑20 became the only fuel available. A user named Sammy Animation said his four‑year‑old i10 NIOS had its fuel pump fail mid‑journey; the car had to be towed. Another I‑20 owner, under the handle Vibdev Engineering, described engine knocking, reduced mileage, and a service‑centre mechanic who candidly admitted: “It’s because of E‑20.”</p>
+
+<p>Skoda drivers are not spared. Manzil Pratap Singh’s vehicle is throwing constant electronic powertrain control warnings; the engine stalls while driving. At a Faridabad Skoda workshop, he was told the waiting time for a fuel‑pump replacement is 6‑10 days because the service bay is booked solid with E‑20‑related complaints. Avinash, who owns a brand‑new Skoda Kushaq, a car officially declared E‑20‑compliant, says he barely gets 6‑7 km/l.</p>
+
+<p>On two‑wheelers, the suffering is just as graphic. A Yamaha R15 (RX 155) rider saw mileage crash from 35 km/l to 20 km/l and had to change the oil filter – ₹15,000 down the drain. An owner of a Honda SP 125 complained of a repeatedly failing injector. A Bullet’s carburettor had to be replaced. Someone’s BS6 scooter had its engine opened twice in a single month. “I have no option,” he wrote. “I am selling my scooter.”</p>
+
+<p>These are not isolated anecdotes. They form a pattern. And pattern recognition is the first step towards accountability.</p>
+
+<h2>The Minister’s Magic Wand: “Petroleum Lobby” and Racing Cars</h2>
+
+<p>Union Road Transport Minister Nitin Gadkari has been the government’s loudest defender on this front. At a SIAM convention as early as September 2024, and again repeatedly through 2025, he claimed that the petroleum lobby was paying money to run a campaign against E‑20. He has never, however, named a single oil company. He has never produced a shred of evidence – no intercepted payment, no whistleblower, no forensic trail. Just a nebulous conspiracy theory that serves one purpose: to mark every complaining citizen as a potential mercenary.</p>
+
+<p>Then came the Petroleum Minister, Hardeep Singh Puri. In a press conference on July 2, 2025, he declared that “a manufactured narrative” was being run on social media. He conceded that a “minor” drop in mileage had been observed, but the masterstroke was his analogy. To reassure a nation of WagonR and Alto drivers, he invoked the chemistry of a Formula 1 racing car. Yes, a Ferrari. Because, as everyone knows, the fuel system of a 1‑litre hatchback that has done 80,000 kilometres on Indian roads is identical to that of a Grand Prix machine tuned by engineers in Maranello.</p>
+
+<p>The absurdity is not accidental. It is designed to make the public feel stupid for asking questions.</p>
+
+<h2>Where Are the Car Companies?</h2>
+
+<p>Perhaps the most curious silence in this entire debate is that of the automobile manufacturers themselves. Maruti Suzuki, Hyundai, Tata Motors, Mahindra, Skoda, Toyota – companies that spend crores on brand equity and “customer first” advertisements – have gone mute. Their CEOs are not holding joint press conferences. Their social‑media handles, normally full of chirpy engagement posts, suddenly have no statement on whether the spate of fuel‑pump failures and engine knocking is being recorded at their own authorised service centres.</p>
+
+<p>Is this fear? Is it a convenient arrangement? When a customer writes that a Maruti service centre diagnosed “petrol quality” as the culprit, and Maruti India says nothing, the message is clear: the company would rather let the government take the heat than stand with its own buyers. A brand that built itself on the trust of the Indian middle class is now telling that same class – by its silence – that their car’s breakdown is a phantom.</p>
+
+<p>And yet, on the ground, service centres are overwhelmed. The Skoda Faridabad example is not an outlier. If the companies were to on‑record release the data of fuel‑system repairs before and after April 2025, we would see a spike that no “petroleum lobby” could fabricate. But data is power, and nobody dares to share it.</p>
+
+<h2>What the Data Says – And What the Government Says</h2>
+
+<p>While the official line oscillates between “no complaint” and “minor drop,” an independent survey conducted by the citizen engagement platform LocalCircles paints a starkly different picture. The survey reached 44,000 petrol‑vehicle owners across 305 districts of India. Its findings, which were reported by India Today, Mint, Business Standard, and Fortune India, among others, deserve to be displayed side by side with the government’s claims.</p>
+
+<table>
+ <tr><th>Parameter</th><th>Government Claim</th><th>LocalCircles Survey (June 2025)</th></tr>
+ <tr><td>Mileage impact</td><td>“Minor” drop (Hardeep Singh Puri)</td><td>66% of pre‑2023 vehicle owners saw at least a 10% fall in fuel efficiency over the past year.</td></tr>
+ <tr><td>Repair frequency</td><td>Only one written complaint received (Rajya Sabha reply, Dec 2025)</td><td>29% reported a rise in repair needs since early 2025; 24% said repairs were of a serious nature.</td></tr>
+ <tr><td>Public sentiment</td><td>“Manufactured narrative paid by petroleum lobby” (Gadkari)</td><td>Widespread, unorganised, and spontaneous complaints across multiple auto brands and cities.</td></tr>
+ <tr><td>Fuel consumption</td><td>Not addressed directly</td><td>PPAC data shows petrol consumption rose 7% year‑on‑year in June 2025 – consistent with lower mileage forcing more refills.</td></tr>
+</table>
+
+<p>The jump in petrol consumption is particularly telling. If mileage is dropping, people have to buy more fuel to cover the same distance. So the petroleum companies – the very lobby allegedly funding an anti‑E‑20 campaign – end up selling more petrol. The logic of the conspiracy theory collapses under the simplest arithmetic.</p>
+
+<h2>The Missing Choice: Why No E‑10 Option?</h2>
+
+<p>In Germany, consumers can choose between E‑5, E‑10, and higher blends. Brazil, a pioneer in ethanol fuel, offers a range of blends and even pure ethanol. No one is forced to pour a blend their engine cannot handle. In India, the government leapfrogged from E‑10 to E‑20 without leaving a single E‑10 pump as a safety valve. The National Policy on Biofuels, notified in 2018, originally targeted 2030 for 20% blending. The Modi government advanced it by five full years and made E‑20 mandatory from 1 April 2025.</p>
+
+<p>Even more worrying, auto‑industry data suggests that barely 20% of the vehicles sold in India over the last 15 years are genuinely compatible with E‑20. The bulk of the country’s fleet – the cars and bikes that millions depend on – were designed for lower ethanol ratios. A mandatory switch without an alternative is not a policy; it is a gamble with the public’s property.</p>
+
+<h2>Blame It on UPA: The Eternal Alibi</h2>
+
+<p>A time‑honoured Bharatiya Janata Party reflex is now kicking in. As complaints mount, party spokespersons have begun murmuring that the ethanol‑blending programme was initiated during the UPA era. The same UPA whose schemes were renamed, redesigned, or scrapped entirely after 2014 now resurfaces as the convenient fall guy. After eleven uninterrupted years in power, after two thumping Lok Sabha majorities, the government still finds it easier to point fingers at a regime that left office when some of today’s complainants were in school.</p>
+
+<p>This is not accountability; it is political ventriloquism.</p>
+
+<h2>No Number to Call: The Vanishing Complaint Mechanism</h2>
+
+<p>In December 2025, in a written reply to Rajya Sabha MP Abdul Wahab of the IUML, Nitin Gadkari stated that the government had received exactly one complaint about E‑20 across the entire nation. One. In a country of 140 crore people. The same reply noted that upon investigation, that single vehicle was found to be E‑20‑compliant anyway.</p>
+
+<p>Where is the public supposed to register a complaint? Has any helpline number been advertised? Is there a centralised portal? The government’s information machinery, which can flood every WhatsApp group with a UPI‑like jingle within hours, could not spare a single awareness campaign about E‑20 compatibility or a grievance redressal channel. The one complaint they claim to have received is not a sign of a problem‑free rollout; it is a sign of a system that does not want to hear.</p>
+
+<h2>Criticisms</h2>
+
+<ul>
+<li><strong>Nitin Gadkari</strong> has repeatedly levelled an unsubstantiated allegation of a “petroleum lobby” funding citizen complaints, thereby branding thousands of taxpayers as paid conspirators without a shred of evidence.</li>
+<li><strong>Hardeep Singh Puri’s</strong> racing‑car analogy trivializes the financial distress of middle‑class families whose daily transport costs are rising, and exposes a deep disconnect between the minister and the ground reality of Indian roads.</li>
+<li>The <strong>BJP‑led government</strong> eliminated all consumer choice by refusing to keep even a handful of E‑10 or normal petrol pumps, despite knowing that a vast majority of the existing vehicle fleet is not built for high ethanol content.</li>
+<li>The <strong>automobile industry</strong> – Maruti Suzuki, Hyundai, Skoda, and others – has chosen safety over honesty. Their refusal to aggregate and disclose service‑centre data on E‑20‑related failures is complicity.</li>
+<li>The <strong>government’s complaint‑receiving mechanism</strong> is a cruel joke. Claiming “only one complaint” while providing no advertised channel to lodge one is bureaucratic gaslighting of the highest order.</li>
+<li>The <strong>UPA alibi</strong> trotted out by BJP functionaries after more than a decade in power is a sign of intellectual bankruptcy. A government that rewrote the country’s economic architecture has no moral right to blame a predecessor for a policy it accelerated and enforced.</li>
+<li>The term “<strong>godhi media</strong>” – once used to mock pliable journalists – has now been expanded in spirit to “godhi public” by dismissing all critical voices as paid operatives. This delegitimisation of the citizen is a direct threat to democracy.</li>
+<li>The <strong>E‑20 fiasco</strong> repeats the demonetisation template: a top‑down, shock‑doctrine decision taken without due consultation, inflicted on a captive population, with the costs borne entirely by the poorest and most vulnerable vehicle owners.</li>
+</ul>
+
+<p>The E‑20 controversy is not really about ethanol. It is about whether the people who buy cars, who fill petrol, who pay taxes – whether they are allowed to speak without being turned into villains. When the government starts calling its own citizens a paid lobby, the fuel that is truly being blended into the national discourse is not ethanol. It is contempt.</p>
+
+<p style="text-align:right; margin-top:2em; font-style:italic; color:#8b949e;">— An independent observer</p>
+
+</div>
+
+<style>
+div.customOuterWrapper1830 {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.8;
+    padding: 40px;
+    max-width: 850px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+}
+div.customOuterWrapper1830 h1 {
+    color: #f2cc8f;
+    font-size: 2.2em;
+    margin-bottom: 0.6em;
+    border-bottom: 2px solid #30363d;
+    padding-bottom: 0.3em;
+}
+div.customOuterWrapper1830 h2 {
+    color: #e6b450;
+    font-size: 1.6em;
+    margin-top: 1.8em;
+    margin-bottom: 0.5em;
+}
+div.customOuterWrapper1830 h3 {
+    color: #d9a84e;
+    font-size: 1.3em;
+    margin-top: 1.5em;
+    margin-bottom: 0.4em;
+}
+div.customOuterWrapper1830 p {
+    margin-bottom: 1.3em;
+    text-align: justify;
+}
+div.customOuterWrapper1830 blockquote {
+    border-left: 4px solid #f2cc8f;
+    padding-left: 20px;
+    color: #b1b8c0;
+    font-style: italic;
+    margin: 1.5em 0;
+}
+div.customOuterWrapper1830 table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    background-color: #161b22;
+}
+div.customOuterWrapper1830 th, div.customOuterWrapper1830 td {
+    border: 1px solid #30363d;
+    padding: 12px 15px;
+    text-align: left;
+    vertical-align: top;
+}
+div.customOuterWrapper1830 th {
+    background-color: #1c2333;
+    color: #f2cc8f;
+    font-weight: bold;
+}
+div.customOuterWrapper1830 td {
+    color: #e0e6ed;
+}
+div.customOuterWrapper1830 ul, div.customOuterWrapper1830 ol {
+    margin-left: 20px;
+    margin-bottom: 1.3em;
+}
+div.customOuterWrapper1830 li {
+    margin-bottom: 0.5em;
+}
+div.customOuterWrapper1830 strong {
+    color: #f5c876;
+}
+</style>

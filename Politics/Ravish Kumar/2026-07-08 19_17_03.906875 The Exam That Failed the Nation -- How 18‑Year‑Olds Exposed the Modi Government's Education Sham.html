@@ -1,0 +1,612 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                success: function (result) {
+                    let grouplink = JSON.parse(result)['current book club'];
+                    $("#customWhatsAppGroupLinkWrapper").html(
+                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                    );
+                }
+            });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper1932 i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper1932 i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper1932 .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper1932 ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper1932 ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+    </style>
+    <style>
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper1932 {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 2rem 2.5rem;
+            border-radius: 10px;
+            line-height: 1.85;
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+        div.customOuterWrapper1932 h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+
+        div.customOuterWrapper1932 h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+
+        div.customOuterWrapper1932 h3,
+        div.customOuterWrapper1932 h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper1932 p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper1932 a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        div.customOuterWrapper1932 a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper1932 strong,
+        div.customOuterWrapper1932 b {
+            color: #f0c040;
+        }
+
+        div.customOuterWrapper1932 ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+
+        div.customOuterWrapper1932 li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper1932 blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper1932 table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+
+        div.customOuterWrapper1932 thead {
+            background-color: #1a2332;
+        }
+
+        div.customOuterWrapper1932 th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+
+        div.customOuterWrapper1932 td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+
+        div.customOuterWrapper1932 tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper1932 {
+                padding: 1.2rem;
+                font-size: 14px;
+                border-radius: 4px;
+            }
+
+            div.customOuterWrapper1932 h1 {
+                font-size: 1.5rem;
+            }
+
+            div.customOuterWrapper1932 h2 {
+                font-size: 1.2rem;
+            }
+
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper1932 {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+
+            div.customOuterWrapper1932 h1 {
+                font-size: 1.3rem;
+            }
+
+            div.customOuterWrapper1932 h2 {
+                font-size: 1.1rem;
+            }
+
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#CUSTOM_SECTION_ID"
+    target="_blank">See All Articles</a>
+<br>
+
+<div class="customOuterWrapper1932">
+
+    <div class="video-embed" style="text-align:center; margin-bottom:2rem;">
+        <iframe class="custom_iframe" src="https://www.youtube.com/embed/hdlBqs4mnZ0" frameborder="0"
+            allowfullscreen></iframe>
+    </div>
+
+    <div class="blog-content">
+        <h1>The Exam That Failed the Nation<br>How 18‑Year‑Olds Exposed the Modi Government’s Education Sham</h1>
+        
+
+        <p>On the last Sunday of May, the Prime Minister’s <em>Mann ki Baat</em> filled the airwaves with tips to beat
+            the summer heat – desi drinks, cool recipes, and the like. He spoke about nothing of exams. Nothing about
+            the paper leaks, the blurred answer sheets, the ruined futures. And we should not be angry about that
+            omission. Rather, we should be reassured: after 13 uninterrupted years of the same government, the
+            examination system has remained so stubbornly dishonest and opaque that discussing it or ignoring it cannot
+            make a difference anymore. The man had 13 years. In that time, papers leaked repeatedly, students took to
+            the streets only to be beaten back by lathis, and still the system never mended. So exchanging summer‑drink
+            advice for an honest conversation on exams changes nothing. The rot is complete.</p>
+
+        <h2>The Children Who Became the Opposition</h2>
+        <p>When a government loses the young, it loses its moral compass. This time, it is not the Opposition that is
+            exposing the hollowness of the Modi dispensation – it is 18‑ and 19‑year‑olds with laptops, curiosity, and
+            an ethical spine. Vidansh Srivastava, Sarthak Sidhant, and Nisharg Adhikari – three names that should be
+            framed in every school – dragged the Central Board of Secondary Education (CBSE) into the light. Vidansh was
+            handed an answer sheet that wasn’t his own; he tweeted the evidence, and CBSE quietly corrected its mistake.
+            Sarthak, from Ranchi, dug through the tenders and unearthed a pattern of rigged clauses that made a specific
+            company the inevitable winner. Nisharg, a 19‑year‑old ethical hacker who never shows his face, cracked the
+            CBSE’s digital vaults and proved that any student’s answer sheet was accessible to anyone with minimal
+            skill. Siddharth Raylan and Anil Teerth Parmar, too, asked uncomfortable questions. This is an unprecedented
+            moment in Indian democracy: for the first time, Class 12 students are risking their careers and peace of
+            mind to expose a sitting government.</p>
+
+        <p>Think of the previous prime ministers – Jawaharlal Nehru, Lal Bahadur Shastri, Indira Gandhi, Rajiv Gandhi,
+            Chandra Shekhar, VP Singh, Deve Gowda, IK Gujral, PV Narasimha Rao, Atal Bihari Vajpayee, Manmohan Singh. In
+            none of their tenures did teenagers systematically strip the falsehoods off a government’s education
+            policies. Narendra Modi is the first PM under whom 18‑year‑olds have become the de facto accountability
+            mechanism. The response was predictably vicious: these children were called “anti‑national”, linked to
+            Pakistan, and the tired bogeyman of George Soros was wheeled out. Yet the students responded with dignity,
+            brushing off the smears with the maturity that the government sorely lacks.</p>
+
+        <p>Rahul Gandhi’s decision to invite these whistleblowers for a conversation was an act of rebellion in today’s
+            India, where even journalists hesitate to be seen with opposition leaders. The children went to him, and he
+            listened. The Prime Minister, on the other hand, chose to ignore them entirely – a deafening silence that
+            speaks louder than any summer‑drink anecdote. If there was even a shred of shame, the Education Minister and
+            the CBSE Chairperson would have been sacked instantly. But shame is a luxury this government never afforded
+            its citizens.</p>
+
+        <h2>The Tender Trail: How CBSE Rigged a Corporate Heist</h2>
+        <p>Sarthak Sidhant’s forensic audit of CBSE tenders reads like a thriller. What he found was not an accident but
+            a carefully scripted sequence that steered a multi‑crore contract towards a single entity – Co‑Amt (Quent
+            Edutech). The tender documents, which he accessed and compared, tell a story of methodical weakening of
+            safeguards. The table below, based on his blog and corroborated by independent reports, lays bare the
+            manipulation.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Criterion</th>
+                    <th>Original Tender (Aug 2025)</th>
+                    <th>Revised Tender (Sep 2025)</th>
+                    <th>Consequence</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Turnover requirement</td>
+                    <td>Rs 50 crore (FY 2021‑23)</td>
+                    <td>Rs 30 crore (FY 2022‑24)</td>
+                    <td>Co‑Amt, which earlier failed by 14%, now qualified with a razor‑thin margin of 1.7%</td>
+                </tr>
+                <tr>
+                    <td>Technical experts</td>
+                    <td>At least 100</td>
+                    <td>Only 15</td>
+                    <td>Quality control for over 1.7 lakh answer sheets was drastically diluted</td>
+                </tr>
+                <tr>
+                    <td>Scanner type</td>
+                    <td>Automatic book / robotic scanner mandatory</td>
+                    <td>“Sufficient scanner”</td>
+                    <td>Allowed any scanner, resulting in blurred, stapled, and folded‑paper images</td>
+                </tr>
+                <tr>
+                    <td>Blacklist clause</td>
+                    <td>Present</td>
+                    <td>Removed</td>
+                    <td>Co‑Amt cannot be blacklisted; only a fine can be imposed</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Sarthak’s questions are damning: why was the turnover limit inflated to exclude competitors? Why did the
+            board accept a firm that just barely scraped through? And why, as <em>Hindustan Times</em> journalist Sanjay
+            Maurya reported, was the blacklist clause quietly erased from the final contract signed in September 2025 –
+            a full two and a half months before Co‑Amt was awarded the deal? The CBSE can now only levy a penalty; it
+            cannot bar the company. That is not negligence; that is complicity.</p>
+
+        <h2>The Scanning Scandal: Blurred Copies and Broken Trust</h2>
+        <p>The consequences of a tender written to favour a crony are now visible on thousands of screens. An <em>Indian
+                Express</em> investigation (by Vidisha Kutta Malla and Shrinivas Janyala) revealed that CBSE has already
+            identified over 5,000 scanned answer sheets that are “blurred” and unreadable. These are the copies of
+            students who applied for re‑evaluation, only to discover that the document they paid to see was not their
+            own. Some received sheets with a stranger’s handwriting; others found stapler pins, bent pages, and loose
+            wires in the photographs – clear evidence that robotic scanners were never used.</p>
+
+        <p>Shivraj Mehta, a Class 12 student, broke down on social media after receiving an answer sheet that wasn’t
+            his. “The handwriting is not mine. My teachers, my family – everyone who knows me is shattered,” he wrote.
+            He is not alone. There will be countless others who couldn’t even afford the Rs 2,000 re‑evaluation fee, or
+            who gave up in despair. CBSE has no mechanism to proactively correct these errors. The board only acts when
+            a student screams loud enough on Twitter – and even then, it thanked “ethical hackers” without mentioning
+            Nisharg or Siddharth by name. The erasure of individual credit is deliberate: acknowledge the flaw, bury the
+            whistleblower.</p>
+
+        <h2>The Financial Extortion: CBSE, the Pocket Thief</h2>
+        <p>Rahul Gandhi called the CBSE a “pocket thief” (जेब कटरा), and the label sticks. When the board’s own
+            negligence – or the outsourced company’s incompetence – produces a wrong result, why should the victim pay
+            to verify the error? Yet students are charged up to Rs 2,000 simply to see their own scanned copies and
+            request re‑evaluation. The Congress leader pointedly asked: if 4 lakh students demanded re‑checking, how
+            much revenue did the CBSE pocket from its own blunders? The answer is tens of crores. Education has been
+            converted into a lucrative business where mistakes generate profit. The government that promised “minimum
+            government, maximum governance” has perfected minimum accountability, maximum extortion.</p>
+
+        <p>The human cost is unbearable. In Sikar, Rajasthan, NEET‑UG aspirant Pradeep Meghwal ended his life after a
+            paper leak shattered his hope. Rahul Gandhi visited his family. The Education Minister was nowhere to be
+            seen. Neither was the Prime Minister. For a man who telephones ISRO scientists and film stars, a call to a
+            grieving mother or to the courageous student‑hackers is apparently too much to ask. The silence confirms
+            what the 13‑year record already shows: this government views critical young citizens as adversaries, not as
+            assets.</p>
+
+        <h2>Media’s Double Standards: Advertising the ‘Mafia’</h2>
+        <p>While the government now labels coaching centres a “mafia”, the front pages of the country’s most respected
+            newspapers – <em>Indian Express</em>, <em>The Hindu</em>, <em>Hindustan</em> – are plastered daily with
+            their advertisements. The same coaching teachers are invited as heroes on TV debates. If they are a mafia,
+            why does the media sell space to them? The double game reveals a brutal truth: in the new India, even crime
+            is a purchasable commodity. The fourth estate cannot excoriate a government for failure when its revenue
+            model depends on the very ecosystem that preys on student anxiety. This is a corruption deeper than any
+            tender: the sale of editorial integrity for a coaching centre’s full‑page ad.</p>
+
+        <h2>A System in Disrepair: From BPSC to Sewer Exams</h2>
+        <p>The CBSE scandal is not an isolated outbreak; it is the symptom of a systemic decay. The BPSC (Bihar Public
+            Service Commission) exam for the 70th main cycle was held in December 2024. As of June 2025, interviews are
+            still ongoing and final results haven’t been declared. An entire generation of Bihar’s youth is being held
+            hostage by administrative apathy. In Kanpur, students appearing for a B8 exam fell into a sewer because of a
+            broken manhole – the exam was cancelled. A country that dreams of a $5 trillion economy cannot even keep its
+            drains covered on exam day.</p>
+
+        <p>Trust in examinations is eroding exactly the way trust in electoral processes has frayed. When every other
+            day brings a paper leak, a cancellation, or a digital fiasco, what message does it send to the young? That
+            merit is an illusion, and the system is a lottery where only the connected win. And the government’s
+            response? A radio show about summer coolers.</p>
+
+        <h2>Mann Ki Baat of Distraction</h2>
+        <p>The Prime Minister’s address skirted the most pressing crisis in Indian education. Instead, he offered advice
+            on what to drink in the heat. One can almost predict the next episode: tips on the correct technique to
+            bathe, perhaps with anchorman‑style debates on whether mustard oil in the hair improves concentration. The
+            absurd is now normal. A government that cannot tell you how a medical entrance paper got leaked can
+            certainly tell you which indigenous beverage to sip. That is the state of the union in 2025: the Prime
+            Minister as lifestyle influencer, while the students he ignores turn into the true opposition.</p>
+
+        <p>Rahul Gandhi’s meeting with the whistleblowers, his tweets, his Parliament questions – none of it receives a
+            sliver of prime‑time coverage on the channels that beam the Prime Minister’s every breath. Yet it is the
+            students who have forced CBSE into repeated confessions and clarifications. They have done what the
+            opposition and the media together could not: hold power to account. The least the country can do is remember
+            their names.</p>
+
+        <div class="criticisms">
+            <h2>Criticisms</h2>
+            <ul>
+                <li>The Modi government has squandered 13 years without instituting a transparent, leak‑proof
+                    examination system, betraying the trust of millions of students.</li>
+                <li>When school children exposed CBSE’s corrupted tender process and digital vulnerabilities, the
+                    government and its supporters labelled them anti‑national and dragged in foreign conspiracy theories
+                    instead of fixing the problem.</li>
+                <li>CBSE deliberately altered tender conditions – lowering financial and technical barriers, removing
+                    the blacklist provision – to favour a specific company, compromising the integrity of millions of
+                    answer sheets.</li>
+                <li>The Education Minister remained invisible throughout the crisis; not a single official has been held
+                    accountable, let alone dismissed.</li>
+                <li>Students are being charged up to Rs 2,000 to view their own incorrectly evaluated answer sheets,
+                    turning a systemic failure into a revenue stream for the board.</li>
+                <li>The Prime Minister used his monthly address to discuss summer drinks rather than acknowledge the
+                    examination meltdown, trivialising the future of an entire generation.</li>
+                <li>Mainstream media outlets routinely run full‑page advertisements of coaching centres while
+                    simultaneously reporting on the “coaching mafia” – a hypocrisy that reveals the commercialisation of
+                    editorial judgment.</li>
+                <li>The government’s silence on student suicides triggered by exam‑related stress and paper leaks
+                    demonstrates a shocking absence of empathy and responsibility.</li>
+                <li>India’s examination infrastructure, from BPSC to CBSE, has become a symbol of administrative apathy,
+                    where results are delayed indefinitely and physical safety is an afterthought.</li>
+                <li>By refusing to even name the ethical hackers who forced CBSE to admit its lapses, the board and the
+                    government sent a clear message: whistleblowers are unwanted nuisances, not guardians of public
+                    interest.</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<style>
+    div.customOuterWrapper1932 {
+        background-color: #0b0c12;
+        color: #d0d5e0;
+        font-family: 'Georgia', 'Times New Roman', serif;
+        padding: 2rem 1rem;
+        line-height: 1.7;
+        max-width: 820px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    div.customOuterWrapper1932 .blog-content {
+        padding: 0 0.5rem;
+    }
+
+    div.customOuterWrapper1932 h1,
+    div.customOuterWrapper1932 h2,
+    div.customOuterWrapper1932 h3 {
+        color: #58a6ff;
+        margin-top: 2rem;
+        margin-bottom: 0.8rem;
+        font-weight: normal;
+        letter-spacing: 0.3px;
+    }
+
+    div.customOuterWrapper1932 h1 {
+        font-size: 2.1rem;
+        border-bottom: 2px solid #2f3440;
+        padding-bottom: 0.5rem;
+        color: #79c0ff;
+    }
+
+    div.customOuterWrapper1932 h2 {
+        font-size: 1.5rem;
+        border-left: 4px solid #58a6ff;
+        padding-left: 0.8rem;
+        color: #a5d6ff;
+    }
+
+    div.customOuterWrapper1932 h3 {
+        font-size: 1.25rem;
+        font-style: italic;
+    }
+
+    div.customOuterWrapper1932 p {
+        margin-bottom: 1.2rem;
+        text-align: justify;
+    }
+
+    div.customOuterWrapper1932 a {
+        color: #6cb2ff;
+        text-decoration: none;
+        border-bottom: 1px dotted #6cb2ff;
+    }
+
+    div.customOuterWrapper1932 a:hover {
+        color: #ffffff;
+        border-bottom-color: #ffffff;
+    }
+
+    div.customOuterWrapper1932 blockquote {
+        border-left: 3px solid #444;
+        margin: 1.5rem 0;
+        padding: 0.8rem 1.2rem;
+        background: #16181e;
+        font-style: italic;
+        color: #b8c0cc;
+    }
+
+    div.customOuterWrapper1932 table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1.8rem 0;
+        font-size: 0.95rem;
+        background: #12141a;
+    }
+
+    div.customOuterWrapper1932 th {
+        background-color: #1f2330;
+        color: #a5d6ff;
+        padding: 0.8rem;
+        text-align: left;
+        border: 1px solid #2a2f3d;
+        font-weight: normal;
+    }
+
+    div.customOuterWrapper1932 td {
+        padding: 0.8rem;
+        border: 1px solid #2a2f3d;
+        vertical-align: top;
+    }
+
+    div.customOuterWrapper1932 .highlight {
+        color: #f0883e;
+        font-weight: 600;
+    }
+
+    div.customOuterWrapper1932 .criticisms ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    div.customOuterWrapper1932 .criticisms li {
+        margin-bottom: 1rem;
+        padding-left: 1.2rem;
+        position: relative;
+    }
+
+    div.customOuterWrapper1932 .criticisms li::before {
+        content: "-";
+        position: absolute;
+        left: 0;
+        color: #f0883e;
+        font-weight: bold;
+    }
+
+    div.customOuterWrapper1932 .byline {
+        font-size: 0.9rem;
+        color: #8b949e;
+        margin-top: -1rem;
+        margin-bottom: 2rem;
+    }
+</style>

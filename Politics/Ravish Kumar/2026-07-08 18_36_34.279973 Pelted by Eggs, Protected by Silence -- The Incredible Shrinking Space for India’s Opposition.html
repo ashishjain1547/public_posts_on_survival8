@@ -1,0 +1,459 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper1852 i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper1852 i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper1852 .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper1852 ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper1852 ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+    </style>
+    <style>
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper1852 {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 2rem 2.5rem;
+            border-radius: 10px;
+            line-height: 1.85;
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+        div.customOuterWrapper1852 h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper1852 h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper1852 h3,
+        div.customOuterWrapper1852 h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper1852 p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper1852 a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper1852 a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper1852 strong,
+        div.customOuterWrapper1852 b {
+            color: #f0c040;
+        }
+
+        div.customOuterWrapper1852 ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper1852 li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper1852 blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper1852 table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper1852 thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper1852 th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper1852 td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper1852 tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper1852 {
+                padding: 1.2rem;
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper1852 h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper1852 h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper1852 {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper1852 h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper1852 h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#CUSTOM_SECTION_ID" target="_blank">See All Articles</a>
+<br>
+
+<div class="customOuterWrapper1852">
+
+<div class="video-embed" style="text-align:center; margin-bottom:2rem;">
+<iframe class="custom_iframe" src="https://www.youtube.com/embed/vuQzDcoFkes" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<style>
+    div.customOuterWrapper1852 {
+        background-color: #0a0f1a;
+        color: #d3d9e3;
+        font-family: 'Georgia', serif;
+        padding: 2em;
+        max-width: 850px;
+        margin: 0 auto;
+        line-height: 1.7;
+    }
+    div.customOuterWrapper1852 h1 {
+        color: #f0f4fa;
+        font-size: 2.4em;
+        margin-bottom: 0.5em;
+        border-bottom: 2px solid #2e3b4e;
+        padding-bottom: 0.3em;
+    }
+    div.customOuterWrapper1852 h2 {
+        color: #f0f4fa;
+        font-size: 1.6em;
+        margin-top: 2em;
+        letter-spacing: 0.5px;
+    }
+    div.customOuterWrapper1852 h3 {
+        color: #cbd0d9;
+        font-size: 1.2em;
+        margin-top: 1.8em;
+    }
+    div.customOuterWrapper1852 p {
+        margin-bottom: 1.2em;
+    }
+    div.customOuterWrapper1852 ul {
+        list-style-type: disc;
+        padding-left: 2em;
+        margin-bottom: 1.5em;
+    }
+    div.customOuterWrapper1852 ul li {
+        margin-bottom: 0.6em;
+    }
+    div.customOuterWrapper1852 table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 1.8em 0;
+        background-color: #121724;
+        font-size: 0.95em;
+    }
+    div.customOuterWrapper1852 th, div.customOuterWrapper1852 td {
+        border: 1px solid #3a4050;
+        padding: 10px 14px;
+        text-align: left;
+    }
+    div.customOuterWrapper1852 th {
+        background-color: #1c2331;
+        color: #cfd6e0;
+        font-weight: normal;
+        letter-spacing: 0.4px;
+    }
+    div.customOuterWrapper1852 td {
+        color: #c2c9d4;
+    }
+    div.customOuterWrapper1852 .criticisms {
+        margin-top: 2.5em;
+        border-top: 1px solid #2a3240;
+        padding-top: 1.8em;
+    }
+    div.customOuterWrapper1852 .criticisms h2 {
+        color: #dbaa5e;
+        margin-bottom: 1em;
+    }
+    div.customOuterWrapper1852 .criticisms ul {
+        list-style-type: none;
+        padding-left: 0.2em;
+    }
+    div.customOuterWrapper1852 .criticisms ul li::before {
+        content: "- ";
+        color: #b58b4b;
+        font-weight: bold;
+    }
+    div.customOuterWrapper1852 .criticisms ul li {
+        margin-bottom: 0.8em;
+        font-style: italic;
+    }
+    div.customOuterWrapper1852 em {
+        color: #a7b3c2;
+    }
+</style>
+
+<h1>Pelted by Eggs, Protected by Silence: The Incredible Shrinking Space for India’s Opposition</h1>
+
+<p>There is a right time to speak in a democracy. It is not when the microphones are friendly or when applause is guaranteed. The right time arrives when you feel that speaking might cost you your life, that a mob might set your house on fire, and that those around you are too scared to even whisper. It arrives when the so-called loudest voices are merely filling their bellies, tweeting ritual condemnations and moving on to the next tweet before anyone notices. It arrives precisely when you realize that neither the law nor the government will shield you—in fact, the government might just clobber you for daring to raise your voice. That is the moment to speak. And it is exactly in such a moment that you should looked at the timeline of Mahua Moitra, the Member of Parliament from Krishnanagar, on the first of July. What you see there is not merely the frantic scrambling of a cornered politician; it is a document of how a democracy deserts its elected representatives.</p>
+
+<p>Mahua Moitra did not whimper. She screamed, tagging Indian ‘Godi’ channels by name, demanding they change their false headlines—she was not part of any raid, she insisted; it was BJP goons who had attacked her office. She screamed that the police stood watching the spectacle for four full hours. She tagged <em>The New York Times</em>, <em>The Guardian</em>, <em>Le Monde</em>, the BBC, Al Jazeera, the <em>Financial Times</em>—pleading with the world to see what was unfolding in Bengal: a mob, wearing the face of the ruling party’s enforcers, lynching an opposition MP with eggs and abuse while the state stood still. She tagged the BJP’s national president, the state president, and the country’s Home Minister. When we checked, the Home Minister had written nothing. No news emerged that he had taken cognizance or promised action. Moitra then tagged Inter-Parliamentary organisations, the West Bengal police chief, named BJP leaders Bapan Ghosh and Kali Das Pal, released their videos, accused them of incitement. She tagged the Speaker of the Lok Sabha, Om Birla, and wrote that the opposition MP received no protection from his office. There is no reply from the Speaker on her timeline. For hours, a sitting Member of Parliament performed the police’s work herself—identifying over sixteen individuals, tagging the police, pleading. It was the thrashing of someone drowning, a hand flailing in every direction before the water pulls her under.</p>
+
+<h2>The Speech That Asked for an Inch</h2>
+
+<p>Why should you scroll that timeline? Because it will make you understand your own fear. In these ten years, you have become a coward. But Mahua Moitra, standing before the very mob that pelted her with eggs, holding her party’s flag, did not flinch. In any other country, such an image would turn an opposition leader into a hero. In India, the Godi media no longer admires such scenes; its job is to turn the opposition into a villain, never a hero. You must recall her maiden speech in the Lok Sabha, 2019. She was 44, freshly elected from Krishnanagar. The BJP had won 303 seats under Prime Minister Modi, and the 67% who did not vote for the ruling party were beginning to lose hope. Moitra stood up and, wrapping her words in history, asked for “one inch of space” for those 67%—a small, dignified corner to speak and be heard. That speech, barely ten-and-a-half minutes long, went viral. People who were watching the vehicle of democracy break down but were too afraid to speak found a voice. She said, “I have struggled to achieve one inch of space.” Today, that same MP had eggs hurled at her, was cornered by a mob, and the inch turned into a millimetre of survival. The features of unchecked authoritarianism she had warned about—where dissent is denied even a millimetre—are now her daily reality.</p>
+
+<h2>The Anatomy of Mob and Machine</h2>
+
+<p>On the surface, what happened on July 1 is simple: a crowd of alleged BJP supporters gathered outside Moitra’s office, shouted slogans, threw eggs, and held her captive for hours while the police stood idle. But those four hours are a precise dissection of power. Moitra was not caught in a spontaneous outburst of public anger. She was targeted in a choreographed operation where the state machinery either collaborated or acquiesced. The video evidence shows her, surrounded, without security, forced to show her injuries to the camera—a woman MP stripped of the most basic protection that her office should guarantee. It is an assault on her political rights as much as on her personal dignity. And yet, the large portion of India’s political and media establishment responded with a colossal shrug.</p>
+
+<p>Consider the response from the Bengal BJP. State minister Arjun Singh declared that once upon a time Bengal echoed with bombs and bullets; now the sound of eggs had replaced them, and the police had no metal detector to catch an egg in a pocket. He added that those who once threw stones and bombs were now afraid of eggs. Another leader, Shamik Bhattacharya, said breezily that the law has no specific section against egg-throwing, as if the entire criminal machinery depends on whether the weapon is listed in the penal code. “The egg is small, how can police search every pocket?” he asked. This is the voice of a ruling party in a state where the Centre’s writ looms large—mocking the victim, trivialising the violence, and inventing an alibi of helplessness.</p>
+
+<h2>The ‘Public Anger’ Charade: A Tale of Two Protests</h2>
+
+<p>We are told repeatedly that the egg-throwers represent “angry public.” Let us examine this public anger with a scalpel. If public anger automatically translates into mob violence, then every pocket of India should be covered in egg yolk. Look at Varanasi. In 2019, Prime Minister Narendra Modi won by a margin of over 4.89 lakh votes. In 2024, that margin collapsed to just about 1.52 lakh votes. That is a staggering 3.37-lakh erosion in a single constituency. The people of Varanasi, by all democratic measures, were deeply angry with their MP. Did they surround his office, pelt eggs, or force him to show his back? They simply cast their vote and stepped aside. Ayodhya, after the Ram Mandir inauguration and the subsequent revelations about land deals and alleged temple trust irregularities, voted out the BJP candidate in 2024. Did the angry citizens of Ayodhya form a mob outside Champat Rai’s residence? There is no FIR against Rai, no egg mark on his kurta. The public that is furious about paper leaks, unemployment, and inflation has not once marched to a BJP office and showered it with breakfast items. That ‘public’ remains miraculously restrained—until the target is an opposition MP. The violence in Bengal, therefore, is not a democratic overflow. It is a selective weapon.</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Location / Incident</th>
+            <th>Target</th>
+            <th>Nature of Protest</th>
+            <th>Response by Authorities</th>
+            <th>BJP's Public Narrative</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Varanasi (2024 reduced margin)</td>
+            <td>PM Narendra Modi</td>
+            <td>Electoral verdict (no street violence)</td>
+            <td>No security breach</td>
+            <td>Democratic mandate respected</td>
+        </tr>
+        <tr>
+            <td>Ayodhya (land scam allegations)</td>
+            <td>Champat Rai, BJP</td>
+            <td>No mob protests</td>
+            <td>No FIR filed</td>
+            <td>Denials, no outrage</td>
+        </tr>
+        <tr>
+            <td>West Bengal (July 1 egg attack)</td>
+            <td>Mahua Moitra (TMC MP)</td>
+            <td>Mob egg-pelting, four-hour siege</td>
+            <td>Police stand by, minimal FIRs</td>
+            <td>"Public anger", "TMC infighting"</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>Every time an opposition leader is humiliated in this manner, the BJP deploys the phrase “TMC vs TMC” — as if the hands pelting eggs belong to some internal feud. The language is deliberate: if you call them goons, people will ask why the police did not stop them. So you don’t call them goons. You pretend they are just an amorphous public quarrel. The term “goonda” would make the state’s failure unignorable, so the official vocabulary strips the attackers of agency and pins the blame on the victim’s own party. This is not a slip of the tongue. It is a rhetorical shield manufactured to protect the real orchestrators.</p>
+
+<h2>The Court Watches, The Mob Laughs</h2>
+
+<p>The Calcutta High Court, dealing with a PIL about eggs being thrown at accused leaders being taken to court, had earlier pulled up the police. Chief Justice T.S. Sivagnanam (as he was then) and Justice Hiranmay Bhattacharyya observed that police personnel themselves were getting soiled by eggs, and the state was doing little. “You are shaming the entire force,” the court remarked, adding that guidelines must be framed to protect the dignity and life of anyone in custody. The court asked the state’s Additional Advocate General what concrete steps were being taken. A few arrests were mentioned. The court warned that if the mob one day does something more drastic, what then? That “something more” nearly materialised when the mob cornered Moitra. Supreme Court guidelines on mob lynching lie on paper, fat and toothless. And the mob knows this—they laugh at the law because the law, in practice, has chosen to laugh with them.</p>
+
+<h2>A Pattern of Silencing the Opposition</h2>
+
+<p>This was not an isolated egg. Trinamool Congress’s national general secretary Abhishek Banerjee has been targeted with eggs and brickbats earlier. A CCTV video released by him shows a helmeted youth calmly picking up a stone and hurling it at his residence. Before that, he was attacked on May 30. The police arrested five people then, but the sense of impunity is so thick that another stone-thrower returned. Kunal Ghosh, Kalyan Banerjee, Kirti Azad—the list of TMC leaders who have been hounded, their houses attacked, their movements restricted, is growing. The message is unspoken but clear: if you are with Mamata Banerjee, if you are in the opposition, stepping out of your home is a gamble. Your life can be made unbearably difficult. You are not being silenced by a law; you are being silenced by a carefully modulated street terror that the state refuses to recognise as terror. This is a campaign designed to make opposition impossible before the next electoral battle begins.</p>
+
+<h2>A Woman MP, But Without the ‘Women’ Shield</h2>
+
+<p>There is a special cruelty in how the category of ‘woman’ vanishes when the woman in question belongs to the opposition. Moitra was forced to lift her garment and show her back to the camera. If that is not an attack on the dignity of a woman, what is? Yet the outrage that normally floods social media when a woman is humiliated—the candles, the hashtags, the parliamentarians thumping desks—remained absent. Prime Minister Modi, who often speaks of ‘nari shakti’ and the nation’s reverence for women, issued no statement. The Home Minister said nothing. The Lok Sabha Speaker, who is the guardian of every MP’s privilege, was silent. The only bustle came from those defending the eggs. Even the assault on the daughter of SP chief Akhilesh Yadav, trolled viciously after the Ram Mandir scam exposure, drew at least a belated public stand from UP Chief Minister Yogi Adityanath. In Moitra’s case, the hum of silence is the government’s verdict.</p>
+
+<h2>The Real Threat Is the Cowardice We Have Accepted</h2>
+
+<p>Why should this matter to you, sitting far from Bengal? Because the shrinking of space does not happen in one state alone. It happens inside you. The fear that stops you from speaking about the Ram Mandir land-grab, about ethanol being forced on you, about the paper leaks ruining your children’s futures—that fear has been methodically injected over a decade. Mahua Moitra’s timeline is a mirror. Look at it and you will see your own growing cowardice. It is not a complaint; it is a diagnosis. The people pelting eggs are not the real danger. The real danger is the officers sitting on cushioned chairs, the honourable persons occupying constitutional posts, who have found a hundred ways to frame, frighten, and silence you. They have outsourced the dirty work to eggs and mobs while they maintain a facade of legality. The egg is innocent; it should stick to being boiled, scrambled, fried, or masala-omeletted. The coup against democracy is being carried out by men in power, not by the breakfast on the street.</p>
+
+<div class="criticisms">
+    <h2>Criticisms</h2>
+    <ul>
+        <li>The Modi government has nurtured a political ecosystem where organized mobs are permitted to physically intimidate elected opposition representatives with near-total impunity.</li>
+        <li>Home Minister Amit Shah’s complete silence after the assault on a woman MP demonstrates that law and order is a selective instrument, activated only when it suits the ruling party.</li>
+        <li>BJP state leaders Arjun Singh and Shamik Bhattacharya trivialized the egg attack as mere “breakfast from the public,” normalizing political violence and mocking the victim.</li>
+        <li>The West Bengal police, operating under a state where the Centre wields significant influence, stood idle for four hours, thereby actively enabling the mob and undermining public trust.</li>
+        <li>Lok Sabha Speaker Om Birla failed in his constitutional duty to safeguard an MP, offering neither protection nor even a token statement, thus degrading the dignity of the House.</li>
+        <li>Mainstream television channels, especially those notoriously labeled ‘Godi media,’ distorted the incident to fit the narrative of “public anger,” effectively acting as amplifiers for the mob’s script.</li>
+        <li>The transformation of egg-throwing into a recurring political weapon reflects a deliberate strategy to intimidate opponents without triggering conventional legal accountability.</li>
+        <li>The government’s rhetoric of “angry public” is a dishonest cover; no comparable mobs ever target BJP figures despite proven public discontent in Varanasi, Ayodhya, and elsewhere.</li>
+        <li>Prime Minister Narendra Modi, who frequently invokes women’s dignity and empowerment, remained conspicuously mute, exposing the deep partisan nature of his concern for ‘nari shakti.’</li>
+        <li>The systematic targeting of Trinamool Congress leaders — Abhishek Banerjee, Kunal Ghosh, Kalyan Banerjee, and others — suggests a coordinated campaign to physically disable the opposition before elections, orchestrated with the collusion of the state apparatus.</li>
+    </ul>
+</div>
+
+<p>At the close of this video, Mahua Moitra stands amidst the din, a flag in her hand. A journalist asks her if she is running away. “Are you running away?” — the question itself indicts the times. Had that mob entered the building, we know what could have happened. The women who used to fill the streets of India before 2014 to protest atrocities now step out only after checking the party flag of the victim. This is not the disappearance of one MP’s safety. It is the vanishing of a democracy’s last inch. Watch the video, understand your own dread, and at least tell a friend — not the name of those you fear, but that you are terrified. Because the eggs will spoil and wash off, but the fear, if not named, will become the very air you breathe.</p>
+
+</div>
