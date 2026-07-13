@@ -1,0 +1,393 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper2325 i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper2325 i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper2325 .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper2325 ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper2325 ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+    </style>
+    <style>
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper2325 {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 2rem 2.5rem;
+            border-radius: 10px;
+            line-height: 1.85;
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+        div.customOuterWrapper2325 h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper2325 h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper2325 h3,
+        div.customOuterWrapper2325 h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper2325 p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper2325 a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper2325 a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper2325 strong,
+        div.customOuterWrapper2325 b {
+            color: #f0c040;
+        }
+
+        div.customOuterWrapper2325 ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper2325 li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper2325 blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper2325 table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper2325 thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper2325 th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper2325 td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper2325 tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper2325 {
+                padding: 1.2rem;
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper2325 h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper2325 h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper2325 {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper2325 h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper2325 h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#customSonamWangchukHungerStrikeJul2026" target="_blank">See All Articles</a>
+
+&nbsp;&nbsp;
+
+<a href="https://survival8.blogspot.com/2026/07/a-leaders-health-fades-movements.html" target="_blank" class="customLink">
+    &laquo; Previously
+</a>
+
+<!-- &nbsp;&nbsp;
+
+<a href="" target="_blank" class="customLink">
+    Next &raquo;
+</a> -->
+
+<br>
+
+<iframe class="custom_iframe" src="https://www.youtube.com/embed/Cud8fP1rJ8k" frameborder="0" allowfullscreen></iframe>
+
+
+<div class="customOuterWrapper2325">
+
+<h1>The Unbearable Indifference: Sonam Wangchuk's Hunger Strike and the Death of Dialogue in Modi's India</h1>
+
+<p>It is the sixteenth day of Sonam Wangchuk's hunger strike at Jantar Mantar in Delhi. Sixteen days of a 69-year-old man refusing food, sixteen days of his blood sugar plummeting, his blood pressure collapsing, his body shedding eight kilograms with no end in sight. Sixteen days, and not a single representative of the Indian government has walked the short distance from the Raisina Hill to the protest site to speak with him. No minister, no bureaucrat, no emissary has been sent to even pretend that a dialogue matters. The government's silence is now a roar: it tells the nation that a life on the line counts for nothing when pitted against the ego of power. And as we watch this tragedy unfold, we must ask ourselves — what kind of democracy allows a citizen to starve himself to near death just to be heard?</p>
+
+<h2>The Fasting Man and the Wall of Silence</h2>
+
+<p>Sonam Wangchuk is not an ordinary name. He is an engineer, an innovator, an educator, and a Ramon Magsaysay Award winner—an honour often equated with the Nobel Prize of Asia. He could have chosen a life of comfort and acclaim, far from the merciless heat and rain of Jantar Mantar. Instead, he sits here, draped in a white shawl, his body weakening with every passing hour, demanding accountability for a country that seems to have forgotten what accountability means. His supporters, a mix of students, labourers, activists, and YouTubers from across India, watch helplessly. One of them, a construction worker from Jalgaon, Maharashtra, told me through a choked voice: "We came here to support Sonam sir, to demand justice for paper leaks and a broken education system. But now we are scared. We don't know how much longer his body can take this."</p>
+
+<p>The protest began with a specific set of demands: the resignation of Union Education Minister Dharmendra Pradhan, the disbanding of the utterly compromised National Testing Agency (NTA), a complete ban on the coaching centre mafia that thrives on paper leaks and solver rackets, and a thorough reform of an examination system that has repeatedly failed innocent students. These are not fringe demands; they are the cries of a generation that has been robbed of its future by a corrupt and negligent machinery. Yet, the government has chosen to treat them as background noise. Why? What is the thermometer that tells the state that a man's life is worth less than the political cost of an admission of failure?</p>
+
+<h2>Health Crisis Ignored: A Government's Ego on Display</h2>
+
+<p>Medical reports from the protest site paint a grim picture. By July 13, Wangchuk's blood sugar had dropped to dangerously low levels; his blood pressure was in free fall, and he had lost 8 kilograms in barely two weeks. He had stopped issuing video messages after July 11 because he was too weak to speak. His team had to issue an SOS on social media, begging every Indian to pay attention. The message read: "We don't know how many more days he can survive like this. He tells us he can continue, but we are terrified." It is a heart-wrenching irony: a man who has dedicated his life to building sustainable futures for others is now betting his own life against the stone wall of the Indian state's indifference.</p>
+
+<p>The question that haunts the thousands gathered at Jantar Mantar is no longer about paper leaks or policy — it is about basic human decency. Will someone in the government please come and break this fast? Can the Congress, the Left, or any opposition party appeal to him to save himself since the government won't? The tragedy is that the narrative has been turned on its head: instead of asking why the government refuses to engage, we are forced to plead with the victim to surrender. This is a perversion of democracy, a moral inversion that the Modi administration has perfected over the last decade.</p>
+
+<h2>The Paper Leak Scam and the Rot in India's Examination System</h2>
+
+<p>What brought Sonam Wangchuk to this point is not an abstract cause. The medical entrance exam NEET was leaked; lakhs of rupees were paid to solvers who impersonated real aspirants; thousands of genuine students had their dreams crushed. The UGC-NET was cancelled minutes before the exam due to similar fears. The CSIR-UGC-NET and NEET-PG were postponed, sowing chaos and anxiety across the country. This is not an isolated incident but a systemic collapse. The NTA, which was supposed to be a tech-savvy, transparent body, has been implicated in a series of bungles and alleged malpractices. Coaching centres, many with deep political connections, have turned into factories of fraud. Yet, not a single head has rolled. The Education Minister remains in his chair, shielded by an opaque loyalty that places party above people.</p>
+
+<p>At Jantar Mantar, a young activist from the Krantikari Yuva Sangathan, who has been sitting in a rain-drenched tent since June 20, told me: "Our first demand is that Dharmendra Pradhan be dismissed. The NTA must be disbanded. And all coaching centres that have been found involved in these scams should be banned. We are here because the system is killing our children." Another protester, a small-time YouTuber from Balrampur, Uttar Pradesh, arrived after seeing the protest on social media and decided to stay. "Everyone who has a phone has the right to oppose wrong policies. When I saw the situation, I couldn't go back." Their faces are the faces of India's youth, and their anger is legitimate. But the government has decided that acknowledging that anger would be a sign of weakness.</p>
+
+<h2>From Wrestlers to Wangchuk: The Pattern of State Apathy at Jantar Mantar</h2>
+
+<p>If this story sounds familiar, it's because we have been here before. In 2023, India's top female wrestlers—Olympic medallists and world champions—sat at the very same Jantar Mantar, demanding the arrest of a powerful sports official accused of sexual harassment. They braved summer heat, monsoon rains, and police brutality. When no one from the government came to speak to them, in desperation, they announced their retirement from wrestling. They even brought practice mats to the protest site, training in full public view to draw media attention, but the controlled media barely covered them. Their protest, like Wangchuk's, was treated as an irritant rather than a moral crisis.</p>
+
+<p>The wrestlers' struggle laid bare a fundamental shift in how the Indian state handles dissent. Before 2014, under the Manmohan Singh government, it was common for ministers to visit protesters at Jantar Mantar, engage in dialogue, and even invite them to ministerial offices. During the Anna Hazare movement against corruption in 2011, the government's emissaries held marathon negotiations, and television channels covered the fast 24/7. Many of the people who were part of that movement are now comfortably aligned with the BJP, their voices silent about the protests of today. But the template has changed: the current regime believes that ignoring a protest is the best way to delegitimize it. The message is chilling — if we don't acknowledge you, you do not exist.</p>
+
+<h2>The Death of Media, the Rise of 'Godi Media'</h2>
+
+<p>This state apathy is made possible by the complicity of India's mainstream media. After 2014, the relationship between Jantar Mantar and the newsroom underwent a dark transformation. Media houses, particularly the Hindi and English news channels, turned into what critics now sarcastically call "Godi Media" — a cabal of outlets that serve as cheerleaders for the government rather than watchdogs for the people. They systematically ignore protests that challenge the ruling establishment or, if forced to cover them, spin them as anti-national conspiracies. The wrestlers complained on camera that hundreds of reporters would record their statements, but by evening, nothing would appear on the prime-time bulletins. Farmers who protested against the now-repealed agricultural laws were labelled "terrorists" by these same channels. The label "Jaichand" was dusted off to brand any dissenter a traitor. When Sonam Wangchuk fasts, the studios do not debate education policy; they ask, "Who is behind him? Is it a foreign conspiracy?" This silence is not just editorial bias — it is a systematic annihilation of public discourse.</p>
+
+<p>The consequence is that a government with a captured media feels no heat. It can let a Ramon Magsaysay laureate starve on the streets while prime-time anchors discuss election strategies or temple politics. The media has become a weapon for the murder of democracy, and Wangchuk's emaciated body is the evidence.</p>
+
+<h2>Farmers' Agitation: A Lesson in Forced Retreat</h2>
+
+<p>The farmer protests of 2020-21 offer another parallel. For over a year, tens of thousands of farmers camped at Delhi's borders, demanding the repeal of three farm laws. The government's response was a masterclass in bad-faith negotiation: it dug trenches on highways, erected concertina wires, and deployed barricades to prevent tractors from entering the capital. It held mock dialogues with handpicked farmer leaders while the real protesters were beaten and tear-gassed. When the Supreme Court formed a committee, it was seen as a delaying tactic. Finally, in November 2021, overwhelmed by the sheer numbers and the international embarrassment, Prime Minister Narendra Modi went on television, apologized, and repealed the laws. He also announced a committee to decide on minimum support price (MSP) guarantees — a key demand of the farmers.</p>
+
+<h2>The MSP Committee: 48 Months, 54 Lakh Rupees, Zero Report</h2>
+
+<p>That committee has now become a symbol of the government's contempt for protesters. An RTI investigation by Newslaundry's Akanksha Routh revealed staggering data:</p>
+
+<table>
+  <tr>
+    <th>Detail</th>
+    <th>Status / Data</th>
+  </tr>
+  <tr>
+    <td>Time elapsed since formation</td>
+    <td>48 months (4 years)</td>
+  </tr>
+  <tr>
+    <td>Full committee meetings held</td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td>Sub-committee meetings held</td>
+    <td>42+</td>
+  </tr>
+  <tr>
+    <td>Expenditure incurred</td>
+    <td>Rs 54 lakh</td>
+  </tr>
+  <tr>
+    <td>Final report submitted</td>
+    <td>No</td>
+  </tr>
+</table>
+
+<p>The Prime Minister’s own announcement, his word to the nation, has been reduced to a farce. Millions of farmers are still waiting, while the committee burns public money and produces nothing. This is how promises are made in Modi's India—with the full knowledge that they will never be kept, because the media will not follow up, and the people will either forget or be too exhausted to protest again.</p>
+
+<h2>Cockroach Janata Party: Has Fear Killed Satire?</h2>
+
+<p>In the early days of the NEET paper leak protests, the internet was flooded with memes about the "Cockroach Janata Party" — a satirical take on the situation that even had songs and animations. But soon, the algorithm seemed to scrub it clean. The trending hashtags vanished. The memes stopped spreading. Did the government's digital machinery manage the narrative, or were people simply scared into silence? When a government can twist a protest into a law-and-order problem and unleash the full force of the state against ordinary citizens, who can blame the scared? Satire, the last refuge of the powerless, is being methodically exterminated.</p>
+
+<p>And yet, the protesters at Jantar Mantar continue. The "Cockroach Janata Party" members — students and young professionals — have been sitting in unyielding humidity for over 25 days, their entire lives shifted to this one patch of concrete. The government's lack of response is not just apathy; it is a strategic message: no matter how long you stay, we will not bend. Your life is cheaper than our ego.</p>
+
+<h2>What Kind of Democracy Can't Tolerate Protest? Wangchuk's Global Comparison</h2>
+
+<p>In one of his last video messages before falling too weak to record, Wangchuk spoke of his recent visit to Switzerland. He stood outside the Swiss Parliament and marvelled at the openness. Citizens could walk right in, and designated spaces in front of the parliament were regularly used for peaceful protests. He compared it with the Westminster in London, the parliaments in Sweden, Denmark, Australia, and New Zealand — all democracies where the people's house remains open to the people. Then he turned to his own capital: "Here in New Delhi, Section 144 is slapped on the city. The new Bharatiya Nagarik Suraksha Sanhita (BNSS) under section 163 makes protest impossible. The Constitution grants us the right to peaceful assembly under Article 19, yet Delhi is perpetually under prohibitory orders. Jantar Mantar is allowed only from 10 am to 5 pm. Is this constitutional? Gandhi said if a law is wrong, it is better to break it." The irony is gut-wrenching: a man of peace is forced to quote the necessity of civil disobedience because the world's largest democracy has barricaded itself against its own people.</p>
+
+<h2>The Ladakh March: Precedent of Detention</h2>
+
+<p>It is not the first time Wangchuk has faced the government's iron fist. Last year, he led a march from Ladakh to Delhi, demanding constitutional safeguards for the fragile Himalayan region and climate-action commitments. On the night of September 30, just outside Delhi, he and 150 companions were detained and kept in custody for two days. They responded with a hunger strike inside the police stations. After release, they went to Raj Ghat to honour Mahatma Gandhi. No government representative ever met them. The pattern is now unmistakable: the state will physically block, detain, and silence the messenger rather than listen to the message.</p>
+
+<p>A young activist named Shiv Kumar Diwari, who came from Balrampur in Uttar Pradesh, told me with a mix of anger and despair: "Our public and our netas—both are fools. I came here because what is happening is wrong, and we have the right to oppose wrong policies." He is not a hardened politician; he is a small YouTuber who decided that the least he could do was show up. And the government tells him he does not matter.</p>
+
+<h2>Criticisms</h2>
+<ul>
+<li>The health of a 69-year-old Ramon Magsaysay Award winner was allowed to deteriorate dangerously without a single ministerial visit.</li>
+<li>No formal dialogue was initiated by the Education Minister or the Prime Minister's Office during sixteen days of fasting.</li>
+<li>The demands of students and youth protesting against systemic paper leaks were dismissed as negligible by the state apparatus.</li>
+<li>The National Testing Agency (NTA) was not disbanded despite repeated evidence of malpractices and question-paper leaks.</li>
+<li>Pro-government media outlets were observed to have blacked out the protest coverage or reframed it as an anti-national conspiracy.</li>
+<li>The MSP committee, announced by the Prime Minister, was revealed via RTI to have expended Rs 54 lakh over 48 months without submitting any final report.</li>
+<li>Peaceful protesters, including top female wrestlers and farmers, were met with police repression, barricades, and bad-faith negotiations.</li>
+<li>The instrument of Section 144 and BNSS 163 was misused to permanently stifle the constitutional right to peaceful assembly in the national capital.</li>
+<li>The detention of Sonam Wangchuk and 150 followers on the outskirts of Delhi during the Ladakh march was executed without accountability.</li>
+<li>Public trust in the examination system was fatally eroded by a government perceived as protecting coaching-centre lobbies and corrupt officials.</li>
+</ul>
+</div>
