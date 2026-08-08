@@ -1,0 +1,337 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Wm5P09LDIRI" frameborder="0" allowfullscreen></iframe>
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#customPostsByAnkurWarikooHeader" target="_blank">See All Articles</a>
+<br>
+
+<div class="customOuterWrapper">
+
+<h1>Owning a Home in India Today: Dream, Trap, or Smart Move?</h1>
+
+<p>It’s late at night. You’ve just hung up with your mother. She asked you the same questions she always does: Did you eat well? Are you sleeping properly? Is work going fine? And then you remember. Your parents spent their entire life in a rented home, raising you and your sister, sacrificing so that you could get an education, land a job, and stand on your own feet. Today you have that job, your sister is doing well, and both of you can afford a decent 3‑bedroom flat. Not a mansion with a swimming pool or a helipad—just a simple roof over your heads that you can call your own. But every time you check listings, nothing is below ₹1.5 crore. You earn ₹15 lakh a year—not a small amount—but after taxes and living expenses, you save about ₹80,000–85,000 a month. To buy that home, you would need a loan of around ₹1.25 crore, with an EMI of roughly ₹1.25 lakh for the next 25 years. Suddenly, the dream feels impossible. You wonder: is buying a house the biggest mistake of my life? Am I forever trapped in rent, failing as a son or daughter? These are not just anxious thoughts; they’re the new reality for millions of Indians. Let’s unpack what has changed, what the numbers actually say, and when—if ever—buying a home makes sense.</p>
+
+<h2>The Vanishing Affordable Dream</h2>
+<p>To understand the frustration, step back to 1995. A house in the suburbs—slightly away from the city—could cost around ₹8 lakh on average. Fast forward 20 years to 2015, and that same home had become ₹80 lakh. The house didn’t suddenly become ten times better; cities expanded, suburbs turned into prime locations, and demand simply exploded. I remember my own story. My family moved to Faridabad about 20 years ago. Before that, we always lived on rent in Lajpat Nagar, a middle‑class pocket of South Delhi. The rent for our two‑bedroom flat was ₹4,500. Owning a home was a lifelong dream. I recall neighbours buying homes in Sarita Vihar back then, and we thought they had gone too far. Today, Sarita Vihar is a fully developed urban hub. And when it was our turn, the best we could afford was in Faridabad—in Green Fields Colony, which in 2002 was practically a forest. You could spot deer, nilgai, and hear peacocks. We took a loan of around ₹8–9 lakh to buy it. Today, that same ageing house is worth about ₹60–65 lakh. The prices across the country have followed a similar trajectory.</p>
+<p>Consider the ratio of home price to annual income. Two decades ago, a flat might cost 3 to 5 times your yearly salary. Today, in cities like Mumbai, the same home is 30‑35 times your annual income. A finance professional I know bought a house in Mumbai in 2007 for 3.4 times his salary. By 2025, that multiple has swollen to 30 times. Delhi‑NCR has been no kinder: residential prices have surged 81% in the last five years alone. In Noida and Greater Noida, rates have nearly doubled. Across India’s top seven cities, the average price increase post‑Covid has been 51%. Meanwhile, did your salary grow 51% in those same five years? Probably not.</p>
+<p>The affordable segment is shrinking as well. In 2019, about 40% of all new housing launches were priced under ₹45 lakh. By 2025‑26, that category accounts for a mere 18%. Builders are chasing luxury apartments because that’s where the margins are fatter. Black money hasn’t vanished, so those high‑end units get lapped up within hours of launch. When a DLF project in Gurgaon sells out in three hours at ₹7 crore a flat, an entire generation starts to feel something shift. They’re not just saying “I can’t afford it”; they’re saying “I don’t want this.” The emotional retreat is real.</p>
+
+<h2>The Gen‑Z Mindset and the Rent‑Is‑Better Argument</h2>
+<p>Faced with such numbers, many young Indians are checking out of the home‑buying dream. “To hell with it,” they say. “I’d rather enjoy my life, travel, spend on experiences, and not be a slave to a 25‑year loan.” And you know what? They have a point. Financial influencers (or “finfluencers”) often champion renting as the smarter move, and on paper, the math can look compelling.</p>
+<p>Before we dive into the numbers, let’s acknowledge an important side note. Smart money decisions don’t end with housing. For example, many people fear credit cards, but when used wisely, they can be powerful tools. A credit card gives you up to 45 days of interest‑free credit, helps build your credit score (which in turn can reduce your future home loan interest), and rewards you with points that can fund travel or vouchers. The challenge is that India offers over 400 credit cards, and finding the best one for your needs is a headache. That’s why we built monzi.co. In just 60 seconds, you answer a few simple questions—no spam, no personal details shared, no tracking—and the platform recommends your ideal credit card. You can apply or ignore it, completely free. It’s a tool to help you make better financial moves. Now, back to housing.</p>
+
+<h2>The Buy‑vs‑Rent Math: A Bangalore Case Study</h2>
+<p>Let’s do some concrete math. Suppose you want a two‑bedroom flat in Bangalore priced at ₹1 crore. You have two options: buy it or rent it.</p>
+<p><strong>If you buy:</strong> You need a 20% down payment, which is ₹20 lakh. Add stamp duty and registration of about ₹5‑6 lakh. For the remaining ₹80 lakh, you take a home loan at 8.75% for 20 years. Your EMI works out to roughly ₹71,000 per month. On top of that, you’ll pay property tax, maintenance charges, and occasional repairs. If the property appreciates at 7% per year (a generous assumption for apartments these days), after 20 years it would be worth around ₹3.9 crore. Your asset has grown, and you’ve paid off the loan.</p>
+<p><strong>If you rent:</strong> The same flat would rent for about ₹24,000 a month. That means the bank demands ₹71,000 to help you buy it, but the landlord will let you live there for ₹24,000. Why the massive difference? Because rental yields in India are painfully low. Rental yield is the annual rent divided by the property value. In most Indian cities, it hovers around 2.5% to 3.5%. For a ₹1 crore house, a 3% yield gives you ₹3 lakh a year, or ₹25,000 a month. Bangalore’s yield is typically 2.5–3.5%, Gurgaon is even worse at 2–2.5%, and Mumbai a slightly better 3.5–4%, but the overall picture is similar.</p>
+<p>So, if you rent, you pay ₹24,000 instead of the ₹71,000 EMI. That leaves you with an extra ₹47,000 every month. Plus, you also save the ₹20 lakh down payment and ₹5 lakh stamp duty. If you invest that ₹47,000 monthly difference—and the upfront ₹25 lakh—into a diversified portfolio earning, say, 10% returns over 20 years, the total corpus could be well above ₹7.5 crore. That’s almost double the value of the home. On pure spreadsheet logic, renting and investing the difference wins hands down. Finfluencers aren’t wrong; they’re just telling half the story.</p>
+
+<h2>The Real Trap Isn’t Renting—It’s You</h2>
+<p>Here’s the bitter truth: the math works only if you actually invest that ₹47,000 every single month without fail for two decades. And for the vast majority of people, that discipline simply doesn’t exist. Where does that money typically go? Into renting a bigger place than you need—switching from a ₹24,000 apartment to a ₹40,000 one in Indiranagar because you can afford it. Or it goes into weekend getaways, the latest gadgets, or a hundred other lifestyle upgrades. These are not assets; they’re liabilities that start depreciating the moment you buy them. The trap is not rent; the trap is your inability to stay committed to a financial journey when extra cash burns a hole in your pocket.</p>
+<p>Sceptics will argue that rent never stays static—it rises over the years, eroding your savings. That’s true. But so does the home loan EMI burden, especially when you factor in repairs and maintenance. The real horror story is the person who rented all their life, kept upgrading their rental, never invested the surplus, and at 60 finds themselves without an owned home, facing a steep rent, and with insufficient savings to buy even a small house. That’s the worst of both worlds. So, is buying a house ever the right decision? The confusion is understandable. Let’s clear it up.</p>
+
+<h2>What Changed from Our Parents’ Time to Ours?</h2>
+<p>In our parents’ generation, buying a house often meant buying land. A plot in a developing area had value not just in the structure but primarily in the land beneath it. Even if the house aged, the land appreciated. Today, most people buy apartments in vertical buildings. The same land is now sold floor by floor. Construction quality is often mediocre, wear and tear is high, and common areas deteriorate quickly. An old apartment’s value can diminish relatively fast as newer, shinier projects launch nearby. The pace of appreciation that your parents witnessed for their standalone home is not the same for a 20‑year‑old apartment. While real estate was once the undisputed king of investments, today I would argue that a well‑managed equity portfolio or even gold can outperform apartment real estate over the long term. Real estate remains a great place to park a large sum of money, but it is no longer the best asset for maximum returns—especially as apartments dominate new purchases.</p>
+
+<h2>When Does It Make Sense to Buy a House?</h2>
+<p>Despite the changed landscape, buying a home can still be a wise decision under the right conditions. Here’s the checklist:</p>
+<ol>
+<li><strong>Income stability:</strong> Your income should comfortably support a 20–25‑year loan without stretching you to the breaking point. If the EMI is more than 40–50% of your take‑home pay, you’re asking for trouble.</li>
+<li><strong>Right size for the future:</strong> The house should meet your family’s needs for at least the next 10–15 years. Buying too small now and upgrading later can be financially painful.</li>
+<li><strong>Location that supports your life:</strong> The neighbourhood should offer good job opportunities, be close to your support network, and have decent infrastructure. A cheap home in a poorly connected area might end up costing you in commuting and quality of life.</li>
+<li><strong>No chain, no cage:</strong> The loan should feel like a commitment you are making willingly, not a trap that strangles your freedom. Timing matters. If the purchase makes you anxious and sleepless, you’re not ready.</li>
+</ol>
+
+<p>Many people ask: what’s the ideal age to buy? My suggestion is to avoid a home loan in your 20s. That decade is for building your career, taking risks, and most importantly, harnessing the magic of compounding by investing the rent‑vs‑EMI difference. If you start at 25 and diligently invest that surplus every month, then by the time you hit 35‑40, you could have accumulated a substantial down payment—perhaps 50‑60% of the property’s value, not just the standard 20%. You’ll also have a clearer picture of your family size, preferred location, and whether you even want to own a home. That maturity brings financial peace. I bought my home at 40, and it worked beautifully. My parents bought theirs at 50. Both were the right calls because the purchase didn’t become a cage.</p>
+
+<h2>A Simple Rule to Remember</h2>
+<p>Buying a house is primarily protection against the insecurity of old‑age renting. It gives you a roof when your income stops. It is not necessarily a great investment compared to other alternatives, but it is a solid asset that brings psychological comfort and stability. The golden rule: don’t let the house own you. If the numbers work, the location is right, and the loan doesn’t steal your life’s joy, go ahead. If not, take a deep breath. You’re not a failure for renting; you’re simply playing a longer, smarter game.</p>
+
+<h2>Conclusion: Key Takeaways</h2>
+<ul>
+<li>- Home prices in India have soared exponentially, far outpacing income growth. The house‑price‑to‑income ratio in major cities is now 30‑40, making the dream unaffordable for many.</li>
+<li>- The affordable housing segment is shrinking as builders focus on luxury projects, leaving fewer options for first‑time buyers.</li>
+<li>- On paper, renting and investing the difference between EMI and rent can generate a higher corpus than owning a home, thanks to low rental yields (2.5–4%).</li>
+<li>- The real trap is not renting but the lack of discipline to invest that surplus each month. Lifestyle inflation usually swallows the extra cash.</li>
+<li>- Apartments, unlike the land‑based homes of our parents’ era, appreciate slower and can depreciate as they age, making them less attractive as pure investments.</li>
+<li>- Buying a home makes sense only when your income can comfortably support the loan, the house fits your long‑term needs, the location supports your career and family, and you don’t feel imprisoned by the debt.</li>
+<li>- The ideal age to buy is between 35 and 40—after you’ve built a significant down payment through years of disciplined investing and have clarity about your life’s direction.</li>
+<li>- Ultimately, homeownership is about security and emotional peace, not necessarily maximum returns. The decision should come from a place of calm, not compulsion.</li>
+</ul>
+
+<p>Your career and skills are your biggest assets. A house is a shelter, not a substitute for a well‑planned life. Keep asking questions, stay disciplined, and remember: the roof over your head should be a shield, not a burden.</p>
+
+<p><em>Citations and references: All data and statistics mentioned—such as the 81% residential price increase in Delhi‑NCR, the 51% average rise across top‑7 cities, the shift from 40% to 18% in affordable launches, and rental yield figures—are drawn from recent market reports and professional analyses, including conversations with real‑estate insiders and publicly available housing data from 2019–2026.</em></p>
+</div>

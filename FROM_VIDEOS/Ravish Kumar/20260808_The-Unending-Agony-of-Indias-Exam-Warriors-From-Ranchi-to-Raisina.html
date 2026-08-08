@@ -1,0 +1,332 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/L-ts-g_Q7Q8" frameborder="0" allowfullscreen></iframe>
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#customNewsByRavishKumarHeader" target="_blank">See All Articles</a>
+<br>
+
+<div class="customOuterWrapper">
+
+<h1>The Unending Agony of India's Exam Warriors: From Ranchi to Raisina</h1>
+
+<p>An election is not the only place where a government’s credibility is tested. In India, the examination hall is a far more brutal courtroom. Here, the state stands directly accused by its youngest citizens, and the evidence—leaked papers, rigged OMR sheets, commissions that cannot conduct a single exam on time—is damning. The protests engulfing Ranchi are neither new nor local. They are a national indictment, a scream from the heart of a country where the very institutions meant to guarantee fair selection have become syndicates of loot. And as students gather at Jaipal Singh Stadium, braving lathis and hunger, the silence from New Delhi and the sudden noise of a fractured media expose a conspiracy of indifference that has ruined generations.</p>
+
+<h2>The Ranchi Protest: A Microcosm of Systemic Rot</h2>
+<p>For almost a fortnight, the youth of Jharkhand have been on the streets. They are not asking for a change in syllabus or a few grace marks. Their demands are foundational: that the Jharkhand Public Service Commission (JPSC) and the Jharkhand Staff Selection Commission (JSSC) be held accountable; that the chairpersons of these bodies be appointed with transparency; that the officials who played with their futures face criminal action. A student from Ranchi, Devendranath Mahto, has been on a hunger strike for three days—a picture of Shibu Soren in his hand, a tragic reminder that even a tribal icon’s party now stands accused of the same betrayal as its predecessors.</p>
+
+<p>The facts are not opinion. In 2015, the JPSC advertised an examination. It was cancelled twice. For three years, only the preliminary exam could be held; the mains exam did not happen for four years. This was under a BJP government. In 2024, the Jharkhand Eligibility Test saw question papers not reach centres in Ranchi and Bokaro, and the printing was so abysmal that the papers were illegible. This happened under the Hemant Soren-led JMM-Congress government. Twenty-six years after the state’s formation, the commissions are still not capable of conducting a single examination without controversy. The government now rushes to form committees, to send ministers to talk, to arrest a few middlemen. But the network—the coaching mafia, the corrupt officials, the politicians who protect them—was allowed to grow precisely because no one in power wanted to dismantle it. The students’ rage is not spontaneous; it is accumulated poison.</p>
+
+<p>The following table, assembled from media reports and testimony, captures just a sliver of the chaos:</p>
+
+<table border="1">
+<tr><th>Incident</th><th>Year</th><th>Details</th></tr>
+<tr><td>JPSC examination cancelled twice</td><td>2015–2018</td><td>Only prelims conducted in three years; mains never held under BJP rule.</td></tr>
+<tr><td>JSSC paper leak arrests</td><td>2024</td><td>Abhay Tiwari, a former TDP agency marketing manager, identified as mastermind; multiple coaching centres raided.</td></tr>
+<tr><td>Jharkhand Eligibility Test fiasco</td><td>April 2024</td><td>Papers not delivered; unreadable printing; exams cancelled after large-scale protest.</td></tr>
+<tr><td>OMR swapping racket busted</td><td>2024</td><td>Suman Saurabh allegedly scored 48 marks but was passed; CID raids linked to Patanjali Academy.</td></tr>
+</table>
+
+<p>The government’s response? Threatening words, a committee, and a promise of a CBI probe that may never come. Meanwhile, BJP spokesperson Kunal Sarangi tweeted that “all gangs and their masters will be found” and punished—a statement that conveniently forgets the party’s own history with the Vyapam scam in Madhya Pradesh, where backdoor doctor degrees were handed out like pamphlets. The Congress, in opposition, is no better. Rahul Gandhi holds rallies in Kota and Prayagraj, speaking of paper leaks and student despair. But his own party’s government in Jharkhand has presided over the same rot. The student is asked to choose between two sets of arsonists—one has already set the house on fire, the other is promising to burn it more “justly”.</p>
+
+<h2>The All-India Disease: Paper Leaks and the NTA’s Dubious Chief</h2>
+<p>Away from Ranchi, a larger, more sinister architecture of fraud has been erected by the central government. The National Testing Agency (NTA), created to streamline entrance exams, has become a byword for scandal. And at its helm sits a man whose career is a masterclass in how the RSS and BJP reward loyalty over competence. Pradeep Kumar Joshi—current chairman of the NTA—has spent two decades moving from one top post to another, trailing controversies like a shadow.</p>
+
+<p>An investigation by The Indian Express, based on RTI documents cited by Milind Ghatwai, revealed that Joshi was appointed chairman of the Madhya Pradesh Public Service Commission in 2006 on the recommendation of the RSS’s kshetriya pracharak Vinod ji, who explicitly stated that Joshi was “not the president of the Akhil Bharatiya Vidyarthi Parishad”—a clear admission that ideological proximity, not merit, was the criterion. After five years in MP, he was made chairman of the Chhattisgarh PSC in 2011. From there, he went straight to the UPSC as a member for five years, and then became its chairman in August 2020. In 2023, he was placed at the head of the NTA. In his 20-year career, at least 13 major controversies are linked to his name, including paper leaks. Yet his rise has been uninterrupted.</p>
+
+<p>The NEET-UG 2024 examination, conducted by the NTA for the first time, was marred by allegations of paper leaks and inflated marks. While students were on the streets in Delhi, the government and its Godi media remained silent. The Prime Minister’s Office, which never misses an opportunity to pose with exam warriors, had nothing to say about the agency it created. The entire architecture of competitive examinations has been reduced to a patronage network, and the chief of that network is promoted again and again. If this is not institutional corruption, what is?</p>
+
+<h2>The Two-Faced Media: Silencing Protests in Delhi, Amplifying in Opposition States</h2>
+<p>Nowhere is the cynicism of this government more visible than in the behaviour of the “Godi media”. When students protested at Jantar Mantar—in the heart of Modi’s Delhi—the same channels that will scream for hours about a temple or a cow vigilante buried the story. They called the protesters Chinese agents, Pakistani agents, anything to delegitimise a cry for employment. But the moment protests erupted in Ranchi, under a non-BJP government, cameras rushed in. Suddenly, every anchor was a messiah of the youth, every prime-time debate a courtroom for Hemant Soren. The switch is so mechanical that even a child can see the script.</p>
+
+<p>These media houses receive hundreds of crores of rupees in government advertisements—money taken from the same taxpayers whose children are now being lathi-charged. They have hundreds of reporters, dozens of empty anchors, and not a single one was allowed to raise the students’ voice in Delhi. Instead, they run four people in boxes spouting nonsense from their bedrooms. Meanwhile, a lone YouTuber can do more factual coverage in a 15-minute video than an entire media empire does in a year. The government should, with immediate effect, stop all advertisement flow to these propaganda machines and redirect the funds to independent journalists who actually stand with the people. Let the prime-time bullies survive without the state’s crutch—they will not last a single evening.</p>
+
+<h2>The Larger Rot: Higher Education in the Hindi Belt</h2>
+<p>But there is a question no political party, no commission, and no coaching giant wants the students to ask: what about the colleges they came from? For years, the Hindi-speaking states have been subjected to a deliberate devaluation of higher education. In hundreds of districts, not a single college is functional. A handful of professors—retired, tired, or simply absent—guard empty corridors. The rest are busy doing “cultural” work: organising religious events, running abvp campaigns, stoking communal tensions. It is a brilliant diversion. A teacher who cannot step into a classroom to explain a basic concept can still pose as a guardian of Hinduism and escape all scrutiny. The student, already weak in language and logic, enters a coaching centre thinking 20 hours of memorisation will compensate for three years of rot. It does not.</p>
+
+<p>For two decades, this destruction has been intentional. It did not happen by accident; it was brought. Brought by design, by a politics that finds it easier to rule over an uneducated, desperate populace that sees a Rs. 15,000 government job as the ultimate salvation. The students who are now marching did not ask for critical thinking; they were trained to crave a post, any post. And they will win their battle for fair exams—they must—but even if they do, they will walk into offices and classrooms with a hollowed-out intellect. The damage will take another twenty years to undo.</p>
+
+<h2>Criticisms</h2>
+
+<p>— The Prime Minister is observed to have never personally addressed the systematic failures of the NTA, the paper leak crisis, or the brazen political appointments in examination bodies.</p>
+<p>— The central government is noted to have weaponized silence and misinformation during the Jantar Mantar student protests, while permitting aggressive coverage in opposition-ruled states.</p>
+<p>— The Godi media is seen to have abandoned journalistic duty in exchange for hundreds of crores in taxpayer-funded advertisements, actively branding young protesters as anti-national elements.</p>
+<p>— The BJP’s legacy of the Vyapam scam and the continued patronage of individuals like P.K. Joshi is regarded as a direct assault on meritocracy and social mobility.</p>
+<p>— The Hemant Soren-led Jharkhand government is found to have procrastinated on dissolving both the JPSC and the JSSC despite years of evidence of their complete administrative failure.</p>
+<p>— The Congress leadership is perceived as exploiting student anger for political rallies while failing to reform examination systems in its own states, thereby eroding the credibility of its demands.</p>
+<p>— The RSS’s role in placing ideological loyalists in crucial institutional positions is identified as a primary reason for the collapse of impartiality in public service commissions across India.</p>
+<p>— The higher education infrastructure in Hindi-speaking states is recognised as having been deliberately degraded by successive governments to produce a dependent, easily manipulated workforce rather than a thinking citizenry.</p>
+<p>— The coaching mafia and the political class are believed to operate in symbiosis, with arrests made only as spectacle, never as structural correction.</p>
+<p>— The entire competitive examination apparatus, from paper-setting to result declaration, is charged with being captured by networks of corruption that span multiple states and parties, leaving the ordinary student with no recourse but the street.</p>
+</div>
