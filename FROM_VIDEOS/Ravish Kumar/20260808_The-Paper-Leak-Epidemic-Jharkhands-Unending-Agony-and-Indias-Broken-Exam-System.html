@@ -1,0 +1,391 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jBK1QsuLzLg" frameborder="0" allowfullscreen></iframe>
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#customNewsByRavishKumarHeader" target="_blank">See All Articles</a>
+<br>
+
+<div class="customOuterWrapper">
+
+<h1>The Paper Leak Epidemic: Jharkhand's Unending Agony and India's Broken Exam System</h1>
+
+<p>On 28 January 2024, the Jharkhand Public Service Commission (JPSC) was set to conduct its examination. Three hours before the third shift, the General Studies paper for 50% of the candidates was abruptly cancelled. That exam was later re-conducted, but doubts never vanished. In December 2025, results were announced, and within days, successful candidates were issued joining letters. Yet, the embers of protest were already glowing. The anger of the youth, simmering since that hurried joining in late 2025, exploded when the results of the 14th JPSC examination were declared on 2 July. Within 48 hours, allegations of massive irregularities spread, and students took to the streets demanding that not only the latest results but all appointments stemming from the January 2024 exam be scrapped.</p>
+
+<p>The agitation in Jharkhand is not a sudden outburst. It is the logical culmination of a system where merit has been replaced by money, fairness by fraud. And the response of the government — led by Hemant Soren — reveals a deep disconnect between those who rule and those who dream.</p>
+
+<h2>The Chronology of Betrayal</h2>
+
+<p>On 28 January 2024, the paper was cancelled because of a leak. The re-test was ordered, but questions about its integrity surfaced immediately. Despite this, results were declared in December 2025, and candidates were appointed. Students say that even before the ink dried on their joining letters, they had evidence of foul play. When the 14th JPSC result came on 2 July, OMR sheets of several candidates were leaked online. The data showed that candidates with lower scores had secured jobs while deserving ones were shut out. The demand swelled: cancel the 11th, 13th, and 14th JPSC examinations, and conduct a fresh, fair process.</p>
+
+<p>The government took notice only after the protests grew. A high-level committee was formed, but the students refused to meet behind closed doors. “We will not talk in a closed room,” they declared. “The government must come to us, in the open, with the media present.” This stance mirrors the Jantar Mantar protests of NEET-UG aspirants, where the central government refused to face students publicly. The bargaining power of the youth now hinges on this public confrontation — a strategy that underscores the deep trust deficit.</p>
+
+<h2>The Demands: Cancel, Investigate, Rebuild</h2>
+
+<p>The students’ charter is clear:</p>
+<ul>
+<li>Cancel the results of the 11th, 13th, and 14th JPSC examinations.</li>
+<li>Annul all appointments made from the December 2025 result.</li>
+<li>Conduct an independent, transparent investigation into the entire examination process.</li>
+<li>Ensure that the probe extends to the assets of all officials linked to the JPSC, Jharkhand Staff Selection Commission (JSSC), and the private agency TDPL that has been repeatedly accused of irregularities.</li>
+</ul>
+
+<p>To understand why these demands are not excessive but urgent, one must look at the history of competitive examinations in Jharkhand. Since the state was carved out of Bihar in 2000, there has not been a single JPSC or JSSC examination that has not been mired in allegations of cheating. Not one. The system is so deeply corrupted that a clean recruitment drive seems an impossibility.</p>
+
+<h2>The Government’s Response: Too Little, Too Late</h2>
+
+<p>When the protests escalated, the Hemant Soren government sent SDMs and ADMs to the protest site, offering a five-member team to meet at the Chief Minister’s residence. But the students refused. They insisted on an open dialogue. The government eventually formed a committee, but the youth remain unconvinced. Their fear is legitimate: closed-door negotiations can easily turn into a whitewash.</p>
+
+<p>Hemant Soren has claimed that the state’s CID has acted swiftly — 18 people arrested, documents seized, and key conspirators identified. He believes this should restore trust. But the students have ample reason to doubt. The CID is a state agency, and in Jharkhand, political interference in investigations is an open secret. Moreover, the central agencies that might have offered hope — the CBI and the ED — have their own credibility crises. The CBI’s conviction rate in paper leak cases is abysmal; the ED’s selective targeting of opposition leaders has made it a political weapon, not an impartial arbiter.</p>
+
+<h2>The Vyapam Precedent and the Supreme Court’s Sword</h2>
+
+<p>The students’ demand for cancellation finds strong legal backing. In the Vyapam scam in Madhya Pradesh, the Supreme Court cancelled the degrees of over 600 medical students who had reached the final year of their MBBS. Admissions taken, exams passed over several years — everything was declared void because the foundation was fraudulent. If the apex court could do that, why can’t the Jharkhand government annul appointments based on demonstrably tainted examinations? The answer lies in political will, not legal hurdle.</p>
+
+<p>The irony is that the Jharkhand High Court, in an unrelated case, had strongly indicted the ED for arresting Hemant Soren without solid grounds. The ED lost that case in the Supreme Court too. Yet the same Hemant Soren, when faced with student anger, has not shown the same resolve to uproot the examination mafia that his own government’s agencies are supposed to control.</p>
+
+<h2>A Nationwide Cancer: The Paper Leak Industry</h2>
+
+<p>The Jharkhand agitation cannot be viewed in isolation. India is witnessing a terrifying surge in examination frauds. A PTI report reveals that the CBI has over 150 cases related to recruitment exam irregularities — investigations are complete in most, but trials have not even begun. Some cases are 20 years old. The CBI is now trying to move these to fast-track courts, but the damage is already done. The faith of the young has been crushed.</p>
+
+<p>The 2024 NEET-UG paper leak case is a glaring example. The main accused, Sanjeev Mukhiya, was discharged by a court because the CBI found no evidence against him. The ED, which arrested Hemant Soren in a money-laundering case, was itself pulled up by the Supreme Court for frivolous arrests of opposition leaders. The investigating agencies that students are supposed to rely upon are either handcuffed or complicit. In such a scenario, the demand for an independent probe becomes a cry into the void.</p>
+
+<h2>The Anatomy of a Cheating Cartel</h2>
+
+<p>The CID’s raids have thrown up chilling details. In Jharkhand, post-dated cheques worth Rs 6 crore were recovered from the houses of Lalu Yadav and Pradeep Yadav of Hazaribagh. These cheques were signed by different individuals — likely candidates or their relatives — revealing a pay-after-success racket. The CID also found admit cards of constable recruitment exams and carbon copies of candidates’ OMR sheets at the residence of Santosh Kumar Singh in Palamu. The suspicion is that candidates who could not pay cash were forced to part with land documents as collateral.</p>
+
+<p>The private firm TDPL is at the heart of this network. Blacklisted by the Jharkhand Staff Selection Commission in May 2025, the company was re-engaged to conduct examinations. That re-appointment itself stinks of a deep nexus. The case of Abhay Tiwari is even more instructive. The CID claims that Tiwari, between 2013 and 2024, passed over 12 competitive examinations, including those of Jharkhand and the Centre. In every exam where Tiwari succeeded, TDPL was involved in some capacity. That is not coincidence; it is a meticulously managed, exam-clearing formula for sale.</p>
+
+<p>A similar pattern emerged in the NEET-UG case. Dinesh Binwal, his brother Mangilal Binwal, and Mangilal’s son Vikas were arrested. Of the five arrested by the CBI, three belonged to the same family — a family whose five children had cleared NEET-UG in the previous year. Rajasthan Congress chief Govind Singh Dotasra had tweeted the names and asked uncomfortable questions about where these children were studying. The answers are still buried.</p>
+
+<h2>The Political Calculus and the Media’s Silence</h2>
+
+<p>On the protest stage at Jantar Mantar, several political parties sent leaders, but the ruling BJP in Jharkhand exerted no real pressure on the state government. Union Minister Dharmendra Pradhan never once engaged with NEET aspirants. The NTA chief, despite the paper leak, did not resign; he did not even accept moral responsibility. In contrast, the JPSC Chairman, E. Khizangte, stepped down on 22 July after CID raids at his home and office. That resignation, however, is little solace to students who have lost years of their lives.</p>
+
+<p>The students in Jharkhand have displayed remarkable discipline. They have consciously kept political, religious, and caste symbols off the stage. They have banned personal attacks on individuals and maintained a sharp focus on systemic reform. This is a movement led by young people who understand that their power lies in their unity, not in the patronage of any party.</p>
+
+<h2>Data Points: The Scale of Contamination</h2>
+
+<table>
+  <tr>
+    <th>Aspect</th>
+    <th>Detail</th>
+  </tr>
+  <tr>
+    <td>Exams passed by Abhay Tiwari (2013-2024)</td>
+    <td>More than 12 (state and central)</td>
+  </tr>
+  <tr>
+    <td>Post-dated cheques recovered</td>
+    <td>Rs 6 crore (number of cheques undisclosed)</td>
+  </tr>
+  <tr>
+    <td>CBI cases on recruitment fraud</td>
+    <td>150+ (investigations complete, trials pending)</td>
+  </tr>
+  <tr>
+    <td>Oldest pending CBI paper leak case</td>
+    <td>20 years</td>
+  </tr>
+  <tr>
+    <td>NEET UG 2024 arrested family members</td>
+    <td>3 out of 5 accused from one family; 5 family children passed NEET</td>
+  </tr>
+  <tr>
+    <td>JPSC examinations since state formation without corruption charges</td>
+    <td>None</td>
+  </tr>
+</table>
+
+<h2>The Road Ahead: A Republic Without Fair Exams?</h2>
+
+<p>Every country’s examination system carries a certain prestige. India’s used to. Today, it is a market. The youth are not just protesting a leak; they are questioning the very legitimacy of a state that cannot hold a single honest test. The Jharkhand government must accept that no closed-door committee will placate the anger. The central government must ensure that the CBI is empowered to deliver swift justice, not just file chargesheets. The political class must understand that using agencies like the ED to harass opponents while ignoring exam mafias is a recipe for social explosion.</p>
+
+<p>The students have said it plainly: “We do not care about any party. Come and support us, understand our pain.” Their agony is not partisan. It is the agony of a nation that has told its young: work hard, and you will rise. But when the results come, the seats are already sold. The paper has leaked, and so has the dream.</p>
+
+<h2>Criticisms</h2>
+<ul>
+<li>A transparent dialogue with protesting students in an open forum is consistently avoided by the government.</li>
+<li>The moral responsibility of resigning upon witnessing a paper leak is not accepted by senior bureaucratic officials in central agencies.</li>
+<li>Blacklisted private firms are re-hired for conducting competitive examinations, with no explanation provided.</li>
+<li>The ED is utilized as a political instrument to target opposition leaders rather than as an impartial investigative body.</li>
+<li>Fast-track trials in paper leak cases are not completed, and delay in justice is perpetuated.</li>
+<li>The credibility of the CBI is eroded by repeated failure to secure convictions in recruitment fraud cases.</li>
+<li>The Hemant Soren government in Jharkhand is allowed to project the CID’s actions as sufficient while systemic rot remains unaddressed.</li>
+<li>The network of post-dated cheques and land documents as collateral is not investigated with the urgency it demands.</li>
+<li>Political parties are observed to treat student movements as vote banks rather than engaging with the core issue of examination integrity.</li>
+<li>The NTA’s flawed examination processes are not overhauled despite repeated national-level leaks.</li>
+<li>A uniform national law to punish exam cheating with stringent action is not enacted by Parliament.</li>
+</ul>
+</div>

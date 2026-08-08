@@ -1,0 +1,344 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/t6bKGm4X54I" frameborder="0" allowfullscreen></iframe>
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#customPostsByAnkurWarikooHeader" target="_blank">See All Articles</a>
+<br>
+
+<div class="customOuterWrapper">
+
+<p>On a random Tuesday, in a big Indian city, five people woke up under the same sky, in the same city, on the same unremarkable Tuesday. No one would call it special. Yet, for each of them, the day unfolded in vastly different orbits — shaped not by the weather or the headlines, but by a single number: their monthly income. These five are not caricatures. They wear gold rings, chains, maybe even a bracelet. They think of themselves as middle class. But if you look closely, only one of them is the real middle class of India. The rest are far richer, or far poorer, than the label suggests.</p>
+
+<p>Most of us have no idea where the Indian middle class actually stands, how much they earn, or how different their life is from ours. So let’s walk through a Tuesday with these five people — and discover what money truly buys at every rung of the ladder.</p>
+
+<h2>The Real Indian Middle Class: Rs 12,000 a Month</h2>
+<p>If you line up all 1.4 billion Indians by income, the person standing exactly in the middle — the median Indian — earns around Rs 10,000 to 11,000 a month. Not a comfortable living. Not “aspirational.” This is the real Indian middle class, often invisible in our Instagram and LinkedIn feeds. According to the Periodic Labour Force Survey (PLFS) 2022-23, the average employed person in India earns about Rs 21,900 a month, while the average self-employed person brings home just Rs 13,500. So our first protagonist, earning Rs 12,000 a month, is not poor by statistical averages; he is, in fact, the median.</p>
+
+<p>His day does not begin at 6 a.m. It begins at 4:30 a.m. He lives in a shared room, a bed in a cramped space that costs him Rs 3,000 to 6,000 a month, depending on the city. Break that down: Rs 100-200 of his daily Rs 400 income goes just to keeping a roof over his head. Breakfast is home-cooked, never ordered. A simple vegetarian breakfast costs about Rs 29. It won’t be protein-rich; it’ll be carb and fat-heavy because hunger, not nutrition, is the enemy. Zomato and Swiggy? They don’t exist in his world. Not because the app isn’t on his phone — it might have come pre-installed — but because a single food order averages Rs 135-150, almost half his daily earning. His entire day’s food budget is around Rs 85-90.</p>
+
+<p>Commute is a battle. He lives far from work because cheap rents and job hubs never overlap. Local trains, metro, bus — Rs 10-15 a day. The minimum auto-rickshaw fare in India is around Rs 36 now. On a rainy evening, when he’s stuck in traffic or a breakdown, an auto is not an option. Uber, Ola? Unthinkable. He will walk, or push a bicycle bought with painstakingly saved money. By the time he reaches work, a significant chunk of his day’s income is already spent: rent (Rs 100-200), food (Rs 80-90), commute (Rs 15-20), along with tiny UPI dents, mobile recharge, the dreaded electricity bill that sometimes crosses Rs 400. Remember, he is not classified as poor. He is the Indian middle class.</p>
+
+<h2>The Comfort Seeker: Rs 30,000 a Month</h2>
+<p>To crack India’s top 10%, you need just Rs 30,300 a month (PLFS data). Our second person, earning Rs 30,000, is already in the elite 10%. His daily budget is Rs 1,000, three times that of the median earner. Life has loosened a little. He still commutes by metro or bus, at Rs 15-30 a day. But if it rains at 6 p.m., he might just splurge on a one-way auto for Rs 40. There’s breathing room. Yet, the edges are sharp. A survey by a financial advisory firm in 2023 found that 29% of Indians run out of money by the 15th of every month, and a staggering 75% have zero emergency funds. If next month’s salary doesn’t land, there is no fallback. Out of that Rs 30,000, maybe Rs 3,000-5,000 can be saved in a good month. But Diwali, a trip home, a movie outing, a Zomato order — and the savings evaporate. In this Rs 1,000-a-day life, there is space to breathe, but no space for a stumble.</p>
+
+<h2>A Pause for Financial Sense: The Monzi Interlude</h2>
+<p>Before we climb higher, a word about a tool that can make a difference, especially for anyone navigating these delicate income bands. Credit cards are a double-edged sword. For many young earners, the first Rs 30,000 salary feels enormous, and a shiny credit card seems like free money — until it turns into a debt trap. On the other hand, if used correctly, paying the full bill every month, a credit card can be a powerful financial ally. But with over 400 credit cards in India, which one is right for you?</p>
+<p>This is exactly why we built <strong>monzi.co</strong> — not to make money, but to truly help. In 60 seconds, through a few simple questions, it selects the most suitable credit card for you from those 400, based on your habits and needs. No personal details asked, no tracking, no ads. You see the card; you decide. No one will chase you. The intention is transparent: to become your best companion for any financial decision — credit cards today, maybe mutual funds, insurance, or loans tomorrow. It’s a small step towards making informed choices in a country where financial literacy often arrives too late.</p>
+
+<h2>When Money Buys Time: Rs 80,000 a Month</h2>
+<p>Our third individual earns Rs 80,000 a month — roughly Rs 2,665 a day. He’s no longer in a shared room but a one-bedroom apartment, paying Rs 12,000-15,000 in rent, perhaps more if close to work. For the first time, money starts buying something precious: time. A cook arrives in the morning, prepares breakfast and dinner, and leaves — costing Rs 2,000-5,000 depending on the city and tasks. A cleaner handles the sweeping, mopping, dishes, and laundry for another Rs 3,000-5,000. This marks a profound shift: out of 1.4 billion Indians, only the top 1% wake up and watch their breakfast being made for them while sipping tea. The money that hired the cook bought back the hours spent chopping, stirring, cleaning. But is that reclaimed time used well? Not always. Often, it’s swallowed by reels and YouTube shorts. Still, the availability of time is a luxury bought only after a certain income threshold.</p>
+<p>Commute is now a two-wheeler or an entry-level car, or at least occasional cabs, adding Rs 5,000-7,000 a month. The life seems sorted. Yet, underlying numbers are sobering. Among earners in this bracket, only 40% are debt-free; 60% carry some loan. And the emergency fund statistic remains brutal: 75% still have none. The margin for shock is thin, even when the salary sounds fat.</p>
+
+<h2>The Distance from India: Rs 3,00,000 a Month</h2>
+<p>At Rs 3 lakh a month, you’ve entered India’s top 1%. The income tax data shows that to be in the top 1%, you need an annual income of about Rs 30-32 lakh — so our fourth character, earning Rs 3 lakh a month, comfortably fits. His life is insulated. He lives in a posh neighborhood, a two-bedroom apartment with rent between Rs 70,000 and Rs 1,25,000. The household staff is full-blown: a cook, a cleaner, a nanny for the children, a driver. Their combined salaries could be Rs 40,000-60,000 a month. Children go to international or premium schools, with monthly fees starting at Rs 10,000-30,000. This is the first income level where, if expenses are managed wisely, substantial savings and investment discussions begin: where to invest, how much to SIP.</p>
+<p>But there’s a strange phenomenon here: distance from India. Gated communities create a bubble — 24/7 electricity and water, security, clubhouse, children playing within walls, school a short drive away. One rarely encounters the chaos, the crowds, the struggle that forms the daily reality of the median Indian. You step out of your car only into insulated spaces. This separation is arguably what money buys at this stage — the ability to curate your environment so thoroughly that you forget how most of your country lives. The downside? A lifestyle so calibrated that it becomes hard to imagine scaling down. And when income stops — because for many freelancers or entrepreneurs it eventually will — the fall can be catastrophic. Up to 65% of high earners have not planned for that eventuality.</p>
+
+<h2>The 0.1% and the Power of Options: Rs 30,00,000 a Month</h2>
+<p>Our final protagonist earns Rs 30 lakh a month — Rs 3.6 crore a year. He is not just top 1%; he is in the 0.35% of Indians who declare over Rs 1 crore in income, and likely even the 0.1%. Here, the numbers blur into lifestyle statements: the house is likely owned, not rented, with an EMI alone of Rs 2-5 lakh a month, for a property worth several crores. A meal out can be Rs 5,000-10,000. At this altitude, the value of money changes. A Rs 300 purchase doesn’t even register; Rs 500 feels negligible; Rs 700 isn’t a decision; Rs 1,000 is the new spare change. There is a psychological inflation that resets the floor of noticeable spending.</p>
+<p>Yet, the most profound thing this income buys is not a bigger house or a fancier car. It buys <strong>options</strong>. You want to live in a tower or in a villa? In this country or abroad? Do you want to work, and if so, with whom, how many hours, on what terms? Every aspect of life becomes a conscious choice rather than a compromise. That is the ultimate luxury — the sovereignty over one’s own time and energy. When you can walk away from anything because your financial base gives you that power, you have arrived at the pinnacle of what money can provide.</p>
+
+<h2>The Rs 2,000 Shock: A Thought Experiment</h2>
+<p>Imagine a sudden, unforeseen expense of Rs 2,000 — a broken phone screen, a dental emergency, a medical test. How does it hit each of these five lives?</p>
+<ul>
+<li>For the Rs 12,000 earner, Rs 2,000 equals five days’ wages. He cannot absorb it. He will make frantic calls — to family in the village, to a brother-in-law, to a sister. It becomes a begging exercise. If help doesn’t come, a local moneylender steps in, and a small problem balloons into a debt spiral.</li>
+<li>For the Rs 30,000 earner, it’s two days’ income. It goes onto a credit card — no distress calls, but the monthly SIP gets paused that month. The safety net is thin, but the immediate crisis is managed.</li>
+<li>For the Rs 80,000 earner, it’s less than a day’s earning. A UPI transfer and it’s done. The day moves on as if nothing happened.</li>
+<li>For the Rs 3,00,000 earner, it’s barely a rounding error. The amount might not even be mentally registered as an expense.</li>
+<li>For the Rs 30,00,000 earner, it’s invisible — not even a line in the sand.</li>
+</ul>
+<p>This simple Rs 2,000 illustrates the granularity of financial vulnerability. It’s not just about how much you earn; it’s about how much shock you can absorb without derailing your life.</p>
+
+<h2>What Each Stage Buys You</h2>
+<p>When you climb from Rs 12,000 to Rs 30,000, money buys you <strong>basic comfort</strong> — the comfort of an auto when it rains, a safer neighborhood, a meal from a dabba instead of cooking. From Rs 30,000 to Rs 80,000, you purchase <strong>your own time</strong> back — no longer cooking, cleaning, or doing laundry yourself; others do it for you, freeing up hours that, even if squandered, are now yours. From Rs 80,000 to Rs 3,00,000, you buy <strong>distance from India</strong> — a curated life inside a gated world, where the messy, loud, struggling India is kept firmly at arm’s length. And from Rs 3,00,000 to Rs 30,00,000 and beyond, you acquire <strong>options</strong> — the near-total freedom to design your life on your own terms.</p>
+
+<h2>Conclusion: The Invisible Realities of Indian Incomes</h2>
+<ul>
+- The true Indian middle class earns around Rs 10,000-12,000 a month, far below what most urbanites imagine.</li>
+- Data from the Periodic Labour Force Survey and income tax returns reveal extreme concentration: the top 10% threshold is just Rs 30,300/month, and the top 1% starts at roughly Rs 2.5 lakh/month.</li>
+- Across income brackets, emergency preparedness is abysmal — 75% of Indians have no emergency fund, and even among relatively high earners, debt is widespread.</li>
+- A small financial shock of Rs 2,000 can push someone at the median into a debt trap, while it is entirely inconsequential for top earners — highlighting the fragility of lower-income lives.</li>
+- As income rises, the nature of what money buys shifts: from sustaining life, to comfort, to time, to insulation, and finally to personal agency.</li>
+- The biggest illusion is the label "middle class." Most people wearing it are far richer than the median Indian, and this cognitive gap blinds us to the vast inequality that shapes everyday existence in the country.</li>
+- Financial tools, when used wisely (like selecting the right credit card through platforms like monzi.co), can help bridge some gaps, but systemic awareness and emergency planning are non-negotiable for true security.</li>
+</ul>
+
+<h2>References</h2>
+<ul>
+- Periodic Labour Force Survey (PLFS) 2022-23, Ministry of Statistics and Programme Implementation, Government of India.</li>
+- Income Tax Department, Government of India: Statistics on income distribution and tax filers (2023).</li>
+- Financial Wellness Survey, 2023 (various independent reports); data on monthly cash exhaustion and emergency fund prevalence.</li>
+- Monzi.co: Credit card selection platform built for transparent, unbiased financial guidance. (Disclaimer: This is a sponsor-supported initiative, integrated here as a resource.)</li>
+</ul>
+</div>
