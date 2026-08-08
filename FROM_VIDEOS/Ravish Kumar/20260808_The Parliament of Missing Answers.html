@@ -1,0 +1,358 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/U0VW0mDlYQw" frameborder="0" allowfullscreen></iframe>
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#customNewsByRavishKumarHeader" target="_blank">See All Articles</a>
+<br>
+
+<div class="customOuterWrapper">
+
+<h2>The Parliament of Missing Answers</h2>
+<p>
+Fifteen days. Fifteen long, rain-drenched days in the monsoon session of Parliament, and one question hangs heavier than the Delhi sky – where is the Home Minister? The familiar scene outside and inside the House has frozen into a still frame: opposition MPs clutching placards, hoisting banners, demanding an answer. “Amit Shah, jawab do!” they chant. Cameras beam this ritual daily, but the man they seek remains invisible. Not a single frame captures him entering the Lok Sabha or Rajya Sabha. No off-record whisper explains why the man who once boasted of his 56-inch chest, who promised to walk into the lion’s den, now scuttles through the parliamentary corridors without ever taking his seat. The question is not just political – it is existential for our democracy: if the executive refuses to be questioned inside the temple of accountability, what remains of the temple?
+</p>
+
+<h2>A Monsoon without a Statement</h2>
+<p>
+The demand is simple. The opposition wants a statement from the Union Home Minister on the violence that unfolded in Delhi – where students, including young women, were lathi-charged, tear-gassed, and struck with pellet guns. It was not a border skirmish, not a foreign policy crisis; it happened on the streets of the national capital, under the watch of a police force that answers directly to the Ministry of Home Affairs. The nation saw bodies of young men and women bruised, their parents weeping. Yet, for fifteen days, the minister in charge refuses to walk a few steps into the House and address the elected representatives of the people. This is not a matter of scheduling; it is an arrogance that mocks the very idea of parliamentary oversight.
+</p>
+
+<h2>The Silence of the ‘Godi Media’</h2>
+<p>
+Where are the fearless anchors who hound the opposition over every whisper? Where are the YouTube patriot-chasers who camp at Jantar Mantar for every minor cause? Their microphones suddenly go mute when it’s time to ask the Home Minister why he is dodging Parliament. The same machines that amplified the Prime Minister’s promise to make Assam flood-free now cannot find the bandwidth to ask why Delhi’s streets ran red under police batons. Instead, the TV studios divert the question, turning it sideways – maybe they ask an Abhijit, an Ajit, a scribe who will pose a soft query so the audience feels that journalism is still breathing. But nobody asks the man who holds the baton, literally, under his ministry. The Godi media, once so eager to frame Rahul Gandhi’s every blink, now blinks itself when Amit Shah’s disappearance turns into a national spectacle. Is it fear? Or is it a silence that has been purchased?
+</p>
+
+<h2>What Does the Government Fear?</h2>
+<p>
+The ruling party’s logic, if it can be called that, is a puzzle wrapped in evasion. Parliamentary Affairs Minister Kiren Rijiju argues that the House should function first, and then the minister will reply. But the House cannot function precisely because the opposition insists on a statement before any other business. It’s a deadlock crafted by design. Rijiju also claims the issue is “over,” that the country has moved on. Moved on? A nation that cannot forget a temple fund embezzlement is told to forget that its police smashed the bones of students? The BJP spokespersons and their digital army are spinning a fresh narrative: Amit Shah will arrive on August 6 with a bill to choke the funding of “anti-nationals.” Suddenly, the Home Minister’s calendar is leaked to friendly handles, creating a buildup of a heroic entry. But not a single anchor dares to ask why the same Home Minister could not spare fifteen minutes on any of the preceding fifteen days to utter a single sentence about the violence. He is not hiding in an undisclosed bunker; he is reportedly sitting in his Parliament chamber, attending office meetings, even meeting various Chief Ministers and religious leaders – his pictures with Bihar’s Shambhavi Chaudhary, Rajasthan’s CM, Goa’s CM, and a Christian spiritual guru on August 6 are proof that his legs work perfectly well. The walk to the Lok Sabha chamber, it seems, is the only journey his courage cannot complete.
+</p>
+
+<h2>A Double Game of Cowardice</h2>
+<p>
+Only two conclusions can be drawn from this prolonged vanishing act. One: the government deliberately disrespects Parliament, treating it as an irrelevant debating club that must not interfere with the executive writ. Two: the ruling party is terrified of facing the opposition inside the House. For a regime that once thundered about decisiveness and fearlessness, this cowering is a spectacular reversal. The very man who promised to rewrite the geography of Kashmir and end floods in Assam now hides behind procedural tricks to avoid a question on a police lathi. The irony is brutal. And the opposition, stunned perhaps by the sheer audacity of the denial, keeps holding up posters – “Amit Shah Missing” – and I can imagine the Home Minister chuckling at those placards from some safe distance. But the laughter can’t mask the constitutional vacuum his absence creates.
+</p>
+
+<h2>The Cooperative Disaster: A Minister’s Report Card</h2>
+<p>
+While the government’s defenders dodge the Delhi question, let’s examine another portfolio that Amit Shah holds – the Ministry of Cooperation. This was the grand experiment of Atmanirbhar Bharat, a ministry created to empower cooperative societies, particularly in the Prime Minister’s home state of Gujarat. The data, placed in Rajya Sabha by the central government itself, tells a story of spectacular failure. Out of over 18,000 cooperative societies in Gujarat, between 10% and 15% are completely non-functional, and more than 1,300 are on the verge of bankruptcy. The state that is showcased as a laboratory of governance is drowning in cooperative losses. And the Cooperation Minister, who promised to make Assam flood-free (Assam still floods), who failed to bring peace to Manipur as Home Minister, now presides over a financial ruin that unfolds silently. If a minister cannot manage a department of friendly cooperatives, what confidence can the country have in his ability to manage the security of 1.4 billion people?
+</p>
+
+<table>
+<caption>Gujarat Cooperative Societies: A Portrait of Collapse</caption>
+<thead>
+<tr><th>Indicator</th><th>Data (as per Govt. reply in Rajya Sabha)</th></tr>
+</thead>
+<tbody>
+<tr><td>Total Cooperative Societies in Gujarat</td><td>Over 18,000</td></tr>
+<tr><td>Societies in Loss</td><td>A significant portion, with many incurring continuous losses</td></tr>
+<tr><td>Non-functional Societies</td><td>Approximately 10% to 15%</td></tr>
+<tr><td>Societies Facing Bankruptcy</td><td>Over 1,300</td></tr>
+</tbody>
+</table>
+
+<p>
+These are not the numbers of a minister who can lecture others on efficiency. Yet, the same government that dodges accountability on police brutality expects the opposition to stay silent on a record of administrative negligence. The demand for a statement is not a “drama,” as Rijiju calls it; the drama is the Government’s stalling of Parliament to protect a minister from answering for his failures.
+</p>
+
+<h2>A Broken Promise: Jammu and Kashmir’s Statehood</h2>
+<p>
+The protests outside Parliament are now also laced with another unkept vow – the restoration of Jammu and Kashmir’s statehood. The Supreme Court’s constitutional bench in December 2023 directed the Centre to restore statehood at the earliest and hold assembly elections by September 2024. Elections were conducted, but statehood remains a phantom. Two years after the court’s historic order, and over six years since the abrogation of Article 370, the Modi government has failed to produce a timeline. In December 2025, when petitioners approached the apex court again, the government pleaded that “ground realities” and “cross-border situation” cannot be overlooked – the same old excuse wrapped in new paper. The Prime Minister himself had given a “sovereign guarantee” that statehood would be restored, and Amit Shah had repeated that pledge in Parliament. Today, with opposition MPs including Jammu and Kashmir Chief Minister Omar Abdullah holding banners that remind the Home Minister of his own words, the promise lies buried under a silence as deep as the one over Delhi violence. The government’s tactic is transparent: stall, deflect, create a spectacle of legislative activity on bills that neutralise dissent, while the core questions of democratic accountability are left to rot.
+</p>
+
+<h2>A Session Held Hostage</h2>
+<p>
+The monsoon session is bleeding away. Day after day, the Rajya Sabha and Lok Sabha are adjourned after verbal clashes between the Leader of Opposition Mallikarjun Kharge and Parliamentary Affairs Minister Kiren Rijiju. Kharge has made it excruciatingly clear: the opposition wants only two things – an apology from the Prime Minister for the breakdown of parliamentary discourse and a statement from the Home Minister on the Delhi student violence. The request is so minimal that it shames the government’s refusal. The government, meanwhile, hides behind the bizarre argument that the opposition cannot dictate which minister should come and when. True, but the Home Minister is not a random junior functionary; he is the custodian of internal security. When the police under his command are accused of brutality, his presence in Parliament is not an opposition’s whim – it is a constitutional necessity. But the government has chosen to strangle the session rather than let a single day of debate expose the rot.
+</p>
+
+<h2>A Calculated Absence</h2>
+<p>
+The media’s role in normalising this paralysis is chilling. Not a single prime-time debate has stripped the layers of this evasion. Instead, the managed narrative keeps the country distracted – a new bill, a new threat, a new enemy. The Home Minister, who once strode the corridors with an air of invincibility, now reveals a political fragility that his earlier bluster concealed. He has shown that when a storm of questions rises, he can step backwards and vanish. But the real damage is not to his image; it is to the institution of Parliament. If a minister can refuse to answer for fifteen days and remain unscathed, then the sovereign body that fought for its right to question the executive has been reduced to a stage prop. The opposition is left wondering: is the government so weak that a single statement would shatter its narrative? Or is the opposition so strong that it cannot be faced? Both possibilities are ominous for a democracy that still pretends to function under the rule of law.
+</p>
+
+<h2>Criticisms</h2>
+<ul>
+<li>No statement is provided by the Home Minister on the police violence against students in Delhi, despite daily demands for over fifteen days.</li>
+<li>Parliament is deliberately prevented from functioning by the government’s refusal to allow a discussion on the conduct of the Delhi Police.</li>
+<li>Accountability for the baton charges, pellet gun use, and tear gas on unarmed students is completely evaded by the Ministry of Home Affairs.</li>
+<li>The media’s failure to persistently question the Home Minister’s absence is allowed to become a shield for executive arrogance.</li>
+<li>Questions about the financial collapse of thousands of cooperative societies in Gujarat, under Amit Shah’s ministerial charge, are not raised by the so-called nationalist press.</li>
+<li>The restoration of Jammu and Kashmir’s statehood is delayed indefinitely, disregarding a Supreme Court directive and a solemn promise made by the Prime Minister and the Home Minister.</li>
+<li>The government’s tactic of using bills to divert attention from unanswered questions of democratic accountability is not challenged by the parliamentary majority.</li>
+<li>The opposition’s legitimate demand for a ministerial reply is dismissed as a “drama” by the ruling party, while the real drama of ministerial vanishing is ignored.</li>
+<li>The moral authority of the Home Minister’s office is eroded by a prolonged absence from the House, yet no censure is initiated by the Speaker or the Chairman.</li>
+<li>The narrative that the issue is “over” is promoted by the government, while the victims of police excess still await justice and a single word of acknowledgment.</li>
+<li>The courage to face elected representatives is exhibited so little that the entire parliamentary session is sacrificed to protect one individual from scrutiny.</li>
+</ul>
+</div>
