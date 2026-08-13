@@ -1,0 +1,318 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/G_HDxOy9OMk" frameborder="0" allowfullscreen></iframe>
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#CUSTOM_SECTION_ID" target="_blank">See All Articles</a>
+<br>
+
+<div class="customOuterWrapper">
+
+        <h1>RBI Holds Repo Rate at 5.25%: What the Pause Means for Home Loan Borrowers</h1>
+        <p>If you were hoping for another cut in your home loan EMI, the Reserve Bank of India has asked you to wait a little longer. In its latest Monetary Policy Committee meeting, the RBI kept the repo rate unchanged at 5.25%, citing domestic economic conditions, inflation trends, and global uncertainties. The decision is a pause, not a surprise, but it leaves millions of borrowers asking the same question: what now?</p>
+
+        <h2>A Pause, Not a Surprise</h2>
+        <p>The RBI's decision to hold the repo rate at 5.25% reflects a central bank that is choosing stability over further stimulus. According to the RBI's latest MPC statement, the pause comes after assessing a mix of domestic inflation pressures and an uncertain global environment. Industry experts quoted by Business Standard note that the central bank now appears focused on ensuring that past rate cuts are fully passed on by banks rather than rushing into another reduction.</p>
+        <p>That focus on transmission is important. The RBI has already delivered significant relief over the past year, and the current hold signals that the central bank wants to consolidate those gains before considering further easing. For anyone expecting a quick follow-up cut, the message is clear: the emergency phase of aggressive loosening is over.</p>
+
+        <h2>What the Hold Means for Your Home Loan</h2>
+        <p>For most borrowers, the immediate answer is not much. Since a large share of home loans in India are linked to benchmarks such as the repo rate, your EMI is likely to remain unchanged for now. Banks are expected to keep lending rates broadly stable unless liquidity conditions change significantly. For those with fixed-rate home loans, there is no immediate impact either.</p>
+        <p>But that does not mean borrowers are stuck. If your existing loan carries a much higher interest rate than the current market range, you could consider refinancing or making part prepayments to reduce your overall interest burden over time. A stable rate environment is actually a good moment to renegotiate or restructure, because the base rate is unlikely to move sharply in the near term.</p>
+
+        <h2>The Context: 125 Basis Points of Relief Since Early 2025</h2>
+        <p>While there is no fresh relief this time, borrowers have already benefited significantly. Since early 2025, the RBI has cut the repo rate by a cumulative 125 basis points, according to data reported by Business Standard. That has reduced borrowing costs for many floating-rate home loans. Home loan rates are still hovering around 7% to 7.25% for many eligible borrowers, making borrowing cheaper than it was a few years ago.</p>
+        <p>This context matters. A pause after such a substantial easing cycle is not unusual. Central banks often take a wait-and-see approach after a series of cuts to gauge the impact on credit growth, consumption, and inflation. The RBI's current stance suggests that it believes the cumulative cuts are sufficient for now, and that the bigger challenge is ensuring those cuts actually reach borrowers through lower lending rates.</p>
+
+        <h2>Should Homebuyers Be Worried? Not Immediately</h2>
+        <p>A stable interest rate environment gives borrowers greater certainty while planning long-term finances. For prospective homebuyers, the current rate environment remains relatively favourable. If you already have a floating-rate home loan, your EMI is likely to stay where it is, which means no sudden upward shock. That predictability is valuable in a volatile global economy.</p>
+        <p>The RBI's decision to hold rates also suggests that the central bank is not seeing an urgent need to tighten, which would have been a far more worrying signal for the housing market. The absence of a hike is itself a form of support, even if it does not feel like fresh relief.</p>
+
+        <h2>The Road Ahead: Inflation and Global Risks</h2>
+        <p>For now, the outlook remains stable, but there are risks on the horizon. Global uncertainty, higher fuel prices, and rising input costs are keeping inflation under pressure. The RBI has now raised its inflation forecast for FY27 to 5%, according to the latest MPC statement. That upward revision is a clear signal that the central bank is not comfortable with the price trajectory.</p>
+        <p>What does this mean for borrowers? No fresh relief, but no fresh burden either. The lower rates delivered over the past year are likely to stay in place for some time, giving households a window of stability. The next move, whenever it comes, will depend on how quickly inflation cools and whether global headwinds ease.</p>
+
+        <h2>Facts</h2>
+        <p>- Repo rate held at 5.25% in the latest RBI Monetary Policy Committee meeting.</p>
+        <p>- Cumulative repo rate cuts since early 2025: 125 basis points.</p>
+        <p>- Typical home loan rate for eligible borrowers: 7% to 7.25%.</p>
+        <p>- RBI's inflation forecast for FY27 raised to 5%.</p>
+        <p>- Most home loans in India are linked to benchmarks such as the repo rate.</p>
+        <p>- Fixed-rate home loans see no immediate impact from the current hold.</p>
+
+        <h2>Criticisms</h2>
+        <p>- The RBI's pause prioritizes inflation optics over borrower relief, leaving millions of homeowners with EMIs that could have fallen further if transmission had been faster.</p>
+        <p>- By raising its inflation forecast to 5% while holding rates, the central bank signals a tolerance for sustained price pressure that contradicts its own mandate of price stability.</p>
+        <p>- Citing global uncertainty without offering a clear timeline for future cuts leaves borrowers in a state of limbo, unable to plan long-term finances with confidence.</p>
+        <p>- The RBI's focus on ensuring past rate cuts are passed on shifts responsibility to banks, but the central bank itself holds the primary lever for meaningful additional relief and has chosen not to use it.</p>
+    </div>

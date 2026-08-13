@@ -1,0 +1,322 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OFiT2GLr6Wo" frameborder="0" allowfullscreen></iframe>
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#CUSTOM_SECTION_ID" target="_blank">See All Articles</a>
+<br>
+
+<div class="customOuterWrapper">
+
+<h1>The Old Retirement Formula Is Heading for Retirement</h1>
+
+<p>For decades, retirement meant one clean exit: work until 60, collect a pension, and slow down. That script is now being torn up. Inflation, longer lives, rising healthcare costs, and disappearing pensions have made the old formula look less like a plan and more like a fantasy. Financial experts are converging on a new reality: retirement is no longer a single endpoint but a series of work-life reinventions.</p>
+
+<h2>The Multi-Retirement Model</h2>
+<p>According to HSBC's Rise of Multi-Retirement study, many professionals now embrace what the bank calls a multi-retirement model. Instead of stopping work once, they take intentional career pauses every five to six years. These breaks last six to twelve months and are used to travel, start businesses, care for children or parents, or pursue personal interests before returning to work. HSBC's Head of International Wealth and Private Banking told a capital markets audience that the classic retirement model is becoming outdated. The research found that 37% of affluent adults surveyed across 12 global markets planned to take a mini-retirement. Among those who had already done so, 87% said it improved their quality of life. The signal is clear: the linear work-then-stop biography is losing ground.</p>
+
+<h2>The Death of the One-Crore Dream</h2>
+<p>In India, the debate sharpened after Sandeep Jaitwani, co-founder of a wealth management firm, suggested that affluent urban Indians may need a retirement corpus of nearly 40 crore rupees to sustain a comfortable metro lifestyle. His estimate assumes monthly expenses between 1 lakh and 2 lakh rupees, a 30-year retirement, and inflation averaging around 9%. It excludes personal assets like homes and vehicles. Financial planners have long used a simpler parameter: save enough to cover 25 to 30 years of annual expenses. That benchmark already demolishes the once-popular belief that 1 crore rupees was enough. The old number was never rooted in economic reality; it was a comfortable myth that has now expired.</p>
+
+<h2>FIRE and the Early Exit Fantasy</h2>
+<p>A 2025 Grant Thornton Bharat survey found that nearly 43% of Indians under 25 want to retire before 55. The typical government retirement age in India is 60. Social media amplifies stories of professionals quitting high-paying jobs to travel or pursue passion projects. But financial experts warn that early retirement demands far larger savings because retirees may need to fund 40 to 50 years without regular income. The FIRE movement, financial independence retire early, has captured millennial and Gen Z attention, but the arithmetic is unforgiving.</p>
+
+<h2>America's Savings Gap</h2>
+<p>The same pressures are visible in the United States. The 2026 Retirement Confidence Survey by the Employee Benefit Research Institute and Greenwald Research found that 36% of Americans were not confident they would have enough money to live comfortably in retirement. Savings data show a brutal gap between averages and medians. Americans aged 35 to 44 have an average retirement balance of about $141,000, but the median is only $45,000. For those aged 55 to 64, the average is $537,000, while the typical balance is just $185,000. Averages are skewed upward by wealthy households, so medians are more honest. According to the National Institute on Retirement Security, the average 401(k) balance is around $40,000.</p>
+
+<h2>What Actually Determines Readiness</h2>
+<p>Financial planners say several factors decide whether someone is truly prepared: income levels, contribution rates, inflation, market performance, healthcare costs, and debt obligations. Workplace pensions, once a reliable safety net, have disappeared in many industries. The burden has shifted almost entirely onto individuals, many of whom are unprepared.</p>
+
+<h2>Conclusion</h2>
+<p>So is the classic retirement model outdated? Probably. Instead of one final exit, retirement is becoming a flexible phase with part-time work, career breaks, and multiple reinventions spread across adulthood. That may be less comfortable, but it is more realistic.</p>
+
+<h2>Facts</h2>
+<ul>
+<li>HSBC's Rise of Multi-Retirement study found 37% of affluent adults across 12 markets planned a mini-retirement.</li>
+<li>87% of those who took a mini-retirement said it improved their quality of life.</li>
+<li>Sandeep Jaitwani estimates affluent urban Indians may need nearly 40 crore rupees for retirement.</li>
+<li>A 2025 Grant Thornton Bharat survey found 43% of Indians under 25 want to retire before 55.</li>
+<li>The 2026 Retirement Confidence Survey found 36% of Americans lack confidence in retirement savings.</li>
+<li>Median U.S. retirement savings are $45,000 for ages 35-44 and $185,000 for ages 55-64.</li>
+</ul>
+
+<h2>Criticisms</h2>
+<ul>
+<li>Governments have allowed workplace pensions to erode without building adequate replacement safety nets.</li>
+<li>Financial experts often quote averages that mislead ordinary savers about the true state of retirement readiness.</li>
+<li>Media outlets repeat the 40 crore figure without sufficiently explaining its narrow assumptions about inflation, expenses, and asset exclusions.</li>
+<li>Employers have shifted retirement risk onto individuals while cutting back on guaranteed pension contributions.</li>
+<li>The FIRE movement is promoted widely but rarely accompanied by honest warnings about the brutal savings required.</li>
+</ul>
+</div>

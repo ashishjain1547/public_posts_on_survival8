@@ -1,0 +1,341 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-vZXgApsPCQ" frameborder="0" allowfullscreen></iframe>
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#CUSTOM_SECTION_ID" target="_blank">See All Articles</a>
+<br>
+
+<div class="customOuterWrapper">
+
+<h1>The Gift of Rejection: What 100 Days of Asking Taught Me</h1>
+
+<p>At six years old, I stood in a classroom with 39 other children while our first-grade teacher attempted a lesson in gift giving and compliments. We were told to compliment each other, and when our names were called, we could pick up a gift and sit down. It sounded warm. But the room slowly emptied. Twenty children left. Ten. Five. Three. I was still standing. The compliments had stopped. The teacher panicked and asked if anyone would say anything nice about the remaining children. Silence. Then she told us to take our gifts and sit down, adding that we should behave next year so someone might say something nice about us.</p>
+<p>That moment branded me. Another child might have shrugged it off, but for me it became a template for public rejection, a wound that shaped my behavior for decades. This is the story of how I turned that wound into a research project, a practice, and eventually a gift.</p>
+
+<h2>Two Versions of Me</h2>
+<p>There were two competing identities inside my head. One was the six-year-old who learned that being unseen in a group was terrifying and who would do anything to avoid public rejection. The other emerged eight years later, when Bill Gates visited Beijing. I was 14, and after hearing him speak, I wrote a letter to my family declaring that by age 25 I would build the largest company in the world and that my company would buy Microsoft. I underlined the key words in terrible handwriting. That version of me wanted domination, scale, and world-changing impact.</p>
+<p>For years, these two selves fought. The six-year-old wanted safety. The fourteen-year-old wanted conquest. Every time I had a new idea, wanted to speak up in a meeting, or considered starting something, the six-year-old won. I did not start that company. At 30, I was a marketing manager at a Fortune 500 company, feeling stagnant. The rejection I experienced when an investment opportunity fell through almost made me quit. Then I asked myself: Would Bill Gates quit after one rejection? Would any successful founder? No.</p>
+<p>I realized I could not build a better product or team until I became a better leader. I had to stop letting the six-year-old dictate my life.</p>
+
+<h2>Turning Fear into a Game</h2>
+<p>I searched online for how to overcome fear of rejection. I found psychology articles about where the pain comes from and a large pile of shallow inspiration: "Do not take it personally" and "Just overcome it." But none of that explained why I was still terrified.</p>
+<p>Then I found RejectionTherapy.com, a game invented by Canadian entrepreneur Jason Conley. The premise is simple: for 30 days, go out and seek rejection every day until the pain loses its grip. I decided to go further. I filmed myself getting rejected for 100 days and made a video blog.</p>
+<p>The first day, I approached a security guard and asked to borrow $100. He said no and asked why. I said sorry and ran. Watching the footage that night, I saw how scared I looked. But I also saw that the man was not menacing. He asked why. He invited me to explain. I had given up before trying. I decided that the next day, no matter what happened, I would not run.</p>
+
+<h2>Three Early Experiments</h2>
+<p>On day two, I asked a burger joint for a "burger refill" like a drink refill but with a burger. The cashier was confused and said no. Instead of fleeing, I stayed engaged. I told him I loved their burgers and would love them more if they offered refills. He said he would tell his manager. The life-and-death feeling from day one had already faded. I had stayed.</p>
+<p>On day three, I walked into a Krispy Kreme and asked for donuts shaped like Olympic rings, five interlinked circles. The donut maker took the request seriously, sketched the colors and rings, and 15 minutes later handed me a box of Olympic-themed donuts. That video reached over five million views. I was stunned, and so was the internet.</p>
+<p>But fame and notoriety did not change me. What I wanted was to learn. So I turned the remaining days into a research project.</p>
+
+<table>
+<thead>
+<tr><th>Day</th><th>Request</th><th>Initial response</th><th>Lesson</th></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>Borrow $100 from a stranger</td><td>No, followed by "why"</td><td>Stay engaged instead of running</td></tr>
+<tr><td>2</td><td>Burger refill</td><td>No, confusion</td><td>Staying reduces panic</td></tr>
+<tr><td>3</td><td>Olympic donuts</td><td>Yes, after serious effort</td><td>Asking can unlock unexpected yes</td></tr>
+</tbody>
+</table>
+
+<h2>The Power of Asking Why</h2>
+<p>One day I knocked on a stranger's door holding a flower and asked if I could plant it in his backyard. He said no. Before he could close the door, I asked why. He explained that his dog would dig up anything in the backyard and that I should try Connie across the street because she loved flowers. I did, and Connie was delighted. Half an hour later, the flower was planted in her backyard.</p>
+<p>If I had left after the initial no, I would have invented a story: he did not trust me, he thought I was crazy, I looked bad. None of that was true. The real reason was that my offer did not fit his situation. He even gave me a referral. The word "why" had turned a no into a yes.</p>
+
+<h2>Naming the Doubt</h2>
+<p>Another lesson came at Starbucks. I asked the manager, Eric, if I could be a Starbucks greeter, like a Walmart greeter but for coffee customers. He looked skeptical. Then I asked, "Is that weird?" He said yes, it was really weird. But as soon as I named the doubt, his whole posture changed. He said, "Yeah, you can do this. Just do not get too weird." For the next hour, I greeted every customer who walked in.</p>
+<p>The phrase "Is that weird?" signaled that I saw the situation the same way he did. It built trust. I learned that if I mentioned a doubt someone was already having before I asked for something, they were more likely to say yes.</p>
+
+<h2>Fulfilling a Dream by Asking</h2>
+<p>I come from four generations of teachers. My grandmother told me I could do anything, but she thought teaching would be great. I wanted to be an entrepreneur, so I never pursued it. But during the experiment, I asked: what if I simply asked to teach a college class?</p>
+<p>I lived in Austin at the time, so I went to the University of Texas, knocked on professors' doors, and asked to teach their classes. The first two attempts failed. On the third try, a professor was impressed that no one had done this before. He asked me to come back in two months with my PowerPoints and lesson. Two months later, I taught a class. When I finished, I walked out crying. I had fulfilled a lifelong dream just by asking. I had assumed I needed a PhD or a massive company to teach, but all I needed was the courage to ask.</p>
+
+<h2>Rejection Is a Reaction, Not a Verdict</h2>
+<p>In my research, I found that the people who changed the world were often met with initial and sometimes violent rejection. Martin Luther King Jr., Mahatma Gandhi, Nelson Mandela, and Jesus Christ all faced rejection that could have defined them. Instead, they let their reactions after rejection define them. They embraced rejection as part of the path.</p>
+<p>We do not have to be icons to learn this. In my case, rejection was my boogeyman, my curse, because I ran from it. When I started embracing it, it became the biggest gift of my life. I began teaching people how to turn rejections into opportunities through my blog, talks, a book, and even technology designed to help people overcome the fear of rejection.</p>
+<p>When you face your next obstacle or failure, consider the possibilities. Do not run. If you embrace rejection, it might become your gift too.</p>
+
+<h2>Criticisms</h2>
+<ul>
+<li>The first-grade teacher is criticized for turning a team-building exercise into a public humiliation without accounting for the emotional harm to the children left unchosen.</li>
+<li>The education system is criticized for endorsing unstructured peer-validation activities that can reinforce social exclusion rather than teach empathy or resilience.</li>
+<li>Bill Gates is criticized for being presented as a singular, conquest-oriented template of success that obscures the collaborative and systemic nature of real achievement.</li>
+<li>The mainstream business media is criticized for glorifying rejection as a necessary rite of passage while ignoring the psychological toll on people without support systems.</li>
+<li>The self-help industry is criticized for offering superficial advice such as "do not take it personally" without addressing the structural or emotional roots of rejection fear.</li>
+<li>Corporate managers are criticized for rejecting ideas without explanation, which deprives employees of actionable feedback and reinforces silence.</li>
+<li>The tech founder culture is criticized for romanticizing rapid domination and acquisition, which fuels unhealthy comparison and anxiety among aspiring entrepreneurs.</li>
+<li>Public figures who narrate only their post-rejection success are criticized for omitting the privileges and luck that softened their own rejections.</li>
+</ul>
+</div>
