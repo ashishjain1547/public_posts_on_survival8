@@ -1,0 +1,442 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WBUO8uPUEBc" frameborder="0" allowfullscreen></iframe>
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#CUSTOM_SECTION_ID" target="_blank">See All Articles</a>
+<br>
+
+<div class="customOuterWrapper">
+
+<h1>The Hidden Reason You're Anxious About Money (And What to Do About It)</h1>
+
+<p>We live in a strange time. Never before in human history have we had so much access to financial tools, information, and opportunity. You can open an investment account from your phone while sitting on your couch. You can automate your savings with a few taps. You can watch free tutorials from seasoned investors, read articles from financial experts, and even consult with a robo-advisor at two in the morning. The barriers that once stood between ordinary people and sound financial planning have largely crumbled.</p>
+
+<p>And yet, the anxiety remains. In fact, it may be getting worse.</p>
+
+<p>Consider these numbers. Only one in three Americans has a written plan for their money. A study by FINRA, the Financial Industry Regulatory Authority, found that only 40 percent of people could correctly answer four out of six basic financial literacy questions. And perhaps most telling of all, 77 percent of Americans report feeling anxiety about their money. Seventy-seven percent. That is more than three out of every four people walking around with a knot in their stomach about their finances.</p>
+
+<p>So what is going on here? We have more access than any generation before us. We have more tools, more information, more convenience. And yet we are as anxious, if not more anxious, than ever. Where is the disconnect?</p>
+
+<p>The answer, I believe, is both simple and uncomfortable. We are starting in the wrong place.</p>
+
+<h2>The IKEA Problem</h2>
+
+<p>Imagine for a moment that someone walks into your living room carrying a large, flat cardboard box from IKEA. They upend the box, dumping hundreds of pieces onto your floor. Screws, wooden dowels, panels, small plastic connectors, and a few mysterious metal brackets scatter across the carpet. Then they say, "Good luck," and walk out the door.</p>
+
+<p>No instruction manual. No parts list. No picture of what the finished piece of furniture is supposed to look like. Just a pile of parts and the vague promise that it could become something useful.</p>
+
+<p>Who in their right mind takes on that challenge? Not me. Not anyone I know.</p>
+
+<p>Yet this is precisely what many of us do with our personal finances. We accumulate pieces, strategies, tips, products, and accounts with no real understanding of where we are trying to go. We follow social media gurus. We download budgeting apps. We open a retirement account because someone at work mentioned it. We buy a stock because a friend recommended it. We save a little here, spend a little there. But we have no instruction manual. No picture on the box. No sense of what the finished thing, our financial life, is supposed to look like.</p>
+
+<p>This approach is inefficient at best and destructive at worst. And it is the root of so much of our money anxiety.</p>
+
+<h2>The Two Corners of the Puzzle</h2>
+
+<p>Here is a better way to think about it. Think of your financial life as a jigsaw puzzle. The strategies, the products, the hacks, the tips, the accounts, the investments, all of those are the middle pieces of the puzzle. They are important, but they are not where you start. You start with the corners and the edges. You start with the frame that gives every other piece a place to fit.</p>
+
+<p>When it comes to personal wealth, there are two corners of the puzzle. Two foundational pieces that, if absent, make everything else structurally unsound.</p>
+
+<p>The first corner is understanding your current relationship with money. Not what you wish it was. Not what you think it should be. What it actually is, right now, today.</p>
+
+<p>The second corner is developing a true purpose for your wealth. Not a vague desire to be rich. Not a number that sounds good. A genuine, deeply personal reason why you are building what you are building.</p>
+
+<p>Let us explore both of these corners.</p>
+
+<h2>The Hidden Killer: Scarcity Mindset</h2>
+
+<p>Your relationship with money is shaped by many things. Your upbringing. Your parents' attitudes toward wealth. Your earliest memories of financial stress or financial comfort. The messages you absorbed from culture, from school, from friends, from religious communities. All of these inputs combine to form a financial narrative that operates quietly in the background of your mind, shaping your decisions without you even realizing it.</p>
+
+<p>We could spend days unpacking all of the things that inform your current financial narrative. But there is one factor that tends to cause more problems than almost anything else. It is the thing that clashes most directly with the idea of financial freedom. It is the thing that creates stress and unnecessary concern across all the major important areas of life.</p>
+
+<p>It is called the scarcity mindset.</p>
+
+<p>The scarcity mindset is the deeply ingrained belief that there is not enough. Not enough money. Not enough opportunity. Not enough time. Not enough success to go around. Whenever someone else wins, the scarcity mindset whispers that your chances just got smaller. Whenever you spend money, the scarcity mindset tells you that you are one step closer to running out. Whenever you face a decision, the scarcity mindset frames it as a choice between survival and non-survival, even when your actual circumstances are far from desperate.</p>
+
+<p>The problem is that scarcity has a way of becoming a self-fulfilling prophecy. When you believe there is never enough, you make decisions from a place of fear. You hoard rather than invest. You avoid risk rather than manage it. You see competition rather than collaboration. You make short-term choices that feel safe in the moment but undermine your long-term potential. And all the while, the scarcity mindset continues to confirm its own truth: see, there really is not enough.</p>
+
+<p>Here is the thing about mindset. It does not just shape how you feel. It shapes how you decide. It shapes what you notice and what you ignore. It shapes your habits, your behaviors, your emotional reactions. And because our financial lives are really just the sum total of thousands of small decisions made over time, the mindset driving those decisions matters enormously.</p>
+
+<p>A scarcity mindset does not just affect your bank account. It spills over into every area of life. It creates tension in relationships because money conversations become loaded with fear. It creates anxiety about the future because you cannot imagine a version of tomorrow that is more abundant than today. It even affects your health, your sleep, your ability to be present with the people you love.</p>
+
+<p>The hidden killer of financial dreams is not a lack of income. It is not a lack of opportunity. It is the belief, deep in the bones, that you and your family are one disaster away from collapse, that there will never be enough, that life is a zero-sum game. That belief is what keeps people stuck, even when their objective circumstances suggest they have every reason to flourish.</p>
+
+<h2>Scarcity vs. Abundance: A Side-by-Side Look</h2>
+
+<p>To make this more concrete, let us compare how a scarcity mindset and an abundance mindset show up in real financial situations. Neither of these is about how much money you have. Both can exist at any income level. This is not about wealth. It is about posture toward life.</p>
+
+<table>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Scarcity Mindset</th>
+<th>Abundance Mindset</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>View of money</td>
+<td>Money is a limited resource that must be protected at all costs.</td>
+<td>Money is a tool that can be created, grown, and directed.</td>
+</tr>
+<tr>
+<td>Authority on success</td>
+<td>Success of others threatens your own.</td>
+<td>Someone else's success can inspire and inform your own.</td>
+</tr>
+<tr>
+<td>Risk perception</td>
+<td>Every risk is a potential catastrophe.</td>
+<td>Risk can be calculated and managed.</td>
+</tr>
+<tr>
+<td>Decision-making style</td>
+<td>Reactive: driven by fear and urgency.</td>
+<td>Proactive: driven by values and long-term vision.</td>
+</tr>
+<tr>
+<td>Generosity</td>
+<td>Giving feels like losing what you have.</td>
+<td>Giving feels like participating in a larger flow.</td>
+</tr>
+<tr>
+<td>Time orientation</td>
+<td>Short-term: survive today, figure out tomorrow later.</td>
+<td>Long-term: build today for the future you want.</td>
+</tr>
+<tr>
+<td>Common emotional state</td>
+<td>Anxiety, defensiveness, comparison.</td>
+<td>Gratitude, confidence, curiosity.</td>
+</tr>
+</tbody>
+</table>
+
+<p>The key insight of this table is that neither column describes how much money you have. They describe the lens through which you see the money you have, the money you might earn, and the money you might lose. And the lens determines the life you experience.</p>
+
+<h2>Connecting to a Deeper Purpose</h2>
+
+<p>The second corner of the financial puzzle is purpose. And this is where things get really interesting. Because purpose, a genuine and deeply personal why, has the power to reshape your entire relationship with money.</p>
+
+<p>Let me share a personal example. For a long time, I struggled with the idea of saving more aggressively, investing more intentionally, and building wealth with purpose. The numbers made sense on paper, but they never translated into real motivation. The problem was not the math. The problem was that the goal did not carry emotional weight.</p>
+
+<p>That changed when I connected my financial goals to something deeper. I thought about what I actually wanted my money to do for me. And what I realized was this: I wanted time freedom. I wanted the ability to be present for the people I love. I wanted to see the smile on a child's face, to hear the giggle, to witness the response, not in a rushed fifteen minutes squeezed between meetings, but anytime I could.</p>
+
+<p>I did not want to miss a game. I did not want to miss a performance, a recital, a milestone moment. And when I connected my financial strategy to that deeper why, something shifted. The solutions, the strategies, the products, the types of accounts, the savings rates, the investment choices, they all started to reveal themselves. They were no longer arbitrary decisions made because a guru on social media said so. They were steps toward a life I deeply wanted to live.</p>
+
+<p>This is the power of purpose in personal finance. When you know why you are building, the how becomes much clearer. When you know what you are building toward, the daily sacrifices start to feel less like sacrifice and more like investment. When your financial plan is tied to something you love, you stop feeling anxious about every market dip because you are not chasing a number. You are building a life.</p>
+
+<h2>A Short Fable: The Farmer and the Soil</h2>
+
+<p>There is an old story about a farmer who inherited a piece of land that had lain fallow for years. The soil was hard, compacted, and full of rocks. The weeds had taken over. The farmer, eager to produce a harvest, went straight to the market and bought the finest seeds he could afford. He scattered them generously across the field and waited.</p>
+
+<p>Nothing grew. The birds ate some of the seeds. The rest sat on the surface of the hard ground, unable to take root. The farmer was frustrated. He blamed the seeds. He blamed the weather. He blamed the birds.</p>
+
+<p>Then he met an older farmer from a neighboring village who saw his plight. The old farmer walked the land with him, pointed to the hard soil, and said, "You did not fail because of your seeds. You failed because you did not prepare the ground. Before you sow, you must cultivate."</p>
+
+<p>So the young farmer spent a season doing the unglamorous work. He tilled the soil. He removed the rocks. He pulled the weeds. He added compost and organic matter. He let the land rest and breathe. And when the next planting season came, he sowed the same seeds in the same field. This time, the harvest was abundant.</p>
+
+<p>Your money mindset is the soil. The financial strategies, tips, products, and tools are the seeds. And many of us are out here scattering premium seeds on hard, unworked ground, then wondering why nothing seems to grow.</p>
+
+<p>Before you chase the next investment tip or open another high-yield savings account, ask yourself: have I done the work of cultivating the soil? Have I examined my relationship with money? Have I identified the scarcity beliefs that might be sabotaging my efforts? Have I connected my financial goals to a deeper purpose that can sustain me through the slow seasons?</p>
+
+<p>If the answer is no, then the seeds will keep failing. Not because they are bad seeds. But because the ground is not ready.</p>
+
+<h2>What This Means for You</h2>
+
+<p>Let me be direct. The solution to the financial anxiety that plagues so many of us does not lie in more hacks, more tips, more guru insights, more apps, or more accounts. The solution lies in two things: understanding your current relationship with money, and developing a true purpose for your wealth.</p>
+
+<p>These two components become the corners and the edges of the jigsaw puzzle. Once they are in place, all the other strategies, solutions, and products have a framework within which to fit. Without them, you are just collecting pieces and hoping the picture makes sense.</p>
+
+<p>So here are some practical starting points.</p>
+
+<p>- Begin by asking yourself honest questions about your money story. What did your parents teach you about money, directly or indirectly? What is your earliest memory of financial stress or financial ease? What messages do you carry about rich people, poor people, and the morality of wealth? Write these down. Do not judge them. Just notice them.</p>
+
+<p>- Pay attention to the moments when you feel money anxiety. What triggered it? Was it a bill? A conversation? A social media post? What was the story you told yourself in that moment? Was it, "I will never have enough"? Was it, "Other people have it easier than me"? Naming the story is the first step toward rewriting it.</p>
+
+<p>- Spend time getting clear on your deeper why. Not the number in your bank account. Not the amount you want to earn. The actual life you want to live. Who do you want to be present for? What experiences do you want to have? What legacy do you want to leave? When you connect your money to that why, the motivation becomes self-sustaining.</p>
+
+<p>- Practice small acts of abundance. Give something away with no expectation of return. Celebrate someone else's success genuinely. Notice the resources you already have, not just the ones you lack. These may seem unrelated to your portfolio, but they are actually part of retraining your brain out of scarcity and into abundance.</p>
+
+<p>- Remember that the work of cultivating the soil is not a one-time event. It is ongoing. Scarcity beliefs have deep roots and they will keep trying to grow back. Tend to your mindset regularly, just as a farmer tends to the land.</p>
+
+<h2>Final Thoughts</h2>
+
+<p>We each have an opportunity to repair the financial wounds in our money mindset and build something we can truly take pride in. Not a pile of accounts and products and half-followed tips. But a coherent, purposeful, intentional financial life that grows out of healthy soil.</p>
+
+<p>Do the work of cultivating the soil in your money mindset. Identify the scarcity beliefs that have been holding you back. Connect your financial efforts to a deeper purpose that truly matters to you. When you do this, you create an environment that is vital for growth. The seeds you sow have a real chance to flourish.</p>
+
+<p>That is how we do more than just leave a financial legacy. That is how we get to live it.</p>
+</div>

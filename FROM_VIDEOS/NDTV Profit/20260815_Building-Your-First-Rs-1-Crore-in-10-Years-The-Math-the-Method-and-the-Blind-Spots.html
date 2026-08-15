@@ -1,0 +1,414 @@
+```html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kWnKkdZmqSo" frameborder="0" allowfullscreen></iframe>
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#CUSTOM_SECTION_ID" target="_blank">See All Articles</a>
+<br>
+
+<div class="customOuterWrapper">
+
+<h1>Building Your First Rs 1 Crore in 10 Years: The Math, the Method, and the Blind Spots</h1>
+
+<p>Reaching Rs 1 crore is no longer a distant retirement fantasy in India. It has become the first serious financial milestone for many salaried investors. The question is not whether the goal is possible, but whether the roadmap being sold to investors is honest about its assumptions. In a recent NDTV Profit conversation, Shridath Marjan, managing partner and CEO of Complete Circle Wealth Solutions, laid out the compounding math, the SIP discipline, and the asset allocation framework required to get there in roughly a decade. The numbers are useful, but they come with caveats that tend to get lost in short television segments.</p>
+
+<h2>Is Rs 1 Crore in 10 Years Realistic?</h2>
+
+<p>The short answer is yes, but only if the investor treats the journey as a system rather than a wish. According to Marjan, a monthly SIP of Rs 30,000 to Rs 35,000 can reach Rs 1 crore in about 10 to 10.5 years at a 12 percent compounding rate, without any top-up. That is a meaningful commitment for most young earners. If the portfolio can compound at 15 percent and the investor commits Rs 50,000 per month, the timeline shrinks to roughly 8.75 years.</p>
+
+<p>What gets less attention is what happens after the first crore. If the money continues to compound at 15 percent, it can double to Rs 2 crore in about five years. At 12 percent, the doubling takes roughly six years. This is the core argument for time in the market. The first crore is the hardest because it depends heavily on fresh contributions. The second crore relies more on the accumulated capital working for the investor.</p>
+
+<h2>How Much Should You Invest?</h2>
+
+<p>The required monthly commitment changes sharply with the assumed return. The table below summarises the scenarios discussed by Marjan.</p>
+
+<table border="1" cellspacing="0" cellpadding="8">
+<caption>Monthly SIP and time to first Rs 1 crore</caption>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Monthly SIP</th>
+<th>Assumed return</th>
+<th>Approximate time to Rs 1 crore</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Base disciplined SIP</td>
+<td>Rs 30,000 to Rs 35,000</td>
+<td>12 percent</td>
+<td>10 to 10.5 years</td>
+</tr>
+<tr>
+<td>Comfortable SIP at lower return</td>
+<td>Rs 45,000</td>
+<td>12 percent</td>
+<td>10 years</td>
+</tr>
+<tr>
+<td>Aggressive SIP at higher return</td>
+<td>Rs 50,000</td>
+<td>15 percent</td>
+<td>8.75 years</td>
+</tr>
+<tr>
+<td>Rule of 15, growing SIP</td>
+<td>Growing at 15 percent annually</td>
+<td>15 percent</td>
+<td>15 years</td>
+</tr>
+<tr>
+<td>Rule of 12, growing SIP</td>
+<td>Growing at 12 percent annually</td>
+<td>12 percent</td>
+<td>20 years</td>
+</tr>
+</tbody>
+</table>
+
+<p>The so-called rule of 15 is a useful shorthand. If an investor can increase the SIP amount by 15 percent every year, the corpus target becomes achievable within 15 years even without a very high starting amount. At a 12 percent annual increase, the timeline extends toward 20 years. The hidden assumption, of course, is that income and bonuses will keep pace well enough to fund those step-ups.</p>
+
+<h2>SIP Discipline: Start, Step Up, Stay Invested</h2>
+
+<p>Marjan's central advice is to link every SIP to a specific goal, whether it is the first crore, a house down payment, education, or retirement. Without a destination, an investment journey tends to drift. He suggests that investors who cannot afford Rs 35,000 or Rs 45,000 per month should start with whatever is possible, even Rs 10,000 or Rs 15,000. Starting is more important than the initial amount.</p>
+
+<p>The second layer is the annual step-up. As increments and bonuses arrive, 15 to 20 percent of that additional income should be redirected into the SIP. This is where most plans fail, not because the math is wrong, but because lifestyle inflation consumes the surplus before it can be invested.</p>
+
+<h2>Asset Allocation: Equity, Debt, Gold, and Emergency Buffers</h2>
+
+<p>Before building the crore corpus, Marjan recommends setting aside an emergency fund equivalent to six to twelve months of expenses. Within the monthly investment amount, he suggests parking around 8 to 10 percent in arbitrage funds. These funds have historically delivered around 5.5 to 6 percent with lower volatility than equity, making them a practical semi-liquid buffer.</p>
+
+<p>For the remaining money, the allocation depends on age and risk appetite. A younger investor in the 20s or 30s could consider 75 to 80 percent in equities, 10 percent in fixed income, and 10 percent in gold. The classic 100-minus-age rule would put a 27-year-old at about 73 percent equity, though Marjan treats that as a starting point rather than a rigid formula.</p>
+
+<table border="1" cellspacing="0" cellpadding="8">
+<caption>Suggested portfolio allocation for a younger investor</caption>
+<thead>
+<tr>
+<th>Asset class</th>
+<th>Allocation</th>
+<th>Role in portfolio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Equity</td>
+<td>70 to 75 percent</td>
+<td>Long-term growth engine</td>
+</tr>
+<tr>
+<td>Fixed income</td>
+<td>10 percent</td>
+<td>Stability and rebalancing</td>
+</tr>
+<tr>
+<td>Gold</td>
+<td>5 to 7 percent</td>
+<td>Currency and inflation hedge</td>
+</tr>
+<tr>
+<td>Arbitrage or emergency parking</td>
+<td>8 to 10 percent</td>
+<td>Liquidity buffer</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Inside the Equity Sleeve: Fund Categories and Global Exposure</h2>
+
+<p>Within the equity allocation, Marjan advises keeping the portfolio compact, roughly four to six funds. A flexi-cap fund can respond to valuation shifts across market capitalisations. A multi-cap fund, under SEBI's framework, spreads at least 25 percent each across large, mid, and small caps, offering built-in diversification without the need for too many small-cap bets.</p>
+
+<p>For the equity sleeve, he suggests around 75 to 80 percent in domestic equities, with 5 to 10 percent in REITs and InvITs for real asset exposure, and another 5 to 10 percent in global equities when the regulatory window allows. At the time of the conversation, many mutual fund houses had paused fresh international fund flows, which makes the global diversification advice practical only when those restrictions lift.</p>
+
+<h2>Why Time in the Market Beats Return Chasing</h2>
+
+<p>The recurring theme in Marjan's framework is that the rate of return matters less than the number of years spent compounding. A portfolio that grows at 12 percent for 20 years can outperform a portfolio that chases 18 percent returns but gets interrupted by withdrawals, switching, or panic. The first crore is a mathematical problem with a behavioural constraint. The investor who automates the SIP, steps it up annually, and ignores interim volatility has a far better chance than the one who constantly rearranges funds in search of the best recent performance.</p>
+
+<h2>Criticisms</h2>
+
+<p>Over-simplified return assumptions have been promoted by personal finance programming without adequate disclosure of volatility and drawdown risk.</p>
+
+<p>The promise of 15 percent compounding has been repeated by wealth management voices while the difficulty of sustaining such returns over a full decade is understated.</p>
+
+<p>Financial news programming has been anchored around the crorepati milestone rather than inflation-adjusted retirement adequacy, which may mislead viewers about real purchasing power.</p>
+
+<p>The assumption that every investor can increase SIP contributions by 15 to 20 percent every year has been circulated, even though income growth for many salaried Indians has been inconsistent.</p>
+
+<p>Emergency fund sizing has been prescribed by advisors without sufficient differentiation between single-income and dual-income households, or between contractual and permanent employment.</p>
+
+<p>The 100-minus-age rule for equity exposure has been repeated as a universal default, despite wide differences in liabilities, job security, and behavioural risk tolerance.</p>
+
+<p>Global diversification has been discussed by fund platforms only after regulatory restrictions made it operationally difficult, leaving late adopters with fewer practical choices than those who already held international exposure.</p>
+</div>
+```
