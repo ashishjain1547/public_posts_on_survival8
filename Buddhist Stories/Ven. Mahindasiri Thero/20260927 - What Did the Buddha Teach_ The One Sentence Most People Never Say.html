@@ -1,0 +1,359 @@
+<iframe class="custom_iframe" src="https://www.youtube.com/embed/fIC62mqjoUA" frameborder="0" allowfullscreen></iframe>
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#CUSTOM_SECTION_ID" target="_blank">See All Articles</a>
+<br>
+
+<div class="customOuterWrapper">
+
+<h1>What Did the Buddha Teach? The One Sentence Most People Never Say</h1>
+<p>If you had to explain in one sentence what the Buddha taught, what would you say? Many people respond with familiar answers: be kind, be generous, treat everyone equally, be content with little, accept life as it is. Those answers are not wrong. They point toward something real. But they are not precise enough.</p>
+<p>There is a more direct answer. The Buddha teaches the Dhamma for one purpose above all: the understanding of suffering. Not the avoidance of suffering as an enemy, but the understanding of suffering as a reality. That distinction changes everything.</p>
+
+<h2>The Everyday Illusion of Avoidance</h2>
+<p>Most human beings organize their lives around avoiding suffering. People study, build businesses, earn money, buy insurance, exercise, and pursue the best possible job. Why? To prevent pain before it arrives. The mind says this method works. But does it?</p>
+<p>Suffering cannot be avoided by external arrangement alone. Many people suffer without recognizing it. Others see suffering in themselves or in others and blame the wrong cause. The Buddha's teaching does not begin with escape. It begins with seeing clearly. Understanding suffering is difficult precisely because the mind prefers distraction and avoidance to direct observation.</p>
+
+<h2>The Phone Message Experiment</h2>
+<p>Imagine you are sitting in a quiet hall listening to a Dhamma talk. Your phone is on silent mode, or it is switched off. While you sit there, a relative at home receives difficult news: your mother has died. Because your phone is off, you do not know. You continue listening. You do not suffer in that moment.</p>
+<p>Later, you turn on the phone and read the message. Instantly, suffering arises. The mind says, "I am suffering because my mother died." But if the death itself were the direct and only cause, you would have suffered at the moment of death, without needing the message. The message is not the death. The message is a condition that delivers the information. Something happens in the middle: contact, perception, mental reaction, attachment, identification. That middle process is what most people never examine.</p>
+<p>This is the hidden mechanism the Buddha pointed to. The pain of loss is real, but the suffering that follows is constructed through a chain of conditions. Seeing that chain is the beginning of liberation.</p>
+
+<h2>The Story of Visakha: Attachment and Sorrow</h2>
+<p>Buddhist tradition recounts the story of Visakha, a wealthy and wise woman who lived during the Buddha's time. She built a large dwelling for monks, loved her many children and grandchildren deeply, and was known for her generosity.</p>
+<p>One day Visakha came to see the Buddha with wet hair and wet clothes. In India at that time, this was a sign that someone in the household had died. The Buddha asked why she was crying. She replied that her favorite granddaughter had died, and without her the house felt empty.</p>
+<p>The Buddha then asked a surprising question: how many children and grandchildren would she like to have? Still crying, Visakha said she would be content even with as many children as there were people in the whole city.</p>
+<p>The Buddha smiled and asked how many people in the city died every day. Visakha said at least five, sometimes eight, nine, or ten. The Buddha replied that if five people died every day, her hair and clothes would be wet every day.</p>
+<p>Visakha was wise. She had already become a stream-enterer at the age of seven. As soon as she heard the Buddha's words, she understood.</p>
+<p>Then the Buddha gave a teaching that remains central to the Dhamma. If there are a hundred things you love, desire, and cling to, there will be a hundred sufferings. If there are fifty, there will be fifty. If there are ten, ten. If there is one, one. But if there is nothing you are attached to, there will be no suffering.</p>
+<p>This does not mean becoming cold or unloving. It means seeing the relationship between attachment and suffering without illusion. Generosity and kindness matter, but they are part of the path toward understanding suffering, not substitutes for that understanding.</p>
+
+<h2>One Taste of the Dhamma</h2>
+<p>The Buddha compared the Dhamma to a honeycomb. Taste the honey from the top, the bottom, or any side. It is always sweet. In the same way, the Dhamma has one taste: freedom from suffering. Buddhist tradition preserves thousands of discourses, but they all lead to the same release.</p>
+<p>If someone asks what the Buddha taught, the answer is not a list of moral tips. The answer is that the Buddha taught the Dhamma for the understanding of suffering and the way beyond it.</p>
+
+<h2>A Short Reading List for the Curious</h2>
+<p>For those who want to explore this teaching, four books offer a strong starting point.</p>
+<table border="1" cellpadding="8">
+<thead>
+<tr>
+<th>Book</th>
+<th>Author / Publisher</th>
+<th>Why It Matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>What the Buddha Taught</td>
+<td>Walpola Rahula</td>
+<td>A clear, widely recommended introduction to the core teachings.</td>
+</tr>
+<tr>
+<td>The Wise Shall Realize</td>
+<td>Mahamega Publishers</td>
+<td>An accessible and powerful first read for those new to the Dhamma.</td>
+</tr>
+<tr>
+<td>The Dhammapada</td>
+<td>Classic Pali text</td>
+<td>A collection of verses suited to daily reading, one line at a time.</td>
+</tr>
+<tr>
+<td>The Great Disciples</td>
+<td>Bhikkhu Bodhi</td>
+<td>Detailed portraits of the Buddha's chief disciples, showing the Dhamma through character.</td>
+</tr>
+</tbody>
+</table>
+<p>Begin with <i>What the Buddha Taught</i> for orientation, then read <i>The Wise Shall Realize</i>. Keep <i>The Dhammapada</i> close for a verse before sleep or work. Finally, move to <i>The Great Disciples</i> when the foundation is secure.</p>
+
+<h2>The Relics and the Inscription</h2>
+<p>At the Ganga Rama temple in Colombo, Buddhist relics were displayed in a stone receptacle. On that receptacle was written a phrase preserved for around 2,600 years: <i>evamitas kevalas dukkha kandas samudayo hoti</i>. The meaning is direct: "This is how suffering arises."</p>
+<p>The relics of the Buddha were kept close to the teaching on suffering. That placement was not accidental. It points to the heart of the entire path.</p>
+<p>So if anyone asks now what the Buddha taught, you know what to say. The Buddha taught the Dhamma for the understanding of suffering. Everything else is commentary on that single purpose.</p>
+
+<h2>Criticisms</h2>
+<ul>
+<li>Suffering is frequently reframed by public figures as a mood to be lifted rather than a condition to be understood.</li>
+<li>The internal causes of suffering are often ignored by governments that invest heavily in external solutions while neglecting ethical and mental education.</li>
+<li>The depth of Buddhist teaching is sometimes reduced by media outlets to generic wellness slogans about positivity and calm.</li>
+<li>The gap between an event and a reaction is exploited by news groups rather than made visible to the public.</li>
+<li>Attachment to desire is reinforced by consumer culture, and the link between clinging and suffering is left unexamined by many political and commercial institutions.</li>
+<li>Authentic Buddhist texts are underpromoted by mainstream educational systems, while personal development is marketed as a substitute for the study of suffering.</li>
+<li>The story of Visakha and similar teachings are often omitted from popular Buddhist coverage, leaving audiences with mindfulness without the underlying framework of liberation.</li>
+<li>Distraction is marketed by corporations and validated by public personalities as a legitimate replacement for inner work.</li>
+</ul>
+</div>
