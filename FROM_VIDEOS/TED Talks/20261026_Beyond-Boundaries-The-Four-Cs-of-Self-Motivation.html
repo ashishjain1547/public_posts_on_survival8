@@ -1,0 +1,438 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#CUSTOM_SECTION_ID" target="_blank">See All Articles</a>
+<br>
+
+<div class="customOuterWrapper">
+
+<h1>Beyond Boundaries: The Four C’s of Self-Motivation</h1>
+
+<p>We often talk about empowerment as if it is something a manager hands down from above. The typical workplace definition goes something like this: "I empower you. Now get it done — with fewer resources and less time." But that is not empowerment. That is delegation with pressure.</p>
+
+<p>Real empowerment is something a person <em>feels</em>. It is the inner engine of self-motivation. It is what makes a child practice piano without being told, an employee solve a problem at 6 p.m. because he wants to, and a neighbor return a lost wallet because it matters. When people feel genuinely empowered, they do not need someone looking over their shoulder. They go beyond the boundary of the call of duty — not because they have to, but because they want to.</p>
+
+<p>The question is: how do we create that feeling in ourselves and in others? Psychology gives us a practical answer. It comes down to four C-words: <strong>competence</strong>, <strong>consequences</strong>, <strong>choice</strong>, and <strong>community</strong>. But before we get to them, we need to understand the three questions that reveal whether someone feels empowered at all.</p>
+
+<h2>Three Questions That Reveal Real Empowerment</h2>
+
+<p>If you want to know whether you — or your child, your student, or your worker — feel empowered, ask three simple questions. They feel like common sense, but they are grounded in decades of research.</p>
+
+<h3>1. Can you do it?</h3>
+<p>Psychologist Albert Bandura called this <strong>self-efficacy</strong>. It is the belief that you have the time, the knowledge, and the training to do what is being asked. If you do not believe you can do the work, no pep talk will make you feel motivated. You will feel anxious or defeated. But if the answer is yes, you have the foundation of empowerment.</p>
+
+<h3>2. Will it work?</h3>
+<p>Bandura also described what he called <strong>response efficacy</strong>. This is the belief that the process or behavior will actually lead to the outcome you want. It is not enough to know how to do something; you must also believe that the thing itself works. This is where education comes in. People need data, theory, and clear explanations. They need to understand why a particular method makes sense.</p>
+
+<h3>3. Is it worth it?</h3>
+<p>The third question is the motivational one. It is about <strong>consequences</strong>. Psychologist B.F. Skinner argued that behavior is selected by consequences. Dale Carnegie quoted Skinner when he said that from the day we are born, everything we do is because we want something for doing it. In other words, is the outcome worth the effort? If people see the payoff — whether it is pride, progress, meaning, or reward — they are far more likely to act.</p>
+
+<p>When someone answers yes to all three questions, something powerful happens. They feel <strong>competent</strong> at doing worthwhile work. And that feeling is the first C-word.</p>
+
+<h2>The First C: Competence</h2>
+
+<p>Think about a time when you felt truly good at your job. Maybe you solved a hard problem, delivered a great presentation, or fixed something that had been broken for weeks. In that moment, you did not need a supervisor to push you. You were self-motivated because you felt capable.</p>
+
+<p>Leaders, teachers, and parents can build this feeling deliberately. The simplest way is through feedback and recognition. Point out what the person did well. Be specific. Show them evidence of their own growth. A child who hears "your handwriting improved a lot this month" feels more competent than a child who only hears "write neatly." An employee who receives a note saying "your clear summary saved the team an hour today" understands that her skill matters.</p>
+
+<p>Competence is not about false praise. It is about noticing real progress and making it visible. When people see themselves getting better, they want to keep going.</p>
+
+<h2>The Second C: Consequences</h2>
+
+<p>Consequences are the fuel of motivation. We often treat this as obvious, but we forget how deeply it shapes behavior. B.F. Skinner taught that we work for pleasant consequences and avoid unpleasant ones. That is simple, but the way we <em>frame</em> those consequences changes everything.</p>
+
+<p>Imagine a student who says, "I have to go to class." Now imagine one who says, "I get to go to class." The behavior is the same, but the feeling is entirely different. The first student is a failure avoider. The second is a success seeker. The first wakes up to an alarm clock. The second wakes up to an opportunity clock.</p>
+
+<p>Here is a useful comparison:</p>
+
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse; width:100%;">
+<thead>
+<tr>
+<th>Success Seeker</th>
+<th>Failure Avoider</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Works to achieve a positive consequence</td>
+<td>Works to avoid a negative consequence</td>
+</tr>
+<tr>
+<td>Feels free and curious</td>
+<td>Feels controlled and anxious</td>
+</tr>
+<tr>
+<td>Says "I get to do this"</td>
+<td>Says "I have to do this"</td>
+</tr>
+<tr>
+<td>Sees effort as opportunity</td>
+<td>Sees effort as obligation</td>
+</tr>
+<tr>
+<td>More likely to persist and enjoy the work</td>
+<td>More likely to burn out or give up</td>
+</tr>
+</tbody>
+</table>
+
+<p>As a leader or parent, ask yourself: are you helping people see the positive consequences of their work, or only the negative consequences of not doing it? The same task can feel like punishment or purpose depending on how you frame it.</p>
+
+<h2>The Third C: Choice</h2>
+
+<p>Common sense tells us that when we believe we have some autonomy, we are more motivated. Research backs this up. Ellen Langer wrote in her book <em>Mindfulness</em> that when you perceive choice, you perceive motivation. The feeling of being able to choose changes how your brain processes a task.</p>
+
+<p>This is also connected to Skinner’s work on reinforcement. When you work for a pleasant consequence, you feel like you are chasing something you want. When you work to avoid an aversive consequence, you feel controlled. Psychologists call this negative reinforcement. The behavior may be the same, but the inner experience is completely different.</p>
+
+<p>Leaders can give choice in small ways. Let people decide the order of their tasks, the method they use, or the schedule they keep. A parent can say, "Do you want to do homework before dinner or after dinner?" The homework still gets done, but the child perceives a sense of control. That perception fuels motivation.</p>
+
+<h2>The Fourth C: Community</h2>
+
+<p>Psychologists have long known that social support is critical for well-being. People who feel connected to others are happier and more motivated. This is the power of <strong>relatedness</strong>. We are not meant to succeed alone. We need each other.</p>
+
+<p>There is a famous poem called <em>The Cookie Thief</em> by Valerie Cox that illustrates this beautifully. A woman is waiting in an airport. She buys a bag of cookies and sits down to read. A man beside her begins taking cookies from the bag between them. She is furious but says nothing. With each cookie she takes, he takes one too. Finally only one cookie is left. The man smiles, breaks the last cookie in half, and offers her half. She snatches it, thinking he is rude and ungrateful.</p>
+
+<p>When her flight is called, she boards the plane, still angry. Then she reaches into her bag and finds her own unopened bag of cookies. The cookies she had been eating were his. He had shared them with her, even the last one. She was the rude one. She was the thief.</p>
+
+<p>This story asks a hard question: whose side were you on? We are raised to think independently. We hear sayings like "nice guys finish last" and "the squeaky wheel gets the grease." But an independent mindset can blind us. We fail to see that other people are not always competitors. Sometimes they are partners. The man in the story was not a thief; he was practicing community. He was sharing, even when it cost him.</p>
+
+<p>We need to move from an independent culture to an <strong>interdependent</strong> one. We need to have each other’s backs. When people feel a sense of belonging, they work harder, they care more, and they are more willing to go beyond boundaries.</p>
+
+<h2>Education vs. Training: A Critical Distinction</h2>
+
+<p>Before we tie everything together, it is worth understanding a distinction that often gets lost.</p>
+
+<p>In school, we call it education. In industry, we call it training. But they are not the same thing. Education gives you knowledge. Training includes behavior and feedback. You can learn about swimming by reading a book. That is education. But you do not know how to swim until you get in the water, practice, and receive feedback. That is training.</p>
+
+<p>This distinction explains why "online training" is often an oxymoron. Watching a video can educate, but it rarely trains. Training requires someone to observe the behavior and provide corrective feedback. You need a coach, a mentor, or a live instructor who can say, "Try it again, but this time move your hand this way."</p>
+
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse; width:100%;">
+<thead>
+<tr>
+<th>Education</th>
+<th>Training</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Provides knowledge and theory</td>
+<td>Provides hands-on practice and feedback</td>
+</tr>
+<tr>
+<td>Answers "why" something works</td>
+<td>Shows "how" to do it</td>
+</tr>
+<tr>
+<td>Can happen alone</td>
+<td>Requires another person to observe and correct</td>
+</tr>
+<tr>
+<td>Examples: lectures, reading, videos</td>
+<td>Examples: coaching, role-play, live demonstrations</td>
+</tr>
+</tbody>
+</table>
+
+<p>For competence to grow, people need both education and training. They need to know why a process works, and they need to practice it with feedback.</p>
+
+<h2>A Story That Ties It All Together</h2>
+
+<p>Over sixty years ago, a ten-year-old boy was asked by his parents if he wanted drum lessons. He said yes. He had a vision of himself playing a beautiful white pearl drum set, like the great drummers Buddy Rich and Gene Krupa. That vision was a consequence. It motivated him to practice on a beat-up old drum his parents had bought at an auction. They promised him a better snare drum, then a bass drum, then cymbals, if his teacher said he was improving. The consequences drove him.</p>
+
+<p>His teacher came each week and showed him simple techniques — a flam, a paradiddle. The boy practiced and mastered them. He felt competent. He even read ahead, learning a double paradiddle on his own because he was so motivated. None of this required yelling or punishment. The boy was self-motivated.</p>
+
+<p>Then the teacher asked for a drumroll. The boy tried and failed. Week after week he could not do it. He felt frustrated, then apathetic. Psychologists call this <strong>learned helplessness</strong>. He was ready to quit. Walking through his elementary school, he saw a music teacher who asked how things were going. The boy admitted he could not do a drumroll and had given up.</p>
+
+<p>The teacher gave him a simple piece of advice: "When you get overwhelmed, break it down." Then he asked, "Can you do a paradiddle?" Yes. "What's the second beat?" The boy played it. Then the teacher said, "That's a drumroll."</p>
+
+<p>Two beats. That was it. The boy went home and practiced. The next week, his drum teacher said, "Okay, Scott, I guess you can't do a drumroll." The boy said, "Watch this." And he played it. The teacher was stunned. "How did you learn to do that?"</p>
+
+<p>The boy showed him, and the teacher said, "I had forgotten that it is two beats. You taught me how to teach the drumroll."</p>
+
+<p>There is a lesson in that story for all of us. We can always learn from each other. We need the humility to accept feedback and the courage to speak up. We need to help each other feel self-motivated.</p>
+
+<h2>Key Takeaways</h2>
+
+<p>- True empowerment is not a management slogan. It is a feeling of self-motivation.</p>
+<p>- Ask three questions: Can you do it? Will it work? Is it worth it? If the answer is yes, people feel competent.</p>
+<p>- Competence grows when we give specific feedback and recognition.</p>
+<p>- Consequences drive behavior. Help people see the positive payoff, not just the threat of failure.</p>
+<p>- Perceived choice boosts motivation. Even small choices create a sense of autonomy.</p>
+<p>- Community matters. We need to shift from independent to interdependent thinking.</p>
+<p>- Education and training are different. People need knowledge and practice with feedback.</p>
+<p>- When someone is overwhelmed, break the task down. Master the two beats before the drumroll.</p>
+
+<p>The goal is not to push people beyond their limits. It is to help them see that they already have the ability, the reason, the freedom, and the support to go further than they thought possible. That is what it means to go beyond boundaries.</p>
+</div>

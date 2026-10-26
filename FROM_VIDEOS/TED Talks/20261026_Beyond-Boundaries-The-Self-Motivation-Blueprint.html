@@ -1,0 +1,462 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body { font-size: 16px; }
+
+        .main-inner .column-center-inner { padding: 0px; }
+        .main-inner .column-center-inner .section { margin: 0 10px; }
+        .content-inner { padding: 0; }
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#customTEDTalksHeader" target="_blank">See All Articles</a>
+<br>
+
+<div class="customOuterWrapper">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7sxpKhIbr0E" frameborder="0" allowfullscreen></iframe>
+<h1>Beyond Boundaries: The Self-Motivation Blueprint</h1>
+
+<p>Beyond boundaries. The phrase itself suggests something more than rules, regulations, and restrictions. Most of us know boundaries as the lines that parents, teachers, and supervisors draw to hold us accountable. That is not a bad thing. We need people who hold us accountable. But beyond boundaries is a different territory. It is where leaders, teachers, parents, and supervisors inspire us to go beyond the call of duty, not because they tell us, but because we want to. That is self-motivation. And research has a lot to say about how to make that happen.</p>
+
+<p>This article is not about forcing people to do more with less. It is about something far more powerful: feeling empowered. When you feel empowered, you are self-motivated. You do not need someone looking over your shoulder. You act because the work itself pulls you forward. The question is, how do we inspire that feeling in ourselves and in other people?</p>
+
+<h2>What Empowerment Really Means</h2>
+
+<p>In many workplaces, the word empowerment has been hijacked. It has become a management code for "get it done with fewer resources and less time." A boss might say, "I empower you. Make it happen." But that is not the kind of empowerment that fuels motivation. That is just pressure dressed up in a nicer word.</p>
+
+<p>Feeling empowered is different. It is an internal state. When you feel empowered, you believe you can do the task, you believe the task will work, and you believe the outcome is worth the effort. Those three beliefs are not just nice ideas. They are grounded in decades of psychological research.</p>
+
+<p>If you want to know whether you or someone else feels empowered, ask three simple questions.</p>
+
+<h3>Question 1: Can You Do It?</h3>
+
+<p>This is what psychologist Albert Bandura called self-efficacy. Do you believe you have the time, the knowledge, and the training to do what is being asked? If the answer is no, then no amount of cheerleading will create motivation. People need real skills and real resources. They need to know they are capable.</p>
+
+<h3>Question 2: Will It Work?</h3>
+
+<p>Bandura called this response efficacy. Do you believe that the behavior you are being asked to do will actually lead to the desired outcome? This is where education comes in. People need to see the data. They need to understand the theory. They need to know why the process works, not just what to do.</p>
+
+<p>There is an important difference between education and training. In school, we call it education. In the workplace, we often call it training. But training is more than information. Training involves doing the behavior and getting feedback. That feedback loop is powerful. It is one thing to read about a skill. It is another to practice it in front of someone who can correct and encourage you.</p>
+
+<table border="1" cellpadding="8" cellspacing="0">
+<caption><strong>Education vs. Training</strong></caption>
+<thead>
+<tr>
+<th>Concept</th>
+<th>What it means</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Education</td>
+<td>Learning concepts, theory, and data</td>
+<td>Builds understanding of why something works</td>
+</tr>
+<tr>
+<td>Training</td>
+<td>Practicing behavior with feedback</td>
+<td>Builds confidence and actual competence</td>
+</tr>
+</tbody>
+</table>
+
+<p>Both are necessary. Education gives people the map. Training gives them the ability to walk the path.</p>
+
+<h3>Question 3: Is It Worth It?</h3>
+
+<p>This is the motivational question. Do you believe the consequences are worth the effort? Psychologist B.F. Skinner taught that behavior is shaped by consequences. Dale Carnegie quoted Skinner when he said that from the day you were born, everything you did was because you wanted something for doing it. That may sound cold, but it is also freeing. We are all driven by consequences. The trick is to make sure the consequences feel positive, not coercive.</p>
+
+<p>If people answer yes to all three questions, they feel competent. And when people feel competent at doing worthwhile work, they are far more likely to be self-motivated.</p>
+
+<h2>The Four C's of Self-Motivation</h2>
+
+<p>So what can leaders, teachers, parents, and individuals do to build that feeling of empowerment? The research points to four C words: Competence, Consequences, Choice, and Community.</p>
+
+<h3>1. Competence</h3>
+
+<p>Competence is the engine of self-motivation. When people feel skilled, they want to use that skill. The challenge for leaders is not to demand competence but to reveal it. You do that through feedback and recognition. Show people what they are doing well. Catch them doing something right. Help them see their own progress.</p>
+
+<p>People who feel competent at worthwhile work do not need constant supervision. They hold themselves to a high standard because the work has become part of who they are.</p>
+
+<h3>2. Consequences</h3>
+
+<p>Consequences are the fuel. People need a reason to act. But there is a big difference between working toward something pleasant and working to avoid something unpleasant. Psychologists call the first positive reinforcement and the second negative reinforcement. Both can motivate, but only one feels good.</p>
+
+<p>Imagine two students in a classroom. One says, "I get to go to class. This is an opportunity." The other says, "I have to go to class. It is a requirement." Both may attend. But one is a success seeker, and the other is a failure avoider. The success seeker wakes up to an opportunity clock. The failure avoider wakes up to an alarm clock.</p>
+
+<table border="1" cellpadding="8" cellspacing="0">
+<caption><strong>Success Seeker vs. Failure Avoider</strong></caption>
+<thead>
+<tr>
+<th>Success Seeker</th>
+<th>Failure Avoider</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Works toward a positive outcome</td>
+<td>Works to avoid a negative outcome</td>
+</tr>
+<tr>
+<td>Feels autonomous and energized</td>
+<td>Feels controlled and drained</td>
+</tr>
+<tr>
+<td>Says "I get to"</td>
+<td>Says "I have to"</td>
+</tr>
+<tr>
+<td>Sees opportunity</td>
+<td>Sees obligation</td>
+</tr>
+</tbody>
+</table>
+
+<p>The language we use with ourselves and others matters. Ellen Langer, in her book Mindfulness, made the point simply: when you perceive choice, you perceive motivation. The more you see options, the more motivated you become.</p>
+
+<h3>3. Choice</h3>
+
+<p>Choice is closely tied to autonomy. When people believe they have a say in what they are doing, they invest more of themselves. B.F. Skinner wrote about this decades ago in his book Beyond Freedom and Dignity. He argued that we are all controlled by consequences, but we do not always feel controlled. When we work for a pleasant consequence, it feels like freedom. When we work to avoid an unpleasant consequence, it feels like captivity.</p>
+
+<p>Leaders can create a sense of choice even within required tasks. How? By giving people options in how they complete the work, by inviting their input, and by explaining the why behind the task. When people understand the reason and have some latitude in the process, the same job feels less like a demand and more like a decision.</p>
+
+<h3>4. Community</h3>
+
+<p>Community is the social glue. Psychologists know that social support is critical for well-being and motivation. People who feel a sense of relatedness, a sense of connection with others, are happier and more driven. We are not built to go it alone.</p>
+
+<p>But many of us are raised in a culture of independence. We hear phrases like "nice guys finish last," "the squeaky wheel gets the grease," and "you have to blow your own horn." We learn to be self-reliant to a fault. Some people get stuck there. They say, "I will do it myself. I do not need you." That is not strength. That is isolation.</p>
+
+<p>The healthier path is interdependence. We need each other. We have to have each other's backs. A sense of community does not weaken individual motivation. It strengthens it because we know we are not alone.</p>
+
+<h2>The Cookie Thief</h2>
+
+<p>There is a famous poem by Valerie Cox that illustrates the difference between an independent mindset and an interdependent one. It is called The Cookie Thief.</p>
+
+<blockquote>
+<p>A woman was waiting in an airport one night, with several hours before her flight.<br>
+She hunted for a book in the airport shop. Bought a bag of cookies, and found a place to drop.<br>
+She was engrossed in her book, and happened to see that the man beside her, as bold as could be,<br>
+took a cookie or two from the bag between. But she tried to ignore, to avoid a scene.<br>
+She read, munched cookies, and watched the clock, as a gutsy cookie thief diminished her stock.<br>
+She was getting more irritated, as the minutes ticked by, thinking, if I wasn't so nice, I'd blacken his eye.<br>
+With each cookie she took, he took one too. When only one was left, she wondered what he'd do.<br>
+With a smile on his face, and a nervous laugh, he took the last cookie, and he broke it in half.<br>
+He offered her half, as he ate the other. She snatched it from him, thought, oh brother,<br>
+this guy has some nerve, and he's also rude. He didn't even show any gratitude.<br>
+She'd never known what she'd been so galled, and she sighed with relief when her flight was called.<br>
+She gathered her belongings, and headed for the gate, refusing to look back at the thieving ingrate.<br>
+She boarded a plane and sank on her seat. Then she sought her book, which was almost complete.<br>
+As she reached in her baggage, she gasped with surprise. There was her bag of cookies in front of her eyes.<br>
+If mine are here, she moaned in despair. Then the others were his, and he tried to share.<br>
+Too late to apologize, she realized with grief that she was the rude one, the ingrate, the thief.</p>
+</blockquote>
+
+<p>Whose side were you on while reading that poem? Most people side with the woman. They assume the man was the thief. That is the independent lens. We are quick to see ourselves as right and others as wrong. But the poem asks us to consider another possibility. Maybe the man was not stealing. Maybe he was sharing. The woman was the one who made the mistake.</p>
+
+<p>This story is not really about cookies. It is about community. When we operate as independent agents, we miss the chance to connect. When we shift to an interdependent mindset, we realize that the person next to us might be trying to help, not harm. We need each other. And that sense of community fuels self-motivation because we know we are part of something larger than ourselves.</p>
+
+<h2>The Drumroll Lesson</h2>
+
+<p>Let me tell you a story that ties all four C's together. It happened over sixty years ago, and it still carries a lesson today.</p>
+
+<p>A ten-year-old boy wanted to play the drums. His parents found a teacher, and the boy was thrilled. He dreamed of playing like the great drummers of his day. His parents bought him a beat-up old drum at an auction and made a deal with him. If he practiced and improved, they would buy him better equipment. That vision, that pleasant consequence, kept him going.</p>
+
+<p>The teacher came for private lessons. He showed the boy simple patterns. A flam. A rim shot. A paradiddle. Each time the teacher demonstrated, the boy felt more competent. He practiced at home and could not wait to show what he had learned. He was self-motivated. He even read ahead in the lesson book because he felt capable.</p>
+
+<p>Then the teacher introduced the drumroll. It seemed simple at first. But week after week, the boy could not do it. He would show the teacher his paradiddle, but the teacher wanted a drumroll. The boy became frustrated. He felt distress, then apathy, and finally learned helplessness. He told a music teacher at school, "I can't do a drumroll. I've kind of given up."</p>
+
+<p>The music teacher said something that changed everything: "Scott, when you get overwhelmed, break it down." He asked, "Can you do a paradiddle?" Yes. "Can you do the second beat?" Yes. "Well, that's a drumroll."</p>
+
+<p>The boy went home and practiced those two beats. The next week, he played the drumroll for his teacher. The teacher was amazed. "How did you learn to do that?" The boy showed him. The teacher realized he had forgotten that a drumroll is simply two beats put together. The ten-year-old had taught his teacher something new.</p>
+
+<p>That story is about more than drums. It is about the four C's. The boy had a vision, a consequence that pulled him forward. He felt competent when he mastered simple skills. He was given choice in how he practiced. And he had a community, a music teacher who cared enough to help him break the problem down. The result was self-motivation, the kind that keeps people going even when things get hard.</p>
+
+<h2>Putting It All Together</h2>
+
+<p>We can all learn from each other. We need the humility to accept feedback and the courage to speak up. We need to help each other feel self-motivated by building competence, explaining consequences, offering choice, and creating community.</p>
+
+<p>So how do you do that in real life? Start with the three questions. If you are leading someone, ask yourself whether they can do the task, whether they believe it will work, and whether they see it as worth it. If the answer to any of those is no, fix that first.</p>
+
+<h2>Key Takeaways</h2>
+
+<p>- Feeling empowered is different from being given more work. It means feeling capable, informed, and motivated.</p>
+<p>- Ask three questions before expecting self-motivation: Can you do it? Will it work? Is it worth it?</p>
+<p>- Build competence through training with feedback, not just education with information.</p>
+<p>- Frame consequences positively. Help people become success seekers, not failure avoiders.</p>
+<p>- Offer choice wherever possible. Even small choices increase motivation.</p>
+<p>- Foster community. Interdependence beats isolation.</p>
+<p>- When someone is overwhelmed, help them break the task down into smaller pieces.</p>
+<p>- Stay humble enough to learn from anyone, even a ten-year-old.</p>
+
+<h2>Final Thoughts</h2>
+
+<p>Self-motivation is not magic. It is built on four pillars: competence, consequences, choice, and community. When those pillars are in place, people do not need to be pushed. They pull themselves forward. They go beyond boundaries, not because they have to, but because they want to.</p>
+
+<p>And that is the kind of motivation that changes lives.</p>
+</div>

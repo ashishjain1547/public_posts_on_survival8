@@ -1,0 +1,390 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8VY8ZyyJsWg" frameborder="0" allowfullscreen></iframe>
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#customNewsByRavishKumarHeader" target="_blank">See All Articles</a>
+<br>
+
+<div class="customOuterWrapper">
+
+<h1>The Friend That Was Sold: IDBI, Public Money, and the Government's Sell-off</h1>
+
+<p>Namaskar. IDBI carried a slogan: "Bank aisa dost jaisa." A bank like a friend. Today that friend is being auctioned. The people who kept that friend alive, the employees of IDBI, are going on strike on 2 and 3 November. They need friends. But the government that once called this bank a strategic public institution is not listening. It has sold the controlling stake to Canada's Fairfax Financial Holdings Limited for Rs 52,878 crore. Around 61 percent of the bank is gone, pending the Reserve Bank of India's approval. The government will keep a 15 percent minority share, which it can sell later on the open market.</p>
+
+<h2>The Official Story and the Missing Years</h2>
+
+<p>The official press release from PIB said that the bank was running in loss and needed government help. That is not a lie, but it is a half-truth. The government injected about Rs 25,000 crore between 2010 and 2020. Why? So that one day the bank could become profitable. That day came. After 2020, the bank started earning. Yet the official story stops at 2020. It does not tell you that in FY2025 the profit was Rs 7,515 crore, and in FY2026 it was Rs 9,513 crore, a jump of 27 percent. It does not tell you that in the last six years the bank earned more than Rs 30,000 crore in profit. Why is the story told only up to 2020? Because after 2020 the truth becomes inconvenient.</p>
+
+<table border="1" cellpadding="6" cellspacing="0">
+<caption>IDBI: The official story versus the financial record</caption>
+<thead>
+<tr>
+<th>Indicator</th>
+<th>Data</th>
+<th>What it shows</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Government support, 2010 to 2020</td>
+<td>Rs 25,000 crore</td>
+<td>Public capital used to clean the bank</td>
+</tr>
+<tr>
+<td>Net profit, FY2025</td>
+<td>Rs 7,515 crore</td>
+<td>Bank was already profitable</td>
+</tr>
+<tr>
+<td>Net profit, FY2026</td>
+<td>Rs 9,513 crore</td>
+<td>27 percent growth year-on-year</td>
+</tr>
+<tr>
+<td>Cumulative profit, last 6 years</td>
+<td>Over Rs 30,000 crore</td>
+<td>Turnaround complete</td>
+</tr>
+<tr>
+<td>Total deposits</td>
+<td>Rs 3.46 trillion</td>
+<td>Up 12 percent in one year</td>
+</tr>
+<tr>
+<td>Total business, 30 September</td>
+<td>Rs 6.26 trillion</td>
+<td>Up 18 percent in one year</td>
+</tr>
+<tr>
+<td>Share sale price</td>
+<td>Rs 81 per share</td>
+<td>Below the earlier benchmark of Rs 94.42</td>
+</tr>
+</tbody>
+</table>
+
+<p>The bank's total deposits reached Rs 3.46 trillion, up 12 percent in one year. Its total business crossed Rs 6.26 trillion by 30 September, up 18 percent. This is not a sick bank. It is a repaired bank. It was repaired with public money, and now it has been sold.</p>
+
+<p>Look at the land. A retired secretary in the Government of India wrote that IDBI has more than 50 acres of prime land in Hyderabad, valued at around Rs 269 crore per acre. That parcel alone is worth Rs 13,450 crore. Across cities, the bank's land holdings may be worth more than Rs 50,000 crore. The share was sold at Rs 81. A year earlier, a benchmark of Rs 94.42 was reported. When the buyer is chosen, the price drops.</p>
+
+<h2>A Short History of Public Risk, Private Reward</h2>
+
+<p>IDBI was not born yesterday. Established in 1964 to finance Indian industry, it was nationalised in 1976. In 2004, when the bank's status was changed to a commercial bank, the then finance minister Jaswant Singh of the BJP assured both houses of Parliament that the government's equity in IDBI would never fall below 51 percent. That promise has now been quietly thrown away.</p>
+
+<p>Devidas Tuljapurkar, convener of the United Forum of IDBI officers and employees, wrote in The Wire that the bank is being gifted to the private sector after the public took the risk. The bank's NPAs grew because of corporate loans. IDBI was used to rescue sinking companies. TCA Sharad Raghavan has written in detail about how IDBI was made to lend to companies that failed later: Kingfisher Airlines, Winsome Diamonds, Videocon Group, and others. In 2006, IDBI was pushed to buy United Western Bank to save it. The bank also helped build the National Stock Exchange, NSDL, and Stock Holding Corporation of India. Its loans went bad because big borrowers did not repay. In the last ten years, the system has written off about Rs 16 lakh crore in non-performing assets. But the small borrower who delays a two-minute EMI is chased to their door.</p>
+
+<p>In 2018, LIC, which is public money from crores of Indians, bought 51 percent of IDBI for Rs 21,624 crore. Management control still remained with the government. At that time, V Sridhar wrote in Frontline that the process of privatisation of strategic sectors had begun. In 2026, that warning has materialised.</p>
+
+<h2>What Is Sold Along With the Bank</h2>
+
+<p>IDBI runs Jan Dhan accounts, Jeevan Jyoti Bima, Suraksha Bima, Atal Pension Yojana, MUDRA loans, PM SVANidhi for street vendors, and PM-KISAN accounts. The bank carries government schemes into villages and small towns. Once privatised, these public welfare works become an expense line for a private company.</p>
+
+<p>The bank has over 19,000 employees; about 9,500 belong to Scheduled Castes, Scheduled Tribes, and Other Backward Classes. With privatisation, reservation safeguards and service protections are put at risk. DIPAM Secretary Arunish Chawla has given verbal assurances that pension and service conditions will not change. He has not given written guarantees. CPI(M) leader John Brittas wrote to Finance Minister Nirmala Sitharaman in June that this is not just disinvestment; it is an attack on the social reservation safeguards of about 20,000 workers and their families. All India Bank Employees Association has opposed the sale. Akhilesh Yadav tweeted that the BJP has opened a season-end sale, selling everything before the shop shuts.</p>
+
+<h2>Media and the Next Targets</h2>
+
+<p>Business newspapers have already begun their familiar dance. When the government sells a public asset, business media celebrates. The deal is called fair. The buyer is called efficient. The social cost is never counted. The Indian government is considering raising the foreign investment limit in public sector banks from 20 percent to 49 percent. NITI Aayog has reportedly selected Central Bank of India and Indian Overseas Bank as the next in line for sale.</p>
+
+<p>The playbook is clear: first, let a public institution fall sick because of corporate defaulters; second, use public money to cure it; third, sell it to private buyers once it starts earning. This was done with airports too. Public money built airports where there was no traffic. Later, when flights became fewer, private companies were invited to run them. Why is the private company not asked to build the airport from the beginning with its own money? Because the profit comes after the public takes the risk.</p>
+
+<h2>A Question for the Employees</h2>
+
+<p>But I have a question for bank employees. The bank officials and staff understand economic matters. After 2014, what was discussed in their WhatsApp groups? Were articles shared about the economy, about disinvestment, about electoral bonds? Or were temple-mosque memes and anti-Muslim politics circulated? Was Rahul Gandhi called "Pappu" for entertainment? When students were stopped from protesting at Jantar Mantar, when 300 MPs were not allowed to reach Jantar Mantar, when Rahul Gandhi and Ashutosh Rana, Saurav Das, and Neha Bora were blocked, what did bank employees write in their family and office groups? Did they support it or criticise it?</p>
+
+<p>If the bank's own employees kept quiet on the economy when it did not affect them directly, how can they expect the public to defend their bank now? Before taking out loudspeakers in the streets to raise public awareness, they should first open their own WhatsApp groups and see their old messages. The bank is gone. What remains is self-examination.</p>
+
+<h2>Criticisms</h2>
+
+<p>1. A bank that earned over Rs 30,000 crore profit in six years is sold by the Indian government to a Canadian financial company at Rs 81 per share, below the price earlier cited.</p>
+
+<p>2. Public money is injected into a bank through budgetary support and LIC, and after the turnaround the profits are transferred by the government to private hands.</p>
+
+<p>3. The PIB's press release gives the loss figure before 2020, but the post-2020 profit is not disclosed with equal prominence by the government.</p>
+
+<p>4. A promise made in Parliament by the then BJP finance minister that government equity in IDBI would never fall below 51 percent is broken by the same political party.</p>
+
+<p>5. Reservation safeguards and service conditions of over 19,000 employees, including about 9,500 SC, ST and OBC workers, are put at risk by privatisation.</p>
+
+<p>6. Welfare schemes run by IDBI for the poor and rural people, such as Jan Dhan, MUDRA, PM SVANidhi and PM-KISAN, are endangered by the sale.</p>
+
+<p>7. A network of public assets built with taxpayer money, including airports, is handed to private players by the government after the public has borne the risk.</p>
+
+<p>8. The success of the sale is celebrated by business newspapers without a serious investigation of the valuation, the social cost, or the history of public rescue.</p>
+
+<p>9. The workers' demand for written guarantees on pension and service conditions is not met by the government; instead, the opposition is blamed by the finance minister.</p>
+
+<p>10. Public attention is diverted by communal and personality-based politics while the government executes economic decisions that reduce public ownership.</p>
+
+</div>

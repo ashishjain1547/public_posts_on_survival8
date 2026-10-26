@@ -1,0 +1,418 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#customTEDTalksHeader" target="_blank">See All Articles</a>
+<br>
+
+<div class="customOuterWrapper">
+
+<h1>What Makes You Comfortable Can Ruin You: The Science of the Growth Rings</h1>
+
+<p>On Monday, January 7th, 2008, at 3 o'clock in the afternoon, I was an executive with a nice salary, annual bonuses, stock options, and all the perks that come with a carefully ordered career. Everything was on track. By 3:15 p.m., I was unemployed. The president of the company, who was also my boss, called me into a small conference room on the top floor of our building for what I assumed was a routine check-in. Instead, he fired me. I still remember how his words sucked the breath right out of me. I left the building in a dazed state, went home, and curled up in my bed in the fetal position for three hours.</p>
+
+<p>At the time, that moment felt like a catastrophe. It created more discomfort than I had ever experienced. But what I now realize is that this departure from my ordered life, this sharp and painful break from everything I knew, forever changed me for the better. That experience taught me a lesson I have never forgotten: what makes you comfortable can ruin you, and what makes you uncomfortable is the only way to grow.</p>
+
+<h2>The Day My Order Died</h2>
+
+<p>If someone had approached me on January 8th and said, "Buddy, getting fired is a good thing because now you are really going to grow," I probably would have smacked them. But looking back, that is exactly what happened. Losing my job shoved me out of a predictable, comfortable environment and into something far messier and far more valuable. Pretty quickly, I became motivated to start a new journey. After a couple of years of work with my new team and a Ph.D. friend at the University of Nebraska, we had an epiphany on how to illustrate and apply the science of discomfort and growth. We called the concept the Growth Rings.</p>
+
+<p>The Growth Rings are a simple way to understand the environments in which we live, work, and play. Some environments promote growth. Others quietly smother it. The rings apply to everything from a corporate office to a fishbowl. And that is where the story gets interesting.</p>
+
+<h2>The Goldfish Principle: Environment Dictates Growth</h2>
+
+<p>Think about a goldfish living in a small glass bowl. The fish is safe. It has food, clean water, and no predators. But that tiny bowl is also very limiting. The goldfish will only grow to the size its environment allows. Now place that same goldfish in a small pond, and something remarkable happens. The fish grows dramatically larger. Yes, the pond also carries risks. The fish could be eaten. But the growth potential is dramatically different.</p>
+
+<p>This is not just a fish story. It is a picture of you and me. The environments in which you work, live, and play are all proverbial fishbowls. They dictate how much you can grow. Most people choose the safe bowl. They choose the comfortable, predictable environment. But safe and comfortable are not the same as healthy and expanding. The Growth Rings map out four distinct environments, each with its own level of growth and performance.</p>
+
+<h2>The Four Growth Rings</h2>
+
+<p>Understanding the Growth Rings starts with recognizing that not all environments are created equal. Some look stable but actually hold you back. Some feel chaotic but can be the doorway to transformation. Here is a closer look at the four rings.</p>
+
+<table>
+<caption>The Four Growth Environments at a Glance</caption>
+<thead>
+<tr>
+<th>Environment</th>
+<th>Growth and Performance</th>
+<th>Key Characteristics</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stagnation</td>
+<td>Low growth, low performance</td>
+<td>Too many steps, permissions, and meaningless rules; creativity and independent thought are stifled</td>
+<td>Large bureaucratic agencies, some government departments, rigid corporate silos</td>
+</tr>
+<tr>
+<td>Chaos</td>
+<td>Low growth, low performance</td>
+<td>Zero predictability or control over inputs and outcomes; internal or external crises dominate</td>
+<td>Business mergers gone wrong, natural disasters, catastrophic events such as 9/11</td>
+</tr>
+<tr>
+<td>Order</td>
+<td>Comfortable but dangerous; growth eventually stops</td>
+<td>Predictability, routine, and comfort; doing the same thing in the same way repeatedly</td>
+<td>Stable jobs, familiar daily habits, a dog's favorite nap spot</td>
+</tr>
+<tr>
+<td>Complexity</td>
+<td>High growth, sustained or exponential</td>
+<td>Changed order, unpredictability, uncertainty, and discomfort that leads to real growth</td>
+<td>Starting a business, learning a difficult skill, challenging unjust laws or systems</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Stagnation: The Slow Death of Creativity</h3>
+
+<p>The first growth ring is stagnation. This is a low-performing, low-growth environment. Stagnation is characterized by too many steps, too many permissions, and too much minutia. It stifles creativity, independent thought, and action. Imagine an environment where every new idea must be approved by layers of management, where the phrase "that is how we have always done it" is used as a shield against change. That is stagnation. It is not loud or chaotic. It is simply slow, heavy, and draining.</p>
+
+<h3>Chaos: The Opposite Extreme</h3>
+
+<p>The antithesis of stagnation is chaos. Chaos is also a low-growth, low-performing environment, but for very different reasons. Chaos can be caused by internal or external events or conditions. We see chaos appear during business mergers, natural disasters, and horrific events like 9/11. In a chaotic environment, you have zero predictability or control over inputs and outcomes. Nothing makes sense. There is no stable ground. While stagnation buries you in rules, chaos leaves you with no rules at all.</p>
+
+<h3>Order: The Comfortable Trap</h3>
+
+<p>Next to stagnation on the Growth Rings lies the most desirable environment for most people: order. Order means knowing that what you do, or what is happening in your environment, leads to a predictable outcome. In predictability, comfort is found. And that comfort is exactly what makes order so dangerous. Science shows that any time you continually do something, or even think about something, in the same way, you eventually stop growing. This applies to every living thing, including our dog.</p>
+
+<p>If our dog Aspen had a chance, she would choose comfort six days a week and twice on Sundays. She would nap in her favorite spot, eat on schedule, and never face anything unpredictable. But too much growth-limiting order would have prevented her from becoming a therapy dog. Had she been allowed to stay entirely comfortable, think of the lives this gentle soul would not be touching today. Comfort feels good, but it has a hidden cost.</p>
+
+<h3>Complexity: The Only Path to Growth</h3>
+
+<p>Between order and chaos lies complexity, the most valuable environment of all. Complexity is nothing more than changed order. When your order is changed, outcomes are no longer predictable, and that unpredictability makes you uncomfortable. But complexity is also the only environment where sustained or exponential growth can occur. If you want to grow, you have to learn to step into complexity on purpose.</p>
+
+<p>Think about the power of this phrase: growth only occurs in a state of discomfort. I can state without hesitation that I would not be where I am today without my uncomfortable, order-disrupting day in January 2008. That does not mean you should go get fired to see if it leads to a big breakthrough. But it does mean that when discomfort hits, you should recognize it for what it is: an invitation to enter the complexity ring.</p>
+
+<h2>Three Triggers That Push You Into Complexity</h2>
+
+<p>Complexity is not something most people seek out. Our instinct is to avoid discomfort and run back to order. But high-growth complexity can be triggered in three primary ways. Understanding these triggers can help you move from fear to growth.</p>
+
+<h3>Trigger 1: Complexity Can Be Forced Upon You</h3>
+
+<p>The first trigger is when complexity is forced upon you. When I got fired, I did not have a chance to stay in order. Complexity was selected for me. And when that happens, how much you grow depends entirely on how you respond to it. I could have remained angry. I could have used the firing as an excuse for bitterness or self-pity. But what I actually learned is that I was not a great employee. I was much better off accepting the risks of running my own company. Being forced into discomfort stripped away my old identity and revealed a better path.</p>
+
+<p>Sometimes life throws you into the deep end. You lose a job, a relationship ends, a health crisis hits. You did not choose it. But you do choose what happens next. You can stay stuck in the pain of the disruption, or you can let that disruption teach you something new about who you are and what you are capable of. The growth does not come from the event itself. It comes from your response to it.</p>
+
+<h3>Trigger 2: Someone Can Help You Get There</h3>
+
+<p>The second trigger is when someone else pushes you into complexity. This is the role of parents, teachers, coaches, and bosses. Left on their own, people will consciously or subconsciously select the comfort of order. They need to be pushed into complexity in order to continue growing. This is not cruelty. It is guidance.</p>
+
+<p>My youngest daughter spent most of her high school life training to play tennis. Her coach was familiar with our work on complexity and the Growth Rings. One day I called him to check on Maddie's progress. I asked, "How long has it been since Maddie's been pushed deep into complexity?" His response was immediate. "Funny you should ask. We got there yesterday. She broke down into tears on the tennis court."</p>
+
+<p>Knowing how tough my daughter is, and the fact that she never cries, told me she was deep into complexity. This is where critical developmental decisions are made. The old version of me, the pre-Growth Ring version, would have intervened. I would have wanted to know what was making her so uncomfortable and done everything I could to make her happy again. But what I really would have been doing was removing the complexity and putting her back into order. I would have been stifling her development.</p>
+
+<p>The new version of me understood what was happening. Her coach's next words confirmed it. He said, "It took a heck of a lot more to get her to the limits of complexity this month than it did last month." Discomfort was causing her growth. The tears were not a sign of failure. They were evidence that she was expanding. This is what good coaches, parents, and leaders do. They hold the line so that the people they care about can grow.</p>
+
+<h3>Trigger 3: You Can Trigger It Yourself</h3>
+
+<p>The third trigger is the most powerful: you can trigger complexity yourself. Even if you are stuck in order or stagnation, you always have the ability to choose discomfort and growth. No one has to force you. No one has to push you. You can step into the unknown on your own.</p>
+
+<p>Take a journey back to Montgomery, Alabama, in the 1950s. Imagine a young black girl who attends an all-black high school. She rides the city bus to get there and home, which was not unusual in that era. On March 2nd, 1955, she boards a bus to come home from school and sits near the back in the first row of seats where black passengers were allowed to sit. As the bus fills with white people, there is eventually no more room in the front. According to local law, she is expected to move further back to make room for white passengers.</p>
+
+<p>Montgomery had an order in place. When people followed the rules, the outcome was predictable: repression of black residents with little conflict. But 15-year-old Claudette Colvin had just spent the last month in high school studying black history, and she was fed up with the historic and existing atrocities. On this day, she decided she did not like Montgomery's order. By refusing to give up her seat, she sent a community, its laws, and the entire country into complexity.</p>
+
+<p>Yes, nine months before Rosa Parks made her famous decision to stay put, it was a 15-year-old girl who was handcuffed, dragged from the bus, and taken to prison. It was Claudette Colvin, not Rosa Parks, who first fought the law. She was also the star plaintiff in the famous lawsuit that went all the way to the U.S. Supreme Court. Her choice to move from order into complexity changed history.</p>
+
+<p>I use Claudette's actions not only to highlight a moment of racial injustice, though that is important. I use it as an example of every situation in an ordered environment. It is a real and perfect example of complexity forcing people, communities, and courts into discomfort. And it shows the downstream impact that can occur any time someone elects to move from order.</p>
+
+<h2>A Quote That Reframes Everything</h2>
+
+<p>Dr. Serene Jones, in her book, summarizes this concept beautifully when she writes:</p>
+
+<blockquote>"The constant facade of order hides the wilderness that is craving to seep out and teach us that life was not created to be what we think it is. Beyond words, we must experience the wilderness to be taught what cannot be otherwise known."</blockquote>
+
+<p>Order offers the illusion of control. It feels safe. But behind that facade, there is a wildness waiting to teach us things we cannot learn any other way. We cannot read our way into growth. We cannot think our way into maturity. We must walk into the wilderness, into discomfort, and let it shape us.</p>
+
+<h2>Key Takeaways</h2>
+
+<p>If you remember nothing else, hold on to these truths:</p>
+
+<ul>
+<li>What makes you comfortable can ruin you.</li>
+<li>Only in a state of discomfort can you continually grow.</li>
+<li>Environments are like fishbowls. They either expand you or limit you.</li>
+<li>Order feels safe, but it silently stalls your growth.</li>
+<li>Complexity is the only environment where sustained or exponential growth occurs.</li>
+<li>Complexity can be forced on you, guided by someone else, or chosen by you.</li>
+<li>Your response to discomfort, not the discomfort itself, dictates your growth.</li>
+</ul>
+
+<h2>Final Thought</h2>
+
+<p>It is not the discomfort of losing a job that you should fear most. It is not having a child break down on the tennis court. The real threat is order, because order convinces you that you are fine while slowly shrinking your world. Order-disrupting individuals like Jesus, Galileo, Claudette Colvin, and even a devoted dog trainer have proven this truth again and again. We should not fear the complexity-triggering individuals or events. We should fear our own unwillingness to accept or seek discomfort. That unwillingness, more than anything else, will dictate the growth of not just your life but our entire world.</p>
+</div>
