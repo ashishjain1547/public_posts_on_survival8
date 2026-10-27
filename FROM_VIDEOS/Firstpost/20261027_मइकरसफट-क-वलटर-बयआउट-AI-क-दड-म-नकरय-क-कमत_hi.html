@@ -1,0 +1,330 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#customFirstpostHeader" target="_blank">See All Articles</a>
+<br>
+
+<div class="customOuterWrapper">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AZHnzFOFCe0" frameborder="0" allowfullscreen></iframe>
+<h1>माइक्रोसॉफ्ट का वॉलंटरी बायआउट: AI की दौड़ में नौकरियों की कीमत?</h1>
+<p>टेक जगत में आर्टिफिशियल इंटेलिजेंस की होड़ ने अब कर्मचारियों के करियर पर सीधा असर डालना शुरू कर दिया है। माइक्रोसॉफ्ट ने अपने वैश्विक कार्यबल के करीब 60,000 कर्मचारियों को स्वैच्छिक बायआउट का ऑफर दिया है। यह संख्या कंपनी के पूर्णकालिक कर्मचारियों की एक चौथाई से अधिक है। यह कोई पारंपरिक छंटनी नहीं है, बल्कि कर्मचारियों को वित्तीय सहायता के साथ कंपनी छोड़ने का विकल्प दिया गया है।</p>
+<p>आइए समझते हैं कि यह ऑफर किसके लिए है, क्यों आया और इसके मायने क्या हैं।</p>
+
+<h2>ऑफर के दायरे में कौन-कौन हैं?</h2>
+<p>माइक्रोसॉफ्ट के अनुसार, यह स्वैच्छिक निकासी पैकेज कंपनी के वैश्विक कार्यबल के लगभग 27 प्रतिशत हिस्से को कवर करता है। जून 2026 तक कंपनी में करीब 200,000 पूर्णकालिक कर्मचारी थे। यह ऑफर अमेरिका, कनाडा, ब्रिटेन और भारत समेत कई क्षेत्रों के पात्र कर्मचारियों के लिए उपलब्ध है।</p>
+<p>जो कर्मचारी level 70 और उससे नीचे हैं, वे इस ऑफर के दायरे में आते हैं। इसमें जनरल मैनेजर, पार्टनर, सीनियर डायरेक्टर और डिस्टिंग्विश्ड इंजीनियर जैसे वरिष्ठ नेतृत्व या उच्च तकनीकी स्तर के पद भी शामिल हैं।</p>
+<p>पात्र टीमों में AI Experiences, Copilot, Finance, Human Resources, Xbox और Windows plus Devices शामिल हैं। हालांकि, Marketing, Commercial Business और Security जैसे विभागों को इस ऑफर से बाहर रखा गया है। कर्मचारियों को दिसंबर की शुरुआत तक फैसला करना होगा और ऑफर स्वीकार करने वालों को 31 दिसंबर को कंपनी छोड़नी होगी।</p>
+
+<h2>वॉलंटरी बायआउट क्या होता है?</h2>
+<p>आसान शब्दों में, वॉलंटरी बायआउट में कंपनी कर्मचारी को नौकरी छोड़ने के बदले पैसे और अन्य लाभ देती है। यह छंटनी से अलग है, जहां नियोक्ता खुद पद खत्म करता है या रोजगार समाप्त करता है। बायआउट में फैसला कर्मचारी का होता है कि वह ऑफर स्वीकार करे या नहीं।</p>
+<p>इस पैकेज में सेवरेंस पे, स्वास्थ्य बीमा कवरेज और करियर ट्रांजिशन सपोर्ट शामिल हो सकते हैं। माइक्रोसॉफ्ट ने अपने मेमो में कहा है कि इस ऑफर में वित्तीय सहायता, स्वास्थ्य कवरेज और करियर नियोजन संसाधन दिए जाएंगे।</p>
+
+<h2>AI की भारी लागत और Microsoft की रणनीति</h2>
+<p>इस कदम के पीछे AI की दौड़ की बड़ी कीमत है। माइक्रोसॉफ्ट डेटा सेंटरों पर भारी निवेश कर रही है। रिपोर्ट के मुताबिक, कंपनी ने वर्ष 2026 में करीब 175 अरब डॉलर खर्च किए हैं। इसमें कंप्यूटर चिप्स, सर्वर, प्रोसेसर, मेमोरी चिप्स, कूलिंग सिस्टम और बिजली जैसे AI सिस्टम चलाने के लिए जरूरी बुनियादी ढांचे पर खर्च शामिल है।</p>
+<p>साथ ही, कंपनी अपने संचालन को ज्यादा कुशल बनाना चाहती है। बायआउट प्रोग्राम से कंपनी स्वैच्छिक इस्तीफों के जरिए कार्यबल घटा सकती है, न कि केवल अनैच्छिक छंटनी पर निर्भर रहना पड़े। कंपनी ने इस ऑफर को बदलती व्यावसायिक जरूरतों के हिसाब से कार्यबल को ढालने का तरीका बताया है।</p>
+
+<h2>कंपनियां बायआउट क्यों चुनती हैं?</h2>
+<p>छंटनी के बजाय बायआउट देने के तीन मुख्य कारण होते हैं। पहला, लागत नियंत्रण। वेतन और कर्मचारी लाभ कंपनी के परिचालन खर्च का बड़ा हिस्सा होते हैं। स्वैच्छिक आधार पर नौकरी छोड़ने वालों को वित्तीय पैकेज देकर कंपनियां भविष्य की पेरोल लागत घटा सकती हैं।</p>
+<p>दूसरा, पुनर्गठन। जैसे-जैसे व्यावसायिक प्राथमिकताएं बदलती हैं, कुछ क्षेत्रों में कम कर्मचारियों की जरूरत होती है और दूसरों में ज्यादा निवेश की। माइक्रोसॉफ्ट के मामले में यह AI की ओर बढ़ता रुझान है।</p>
+<p>तीसरा, बायआउट कंपनियों को अनैच्छिक नौकरी कटौती का विकल्प देता है, जिससे कानूनी और नैतिक दबाव कम हो सकता है।</p>
+
+<h2>यह कोई पहली बार नहीं है</h2>
+<p>इस साल माइक्रोसॉफ्ट में कार्यबल में कटौती का यह पहला मामला नहीं है। जुलाई में कंपनी ने वैश्विक स्तर पर करीब 4,800 नौकरियां खत्म करने की घोषणा की थी। उस पुनर्गठन में पांच गेमिंग स्टूडियो को बेचने या बंद करने की योजना भी शामिल थी। इसके अलावा, कंपनी ने अमेरिका में करीब 8,000 कर्मचारियों को पहले भी स्वैच्छिक बायआउट का ऑफर दिया था। लेकिन ताजा ऑफर अपनी पहुंच में कहीं ज्यादा व्यापक है।</p>
+
+<h2>कर्मचारियों के लिए अनिश्चित भविष्य</h2>
+<p>माइक्रोसॉफ्ट का यह कदम इस बात का संकेत है कि AI की दौड़ टेक इंडस्ट्री को कैसे बदल रही है। कंपनियां अरबों डॉलर AI की ओर मोड़ रही हैं, जबकि कर्मचारी अनिश्चित भविष्य का सामना कर रहे हैं। बायआउट भले ही विकल्प देता हो, लेकिन यह इंडस्ट्री में नौकरी की सुरक्षा पर सवाल भी खड़े करता है।</p>
+
+<h2>तथ्य (Facts)</h2>
+<ul>
+<li>माइक्रोसॉफ्ट ने करीब 60,000 कर्मचारियों को स्वैच्छिक बायआउट का ऑफर दिया है, जो वैश्विक कार्यबल का 27 प्रतिशत से अधिक है।</li>
+<li>जून 2026 तक कंपनी में करीब 200,000 पूर्णकालिक कर्मचारी थे।</li>
+<li>ऑफर अमेरिका, कनाडा, ब्रिटेन और भारत के पात्र कर्मचारियों के लिए है।</li>
+<li>level 70 और उससे नीचे के कर्मचारी, जिनमें जनरल मैनेजर, पार्टनर, सीनियर डायरेक्टर और डिस्टिंग्विश्ड इंजीनियर शामिल हैं, पात्र हैं।</li>
+<li>AI Experiences, Copilot, Finance, HR, Xbox और Windows plus Devices टीमें ऑफर में शामिल हैं; Marketing, Commercial Business और Security बाहर हैं।</li>
+<li>ऑफर स्वीकार करने की आखिरी तारीख दिसंबर की शुरुआत है और निकासी 31 दिसंबर को होगी।</li>
+<li>माइक्रोसॉफ्ट ने वर्ष 2026 में AI बुनियादी ढांचे पर करीब 175 अरब डॉलर खर्च किए हैं।</li>
+<li>जुलाई 2026 में कंपनी ने वैश्विक स्तर पर 4,800 नौकरियां खत्म की थीं और अमेरिका में 8,000 कर्मचारियों को बायआउट दिया था।</li>
+</ul>
+
+<h2>आलोचनाएं (Criticisms)</h2>
+<ul>
+<li>माइक्रोसॉफ्ट AI पर 175 अरब डॉलर खर्च कर रही है, लेकिन कर्मचारियों को "स्वैच्छिक" नाम पर नौकरी छोड़ने का दबाव महसूस हो सकता है।</li>
+<li>बायआउट को "नई पसंद" या "सपोर्ट" बताना भ्रामक है, क्योंकि यह मूल रूप से लागत कटौती की रणनीति है।</li>
+<li>कुछ विभागों, जैसे Security और Marketing, को ऑफर से बाहर रखना चुनिंदा कर्मचारियों पर अनिश्चितता का बोझ डालता है।</li>
+<li>बार-बार छंटनी और बायआउट से टेक इंडस्ट्री में नौकरी की असुरक्षा और मानसिक दबाव बढ़ रहा है।</li>
+<li>कंपनी का AI-केंद्रित निवेश कर्मचारियों की भलाई से ज्यादा शेयरधारकों के रिटर्न को प्राथमिकता देता दिखता है।</li>
+</ul>
+</div>

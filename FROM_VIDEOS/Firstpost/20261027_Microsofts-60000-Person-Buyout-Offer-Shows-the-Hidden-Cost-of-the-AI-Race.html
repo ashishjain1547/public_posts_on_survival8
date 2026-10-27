@@ -1,0 +1,320 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#customFirstpostHeader" target="_blank">See All Articles</a>
+<br>
+
+<div class="customOuterWrapper">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AZHnzFOFCe0" frameborder="0" allowfullscreen></iframe>
+<h1>Microsoft's 60,000-Person Buyout Offer Shows the Hidden Cost of the AI Race</h1>
+
+<p>Microsoft is not calling it a layoff. But when a company asks more than a quarter of its global workforce to consider leaving by December 31, the distinction begins to blur. The tech giant is offering voluntary buyout packages to roughly 60,000 employees, according to an internal memo reported by multiple tech outlets. That is about 27 percent of a headcount that stood near 200,000 full-time workers as of Microsoft's latest disclosure. Behind the careful language of "career planning resources" and "support" is a harder reality: the AI buildout is forcing one of the world's most valuable companies to restructure faster than it can retrain people.</p>
+
+<h2>The scope of the offer</h2>
+
+<p>The buyout is broad but not universal. It applies to eligible employees in the United States, Canada, the United Kingdom, and India. Microsoft's memo says the package is open to workers at level 70 and below, a technical and management band that includes general managers, partners, senior directors, and distinguished engineers. Teams named in the memo include AI experiences, Copilots, finance, human resources, Xbox, and Windows plus devices. Marketing, commercial business, and security are excluded. Employees need to decide in early December, and those who accept will leave on December 31.</p>
+
+<h2>What a voluntary buyout actually is</h2>
+
+<p>A buyout is not the same as a layoff. In a layoff, the employer eliminates the position. In a voluntary buyout, the employee chooses to accept money and benefits in exchange for leaving. Microsoft's package includes financial support, continued health coverage, and career transition resources. That sounds generous. But the logic is corporate: buyouts allow companies to reduce payroll costs without the formal stigma of mass termination. For workers, the "choice" is often shaped by the knowledge that future rounds may be less voluntary.</p>
+
+<h2>Why Microsoft is doing this now</h2>
+
+<p>The main driver is AI infrastructure spending. Microsoft invested around $175 billion in the current fiscal year, according to its capital expenditure reports, much of it on data centers, chips, cooling systems, and electricity. Data centers are not cheap. They require servers, processors, memory, and enormous energy. At the same time, Microsoft is trying to make operations leaner. A buyout program lets the company cut headcount through attrition rather than forced reductions, while it redirects billions toward AI. Microsoft's memo framed the offer as a way to adapt the workforce to changing business needs.</p>
+
+<h2>The pattern behind the announcement</h2>
+
+<p>This is not Microsoft's first workforce action of the year. In July, the company announced about 4,800 job cuts globally, including plans to divest up to five gaming studios. It also offered voluntary buyouts to around 8,000 employees in the United States. The latest offer is far wider: 60,000 people potentially eligible. That scale suggests the company is not simply trimming fat. It is reshaping which parts of the business survive the AI transition, and which workers are expected to keep up.</p>
+
+<h2>Facts</h2>
+
+<p>- Microsoft's voluntary buyout offer reportedly covers about 60,000 employees, or more than 27 percent of its global workforce.</p>
+<p>- The company had roughly 200,000 full-time employees worldwide, according to its latest disclosure.</p>
+<p>- Eligible regions include the United States, Canada, the United Kingdom, and India; eligible roles include level 70 and below, a tier that can include general managers, partners, senior directors, and distinguished engineers.</p>
+<p>- Eligible teams include AI experiences, Copilots, finance, human resources, Xbox, and Windows plus devices. Marketing, commercial business, and security are excluded.</p>
+<p>- Employees must decide in early December; accepting workers leave on December 31.</p>
+<p>- The buyout includes financial support, health coverage, and career planning resources.</p>
+<p>- Microsoft invested about $175 billion in the current fiscal year, much of it on AI-related infrastructure.</p>
+<p>- In July, Microsoft announced around 4,800 job cuts and divested up to five gaming studios; it previously offered buyouts to about 8,000 U.S. employees.</p>
+
+<h2>Criticisms</h2>
+
+<p>- Microsoft is using the language of "choice" and "support" to soften the optics of large-scale downsizing while spending heavily on AI infrastructure.</p>
+<p>- The offer covers senior technical and leadership tiers, which looks less like efficient adaptation and more like strategic thinning of expensive roles.</p>
+<p>- Employees are given only weeks to decide on a life-altering exit, shifting the burden of uncertainty onto workers while the company keeps its narrative intact.</p>
+<p>- Excluding marketing, commercial business, and security creates a two-tier workforce in which some teams face buyout pressure while others are insulated; that can erode morale and trust.</p>
+<p>- The repeated buyout rounds, following July's layoffs, suggest Microsoft is using monthly "voluntary" windows as a rolling workforce reduction tool instead of transparent planning.</p>
+</div>
