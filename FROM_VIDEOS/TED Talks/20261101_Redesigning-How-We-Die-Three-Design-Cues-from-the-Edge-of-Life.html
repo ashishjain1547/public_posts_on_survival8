@@ -1,0 +1,470 @@
+```html
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body { font-size: 16px; }
+
+        .main-inner .column-center-inner { padding: 0px; }
+        .main-inner .column-center-inner .section { margin: 0 10px; }
+        .content-inner { padding: 0; }
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#customTEDTalksHeader" target="_blank">See All Articles</a>
+<br>
+
+<div class="customOuterWrapper">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/apbSsILLh28" frameborder="0" allowfullscreen></iframe>
+<h1>Redesigning How We Die: Three Design Cues from the Edge of Life</h1>
+
+<section>
+<h2>Eleven Thousand Volts and a Reason to Wake Up</h2>
+<p>We all need a reason to wake up. For me, it took 11,000 volts.</p>
+<p>One night during my sophomore year of college, just back from Thanksgiving holiday, a few friends and I were horsing around and decided to climb atop a parked commuter train. It was sitting there with the wires that run overhead. Somehow that seemed like a great idea at the time. We had certainly done stupider things.</p>
+<p>I scurried up the ladder on the back, and when I stood up, the electrical current entered my arm, blew down and out my feet, and that was that. Would you believe that watch still works? Takes a licking. My father wears it now in solidarity.</p>
+<p>That night began my formal relationship with death. My death. It also began my long run as a patient. It is a good word, patient. It means one who suffers. I guess we are all patients.</p>
+</section>
+
+<section>
+<h2>A System Built Around the Wrong Center</h2>
+<p>The American health care system has more than its fair share of dysfunction — to match its brilliance, to be sure. I am a physician now, a hospice and palliative medicine doctor, so I have seen care from both sides. And believe me, most everyone who goes into health care really means well. I mean, truly.</p>
+<p>But we who work in it are also unwitting agents for a system that too often does not serve. Why? There is actually a pretty easy answer to that question, and it explains a lot: health care was designed with diseases, not people, at its center. Which is to say, of course, it was badly designed.</p>
+<p>And nowhere are the effects of bad design more heartbreaking, or the opportunity for good design more compelling, than at the end of life. There, things are so distilled and concentrated. There are no do-overs.</p>
+<p>My purpose here is to reach out across disciplines and invite design thinking into this big conversation — to bring intention and creativity to the experience of dying. We have a monumental opportunity in front of us, one of the few universal issues as individuals and as a civil society, to rethink and redesign how it is we die.</p>
+</section>
+
+<section>
+<h2>Necessary Suffering vs. Unnecessary Suffering</h2>
+<p>So let us begin at the end. For most people, the scariest thing about death is not being dead. It is dying. Suffering. Those are two quite different things.</p>
+<p>To get underneath this, it can be very helpful to tease out the suffering that is necessary from the suffering we can change. The former is a natural, essential part of life, part of the deal. To this we are called to make space, adjust, grow. It can be really good to realize forces are larger than ourselves. It brings proportionality, like a cosmic right-sizing.</p>
+<p>After my accident, I lost my limbs. That loss became fact, fixed, necessarily part of my life. I learned I could no more reject this fact than reject myself. It took me a while, but I learned it eventually.</p>
+<p>Another great thing about necessary suffering is that it is the very thing that unites caregiver and care receiver — human beings. This is where healing happens. Yes, compassion, literally, suffering together.</p>
+<p>But on the systems side, on the other hand, so much of the suffering is unnecessary. It is invented. It serves no good purpose. The good news is that since this brand of suffering is made up, we can change it. How we die is indeed something we can affect.</p>
+<blockquote>Making the system sensitive to the distinction between necessary and unnecessary suffering gives us our first of three design cues. Our role as caregivers, as people who care, is to relieve suffering, not add to the pile.</blockquote>
+</section>
+
+<section>
+<h2>What Palliative Care Really Means</h2>
+<p>Before going further, let me offer a quick aside about palliative care — a terribly important field that is poorly understood. While palliative care includes end-of-life care, it is not limited to it. It is not limited to hospice. It is simply about comfort and living well at any stage. You do not have to be dying anytime soon to benefit from palliative care.</p>
+<p>This gets right at a fundamental shift in perspective: care can be about making life more wonderful rather than just less horrible.</p>
+</section>
+
+<section>
+<h2>Frank and the Colorado River</h2>
+<p>Let me introduce you to Frank. He sort of makes this point. I have been seeing Frank for years. He is living with advancing prostate cancer on top of long-standing HIV. We work on his bone pain and his fatigue, but most of the time we spend thinking out loud together about his life — really about our lives.</p>
+<p>In this way, Frank grieves. He keeps up with his losses as they roll in so that he is ready to take in the next moment. Loss is one thing, but regret is quite another.</p>
+<p>Frank has always been an adventurer. He looks like something out of a Norman Rockwell painting and is no fan of regret. So it was not surprising when he came into clinic one day saying he wanted to raft down the Colorado River. Was this a good idea? With all the risks to his safety and his health, some would say no. Many did. But he went for it while he still could.</p>
+<p>And it was a glorious, marvelous trip. Freezing water, blistering dry heat, scorpions, snakes, wildlife howling off the flaming walls of the Grand Canyon — all the glorious side of the world beyond our control.</p>
+<p>Frank's decision, while maybe dramatic, is exactly the kind so many of us would make if we only had the support to figure out what is best for ourselves over time.</p>
+</section>
+
+<section>
+<h2>A Shift in Perspective</h2>
+<p>After my accident, when I went back to college, I changed my major to art history. Studying visual art, I figured I would learn something about how to see. That was a really potent lesson for someone who could not change so much of what he was seeing.</p>
+<p>Perspective. That kind of alchemy we humans get to play with, turning anguish into a flower.</p>
+<p>Flash forward. Now I work at an amazing place in San Francisco called the Zen Hospice Project, where we have a little ritual that helps with this shift in perspective. When one of our residents dies, the mortuary men come. As we wheel the body out through the garden, heading for the gate, we pause. Anyone who wants — fellow residents, family, nurses, volunteers, even the hearse drivers — shares a story or a song or silence as we sprinkle the body with flower petals.</p>
+<p>It takes a few minutes. It is a simple, parting image to usher in grief with warmth rather than repugnance.</p>
+</section>
+
+<section>
+<h2>The Hospital vs. The Hospice</h2>
+<p>Contrast that with the typical experience in a hospital setting. Picture a floodlit room lined with tubes and beeping machines and blinking lights that do not stop even when the patient's life has. Cleaning crews swoop in, the body is whisked away, and it all feels as though that person had never really existed.</p>
+<p>Well intended, of course, in the name of sterility. But hospitals tend to assault our senses, and the most we might hope for within those walls is numbness. Anesthetic. Literally the opposite of aesthetic.</p>
+<p>I revere hospitals for what they can do. I am alive because of them. But we ask too much of our hospitals. They are places for acute trauma and treatable illness. They are no place to live and die. That is not what they were designed for.</p>
+</section>
+
+<section>
+<h2>The Snowball</h2>
+<p>I am not giving up on the notion that our institutions can become more humane. Beauty can be found anywhere. I spent a few months in a burn unit at St. Barnabas Hospital in Livingston, New Jersey, where I received really great care at every turn, including good palliative care for my pain.</p>
+<p>One night, it began to snow outside. I remember my nurses complaining about driving through it. There was no window in my room, but it was great to just imagine it coming down all sticky. Next day, one of my nurses smuggled in a snowball for me. She brought it into the unit.</p>
+<p>I cannot tell you the rapture I felt holding that in my hand — the coldness dripping onto my burning skin, the miracle of it all, the fascination as I watched it melt and turn into water. In that moment, just being any part of this planet in this universe mattered more to me than whether I lived or died. That little snowball packed all the inspiration I needed to both try to live and be okay if I did not.</p>
+<p>In a hospital, that is a stolen moment.</p>
+</section>
+
+<section>
+<h2>Design Cue Number Two: Dignity Through the Senses</h2>
+<p>When we look carefully, we find that so much of what matters at the end of life comes down to loving our time by way of the senses, by way of the body — the very thing doing the living and the dying.</p>
+<p>Take Jeanette. She finds it harder to breathe one day to the next due to ALS. Well, guess what? She wants to start smoking again — French cigarettes, if you please. Not out of some self-destructive bent, but to feel her lungs filled while she has them. Priorities change.</p>
+<p>Or take Kate. She just wants to know her dog Austin is lying at the foot of her bed, his cold muzzle against her dry skin. Instead of more chemotherapy coursing through her veins, she is done. She wants the sensuous, aesthetic gratification of being alive. In a moment, in an instant, we are rewarded for just being.</p>
+<p>If teasing unnecessary suffering out of the system is our first design cue, then tending to dignity by way of the senses — by way of the body, the aesthetic realm — is design cue number two.</p>
+</section>
+
+<section>
+<h2>The Kitchen at Zen Hospice</h2>
+<p>Probably the most poignant room in the Zen Hospice guesthouse is our kitchen. That is a little strange when you realize that so many of our residents can eat very little, if anything at all. But we realize we are providing sustenance on several levels. Smell. Symbolic plane. Seriously, with all the heavy-duty stuff happening under our roof, one of the most tried-and-true interventions we know of is to bake cookies.</p>
+<p>As long as we have our senses — even just one — we have at least the possibility of accessing what makes us feel human, connected. Imagine the ripples of this notion for the millions of people living and dying with dementia. Primal sensorial delights that say the things we do not have words for. Impulses that make us stay present, with no need for a past or a future.</p>
+</section>
+
+<section>
+<h2>Design Cue Number Three: Set Our Sights on Well-Being</h2>
+<p>The third and final cue is this: we need to lift our sights. We need to set our sights on well-being. Health and health care can become about making life more wonderful rather than just less horrible.</p>
+<p>This gets right at the distinction between a disease-centered model and a human-centered model of care. And here is where caring becomes a creative, generative, even playful act.</p>
+<p>Play may sound like a funny word here. But it is one of our highest forms of adaptation. Consider every major compulsory effort it takes to be human. The need for food gave birth to cuisine. The need for shelter gave rise to architecture. The need for cover, fashion. And for being subjected to the clock, well, we invented music.</p>
+<p>So, since dying is a necessary part of life, what might we create with this fact?</p>
+<p>By play, I am in no way suggesting that we take a light approach to dying or that we mandate any particular way of dying. There are mountains of sorrow that cannot move, and one way or another, we will all kneel there.</p>
+<p>Rather, I am asking that we make space — physical and psychic room — to allow life to play itself all the way out. So that rather than just getting out of the way, aging and dying can become a process of crescendo through to the end.</p>
+</section>
+
+<section>
+<h2>Two Models, Side by Side</h2>
+<p>To bring these three design cues into sharper focus, let me lay out the contrast between the disease-centered model that dominates health care today and the human-centered model that hospice and good palliative care point toward.</p>
+<table border="1" cellpadding="10" cellspacing="0">
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Disease-Centered Model</th>
+<th>Human-Centered Model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Core focus</td>
+<td>The disease, the diagnosis, the treatment protocol</td>
+<td>The whole person: body, senses, relationships, meaning</td>
+</tr>
+<tr>
+<td>Primary goal</td>
+<td>To fix, cure, or manage illness</td>
+<td>To relieve suffering and foster well-being</td>
+</tr>
+<tr>
+<td>View of suffering</td>
+<td>All suffering is a problem to be eliminated</td>
+<td>Necessary suffering is acknowledged; unnecessary suffering is removed</td>
+</tr>
+<tr>
+<td>Role of the senses</td>
+<td>Largely ignored or numbed with anesthetic</td>
+<td>Activated as a source of dignity, connection, and joy</td>
+</tr>
+<tr>
+<td>Death</td>
+<td>Seen as a failure of the system</td>
+<td>Seen as a natural part of life to be designed for</td>
+</tr>
+<tr>
+<td>Setting</td>
+<td>Sterile, noisy, disorienting, institution-first</td>
+<td>Warm, human-scale, sensory-rich, person-first</td>
+</tr>
+<tr>
+<td>Key question</td>
+<td>What is wrong and how do we fix it?</td>
+<td>What matters to you, and how do we support it?</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<section>
+<h2>What This Means for You and Me</h2>
+<p>We know from research what is most important to people who are closer to death. Comfort. Feeling unburdened and unburdening to those they love. Existential peace. A sense of wonderment and spirituality. Over nearly 30 years at Zen Hospice, we have learned much more from our residents in subtle detail.</p>
+<p>Little things are not so little.</p>
+<p>The challenge is not that we lack the ingredients for better end-of-life care. The challenge is that we have built an entire system that ignores them. Policy, education and training, systems, bricks and mortar — we have tons of input for designers of all stripes to work with. What we need now is the will to redesign.</p>
+</section>
+
+<section>
+<h2>Let Death Be What Takes Us</h2>
+<p>Parts of me died early on, and that is something we can all say one way or another. I got to redesign my life around that fact, and I tell you it has been a liberation to realize you can always find a shock of beauty or meaning in what life you have left.</p>
+<p>Like that snowball, lasting for a perfect moment, all the while melting away.</p>
+<p>If we love such moments ferociously, then maybe we can learn to live well — not in spite of death, but because of it.</p>
+<p>Let death be what takes us, not lack of imagination.</p>
+</section>
+
+<section>
+<h2>Key Takeaways</h2>
+<p>Here are the core lessons I carry with me — as a physician, as a patient, and as a human being.</p>
+<ul>
+<li>- Separate necessary suffering from unnecessary suffering. The first is part of life. The second is a design flaw. As caregivers, our job is to relieve suffering, not add to the pile.</li>
+<li>- Dignity lives in the senses. A snowball, a cigarette, a cold dog muzzle, the smell of baking cookies — these are not small things. They are the very texture of being alive.</li>
+<li>- Health care must be redesigned around people, not diseases. This is not a soft sentiment. It is a practical, urgent design challenge.</li>
+<li>- Hospitals are extraordinary for acute trauma and curable illness. They are not places to live and die. We need new kinds of spaces and rituals for the end of life.</li>
+<li>- Death cannot be solved. But we can design toward it. We can make space — physical, psychic, and spiritual — to allow life to play itself all the way out.</li>
+<li>- Play and creativity are not frivolous. Cuisine, architecture, fashion, music — all were born from necessity. What will we create from the necessity of dying?</li>
+<li>- You do not need to be dying to benefit from palliative care. Asking for comfort and well-being at any stage is not giving up. It is waking up.</li>
+</ul>
+</section>
+
+<section>
+<h2>Quotations to Carry With You</h2>
+<blockquote>"We all need a reason to wake up. For me, it just took 11,000 volts."</blockquote>
+<blockquote>"Compassion, literally, suffering together."</blockquote>
+<blockquote>"Hospitals are places for acute trauma and treatable illness. They are no place to live and die."</blockquote>
+<blockquote>"Let death be what takes us, not lack of imagination."</blockquote>
+</section>
+
+<section>
+<h2>A Final Thought</h2>
+<p>We are living through a silver tsunami. There are already record numbers of us living with chronic and terminal illness and into ever older age, and we are nowhere near ready. The old model will not stretch to meet this need. We need an infrastructure dynamic enough to handle these seismic shifts in our population.</p>
+<p>I know we can build it, because we have to. The alternative is simply unacceptable.</p>
+<p>The key ingredients are known. The design cues are clear. The stories from people like Frank, Jeanette, and Kate show us the way. The snowball reminds us what is possible even in the most sterile corridor.</p>
+<p>So I will leave you with this: we cannot solve for death. But we can design toward it. We can strip away the suffering that serves no purpose, feed the senses that keep us connected, and make room for life to crescendo all the way to its final note.</p>
+<p>That is not a medical challenge. It is a design challenge. And it belongs to all of us.</p>
+</section>
+</div>
+```
