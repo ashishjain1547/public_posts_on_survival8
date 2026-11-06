@@ -1,0 +1,343 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        .main-inner .column-center-inner .section { margin: 5px; }
+
+        .content-inner { padding: 0; }
+
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#customNDTVProfitHeader" target="_blank">See All Articles</a>
+<br>
+
+<div class="customOuterWrapper">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WTWvEAFdOFE" frameborder="0" allowfullscreen></iframe>
+<h1>शेयर बाजार: विदेशी निवेशकों की घर वापसी और निफ्टी की रिकॉर्ड रैली</h1>
+
+<p>भारतीय शेयर बाजार के लिए यह सप्ताह कई मायनों में यादगार रहा। निफ्टी ने लगातार सातवें कारोबारी सत्र में बढ़त दर्ज की और 25,000 के स्तर के ऊपर बंद हुआ। यह 27 फरवरी 2026 के बाद का सबसे ऊंचा क्लोजिंग स्तर है। करीब 170 सत्रों के बाद निफ्टी ने इतनी मजबूत वापसी की है। आम भाषा में कहें तो बाजार में लगातार खरीदारी का माहौल बना हुआ है।</p>
+
+<p>लेकिन इस तेजी की असली कहानी सिर्फ इंडेक्स की संख्या में नहीं, बल्कि विदेशी संस्थागत निवेशकों यानी FII की वापसी में छिपी है। सितंबर और अक्टूबर में भारी बिकवाली करने वाले FII अब लगातार खरीदारी कर रहे हैं। बाजार की भाषा में इसे घर वापसी कहा जा सकता है। एनडीटीवी प्रॉफिट के बाजार आंकड़ों के मुताबिक, यह बदलाव सिर्फ एक दिन का नहीं, बल्कि एक सिलसिला बन चुका है।</p>
+
+<h2>निफ्टी की सात दिन की जीत: आंकड़ों पर एक नजर</h2>
+
+<p>निफ्टी ने पिछले सात सत्रों में करीब 10 फीसदी यानी 2,250 अंकों की छलांग लगाई है। साप्ताहिक आधार पर यह लगातार दूसरा हफ्ता है जब निफ्टी हरे निशान पर बंद हुआ है। पिछले हफ्ते निफ्टी ने 8 फीसदी से अधिक की बढ़त दर्ज की, जिसमें श्रीराम फाइनेंस और बजाज फाइनेंस ने 15 फीसदी से ज्यादा का रिटर्न दिया। दैनिक कारोबार में एमएंडएम 6 फीसदी से अधिक चढ़कर टॉप गेनर रहा।</p>
+
+<p>हालांकि ब्रोडर मार्केट की चाल बेंचमार्क से कमजोर रही। निफ्टी मिडकैप 150 में पिछले हफ्ते 5.6 फीसदी और निफ्टी स्मॉलकैप 250 में 3.7 फीसदी की तेजी आई। आज के कारोबार में मिडकैप इंडेक्स सपाट रहा, जबकि स्मॉलकैप 250 करीब 0.9 फीसदी गिर गया। टीडी पावर सिस्टम्स जैसे शेयर में 14 फीसदी तक की गिरावट देखी गई। इसका मतलब यह है कि बड़े शेयरों के दम पर इंडेक्स चढ़ रहा है, लेकिन छोटे शेयरों में मुनाफावसूली का दबाव अभी भी बना हुआ है।</p>
+
+<h2>FII की वापसी: क्या बदला?</h2>
+
+<p>विदेशी संस्थागत निवेशकों ने 6 नवंबर को 13,750 करोड़ रुपये के शेयर खरीदे। यह लगातार छठा सत्र है जब FII ने भारतीय इक्विटी में खरीदारी की है। अगस्त 2026 के बाद यह सबसे लंबी FII खरीदारी श्रृंखला है। नवंबर में अब तक FII 45,000 करोड़ रुपये से अधिक के शेयर खरीद चुके हैं, जबकि सितंबर और अक्टूबर में उन्होंने करीब 90,000 करोड़ रुपये बेचे थे। यानी पिछली बिकवाली का लगभग आधा हिस्सा वापस खरीदा जा चुका है।</p>
+
+<p>दूसरी तरफ घरेलू संस्थागत निवेशक यानी DII लगातार छह सत्रों से बिकवाली कर रहे हैं। जुलाई 2024 के बाद यह DII की सबसे लंबी बिकवाली श्रृंखला है।</p>
+
+<p>इस वापसी के पीछे चार बड़े कारण हैं:</p>
+
+<ul>
+<li>भारतीय कंपनियों की दूसरी तिमाही यानी Q2 FY27 की कमाई मैक्रोइकनॉमिक दबावों के बावजूद मजबूत रही है।</li>
+<li>वैश्विक AI ट्रेड में उलटफेर के चलते अमेरिकी बाजारों में भारी गिरावट आई। डाओ और नैस्डैक ने 19 महीने का सबसे खराब दिन देखा।</li>
+<li>चीन, ताइवान, कोरिया और जापान जैसे एशियाई बाजार बियर मार्केट में चले गए हैं। बियर मार्केट का मतलब है जब कोई बाजार अपने ऊपरी स्तर से 20 फीसदी से अधिक गिरता है। कोरिया और ताइवान से अकेले अक्टूबर में करीब 45 अरब डॉलर की निकासी हुई।</li>
+<li>अमेरिकी बॉन्ड यील्ड और कच्चे तेल की कीमतें अपने ऊंचे स्तरों से नीचे आई हैं, जिससे भारत जैसे विविध बाजार विदेशी निवेशकों के लिए फिर आकर्षक बन गए हैं।</li>
+</ul>
+
+<h2>सेक्टोरल प्रदर्शन: फाइनेंशियल सर्विसेज की चमक</h2>
+
+<p>सभी प्रमुख सेक्टोरल इंडेक्स हरे निशान पर बंद हुए। निफ्टी फाइनेंशियल सर्विसेज 2.5 फीसदी से अधिक चढ़ा और लगातार आठवें सत्र में तेजी दर्ज की। श्रीराम फाइनेंस और मुथूट फाइनेंस जैसे शेयरों ने इस सेक्टर को सबसे आगे रखा। निफ्टी आईटी लगातार छठे हफ्ते हरे निशान पर बंद हुआ। निफ्टी बैंक, फार्मा, एफएमसीजी, ऑयल एंड गैस और रियल्टी इंडेक्स भी लगातार पांचवें दिन बढ़त के साथ बंद हुए। फार्मा इंडेक्स में चौथे दिन और मेटल तथा पीएसयू बैंक में तीसरे दिन तेजी रही।</p>
+
+<p>हालांकि ब्रोडर मार्केट में मुनाफावसूली भी साफ दिखी। निफ्टी स्मॉलकैप 250 में करीब 0.9 फीसदी की गिरावट हुई, जिसमें टीडी पावर सिस्टम्स 14 फीसदी तक टूटा। यह संकेत है कि रैली में चयनात्मकता बढ़ गई है और हर शेयर एक साथ नहीं चढ़ रहा।</p>
+
+<h2>कच्चे तेल और वैश्विक हालात का असर</h2>
+
+<p>कच्चे तेल की कीमतों में उतार-चढ़ाव जारी है। डब्ल्यूटीआई क्रूड 90 डॉलर प्रति बैरल के करीब मंडरा रहा है। अमेरिकी मध्यावधि चुनावों के बाद तनाव घटने की उम्मीद में तेल की कीमतों में गिरावट आई थी, लेकिन वाणिज्यिक जहाजों पर नए हमलों ने समुद्री आपूर्ति के जोखिम को फिर बढ़ा दिया है। जब तक शिपिंग बाधाएं कम नहीं होतीं, कच्चे तेल की कीमतों में अस्थिरता बनी रह सकती है। भारत जैसे तेल आयातक देश के लिए यह महंगाई और चालू खाते के घाटे पर दबाव डाल सकता है।</p>
+
+<h2>Key Insights</h2>
+
+<ul>
+<li>निफ्टी का 25,000 के ऊपर बंद होना बताता है कि बाजार की धारणा तेजी की ओर मुड़ गई है।</li>
+<li>FII की वापसी सिर्फ एक दिन की बात नहीं, बल्कि छह सत्रों की मजबूत खरीदारी है। यह विदेशी पूंजी के भरोसे की बहाली का संकेत है।</li>
+<li>सेक्टोरल चौड़ाई अच्छी है, लेकिन स्मॉलकैप में मुनाफावसूली से पता चलता है कि रैली में चयनात्मकता बढ़ी है।</li>
+<li>एशियाई बाजारों से निकला पैसा भारत की ओर शिफ्ट हो रहा है, जिससे आने वाले हफ्तों में विदेशी प्रवाह को सहारा मिल सकता है।</li>
+</ul>
+
+<h2>Criticisms</h2>
+
+<ul>
+<li>ब्रोडर मार्केट का कमजोर प्रदर्शन बताता है कि यह रैली अभी पूरी तरह व्यापक नहीं है; बड़े शेयरों के दम पर इंडेक्स चढ़ रहा है।</li>
+<li>DII की लगातार बिकवाली चिंता पैदा करती है। अगर विदेशी खरीदारी थमी तो घरेलू बिकवाली का दबाव बढ़ सकता है।</li>
+<li>कच्चे तेल की कीमतों में अस्थिरता और एशियाई बाजारों का बियर मार्केट वैश्विक जोखिम को बरकरार रखता है।</li>
+<li>इस तेज उछाल के बाद मुनाफावसूली की आशंका से इनकार नहीं किया जा सकता, खासकर छोटे और मझोले शेयरों में।</li>
+</ul>
+
+<p>कुल मिलाकर, बाजार के लिए यह धनतेरस शानदार रहा। अब सवाल यह है कि क्या दिवाली के बाद भी FII की यह वापसी जारी रहेगी या यह सिर्फ त्योहारी उत्साह है। निवेशकों को सतर्क रहते हुए बाजार की चाल पर नजर रखनी चाहिए। (स्रोत: एनडीटीवी प्रॉफिट और बाजार आंकड़े)</p>
+</div>

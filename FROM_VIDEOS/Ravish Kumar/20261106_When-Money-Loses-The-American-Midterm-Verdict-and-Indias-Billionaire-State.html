@@ -1,0 +1,434 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        .main-inner .column-center-inner .section { margin: 5px; }
+
+        .content-inner { padding: 0; }
+
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#customNewsByRavishKumarHeader" target="_blank">See All Articles</a>
+<br>
+
+<div class="customOuterWrapper">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/akObzXbzbTk" frameborder="0" allowfullscreen></iframe>
+<h1>When Money Loses: The American Midterm Verdict and India's Billionaire State</h1>
+
+<p>Hello, I am Ravish Kumar. The most important political news this week is not from Delhi, not from Bihar, not from Uttar Pradesh. It is from America. In the American midterm elections, the people defeated the power of money. This is not a small story. It is a warning for every government that thinks elections can be bought with corporate cash, every party that treats billionaires as its real voters, and every media house that has become a public relations agency for power.</p>
+
+<p>From Brazil to Serbia, voters are rejecting parties that stand with big business. But America has given the clearest signal. Elon Musk alone poured about 470 million dollars, roughly 4,470 crore rupees, into the Republican effort. Still the Republican Party was weakened in both the House of Representatives and the Senate. Musk was not the only one. Several American billionaires lost their money in this election. This time, money lost.</p>
+
+<h2>The First Humiliation: A Mayor and His Billionaires</h2>
+
+<p>The beginning of this trend was visible in the New York mayoral primary. Andrew Cuomo had the city's billionaires standing with him. After spending 35 million dollars, he still lost. Zohran Mamdani, who fought the election on public donations, defeated him. The winning candidate told the people: you defeated the power of money. You did this. He said that public donations were enough, and that politics needs money but not from lobbies, not from billionaires, not from corporations whose data centres are drying up the city's water supply.</p>
+
+<p>Mamdani said something America's people, leaders and governments needed to hear. People's daily lives are becoming difficult. How long will you keep telling them that Musk is the world's first trillionaire? This is enough. This is rubbish. People cannot run their homes. They cannot pay rent. They cannot afford good schools and hospitals. The public can see that the rich are getting richer while everyone else is getting poorer.</p>
+
+<h2>The Texas Lesson: A Teacher Against a Billionaire</h2>
+
+<p>In Texas, which is the Gujarat of the Republican Party, a teacher named James Talerico defeated not only the Republican candidate but also the billionaires standing with Ken Paxton. Elon Musk spent 200 million dollars to defeat Talerico. That is around 1,900 crore rupees. Talerico says he was fighting against 300 million dollars. He had some rich donors too, like LinkedIn co-founder Reid Hoffman, but his money was nowhere near what Paxton's side received. Still, he won.</p>
+
+<p>Texas saw negative propaganda, fake videos, deepfakes, and attempts to manipulate social media algorithms. Foreign money was used to buy influence. Yet the teacher won. The public saw the connection between money and propaganda and rejected both.</p>
+
+<h2>Michigan: The Lobby That Lost</h2>
+
+<p>In Michigan, Dr. Abdul El-Sayed won the Senate election. AIPAC, the American Israel Public Affairs Committee, spent 42 million dollars to defeat him. AIPAC is a lobby that has funded both Democrats and Republicans since the 1950s. They did everything to stop a candidate who spoke against the massacre in Gaza. But the public collected 2.4 million dollars in one day from 65,000 ordinary people, an average of 37 dollars per person. Dr. El-Sayed said he would pass through a metal detector if only Trump would agree to pass through a lie detector. He won.</p>
+
+<p>This victory was not only against the Republican candidate, Mike Rogers. It was also against the power of Israel's lobby money. AIPAC had spent heavily to keep critics of Israel out of American politics. This time, the money failed.</p>
+
+<h2>The Arithmetic of Humiliation</h2>
+
+<p>Look at the scale of spending. According to AdImpact, which tracks political advertising, this midterm cycle saw around 11.6 billion dollars spent on ads. The 2024 presidential election, which Trump won, had around 11 billion dollars. This is the first time a midterm election's ad spend exceeded a previous presidential election. The Federal Election Commission's official expenditure figure is 9.5 billion dollars, but OpenSecrets, another tracker, estimates the total spend at up to 12 billion dollars.</p>
+
+<p>Here is a simple table of selected humiliations:</p>
+
+<table border="1" cellpadding="4" cellspacing="0">
+<tr>
+<th>Race / Context</th>
+<th>Money Spent by Big Donors</th>
+<th>Result</th>
+</tr>
+<tr>
+<td>New York mayoral primary</td>
+<td>35 million dollars for Andrew Cuomo</td>
+<td>Cuomo lost to Zohran Mamdani</td>
+</tr>
+<tr>
+<td>Texas race</td>
+<td>200 million dollars by Elon Musk against James Talerico</td>
+<td>Talerico won</td>
+</tr>
+<tr>
+<td>Michigan Senate race</td>
+<td>42 million dollars by AIPAC against Dr. Abdul El-Sayed</td>
+<td>El-Sayed won</td>
+</tr>
+<tr>
+<td>Overall midterm advertising</td>
+<td>11.6 billion dollars</td>
+<td>Republican Party weakened</td>
+</tr>
+</table>
+
+<p>This is not all. The top 20 donors were Republicans. Super PACs and political funding committees spent 350 million dollars on their own advertisements. The official 9.5 billion dollar expenditure includes 5.5 billion dollars spent by PACs and super PACs. In the last few months, their spending doubled. The American public watched this while they themselves struggled to pay their household bills. They saw that the Republican Party had unlimited money for elections but no money for people's lives. So they voted against it.</p>
+
+<h2>The Courtier Billionaires and Indian Business Silence</h2>
+
+<p>America has always respected money. It celebrates self-made success. But something changed when the White House became a darbar. Trump summoned billionaires, made them stand like courtiers, and called himself their boss. The public saw that these billionaires were no longer leaders. They were followers. When Trump named AI "Super Intelligence" and said "S.I.", everyone around him nodded, yes sir, S.I. This was not capitalism. This was sycophancy.</p>
+
+<p>India's business leaders should read this carefully. In India, too, the biggest industrial houses have become courtiers. When the Tata Sons dispute erupted, the business leaders remained silent. When the Adani group's monopolies came under question, they looked away. Rahul Gandhi warned them: your silence will one day destroy you. Your business will end. Two or three people should not run this country. But the Modi government has created exactly that: a system where two or three business houses have access to airports, ports, data centres, media, and political protection.</p>
+
+<p>When business leaders become government puppets, when they swallow taxpayers' money through sweetheart deals, the public notices. In America, the public punished such courtiers. In India, the government still protects them.</p>
+
+<h2>India's Electoral Bond Fraud</h2>
+
+<p>Now let us compare this with India. The Modi government introduced electoral bonds in 2018. It was called a reform. It was actually a fraud. The scheme allowed anonymous corporate donations to political parties. The Supreme Court struck it down in 2024, calling it unconstitutional. But by then, the damage was done. According to ADR, the BJP received around 6,000 crore rupees through this opaque scheme. The entire opposition received only a small fraction. The gap became so large that the opposition could never compete on equal terms.</p>
+
+<p>By March 2026, the BJP's war chest had grown to about 6,700 crore rupees. The party of billionaires is now a billionaire party. It is India's first billionaire political party. This is not an accusation. It is arithmetic.</p>
+
+<p>And what does the public get? In Bihar, 60 percent of the population earns less than 10,000 rupees a month. Yet cash was distributed before elections. Free electricity was promised when votes were needed. When the time came to pay the electricity bill, the government asked the rich to give up subsidies. The state's finances collapsed, but the elections were won. This is the model: buy votes now, break the state later.</p>
+
+<h2>Two Democracies, Two Kinds of Money</h2>
+
+<table border="1" cellpadding="4" cellspacing="0">
+<tr>
+<th>Measure</th>
+<th>United States (recent midterm)</th>
+<th>India (electoral bonds era)</th>
+</tr>
+<tr>
+<td>Key financial instrument</td>
+<td>Disclosed donations, super PACs, dark money</td>
+<td>Anonymous electoral bonds, struck down as unconstitutional</td>
+</tr>
+<tr>
+<td>Ruling party advantage</td>
+<td>Republican billionaires still lost key races</td>
+<td>BJP got overwhelming share, opposition left far behind</td>
+</tr>
+<tr>
+<td>Public reaction</td>
+<td>Voters rejected money power and hate</td>
+<td>Voters continue to face cash distribution and media manipulation</td>
+</tr>
+<tr>
+<td>Civil society role</td>
+<td>OpenSecrets and AdImpact track every dollar</td>
+<td>ADR tracks money, but government and media ignore it</td>
+</tr>
+</table>
+
+<h2>Hate, Lobby Money, and Godi Media</h2>
+
+<p>AIPAC's defeat in Michigan is significant. For decades, this lobby has funded both American parties so generously that no politician dared to speak against Israel. When the genocide in Gaza happened, the American people saw their leaders dancing to Israel's money. This time, candidates who refused AIPAC's money won. Candidates who took AIPAC money lost. The connection between hate politics and money politics became clear.</p>
+
+<p>In India, hate politics is also a business. Muslim boys are killed in the name of cow protection. Hindu boys are turned into criminals in the same political project. The BJP and RSS spread hatred wherever they go. Rahul Gandhi says love can heal what is broken in America. He says the same in India: we will not let hatred win. But his own party still has to answer why the country's hate machinery remains so powerful.</p>
+
+<p>And the media? In America, Fox News is being blamed by Trump for the Republican loss. He is calling its quality cheap. In India, the Godi media does not even face such criticism because it has no independent existence. It is a government bulletin. The government spends thousands of crores of public money on advertisements to keep these channels alive. If the Modi government stops advertising in Godi media, millions of rupees of taxpayers' money would be saved. But that will not happen, because the media is part of the election machinery.</p>
+
+<h2>The Election Commission and the Stolen Level Playing Field</h2>
+
+<p>The transcript of American democracy shows that when money is tracked, when media reports, when civil society exposes, the voter can act. In India, ADR has done the work. It has tracked electoral bonds, questioned the source of funds, and exposed the scale of corporate capture. But the Election Commission has not done its job. There are serious allegations of voter list manipulation, fake names, deletion of legitimate voters, and sudden vote spikes after polling hours. ADR and independent researchers have documented these issues through RTI. Instead of answering, the Election Commission first denied, then quietly made corrections.</p>
+
+<p>In America, the public could defeat money because institutions tracked money and media reported it. In India, institutions are captured and media is silent. The Election Commission and the ruling party are accused of working together to steal elections. This accusation should worry every citizen.</p>
+
+<h2>What the American Voter Said and What India Must Hear</h2>
+
+<p>The American midterm message was simple: our lives are becoming difficult. We cannot pay rent. We cannot afford schools and hospitals. We are tired of hearing about Musk being the world's first trillionaire while our children's schools crumble. We will not be fooled by fake videos, deepfakes, or billion-dollar propaganda. We want good and cheap healthcare. We want lower prices. We will not fall for hate politics anymore.</p>
+
+<p>In India, 67 percent of people already do not vote for hate politics. But hate politics still dominates because the playing field is not level. The Election Commission has been accused of allowing voter list manipulation, fake names, deletion of legitimate voters, and sudden vote spikes after polling hours. ADR and independent researchers have documented these issues through RTI. Instead of answering, the Election Commission first denied, then quietly made corrections. In America, the public could defeat money because institutions tracked money and media reported it. In India, institutions are captured and media is silent.</p>
+
+<p>But there is hope. ADR's work is slowly reaching people. One day, its effect will be felt in India the way OpenSecrets and AdImpact have influenced American elections. When that day comes, the Modi government will have to answer for every rupee taken from corporate donors, every vote bought with freebies, and every journalist bought with government advertising.</p>
+
+<h2>Conclusion</h2>
+
+<p>America's voters have shown that money can be defeated. The billionaires who thought they could buy elections have been taught a lesson. The party that danced to lobby money has been weakened. This is not a foreign story. It is a mirror. India's government, its billionaires, its Godi media, and its Election Commission should look into it. The public is watching. The public is counting. The public is angry.</p>
+
+<h2>Criticisms</h2>
+
+<ul>
+<li>It is observed that the Modi government's electoral bond scheme was designed to conceal the identity of corporate donors and was later struck down as unconstitutional by the Supreme Court.</li>
+<li>It is noted that the BJP received an overwhelming share of electoral bond funds, creating an insurmountable financial gap between the ruling party and the opposition.</li>
+<li>It is reported that public money was used before elections to distribute cash and subsidies, worsening state finances and undermining genuine public welfare.</li>
+<li>It is argued that business leaders in India have been reduced to silence and sycophancy, refusing to speak on monopolies, cronyism, and corruption.</li>
+<li>It is alleged that the Godi media functions as a government propaganda arm, surviving on public advertisements while suppressing critical reporting.</li>
+<li>It is claimed that the Election Commission has failed to address voter list manipulation, fake voters, and questionable vote counting, thereby weakening confidence in free and fair elections.</li>
+<li>It is alleged that hate politics has been systematically used to divide communities, resulting in killings in the name of cow protection and the criminalisation of young men from all communities.</li>
+<li>It is pointed out that the government has allowed billionaire monopolies to capture airports, ports, data centres, and media, converting public assets into private fiefdoms.</li>
+<li>It is observed that while the American public rejected money power, Indian institutions have not yet created the transparency and accountability needed for voters to do the same.</li>
+<li>It is stated that public figures and politicians in India continue to invoke nationalism and development while everyday life becomes harder on account of inflation, unemployment, and collapsing public services.</li>
+</ul>
+
+</div>

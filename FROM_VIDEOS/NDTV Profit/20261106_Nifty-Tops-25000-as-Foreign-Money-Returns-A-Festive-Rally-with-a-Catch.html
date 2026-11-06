@@ -1,0 +1,320 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        .main-inner .column-center-inner .section { margin: 5px; }
+
+        .content-inner { padding: 0; }
+
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#customNDTVProfitHeader" target="_blank">See All Articles</a>
+<br>
+
+<div class="customOuterWrapper">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WTWvEAFdOFE" frameborder="0" allowfullscreen></iframe>
+<h1>Nifty Tops 25,000 as Foreign Money Returns: A Festive Rally with a Catch</h1>
+<p>The Indian stock market just finished its seventh straight session in the green, taking the Nifty above 25,000 for the first time since late February 2026. That is nearly 170 trading sessions of waiting. The push is not just local optimism. Foreign institutional investors, who were dumping Indian shares in September and October, have turned aggressive buyers. Here is what is driving the move, why it matters for ordinary investors, and where the risks are.</p>
+
+<h2>Nifty's Hot Streak: The Numbers</h2>
+<p>The Nifty 50, India's benchmark index, has climbed almost 10 percent in seven sessions -- more than 2,250 points. Last week alone, it gained over 8 percent, its second consecutive weekly rise. The index closed above 25,000, a level last seen on 27 February 2026, according to NDTV Profit's market roundup. Nifty IT, meanwhile, closed positive for the sixth straight week.</p>
+<p>Financial stocks led the charge. Shriram Finance and Bajaj Finance each rose more than 15 percent during the week. Nifty Financial Services was the best-performing sector, gaining over 2.5 percent on November 6 and extending its winning streak to eight sessions. Other sectors joined the party too. Bank, pharma, FMCG, oil and gas, and realty indices all closed positive for a fifth straight day. Mahindra & Mahindra was the day's top gainer, rising more than 6 percent.</p>
+<p>But the broader market lagged. The Nifty Midcap 150 gained 5.6 percent last week, while the Nifty Smallcap 250 rose only 3.7 percent. On the final day, small caps slipped 0.9 percent, dragged by TD Power Systems, which fell around 14 percent. That gap is an early sign that the rally is not yet broad-based.</p>
+
+<h2>The FII 'Ghar Wapsi'</h2>
+<p>Foreign institutional investors bought Rs 13,750 crore worth of Indian shares on November 6, extending their buying streak to six sessions -- the longest since August 2026. In eight of the last nine sessions, FIIs were net buyers. Total November purchases have crossed Rs 45,000 crore. To put that in perspective, these investors sold nearly Rs 90,000 crore in September and October. So roughly half of that outflow has already reversed. This is a classic 'ghar wapsi' trade -- foreign money returning home in search of value.</p>
+<p>Why are foreign investors returning? NDTV Profit's market analysis points to four main reasons:</p>
+<p>- Indian companies have delivered resilient Q2 FY27 earnings despite macroeconomic headwinds.</p>
+<p>- The global artificial intelligence trade is reversing. US tech stocks suffered their worst single-day fall in 19 months, with the Nasdaq reportedly erasing $2.5 trillion in market value in one session.</p>
+<p>- Several Asian markets are struggling. China, Taiwan, South Korea, and Japan have entered bear markets. Korea and Taiwan alone saw about $45 billion of outflows in October.</p>
+<p>- The macro backdrop has improved. US bond yields and crude oil prices have pulled back from their highs, making India's risk-reward more attractive.</p>
+<p>Meanwhile, domestic institutional investors have been selling for six straight sessions -- their longest selling streak since July 2024. In simple terms, local funds are booking profits while foreign money is coming back.</p>
+
+<h2>Oil and Global Risk</h2>
+<p>Crude oil rebounded, with WTI hovering near $90 a barrel. Earlier in the week, prices had fallen on hopes of de-escalation after the US midterm elections. But renewed attacks on commercial vessels have put shipping risks back in focus. Until those disruptions ease, oil prices are likely to remain volatile. For India, which imports most of its crude, this is a key risk for inflation, the rupee, and corporate margins.</p>
+
+<h2>Key Insights</h2>
+<p>- The Nifty's 10 percent surge in seven sessions is strong, but the gains are concentrated in financials and large caps. Small caps are lagging, which suggests investors are being selective.</p>
+<p>- The FII reversal is significant. Half of the Rs 90,000 crore sold in September and October has returned in the first week of November.</p>
+<p>- The rally is partly a relative-value story. Money is leaving overvalued AI-heavy US tech stocks and bearish Asian markets, looking for diversified opportunities -- and India fits that bill.</p>
+<p>- Lower US bond yields and softer crude prices from their peaks are giving India's macro story some breathing room.</p>
+<p>- The DII selling streak is a caution flag. Local institutions may see this as a profit-booking window rather than a broad market re-rating.</p>
+
+<h2>Criticisms</h2>
+<p>- The market's record close rests on a narrow foundation. Strong FII buying coexists with DII selling and weak small-cap performance, which points to uneven participation.</p>
+<p>- A six-session foreign buying streak is not a durable trend. Emerging-market flows can reverse quickly if US bond yields rise again or oil spikes.</p>
+<p>- The rebound in crude and shipping disruptions remain live risks. Sustained high oil prices would pressure India's fiscal math, corporate earnings, and the rupee.</p>
+<p>- The AI trade reversal is a double-edged sword. It is sending money to India now, but a broader US tech correction could eventually drag down global risk appetite everywhere.</p>
+<p>- Earnings resilience is encouraging, but much of the good news may already be priced in. If festive demand does not convert into stronger consumption, valuations could look stretched.</p>
+</div>
