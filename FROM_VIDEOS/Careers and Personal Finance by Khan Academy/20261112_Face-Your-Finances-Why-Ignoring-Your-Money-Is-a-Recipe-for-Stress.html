@@ -1,0 +1,379 @@
+```html
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        .main-inner .column-center-inner .section { margin: 5px; }
+
+        .content-inner { padding: 0; }
+
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#customKhanAcademyPersonalFinanceHeader" target="_blank">See All Articles</a>
+<br>
+
+<div class="customOuterWrapper">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2rCF-tT3x-Q" frameborder="0" allowfullscreen></iframe>
+<h1>Face Your Finances: Why Ignoring Your Money Is a Recipe for Stress</h1>
+
+<p>Many people treat money the way they treat a strange noise in a dark basement: they would rather not look too closely. The problem is that avoiding your finances does not make them go away. It makes them worse. This post is about a simple, no-spreadsheet approach to understanding where your money actually goes, and why living below your means is one of the most powerful habits you can build.</p>
+
+<h2>Why We Avoid Our Own Money</h2>
+
+<p>Psychology plays a big role in financial avoidance. Looking at your bank account may reveal answers you do not like, such as "I cannot afford that fancy sports car" or "I cannot go to that expensive restaurant this month." So many people choose to stay in the dark. They buy the nice meal, take the vacation, and swipe the card. But short-term enjoyment often leads to long-term pain. Sleepless nights, difficulty concentrating at work, and strain on relationships with family and friends are all common consequences of ignoring your money.</p>
+
+<h2>You Do Not Need a PhD in Finance</h2>
+
+<p>Here is the good news: getting a grip on your money does not require an advanced degree or complicated spreadsheets. All you need are two simple pieces of information: how much money comes in each month and how much goes out.</p>
+
+<h2>Step 1: Find Your After-Tax Income</h2>
+
+<p><strong>After-tax income</strong> is the amount you actually take home after taxes and other deductions are removed from your paycheck. Look at your pay stub. That number at the bottom, the amount that actually lands in your bank account, is your true monthly income. Write that number down.</p>
+
+<h2>Step 2: List Your Expenses</h2>
+
+<p>Next, make a list of everything you spend money on in a typical month:</p>
+
+<ul>
+<li>Rent</li>
+<li>Car payment</li>
+<li>Car insurance</li>
+<li>Health or other insurance</li>
+<li>Groceries</li>
+<li>Eating out</li>
+<li>Clothes</li>
+<li>Vacations</li>
+<li>Other recurring costs</li>
+</ul>
+
+<p>First, write down what you <em>think</em> you spend on each category. Then comes the important step: log in to your online banking and check what you <em>actually</em> spent. Banks now let you search and total transactions by category, so this is easier than ever before.</p>
+
+<h2>What You Think vs. Reality: A Simple Table</h2>
+
+<p>Here is an example of how your estimates might compare with the truth from your bank account.</p>
+
+<table border="1" cellpadding="8" cellspacing="0">
+<thead>
+<tr>
+<th>Category</th>
+<th>What You Think You Spend</th>
+<th>What You Actually Spent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Eating out per month</td>
+<td>$100</td>
+<td>$350</td>
+</tr>
+</tbody>
+</table>
+
+<h2>The Eating Out Surprise</h2>
+
+<p>Here is a classic example. You might believe you only spend $100 a month on eating out. Then you check your bank account and discover the truth: $350 a month. That difference of $250 per month adds up to $3,000 a year. This is why guessing is not enough. The data in your bank account tells the real story.</p>
+
+<h2>Live Below Your Means</h2>
+
+<p>Once you know your real numbers, the goal becomes clear: live below your means. This phrase simply means spending less money than you earn. At minimum, you should be able to comfortably pay your rent, car payment, insurance, and other essentials without stress. But ideally, you want a buffer. That gap between what you earn and what you spend is what allows you to save, invest, and handle emergencies without panic.</p>
+
+<h2>Key Takeaways</h2>
+
+<ul>
+<li>Ignoring your finances may feel comfortable in the short term but leads to stress, sleepless nights, and relationship strain later on.</li>
+<li>You do not need complex tools to understand your money. A simple back-of-the-envelope calculation works.</li>
+<li>Start with your after-tax income: the amount you actually take home each month.</li>
+<li>List your expenses twice: first what you think you spend, then what your bank account shows you actually spend.</li>
+<li>The gap between beliefs and reality can be large. A person may think they spend $100 a month eating out when they actually spend $350.</li>
+<li>Live below your means. Spend less than you earn. That is the foundation of long-term financial wellbeing.</li>
+</ul>
+
+<h2>What You Can Do Next</h2>
+
+<p>Here are practical, actionable steps you can take right now:</p>
+
+<ol>
+<li>Pull up your most recent pay stub and write down your after-tax monthly income.</li>
+<li>List your major spending categories, from rent to groceries to eating out.</li>
+<li>Write down what you think you spend in each category.</li>
+<li>Log in to your bank account and find the real numbers.</li>
+<li>Compare the two. If there is a gap, note where your estimates were off.</li>
+<li>Check whether your total spending is less than your income. If it is not, look at the categories where you can trim, starting with the ones where the gap between belief and reality is biggest.</li>
+</ol>
+
+<h2>References</h2>
+
+<p>This guide draws on widely accepted financial literacy principles taught in educational resources on money management and personal finance. For further reading, search for beginner-friendly personal finance materials on budgeting fundamentals and the concept of living below your means.</p>
+</div>
+```

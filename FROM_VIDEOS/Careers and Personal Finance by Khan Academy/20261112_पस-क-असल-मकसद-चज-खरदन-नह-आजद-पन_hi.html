@@ -1,0 +1,387 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        .main-inner .column-center-inner .section { margin: 5px; }
+
+        .content-inner { padding: 0; }
+
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/2025/05/lessons-in-investing.html#customKhanAcademyPersonalFinanceHeader" target="_blank">See All Articles</a>
+&nbsp;&nbsp;
+<a href="https://survival8.blogspot.com/2026/11/blog-post_12.html" target="_blank" class="customLink">&laquo; Previous</a>
+&nbsp;&nbsp;
+<a href="https://survival8.blogspot.com/2026/11/blog-post_414.html" target="_blank" class="customLink">Next &raquo;</a>
+&nbsp;&nbsp;
+<a href="https://survival8.blogspot.com/2026/11/money-is-not-goal-how-to-optimize-for.html" target="_blank" class="customLink">In English</a>
+<br>
+
+<div class="customOuterWrapper">
+
+<iframe class="custom_iframe" src="https://www.youtube.com/embed/0mkho5Bw1Yk" frameborder="0" allowfullscreen></iframe>
+<h1>पैसे का असली मकसद: चीज़ें खरीदना नहीं, आज़ादी पाना</h1>
+
+<p>आज के समाज में हम चारों तरफ एक ही तस्वीर देखते हैं - फिल्मों में, मैगजीनों में, और सोशल मीडिया पर। उस तस्वीर में लोगों के पास महंगी गाड़ियां हैं, बड़े-बड़े घर हैं, और चमकदार लाइफस्टाइल है। इन तस्वीरों के साथ एक छिपा हुआ संदेश जुड़ा होता है - "शायद इन लोगों ने ज़िंदगी में कुछ हासिल कर लिया है। शायद मुझे भी ऐसा ही बनना चाहिए।"</p>
+
+<p>लेकिन क्या यही सच में सफलता है? क्या इन चीज़ों को पाने के बाद हम सच में खुश और संतुष्ट महसूस करते हैं? यही वह समस्या है जिसे यह लेख हल करने की कोशिश करता है। क्योंकि अगर हम गलत चीज़ों के पीछे भागते रहे, तो सारी मेहनत के बाद भी हमारे हाथ खाली रह जाएंगे - न सच्ची खुशी मिलेगी, न संतुष्टि।</p>
+
+<h2>समाज की दिखावे वाली तस्वीर</h2>
+
+<p>हम अक्सर फिल्में देखते हैं या मैगजीन में लोगों के बारे में पढ़ते हैं जिनके पास fancy गाड़ियां और बड़े घर होते हैं। इन कहानियों के पीछे एक इशारा छिपा होता है - कि शायद इन लोगों ने ज़िंदगी में कुछ खास हासिल किया है, और शायद हमें भी वैसा ही बनना चाहिए।</p>
+
+<p>लेकिन असली सच्चाई यह है कि एक अच्छी गाड़ी शायद आपको थोड़ी देर के लिए अच्छा महसूस कराए। पर बड़ी तस्वीर में देखें, तो ये चीज़ें आपकी आत्मा को सच में संतुष्ट नहीं करतीं। मनोविज्ञान में इसे hedonic adaptation कहा जाता है - यानी हम नई चीज़ों के आदी हो जाते हैं और उनसे मिलने वाली खुशी जल्दी ही फीकी पड़ जाती है। आज जो गाड़ी आपको रोमांच देती है, वही कुछ महीनों बाद एक आम चीज़ बन जाती है।</p>
+
+<h2>असली संतुष्टि कहां है</h2>
+
+<p>तो फिर असली संतुष्टि किसमें है? अगर गाड़ी और घर नहीं, तो क्या? असली संतुष्टि उन चीज़ों में है जो आपकी आत्मा को भरती हैं:</p>
+
+<ul>
+<li>आज़ादी - अपनी मर्ज़ी से काम करने और जीने की आज़ादी</li>
+<li>परिवार के साथ बिताया गया समय</li>
+<li>बौद्धिक रूप से दिलचस्प काम करना</li>
+<li>अपने passions को पूरा करना - वो चीज़ें जो आपको सच में जीवित महसूस कराती हैं</li>
+</ul>
+
+<p>ये वो चीज़ें हैं जो लंबे समय तक आपको संतुष्ट रखती हैं, न कि कोई महंगी गाड़ी या बड़ा घर। जब आप इन चीज़ों पर ध्यान देते हैं, तो आपकी ज़िंदगी में गहराई आती है और आप सच में खुश रह पाते हैं।</p>
+
+<h2>पैसे को आज़ादी के नज़रिए से देखें</h2>
+
+<p>यहीं पर एक बहुत ज़रूरी बात समझने की ज़रूरत है। पैसे को हमेशा चीज़ें खरीदने का साधन मत समझिए। पैसे को उस आज़ादी के रूप में देखिए जो वह आपको दिला सकता है।</p>
+
+<p>पैसा आपको वह आज़ादी दे सकता है जिससे आप अपनी पसंद के काम कर सकें, अपने अनुभव बना सकें, और अपनी ज़िंदगी अपने तरीके से जी सकें। यही पैसे का असली इस्तेमाल है। पैसा सिर्फ खर्च करने के लिए नहीं है - पैसा आपके लिए विकल्प खोलने का एक ज़रिया है।</p>
+
+<h2>पैसे के लिए नहीं, आज़ादी के लिए optimize करें</h2>
+
+<p>सबसे अहम सबक यह है: पैसे के लिए optimize मत करो, उस आज़ादी के लिए optimize करो जो पैसा आपको दिला सकता है।</p>
+
+<p>Optimize का मतलब है - किसी चीज़ को सबसे अच्छे तरीके से हासिल करने की कोशिश करना। जब आप सिर्फ पैसा कमाने के पीछे भागते हैं, तो आप गलत चीज़ के पीछे भाग रहे होते हैं। असली लक्ष्य आज़ादी होना चाहिए। नीचे दी गई तालिका दोनों नज़रियों का फर्क साफ करती है:</p>
+
+<table>
+<tr>
+<th>चीज़ें खरीदने के लिए पैसा</th>
+<th>आज़ादी पाने के लिए पैसा</th>
+</tr>
+<tr>
+<td>महंगी गाड़ी, बड़ा घर</td>
+<td>अपनी पसंद का काम करने की आज़ादी</td>
+</tr>
+<tr>
+<td>थोड़ी देर की खुशी</td>
+<td>लंबे समय की संतुष्टि</td>
+</tr>
+<tr>
+<td>दिखावे का दबाव</td>
+<td>अपनी मर्ज़ी से जीने की छूट</td>
+</tr>
+<tr>
+<td>आर्थिक बंधन</td>
+<td>आर्थिक स्वतंत्रता</td>
+</tr>
+</table>
+
+<p>तालिका से साफ है कि पैसे का इस्तेमाल दो तरीकों से हो सकता है, लेकिन सिर्फ एक तरीका ही आपको सच्ची संतुष्टि देता है।</p>
+
+<h2>Key Takeaways</h2>
+
+<ul>
+<li>समाज का दिखावा असली सफलता की पहचान नहीं है</li>
+<li>महंगी चीज़ें थोड़ी देर की खुशी देती हैं, स्थायी संतुष्टि नहीं</li>
+<li>असली संतुष्टि आज़ादी, परिवार के साथ समय, और अपने passions में है</li>
+<li>पैसे को चीज़ें खरीदने के साधन के रूप में नहीं, आज़ादी के साधन के रूप में देखें</li>
+<li>पैसे के लिए optimize मत करें, उस आज़ादी के लिए optimize करें जो पैसा दिला सकता है</li>
+</ul>
+
+<h2>What You Can Do Next</h2>
+
+<ul>
+<li>अपने पिछले तीन महीनों के खर्चों की समीक्षा करें - पहचानें कि कितना पैसा दिखावे वाली चीज़ों पर गया</li>
+<li>अपने लिए "आज़ादी का लक्ष्य" लिखें - आप अपनी ज़िंदगी में कौन सी आज़ादी चाहते हैं?</li>
+<li>हर बड़ी खरीदारी से पहले खुद से पूछें - क्या यह मुझे आज़ादी देगी या मुझे और बांधेगी?</li>
+<li>हर हफ्ते परिवार और अपने passions के लिए समय निकालें - इसे कैलेंडर में ब्लॉक करें</li>
+<li>पैसे बचाने और निवेश करने की आदत डालें ताकि भविष्य में आपको ज़्यादा आज़ादी मिल सके</li>
+</ul>
+
+<p>संदर्भ: इस लेख में व्यक्त विचार व्यवहार विज्ञान और व्यक्तिगत वित्त के सामान्य सिद्धांतों पर आधारित हैं, जिनमें hedonic adaptation की अवधारणा शामिल है (Brickman & Campbell, 1971)।</p>
+
+</div>
+
+<br>
+<a class="customLink" href="https://survival8.blogspot.com/2025/05/lessons-in-investing.html#customKhanAcademyPersonalFinanceHeader" target="_blank">See All Articles</a>
+&nbsp;&nbsp;
+<a href="https://survival8.blogspot.com/2026/11/blog-post_12.html" target="_blank" class="customLink">&laquo; Previous</a>
+&nbsp;&nbsp;
+<a href="https://survival8.blogspot.com/2026/11/blog-post_414.html" target="_blank" class="customLink">Next &raquo;</a>
+&nbsp;&nbsp;
+<a href="https://survival8.blogspot.com/2026/11/money-is-not-goal-how-to-optimize-for.html" target="_blank" class="customLink">In English</a>
+<br>

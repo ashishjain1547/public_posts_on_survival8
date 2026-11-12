@@ -1,0 +1,364 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        .main-inner .column-center-inner .section { margin: 5px; }
+
+        .content-inner { padding: 0; }
+
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/2025/05/lessons-in-investing.html#customKhanAcademyPersonalFinanceHeader" target="_blank">See All Articles</a>
+<br>
+
+<div class="customOuterWrapper">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XyprwJuGVtk" frameborder="0" allowfullscreen></iframe>
+<h1>How to Save Money on Everyday Expenses Without Giving Up What Matters</h1>
+
+<p>Most young adults already know a few basic money-saving habits: making your own coffee, bringing lunch to work, and turning off the lights when you leave a room. Those habits matter and can save you hundreds of dollars a year. But if you want to go further, the real savings often hide in the simple, everyday decisions you make at the supermarket, at home, and on the road. This post walks through practical ways to trim those costs where it hurts the least.</p>
+
+<h2>Start at the Supermarket</h2>
+
+<p>You may already use a shopping list to avoid impulse buying (buying things on the spot without planning), clip coupons, use deal-finding apps, and compare the price per unit (the cost of a product divided by its size or quantity, such as price per ounce). Those are great foundations. But there are even more ways to cut your grocery bill.</p>
+
+<p>When you see a sale or discount, be strategic. Sales and discounts can be excellent opportunities to save on things you actually need, but stores often design incentives for items that many people would not normally buy. So it pays to be selective about any discount you are offered.</p>
+
+<p>At the same time, spend on what is important and save on what is not. For some people, organic foods or specific favorite brands are worth the extra cost. For others, the priorities may be different. The key is to spend a little more on the items you care about while finding ways to save on the things that matter less to you. These simple trade-offs keep you on budget (a plan for how you spend your money) without making you feel deprived.</p>
+
+<p>Finally, before you even write a shopping list, consider your real eating and cooking habits. Plan your meals ahead of time or challenge yourself to eat at least one more meal at home each week. This can help you avoid throwing away spoiled groceries you never ate or ordering takeout because you did not buy enough food for the week. This single habit can save you hundreds of dollars each year.</p>
+
+<h2>Household Bills: Timing Is Everything</h2>
+
+<p>You probably already turn off lights when you leave a room and unplug gadgets when you are not using them. But there is another small change that can save even more around the house.</p>
+
+<p>Many utility companies charge more for electricity during different parts of the day. Peak hours are the times of day when electricity demand and prices are highest, usually the middle of the day when more people are using power. Early mornings and late nights often have substantially lower rates.</p>
+
+<table>
+<thead>
+<tr><th>Time of day</th><th>Electricity rate</th></tr>
+</thead>
+<tbody>
+<tr><td>Middle of the day (peak hours)</td><td>Often substantially higher</td></tr>
+<tr><td>Early mornings or late nights (off-peak)</td><td>Often lower</td></tr>
+</tbody>
+</table>
+
+<p>Doing your laundry or running your dishwasher during off-peak hours can likely help you save on your utility bill. To find your utility company's specific peak hours, check their website or contact them directly.</p>
+
+<h2>Transportation: Drive Down Your Costs</h2>
+
+<p>Gas prices can be unpredictable, but technology can help you save. Plenty of websites and apps can show you which gas station in your area is offering the cheapest prices at any given time.</p>
+
+<p>Depending on how often you drive and where you live, you might also consider giving up your car altogether. Public transportation is one option. Car-sharing programs are another: these services let you rent a vehicle for short periods, often by the hour, without the long-term costs of ownership. For the truly dedicated, biking is a cost-effective and healthy alternative to both driving and public transportation.</p>
+
+<table>
+<thead>
+<tr><th>Alternative to driving your own car</th><th>How it works</th></tr>
+</thead>
+<tbody>
+<tr><td>Public transportation</td><td>Buses, trains, and subways on fixed schedules</td></tr>
+<tr><td>Car-sharing programs</td><td>Short-term vehicle rentals, often by the hour</td></tr>
+<tr><td>Biking</td><td>A healthy, low-cost way to get around on your own schedule</td></tr>
+</tbody>
+</table>
+
+<h2>Social Spending: Plan Fun, Not Impulse Spending</h2>
+
+<p>It is easy to follow friends or family into overspending. One effective counter-move is to plan activities ahead of time. When you already know what you are doing, you are less likely to cave to a spontaneous meal out or another unplanned expense.</p>
+
+<p>Saving money does not have to mean sacrificing fun. It simply pays to take some time to figure out where you are spending and what you are willing to cut back on. You do not have to do the math on every single decision. But being mindful of where your money is going and how small trade-offs add up over time can help you find your own creative ways to trim costs.</p>
+
+<h2>Key Takeaways</h2>
+
+<ul>
+<li>At the supermarket, compare price per unit and be selective about sales and discounts.</li>
+<li>Spend more on the items you truly care about, and save on the ones you do not.</li>
+<li>Plan meals ahead and eat at least one more meal at home each week to avoid wasted food and takeout.</li>
+<li>Run laundry and dishwasher during off-peak electricity hours to lower your utility bill.</li>
+<li>Use gas-price apps before filling up, and consider public transit, car-sharing, or biking.</li>
+<li>Plan social activities ahead of time to avoid spontaneous overspending.</li>
+</ul>
+
+<h2>What You Can Do Next</h2>
+
+<ul>
+<li>Review your last grocery receipt and identify one item you can trade for a cheaper alternative without feeling the loss.</li>
+<li>Pick one day this week to cook a meal at home instead of buying takeout.</li>
+<li>Visit your utility company's website or call them to learn their peak and off-peak hours.</li>
+<li>Before your next fill-up, use a fuel-price comparison app to find the cheapest station nearby.</li>
+<li>Plan one low-cost or free activity with friends this weekend, such as a walk, bike ride, or potluck at home.</li>
+</ul>
+
+<p>For more details on time-of-use electricity pricing, check your local utility provider's website or contact them directly.</p>
+</div>

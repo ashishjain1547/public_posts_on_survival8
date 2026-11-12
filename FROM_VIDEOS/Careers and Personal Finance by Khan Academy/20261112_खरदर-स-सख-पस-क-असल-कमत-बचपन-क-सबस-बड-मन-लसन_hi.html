@@ -1,0 +1,373 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        .main-inner .column-center-inner .section { margin: 5px; }
+
+        .content-inner { padding: 0; }
+
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/2025/05/lessons-in-investing.html#customKhanAcademyPersonalFinanceHeader" target="_blank">See All Articles</a>
+&nbsp;&nbsp;
+<a href="https://survival8.blogspot.com/2026/11/blog-post_868.html" target="_blank" class="customLink">&laquo; Previous</a>
+&nbsp;&nbsp;
+<a href="https://survival8.blogspot.com/2026/11/blog-post_165.html" target="_blank" class="customLink">Next &raquo;</a>
+&nbsp;&nbsp;
+<a href="https://survival8.blogspot.com/2026/11/how-to-start-thinking-about-money-every.html" target="_blank" class="customLink">In English</a>
+
+<br>
+
+<div class="customOuterWrapper">
+
+<iframe class="custom_iframe" src="https://www.youtube.com/embed/kKCgjOlsFGY" frameborder="0" allowfullscreen></iframe>
+<h1>खरीदारी से सीखें पैसे की असली कीमत: बचपन का सबसे बड़ा मनी लेसन</h1>
+
+<p>कई युवाओं को लगता है कि खाना अपने आप मेज पर आ जाता है, सिर पर छत जादू से बन जाती है, और बिजली-पानी बस चलता रहता है। लेकिन इन सबके पीछे एक ही चीज़ काम करती है: पैसा। इस पोस्ट में हम एक बहुत ही सरल लेकिन गहरी बात समझेंगे कि पैसे के बारे में सोचना क्यों ज़रूरी है, और बचपन की छोटी-छोटी खरीदारी की आदतें हमें पैसे की समझ कैसे दे सकती हैं।</p>
+
+<h2>पैसे के पीछे की सोच जगाएं</h2>
+<p>सबसे पहली बात: पैसे के बारे में सच में सोचना शुरू कीजिए। यह मान लेना गलत है कि चीज़ें जादू से हो जाती हैं। जो खाना आपकी थाली में है, जो छत आपके सिर पर है, वह सब पैसे से चलता है। इसलिए अपने माता-पिता से बात कीजिए। जब वे किराने की खरीदारी करने जाएं, तो साथ जाइए और दामों पर ध्यान दीजिए।</p>
+
+<h2>किराने की दुकान एक क्लासरूम है</h2>
+<p>बचपन में एक टीवी गेम शो "The Price is Right" बहुत मशहूर था। उस शो ने कीमतों को लेकर एक अलग ही उत्सुकता पैदा की। इसी उत्सुकता से कूपन बुक देखने, कूपन इकट्ठा करने और मां के साथ दुकान जाकर उन्हीं चीज़ों को खरीदने की आदत बनी जिन पर कूपन होता था। कूपन यानी छूट देने वाला छोटा वाउचर, जो किसी सामान पर कम कीमत दिलाता है। इस छोटी-सी आदत से कीमतों की गहरी समझ बनती गई।</p>
+
+<h2>मां का किफायती तरीका और कागज़ के तौलिये</h2>
+<p>घर में मां किफायती यानी बचत करने वाली थीं। वे कागज़ के तौलिये को दोबारा इस्तेमाल करती थीं। वे बताती थीं कि ये तौलिये कितने महंगे आते हैं। इससे एक अहम सबक मिला: चीज़ों की कीमत पता हो, तो उनका सही इस्तेमाल भी समझ आता है।</p>
+
+<h2>प्रति पाउंड कीमत यानी यूनिट प्राइस का खेल</h2>
+<p>दुकान पर जाकर यह देखना सीखें कि किस चीज़ का दाम प्रति पाउंड कितना है। यूनिट प्राइस का मतलब है किसी सामान की कीमत को उसके वज़न या मात्रा से भाग देना, ताकि पता चले कि एक किलो, एक लीटर या एक पाउंड का दाम कितना बैठता है।</p>
+
+<table>
+<thead>
+<tr>
+<th>पैकेट</th>
+<th>कुल कीमत</th>
+<th>वज़न</th>
+<th>यूनिट प्राइस (कीमत / वज़न)</th>
+<th>सोचने की बात</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>छोटा पैकेट</td>
+<td>दुकान पर लिखी होगी</td>
+<td>पैकेट पर देखें</td>
+<td>कुल कीमत को वज़न से भाग दें</td>
+<td>अगर कम खराब होगा तो कभी-कभी यही सही रहता है</td>
+</tr>
+<tr>
+<td>बड़ा पैकेट</td>
+<td>दुकान पर लिखी होगी</td>
+<td>पैकेट पर देखें</td>
+<td>कुल कीमत को वज़न से भाग दें</td>
+<td>अगर यूनिट प्राइस कम है, लेकिन बर्बादी नहीं होगी, तो बेहतर सौदा</td>
+</tr>
+</tbody>
+</table>
+
+<p>अक्सर बड़ा पैकेट खरीदने पर प्रति पाउंड कीमत कम बैठती है। लेकिन यह फायदा तभी तक है, जब तक बड़ा पैकेट इतना बड़ा न हो कि उसका कुछ हिस्सा खराब होकर फेंकना पड़े।</p>
+
+<h2>बर्बादी से बचना भी पैसा बचाना है</h2>
+<p>अगर बड़ा पैकेट सस्ता लगे, लेकिन उसका आधा सामान इस्तेमाल से पहले खराब हो जाए, तो असल में आपने पैसा नहीं बचाया, बल्कि गंवाया। इसलिए हमेशा अपनी ज़रूरत के हिसाब से सही साइज़ चुनना चाहिए।</p>
+
+<h2>पैसों पर खुलकर बात करें</h2>
+<p>पैसे को लेकर शर्म या झिझक छोड़ दीजिए। अपने माता-पिता से पूछिए कि क्या वे पैसे को लेकर तनाव में हैं, उनके पास पैसे बचाने के क्या टिप्स हैं, और वे किस तरह फैसले लेते हैं। यह बातचीत किताबों से कहीं ज़्यादा सिखाती है।</p>
+
+<h2>मुख्य बातें</h2>
+<ul>
+<li>पैसा रोज़मर्रा की ज़रूरतों के पीछे काम करता है, इसे हल्के में न लें।</li>
+<li>खरीदारी के दौरान कीमतों पर ध्यान देना पैसे की समझ बनाता है।</li>
+<li>यूनिट प्राइस निकालकर छोटे और बड़े पैकेट की तुलना करें।</li>
+<li>बड़ा पैकेट सस्ता लग सकता है, लेकिन बर्बादी होने पर वह महंगा साबित होता है।</li>
+<li>कूपन, छूट और किफायती आदतें छोटी उम्र से ही सीखी जा सकती हैं।</li>
+<li>माता-पिता से पैसे पर खुली बातचीत सबसे व्यावहारिक सबक देती है।</li>
+</ul>
+
+<h2>अब आप क्या कर सकते हैं</h2>
+<ul>
+<li>इस हफ्ते अपने माता-पिता के साथ किराने की दुकान जाएं और 5 चीज़ों के दाम लिखें।</li>
+<li>उन 5 चीज़ों के छोटे और बड़े पैकेट का यूनिट प्राइस खुद निकालें।</li>
+<li>घर पर किसी एक चीज़ की बर्बादी रोकने का तरीका सोचें, जैसे खाने को सही तरीके से स्टोर करना।</li>
+<li>अपने माता-पिता से एक सवाल पूछें कि उन्होंने पैसे बचाने का सबसे अच्छा तरीका क्या सीखा है।</li>
+<li>अपने खर्चों की एक छोटी डायरी बनाना शुरू करें, ताकि पता रहे कि पैसा कहां जा रहा है।</li>
+</ul>
+</div>
+<br>
+
+<a class="customLink" href="https://survival8.blogspot.com/2025/05/lessons-in-investing.html#customKhanAcademyPersonalFinanceHeader" target="_blank">See All Articles</a>
+&nbsp;&nbsp;
+<a href="https://survival8.blogspot.com/2026/11/blog-post_868.html" target="_blank" class="customLink">&laquo; Previous</a>
+&nbsp;&nbsp;
+<a href="https://survival8.blogspot.com/2026/11/blog-post_165.html" target="_blank" class="customLink">Next &raquo;</a>
+&nbsp;&nbsp;
+<a href="https://survival8.blogspot.com/2026/11/how-to-start-thinking-about-money-every.html" target="_blank" class="customLink">In English</a>

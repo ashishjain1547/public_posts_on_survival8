@@ -1,0 +1,349 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        .main-inner .column-center-inner .section { margin: 5px; }
+
+        .content-inner { padding: 0; }
+
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/2025/05/lessons-in-investing.html#customKhanAcademyPersonalFinanceHeader" target="_blank">See All Articles</a>
+<br>
+
+<div class="customOuterWrapper">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BCGIr8xnE6c" frameborder="0" allowfullscreen></iframe>
+<h1>How Much Should You Save Each Month for Your Child's College Fund?</h1>
+<p>If you have just had a child and want the option to pay for college 18 years from now, the first question is simple: how much do I need to set aside every month? The answer depends on assumptions about today's college costs, how fast those costs rise, and whether your savings earn a return. Below we walk through a private-university example step by step. Public university costs are roughly half of these numbers.</p>
+
+<h2>Start With Today's Cost and Tuition Inflation</h2>
+<p>In this example, the current full cost of one year at a private university is approximately $45,000. This includes tuition, room, board, and supplies. The average public university cost is roughly half, about $22,500 per year.</p>
+<p>Tuition inflation means the price of college tends to rise over time, just like other prices. Research used here assumes annual college cost growth of about 3%. If you think costs will grow faster or slower, you can change that number.</p>
+<p>To project one year of private college 18 years from now, multiply $45,000 by 1.03 for each year:</p>
+<p>45,000 * 1.03^18 = $76,609, rounded to the nearest dollar.</p>
+<p>That is the projected cost for the first year of college.</p>
+
+<h2>Project All Four Years</h2>
+<p>You cannot simply multiply the first year by four because tuition may keep growing while the student is in school. Each year grows by another 3%.</p>
+<table>
+<thead>
+<tr><th>College year</th><th>Private annual cost</th></tr>
+</thead>
+<tbody>
+<tr><td>Year 1</td><td>$76,609</td></tr>
+<tr><td>Year 2</td><td>$78,908</td></tr>
+<tr><td>Year 3</td><td>$81,275</td></tr>
+<tr><td>Year 4</td><td>$83,713</td></tr>
+<tr><td><strong>Total</strong></td><td><strong>$320,505</strong></td></tr>
+</tbody>
+</table>
+<p>Adding these gives a total projected private college cost of $320,505 for four years. A public university, using the same assumptions, would be roughly half of that total.</p>
+
+<h2>The Simplest Saving Calculation: No Investment Growth</h2>
+<p>There are 18 years * 12 months = 216 months until college. If you saved the same payment every month with no interest or investment growth, you would need:</p>
+<p>216 * P = $320,505</p>
+<p>P = $320,505 / 216 = about $1,484 per month.</p>
+<p>This is a useful starting point, but it assumes you keep the money under a mattress. In reality, many parents put savings into a bank account, a certificate of deposit (CD), a bank product that pays a fixed interest rate for a set period, or bonds or stock market investments that may earn a return.</p>
+
+<h2>Include a Monthly Return</h2>
+<p>A monthly return is the percentage your savings grow each month. Compounding means each month's growth is added to the balance, so future growth applies to a slightly larger amount. In this example, we assume a 0.3% monthly return. Compounded monthly, that works out to a little more than 3.6% per year. You can adjust this assumption based on how you plan to save and your risk tolerance.</p>
+<p>The formula for a monthly payment that grows at a fixed monthly return is:</p>
+<p>Payment = (total needed * monthly return) / ((1 + monthly return)^number of months - 1)</p>
+<p>Plug in the numbers:</p>
+<p>Payment = (320,505 * 0.003) / (1.003^216 - 1)</p>
+<p>Payment = about $1,057 per month.</p>
+<p>This is lower than $1,484 because the earliest payments have time to grow. The first payment has 216 months to compound, the second has 215 months, and so on. Because of that growth, you can put aside less each month under these assumptions.</p>
+<p>If you were saving for a public university instead, the monthly payment would be roughly half of this number, about $528 per month using the same assumptions.</p>
+
+<h2>Key Takeaways</h2>
+<ul>
+<li>Current assumed private college cost: $45,000 per year; public: $22,500 per year.</li>
+<li>Assuming 3% annual tuition inflation, the first year of private college in 18 years would cost about $76,609.</li>
+<li>Four years of private college would total about $320,505. Public college would be roughly half.</li>
+<li>With no investment growth, you would need to save about $1,484 per month for 216 months.</li>
+<li>With an assumed 0.3% monthly return, the required monthly savings drops to about $1,057.</li>
+<li>All figures are based on assumptions, not guarantees. Change the assumptions to match your own expectations.</li>
+</ul>
+
+<h2>What You Can Do Next</h2>
+<ol>
+<li>Write down your own assumptions: current college cost, years until college, expected annual tuition growth, and expected monthly return.</li>
+<li>Run the calculation for your situation using a spreadsheet or calculator.</li>
+<li>Compare the monthly savings amount to your budget. If it is too high, consider a longer time horizon, a different school type, or a different savings mix.</li>
+<li>Research low-cost savings or investment accounts that fit your risk tolerance and time horizon.</li>
+<li>Revisit the plan every year and adjust for changes in costs, income, and goals.</li>
+</ol>
+
+<p>Note: All numbers in this example come from the stated assumptions: private college cost of $45,000 per year, public college cost of $22,500 per year, and 3% annual tuition growth. They are not actual quotes for any specific school.</p>
+</div>

@@ -1,0 +1,351 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        .main-inner .column-center-inner .section { margin: 5px; }
+
+        .content-inner { padding: 0; }
+
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/2025/05/lessons-in-investing.html#customKhanAcademyPersonalFinanceHeader" target="_blank">See All Articles</a>
+<br>
+
+<div class="customOuterWrapper">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vo6tNKdDW4E" frameborder="0" allowfullscreen></iframe>
+<h1>How to Manage Your Money Without a Spreadsheet Budget</h1>
+
+<p>Keeping a detailed budget can be one of the best ways to save money and avoid overspending. But not everyone has the time or the desire to sit down with a spreadsheet on a regular basis. You may have tried a budget before, and it didn't work out. You're not alone. Fortunately, there are ways to manage your money without a traditional spreadsheet. The most important part is making sure your needs are covered. This requires a bit of math, but it doesn't need to be complicated.</p>
+
+<h2>Know Your Baseline</h2>
+
+<p>Start by figuring out all of your regular monthly expenses. These are your regular bills: rent or mortgage payments, utilities, insurance payments, and any other loan or credit card payments you make each month. Then, estimate your other necessary expenses, like what you spend per month on groceries and transportation costs.</p>
+
+<p>Add all these costs up and you've got your baseline. Your baseline is the amount you need to cover every month to keep your needs met. Think of it as your financial floor: the minimum your income must cover before you spend on anything else.</p>
+
+<h2>Make Bill Paying Easier</h2>
+
+<p>When it comes to paying your regular bills, setting up alerts on a calendar can help remind you to pay them a few days before they're due. Or, to make it even easier, you can try automating some of your payments.</p>
+
+<p>You can sign up for automatic bill pay with your utility companies, lenders, and in some cases, even with your landlord. The amount you owe each month will be automatically withdrawn from your bank account or charged to your credit card. Automating payments can save you time and effort every month and help make sure your bills are paid on time.</p>
+
+<p>Just be sure you always have enough money available in your account to cover all of your automatic withdrawals. If you use a credit card, make sure you can pay the balance in full each month in order to avoid paying interest on those charges. If you change your mind and decide that automatic payments aren't for you, you can always cancel your scheduled payments and go back to paying manually.</p>
+
+<h2>Automate Your Savings</h2>
+
+<p>Automatic payments can also be a great way to help you systematically pay down debt if you set up extra payments toward your loans. They can also help you grow your savings if you set up regular contributions to a savings account. This can be especially helpful if you've had trouble saving in the past.</p>
+
+<p>To help yourself prioritize saving, try thinking of saving as a bill you have to pay to yourself. Even if it's just a small amount, making automatic payments to yourself can help you build up an emergency fund or a retirement account.</p>
+
+<h2>Track Spending Without a Spreadsheet</h2>
+
+<p>Once you've taken care of your regular bills and savings, you have a bit more flexibility with what's left. But if you find yourself overspending from month to month, you might want to try tracking your spending.</p>
+
+<p>One simple way is the envelope method. While it might sound old-fashioned, putting a set amount of cash in envelopes each month for different purposes - like groceries, transportation, dining out, and general spending money - can help you set limits on what you spend. If you find yourself spending more than you had available in any of your envelopes, you might need to make adjustments the following month.</p>
+
+<p>Another way to keep track of your spending with little effort is to use a single debit or credit card that can track and categorize your expenses for you. Keeping all of your purchases on one card means you'll only have one monthly statement that shows how much you've spent and where you spent it. This makes it easier to see where you might be overspending and how you might cut back.</p>
+
+<p>Many banks now have online tools that can categorize your spending for you, so you can get an idea of what you spend on different things like entertainment, groceries, or dining out. Many banks also offer account alerts that let you know when you've reached certain spending limits.</p>
+
+<p>If using a single card is too limiting, money management software or apps can help you link all of your accounts and automatically track your spending and saving for you. Many of these have more detailed tools to help you analyze your spending, and they also have alerts that can warn you if you might be overspending in one category.</p>
+
+<h2>Reward Yourself</h2>
+
+<p>Finally, if you feel like setting limits on your spending is a challenge, consider making one of your goals a small reward to yourself. Whether it's a treat at the end of a long week or putting aside a little extra toward a large purchase you really want, rewarding yourself might help you feel more motivated about managing your money - as long as it doesn't push you into overspending.</p>
+
+<h2>Key Takeaways</h2>
+
+<ul>
+<li>A detailed spreadsheet budget is a great tool, but it's not the only way to manage money.</li>
+<li>Know your baseline: add up all regular monthly bills plus necessary expenses like groceries and transportation.</li>
+<li>Use calendar alerts or automatic bill pay to avoid missed payments and save time.</li>
+<li>Automate savings and extra debt payments; treat saving as a bill you pay to yourself.</li>
+<li>Track spending with the envelope method, a single card with tracking tools, or a money management app.</li>
+<li>Build in small rewards to stay motivated without crossing into overspending.</li>
+</ul>
+
+<h2>What You Can Do Next</h2>
+
+<ol>
+<li>Write down every regular monthly expense, then estimate groceries and transportation costs to find your baseline.</li>
+<li>Set calendar alerts for bill due dates, or sign up for automatic bill pay with your utility companies and lenders.</li>
+<li>Set up a small automatic transfer to a savings account every month, even if it's a modest amount.</li>
+<li>Choose one spending-tracking method that fits your style: cash envelopes, a single card, or a money management app.</li>
+<li>Pick one small reward to aim for this month, and make sure it stays within your limits.</li>
+</ol>
+
+<p>A detailed budget can be a great motivational tool to help you cut costs and reach your savings goals, but it's not the only answer. As long as you pay attention to the basics - make sure your needs are covered, manage your debts and savings, and avoid overspending - you will be setting the groundwork for a more secure financial future.</p>
+
+<p><em>Note: This information is for educational purposes only and does not constitute financial advice.</em></p>
+</div>
