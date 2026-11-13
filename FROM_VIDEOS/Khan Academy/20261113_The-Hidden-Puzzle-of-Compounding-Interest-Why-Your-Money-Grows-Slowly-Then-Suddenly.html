@@ -1,0 +1,421 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        .main-inner .column-center-inner .section { margin: 5px; }
+
+        .content-inner { padding: 0; }
+
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#CUSTOM_SECTION_ID" target="_blank">See All Articles</a>
+<br>
+
+<div class="customOuterWrapper">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Rm6UdfRs3gw" frameborder="0" allowfullscreen></iframe>
+    <h1>The Hidden Puzzle of Compounding Interest: Why Your Money Grows Slowly, Then Suddenly</h1>
+
+    <p>If someone offers you 10 percent interest that compounds annually, what exactly happens to your money? The idea sounds simple, but the math can become surprisingly difficult once you start asking practical questions like, how long until I double my money? Compounding interest is one of the most powerful concepts in personal finance, and understanding it is the first step toward using it to your advantage.</p>
+
+    <h2>The Core Idea: Interest on Interest</h2>
+    <p>Compound interest is defined by the U.S. Securities and Exchange Commission as interest calculated on the initial principal and also on the accumulated interest of previous periods. In plain language, you earn interest not just on the money you deposit, but also on the interest that money has already earned.</p>
+
+    <p>This is different from simple interest, where you earn interest only on the original principal. With simple interest at 10 percent on a $100 deposit, you would earn $10 each year. After three years, you would have $130. But with annual compounding, you earn interest on a growing balance, and that changes everything.</p>
+
+    <h2>A $100 Example at 10 Percent Annual Compounding</h2>
+    <p>Let’s say you deposit $100 into an account that pays 10 percent interest, compounded annually. If you leave the money untouched, here is what happens.</p>
+
+    <p>After one year, you have your original $100 plus 10 percent of $100, which is $10. Your balance is $110.</p>
+
+    <p>After the second year, you earn 10 percent again, but this time it is 10 percent of $110, not just $100. Ten percent of $110 is $11. Your new balance is $121. That extra $1 compared with the first year comes from earning interest on the previous year’s interest.</p>
+
+    <p>After the third year, you earn 10 percent of $121, which is $12.10. Your balance becomes $133.10. Notice that the amount of interest added each year is increasing, even though the rate stays the same. That is compounding in action.</p>
+
+    <h2>The General Formula, and Why It Gets Tricky</h2>
+    <p>If you let the money grow for any number of years, you can use a general formula. Start with a principal P and an annual interest rate r, expressed as a decimal. After t years, the amount A is:</p>
+
+    <p><strong>A = P(1 + r)^t</strong></p>
+
+    <p>For the 10 percent example, P is 100 and r is 0.10, so 1 + r equals 1.10. After t years, the balance is:</p>
+
+    <p><strong>100 × 1.10^t</strong></p>
+
+    <p>That 1.10 represents 100 percent of your original deposit plus another 10 percent. Each year, you multiply the previous balance by 1.10. After two years, you multiply by 1.10 twice. After three years, you multiply by 1.10 three times. The pattern is simple to describe, but calculating large powers by hand becomes difficult quickly.</p>
+
+    <h2>The Same Logic at 7 Percent</h2>
+    <p>The pattern does not change if the interest rate changes. Suppose the annual compounding rate is 7 percent instead of 10 percent. Then 1 + r is 1.07. After one year, a $100 deposit grows to $107. After two years, it grows to 100 × 1.07 × 1.07, or $114.49. After t years, the balance is:</p>
+
+    <p><strong>100 × 1.07^t</strong></p>
+
+    <p>The table below compares the growth of a $100 deposit at 10 percent and 7 percent annual compounding.</p>
+
+    <table border="1" cellpadding="5">
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>10% annual compounding</th>
+          <th>7% annual compounding</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>$110.00</td>
+          <td>$107.00</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>$121.00</td>
+          <td>$114.49</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>$133.10</td>
+          <td>$122.50</td>
+        </tr>
+        <tr>
+          <td>t</td>
+          <td>100 × 1.10^t</td>
+          <td>100 × 1.07^t</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Even at these relatively low rates, the gap between the two accounts widens over time. At 10 percent, the balance after three years is $133.10. At 7 percent, it is $122.50. The difference grows larger as the years pass because the higher rate compounds on itself more aggressively.</p>
+
+    <h2>The Doubling Question: Simple to Ask, Hard to Solve</h2>
+    <p>Now consider a question that every investor eventually asks: How long will it take for my money to double? The question is easy to state, but solving it exactly requires logarithms, which most people cannot do mentally.</p>
+
+    <p>To find the doubling time at 10 percent annual compounding, start with $100 and multiply by 1.10 raised to the power of x. You want the result to equal $200, because doubling $100 gives $200.</p>
+
+    <p><strong>100 × 1.10^x = 200</strong></p>
+
+    <p>Divide both sides by 100 to get:</p>
+
+    <p><strong>1.10^x = 2</strong></p>
+
+    <p>Now you need to solve for x. That means taking the logarithm base 1.10 of both sides:</p>
+
+    <p><strong>x = log base 1.10 of 2</strong></p>
+
+    <p>Unless you happen to carry a calculator with logarithm functions everywhere you go, this is not a calculation you can do in your head. And this is just for a round 10 percent rate. If the rate is 9.3 percent or 6.5 percent, the arithmetic becomes even less intuitive. The underlying concept of compounding is simple, but the exact math for doubling time is genuinely inconvenient.</p>
+
+    <h2>The Rule of 72: A Mental Shortcut Worth Knowing</h2>
+    <p>Because exact solutions are cumbersome, financial educators have long used a shortcut called the Rule of 72. To estimate the number of years it takes to double your money, divide 72 by the annual interest rate as a whole number.</p>
+
+    <p><strong>Years to double ≈ 72 / annual interest rate</strong></p>
+
+    <p>For a 10 percent annual rate, the rule gives 72 divided by 10, or 7.2 years. The exact solution from the logarithmic equation is about 7.27 years. For a 7 percent annual rate, the rule gives 72 divided by 7, or about 10.3 years. The exact solution is roughly 10.24 years. The approximation is close enough for quick mental decisions.</p>
+
+    <table border="1" cellpadding="5">
+      <thead>
+        <tr>
+          <th>Annual interest rate</th>
+          <th>Rule of 72 estimate</th>
+          <th>Exact doubling time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>10%</td>
+          <td>7.2 years</td>
+          <td>7.27 years</td>
+        </tr>
+        <tr>
+          <td>7%</td>
+          <td>10.3 years</td>
+          <td>10.24 years</td>
+        </tr>
+        <tr>
+          <td>6%</td>
+          <td>12.0 years</td>
+          <td>11.90 years</td>
+        </tr>
+        <tr>
+          <td>8%</td>
+          <td>9.0 years</td>
+          <td>9.01 years</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>The Rule of 72 has a long history. It appears in early commercial arithmetic texts, including Luca Pacioli’s Summa de arithmetica from 1494. It remains one of the most practical mental math tools in finance because it turns a logarithmic problem into a simple division problem.</p>
+
+    <h2>Why This Matters</h2>
+    <p>Compounding is a quiet force. In the early years, the growth may look unremarkable. A $100 deposit at 10 percent earns $10 in year one. By year three, it earns $12.10. The real power shows up over decades, as interest builds on interest on an ever-larger base.</p>
+
+    <p>But the exact math can quickly become a barrier to quick decisions. You should not have to pull out a logarithm table every time you want to know how fast your money will double. That is why shortcuts like the Rule of 72 exist. They sacrifice a little precision for a lot of speed and intuition.</p>
+
+    <p>So the next time you see an interest rate, try this. Divide 72 by that rate. The result is a rough estimate of how many years it will take to double your money. Then remember the larger point: the concept of compounding is simple, but its long-term effects are anything but small.</p>
+  </div>

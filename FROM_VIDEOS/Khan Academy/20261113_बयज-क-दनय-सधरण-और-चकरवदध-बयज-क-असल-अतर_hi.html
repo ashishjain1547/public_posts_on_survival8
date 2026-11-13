@@ -1,0 +1,397 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        .main-inner .column-center-inner .section { margin: 5px; }
+
+        .content-inner { padding: 0; }
+
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#CUSTOM_SECTION_ID" target="_blank">See All Articles</a>
+<br>
+
+<div class="customOuterWrapper">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GtaoP0skPWc" frameborder="0" allowfullscreen></iframe>
+<h1>ब्याज की दुनिया: साधारण और चक्रवृद्धि ब्याज का असली अंतर</h1>
+
+<p>जीवन में कुछ अवधारणाएं ऐसी होती हैं जो अगर शुरू में समझ ली जाएं तो आगे चलकर बड़ी आर्थिक परेशानियों से बचा सकती हैं। ब्याज की अवधारणा उन्हीं में से एक है। हो सकता है कि आपने ब्याज दरों, होम लोन पर ब्याज, या क्रेडिट कार्ड पर लगने वाले ब्याज के बारे में सुना हो। लेकिन क्या आप जानते हैं कि ब्याज असल में क्या है, और साधारण ब्याज और चक्रवृद्धि ब्याज में क्या फर्क है? यही समझना इस लेख का मकसद है।</p>
+
+<h2>ब्याज आखिर है क्या?</h2>
+
+<p>ब्याज को सबसे आसान भाषा में कहें तो यह पैसे का किराया है। यह वह रकम है जो आप किसी धनराशि को एक निश्चित अवधि तक अपने पास रखने के लिए चुकाते हैं। इसे एक उदाहरण से समझते हैं। मान लीजिए कि आज आप मुझे 100 रुपये उधार देते हैं, और एक साल बाद मैं आपको 110 रुपये लौटाता हूं। इस स्थिति में आपने मुझे 100 रुपये का इस्तेमाल एक साल तक करने दिया, और बदले में मैंने आपको 10 रुपये अतिरिक्त दिए। यही 10 रुपये ब्याज है। इसे वित्तीय शिक्षा के एक प्रमुख स्रोत में "पैसे का किराया" बताया गया है [1]।</p>
+
+<p>ब्याज को अक्सर मूल राशि के प्रतिशत के रूप में दर्शाया जाता है। अगर मैंने 100 रुपये उधार लिए और 10 रुपये ब्याज दिया, तो ब्याज दर 10% हुई। यही प्रतिशत बैंकों और वित्तीय संस्थाओं की भाषा में ब्याज दर कहलाती है।</p>
+
+<h2>मूलधन क्या है?</h2>
+
+<p>जो मूल राशि उधार ली जाती है, उसे वित्तीय शब्दावली में <strong>मूलधन</strong> (principal) कहते हैं। ऊपर के उदाहरण में 100 रुपये मूलधन है। ब्याज की गणना इसी मूलधन पर की जाती है। अगर कोई आपसे 10% वार्षिक ब्याज पर 1,000 रुपये उधार लेता है, तो एक साल बाद उसे 1,000 रुपये मूलधन और 100 रुपये ब्याज यानी कुल 1,100 रुपये लौटाने होंगे [2]।</p>
+
+<h2>साधारण ब्याज: हर साल एक जैसा किराया</h2>
+
+<p>साधारण ब्याज (simple interest) वह तरीका है जिसमें हर साल केवल मूलधन पर ही ब्याज लगता है। यानी ब्याज की रकम हर साल एक जैसी रहती है। उदाहरण के लिए, अगर आप 100 रुपये 10% वार्षिक साधारण ब्याज पर 10 साल के लिए उधार लेते हैं, तो हर साल 10 रुपये ब्याज लगेगा। पहले साल के बाद कुल बकाया 110 रुपये, दूसरे साल 120 रुपये, तीसरे साल 130 रुपये, और इसी तरह दसवें साल 200 रुपये होगा।</p>
+
+<p>साधारण ब्याज का सूत्र है: <strong>ब्याज = मूलधन × दर × समय</strong>, यानी I = P × r × t। यहां P मूलधन, r वार्षिक ब्याज दर (दशमलव में) और t समय (वर्षों में) है। इस पद्धति में हर साल ब्याज की गणना के लिए मूलधन को स्थिर रखा जाता है [3]।</p>
+
+<h2>चक्रवृद्धि ब्याज: ब्याज पर ब्याज</h2>
+
+<p>चक्रवृद्धि ब्याज (compound interest) में स्थिति बदल जाती है। यहां पहले साल के बाद जो ब्याज जुड़ता है, वह अगले साल के लिए नए मूलधन का हिस्सा बन जाता है। यानी दूसरे साल ब्याज की गणना केवल मूल 100 रुपये पर नहीं, बल्कि 110 रुपये पर होती है। इसे "ब्याज पर ब्याज" भी कहा जाता है।</p>
+
+<p>अगर वही 100 रुपये 10% वार्षिक चक्रवृद्धि ब्याज पर उधार लिए जाएं, तो पहले साल के बाद बकाया 110 रुपये होगा। दूसरे साल 110 का 10% यानी 11 रुपये ब्याज जुड़ेगा, इसलिए कुल 121 रुपये। तीसरे साल 121 का 10% जोड़ा जाएगा, और यह क्रम चलता रहेगा। दस साल बाद बकाया राशि लगभग 259.37 रुपये होगी। चक्रवृद्धि ब्याज का सूत्र है: <strong>कुल राशि = मूलधन × (1 + दर)^समय</strong>, यानी A = P × (1 + r)^t [2]।</p>
+
+<p>साधारण और चक्रवृद्धि ब्याज का अंतर पहली नज़र में मामूली लग सकता है, लेकिन लंबी अवधि में यह बहुत बड़ा हो जाता है। ऊपर के उदाहरण में साधारण ब्याज से 10 साल में कुल 200 रुपये चुकाने पड़ते, जबकि चक्रवृद्धि ब्याज से लगभग 259.37 रुपये। यानी 59.37 रुपये का अतिरिक्त भार केवल इसलिए कि ब्याज पर भी ब्याज लगता रहा।</p>
+
+<h2>साधारण बनाम चक्रवृद्धि: एक तुलना तालिका</h2>
+
+<p>नीचे दी गई तालिका में 100 रुपये मूलधन, 10% वार्षिक ब्याज दर और 10 वर्ष की अवधि के लिए दोनों विधियों की तुलना की गई है:</p>
+
+<table border="1" cellpadding="6" cellspacing="0">
+<thead>
+<tr>
+<th>वर्ष</th>
+<th>साधारण ब्याज से बकाया (रुपये)</th>
+<th>चक्रवृद्धि ब्याज से बकाया (रुपये)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>110</td>
+<td>110</td>
+</tr>
+<tr>
+<td>2</td>
+<td>120</td>
+<td>121</td>
+</tr>
+<tr>
+<td>3</td>
+<td>130</td>
+<td>133.10</td>
+</tr>
+<tr>
+<td>4</td>
+<td>140</td>
+<td>146.41</td>
+</tr>
+<tr>
+<td>5</td>
+<td>150</td>
+<td>161.05</td>
+</tr>
+<tr>
+<td>6</td>
+<td>160</td>
+<td>177.16</td>
+</tr>
+<tr>
+<td>7</td>
+<td>170</td>
+<td>194.87</td>
+</tr>
+<tr>
+<td>8</td>
+<td>180</td>
+<td>214.36</td>
+</tr>
+<tr>
+<td>9</td>
+<td>190</td>
+<td>235.79</td>
+</tr>
+<tr>
+<td>10</td>
+<td>200</td>
+<td>259.37</td>
+</tr>
+</tbody>
+</table>
+
+<p>तालिका से साफ है कि शुरुआती वर्षों में अंतर छोटा होता है, लेकिन जैसे-जैसे समय बढ़ता है, चक्रवृद्धि ब्याज का प्रभाव तेजी से बढ़ता जाता है। दसवें वर्ष तक अंतर 59.37 रुपये का हो जाता है [3]।</p>
+
+<h2>कौन सा ब्याज कब और क्यों मायने रखता है?</h2>
+
+<p>व्यावहारिक जीवन में यह अंतर बहुत महत्वपूर्ण है। अगर आप निवेश कर रहे हैं, तो चक्रवृद्धि ब्याज आपका मित्र है। म्यूचुअल फंड, सावधि जमा या शेयर बाजार में लंबी अवधि का निवेश इसीलिए फायदेमंद होता है क्योंकि रिटर्न पर भी रिटर्न मिलता है। दूसरी ओर, अगर आप कर्ज ले रहे हैं, खासकर क्रेडिट कार्ड जैसे उच्च ब्याज वाले ऋण, तो चक्रवृद्धि ब्याज आपके लिए भारी पड़ सकता है। इसीलिए वित्तीय सलाहकार हमेशा कहते हैं कि कर्ज को जल्द से जल्द चुकाना चाहिए, क्योंकि हर दिन का ब्याज अगले दिन के मूलधन में जुड़ता जाता है [1]।</p>
+
+<p>साधारण ब्याज का उपयोग आमतौर पर छोटी अवधि के ऋण, जैसे कुछ व्यक्तिगत ऋण या वाहन ऋण में होता है, जबकि चक्रवृद्धि ब्याज बैंक जमा, बॉन्ड और अधिकांश दीर्घकालिक वित्तीय उत्पादों में लागू होता है [2]।</p>
+
+<h2>निष्कर्ष</h2>
+
+<p>ब्याज को समझना सिर्फ गणित का अभ्यास नहीं है, बल्कि आपके व्यक्तिगत वित्तीय निर्णयों की नींव है। साधारण ब्याज सीधा और अनुमान लगाने में आसान है, जबकि चक्रवृद्धि ब्याज समय के साथ घातीय रूप से बढ़ता है। यही कारण है कि अल्बर्ट आइंस्टीन को चक्रवृद्धि ब्याज को "दुनिया का आठवां अजूबा" कहने का श्रेय दिया जाता है। अगर आप निवेशक हैं, तो चक्रवृद्धि की शक्ति का लाभ उठाइए। अगर आप कर्जदार हैं, तो इसकी मारक क्षमता से सावधान रहिए और कर्ज को जल्दी चुकाने की कोशिश कीजिए।</p>
+
+<h2>संदर्भ</h2>
+<p>[1] Khan Academy, "Interest and Debt" video lesson, वित्तीय साक्षरता श्रृंखला।</p>
+<p>[2] Investopedia, "Simple Interest vs. Compound Interest: What's the Difference?"</p>
+<p>[3] भारतीय रिज़र्व बैंक, वित्तीय शिक्षा पहल, "ब्याज दरें और जमा योजनाएं"।</p>
+</div>

@@ -1,0 +1,396 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        .main-inner .column-center-inner .section { margin: 5px; }
+
+        .content-inner { padding: 0; }
+
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#CUSTOM_SECTION_ID" target="_blank">See All Articles</a>
+<br>
+
+<div class="customOuterWrapper">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mec-QpjQMXY" frameborder="0" allowfullscreen></iframe>
+<h1>पैसा दोगुना होने में कितना समय लगेगा? '72 का नियम' और चक्रवृद्धि ब्याज की आसान गणना</h1>
+
+<p>चक्रवृद्धि ब्याज (compound interest) की अवधारणा सुनने में जितनी सरल लगती है, उसका गणित उतना ही पेचीदा हो सकता है। बुनियादी विचार यह है कि हर साल आपको उस साल की शुरुआत में जमा राशि पर ब्याज मिलता है, और अगले साल ब्याज पर भी ब्याज मिलता है। यही कारण है कि इसे चक्रवृद्धि ब्याज कहते हैं। लेकिन जब सवाल यह हो कि किसी निश्चित ब्याज दर पर पैसा दोगुना होने में कितना समय लगेगा, तो सामान्य गणना से काम नहीं चलता। यहीं पर '72 का नियम' (Rule of 72) बेहद काम आता है। यह एक सरल मानसिक गणना का तरीका है, जिससे बिना कैलकुलेटर के भी पैसा दोगुना होने का समय निकाला जा सकता है।</p>
+
+<h2>चक्रवृद्धि ब्याज: समझना आसान, गणना कठिन</h2>
+
+<p>मान लीजिए आपके पास 100 डॉलर हैं और ब्याज दर 10 प्रतिशत वार्षिक है। हर साल आपकी राशि में 10 प्रतिशत की वृद्धि होती है। पहले साल के अंत में राशि 110 डॉलर हो जाती है, दूसरे साल 121 डॉलर, और इसी तरह बढ़ती रहती है। अब सवाल यह है कि 100 डॉलर को 200 डॉलर यानी दोगुना होने में कितने साल लगेंगे?</p>
+
+<p>इसे गणितीय रूप में लिखें तो समीकरण बनता है:</p>
+
+<p>100 × (1.1)^x = 200</p>
+
+<p>यहां x वह समय है जो हमें निकालना है। इस समीकरण को हल करने के लिए हमें log की आवश्यकता पड़ती है। इसे इस प्रकार लिखा जा सकता है:</p>
+
+<p>x = log base 1.1 of 2</p>
+
+<p>अधिकतर कैलकुलेटर में log base 1.1 का सीधा फंक्शन नहीं होता। इसलिए हम log base 10 का उपयोग करके इसे बदल सकते हैं:</p>
+
+<p>x = log 2 / log 1.1</p>
+
+<p>जब हम कैलकुलेटर में यह मान डालते हैं, तो परिणाम आता है 7.27 वर्ष, यानी लगभग 7.3 साल। यह गणना सटीक तो है, लेकिन इसे दिमाग में कर पाना लगभग असंभव है। यही वह जगह है जहां 72 का नियम काम आता है।</p>
+
+<h2>72 का नियम क्या है?</h2>
+
+<p>72 का नियम एक पारंपरिक वित्तीय अनुमान विधि है, जो बताती है कि किसी निश्चित वार्षिक ब्याज दर पर आपका पैसा दोगुना होने में कितना समय लगेगा। नियम बहुत सीधा है:</p>
+
+<p>वर्षों की संख्या = 72 / वार्षिक ब्याज दर (प्रतिशत में)</p>
+
+<p>यानी यदि ब्याज दर 10 प्रतिशत वार्षिक है, तो 72 को 10 से भाग दीजिए। उत्तर आता है 7.2 वर्ष। यह हमारी सटीक गणना 7.27 वर्ष के बहुत करीब है। अंतर केवल 0.07 वर्ष का है।</p>
+
+<p>इसी तरह, यदि ब्याज दर 6 प्रतिशत वार्षिक है, तो 72 को 6 से भाग देने पर 12 वर्ष मिलते हैं। यानी 6 प्रतिशत की दर से पैसा दोगुना होने में लगभग 12 साल लगेंगे। सटीक गणना करने पर यह समय 11.9 वर्ष आता है। एक बार फिर, अनुमान बहुत अच्छा है।</p>
+
+<p>अगर ब्याज दर 9 प्रतिशत वार्षिक हो, तो 72 / 9 = 8 वर्ष। सटीक उत्तर 8.04 वर्ष है। यह अंतर न के बराबर है।</p>
+
+<p>ध्यान देने वाली बात यह है कि यदि चक्रवृद्धि मासिक हो रही है, तो यही नियम मासिक अवधि पर भी लागू होता है। उदाहरण के लिए, यदि मासिक ब्याज दर 10 प्रतिशत है, तो 72 / 10 = 7.2 महीने लगेंगे। यानी अवधि वही होती है जो ब्याज दर की अवधि है।</p>
+
+<h2>नियम की सटीकता: वास्तविक गणना से तुलना</h2>
+
+<p>यह जानने के लिए कि 72 का नियम कितना सटीक है, विभिन्न ब्याज दरों पर वास्तविक समय और अनुमानित समय की तुलना करना उपयोगी होगा। वास्तविक समय निकालने के लिए x = log 2 / log(1 + r) सूत्र का उपयोग किया जाता है, जहां r दशमलव रूप में ब्याज दर है। नीचे दी गई तालिका कुछ सामान्य ब्याज दरों के लिए यह तुलना दिखाती है:</p>
+
+<table>
+<thead>
+<tr>
+<th>वार्षिक ब्याज दर</th>
+<th>वास्तविक समय (वर्ष)</th>
+<th>72 के नियम से अनुमान (वर्ष)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1%</td>
+<td>70</td>
+<td>72</td>
+</tr>
+<tr>
+<td>2%</td>
+<td>35</td>
+<td>36</td>
+</tr>
+<tr>
+<td>4%</td>
+<td>17.6</td>
+<td>18</td>
+</tr>
+<tr>
+<td>5%</td>
+<td>14.2</td>
+<td>14.4</td>
+</tr>
+<tr>
+<td>6%</td>
+<td>11.9</td>
+<td>12</td>
+</tr>
+<tr>
+<td>9%</td>
+<td>8.04</td>
+<td>8</td>
+</tr>
+<tr>
+<td>10%</td>
+<td>7.27</td>
+<td>7.2</td>
+</tr>
+<tr>
+<td>25%</td>
+<td>3.1</td>
+<td>2.88</td>
+</tr>
+</tbody>
+</table>
+
+<p>ऊपर दी गई तालिका से साफ पता चलता है कि 72 का नियम अधिकांश व्यावहारिक ब्याज दरों के लिए बहुत अच्छा अनुमान देता है। कम ब्याज दरों पर यह थोड़ा अधिक समय बताता है, जबकि अधिक ब्याज दरों पर यह थोड़ा कम समय बताता है। लेकिन 4 प्रतिशत से 25 प्रतिशत तक की रेंज में, जो कि आम जीवन में सबसे अधिक उपयोग होती है, यह नियम काफी भरोसेमंद है।</p>
+
+<h2>72 ही क्यों? 69 या 70 क्यों नहीं?</h2>
+
+<p>यह सवाल स्वाभाविक है कि आखिर 72 ही क्यों? इसका गणितीय आधार natural log (ln) में छिपा है। हम जानते हैं कि ln(2) का मान लगभग 0.693 होता है। छोटी ब्याज दरों के लिए ln(1 + r) लगभग r के बराबर होता है। इसलिए पैसा दोगुना करने का समय लगभग 0.693 / r होता है। अगर r को प्रतिशत में लें, तो यह 69.3 / ब्याज दर बनता है। इसलिए कुछ लोग 69 या 70 का नियम भी इस्तेमाल करते हैं, खासकर जब चक्रवृद्धि निरंतर (continuous compounding) हो रही हो।</p>
+
+<p>लेकिन 72 को इसलिए चुना गया क्योंकि यह संख्या कई छोटे भाजकों से विभाजित होती है। 72 को 2, 3, 4, 6, 8, 9, 12, 18, 24 और 36 से आसानी से भाग दिया जा सकता है। इससे मानसिक गणना करना बहुत आसान हो जाता है। यही कारण है कि 72 का नियम सबसे लोकप्रिय है। जब ब्याज दर बहुत अधिक हो या चक्रवृद्धि निरंतर हो, तो 69 या 70 का नियम थोड़ा अधिक सटीक हो सकता है, लेकिन सामान्य उपयोग के लिए 72 एक बेहतरीन संतुलन है।</p>
+
+<h2>सीमाएं और व्यावहारिक उपयोग</h2>
+
+<p>72 का नियम एक अनुमान है, सटीक गणना नहीं। यह कम ब्याज दरों पर समय को थोड़ा बढ़ाकर दिखाता है और ऊंची दरों पर थोड़ा घटाकर। हालांकि, 4 प्रतिशत से 25 प्रतिशत तक की अधिकांश सामान्य ब्याज दरों के लिए यह अंतर बहुत मामूली रहता है। यदि आपको पूर्ण सटीकता चाहिए, तो log आधारित सूत्र का उपयोग करना होगा। लेकिन रोजमर्रा की वित्तीय योजना, निवेश की तुलना या किसी को प्रभावित करने के लिए यह नियम काफी है।</p>
+
+<p>एक और उपयोगी पहलू यह है कि इस नियम से ब्याज दर के महत्व का भी अंदाजा लगता है। 1 प्रतिशत की दर से पैसा दोगुना होने में 70 साल लगते हैं, जबकि 2 प्रतिशत की दर से 35 साल। यानी सिर्फ 1 प्रतिशत का अंतर समय को आधा कर सकता है। इसलिए निवेश करते समय ब्याज दर का छोटा सा अंतर भी लंबी अवधि में बड़ा असर डालता है।</p>
+
+<h2>निष्कर्ष</h2>
+
+<p>72 का नियम एक अत्यंत सरल और प्रभावी मानसिक गणना उपकरण है। यह चक्रवृद्धि ब्याज की जटिल log गणना को एक आसान भाग के रूप में बदल देता है। अगली बार जब आपको यह जानना हो कि किसी निश्चित ब्याज दर पर पैसा कितने समय में दोगुना होगा, तो बस 72 को ब्याज दर से भाग दीजिए। यह नियम वित्तीय साक्षरता की एक बुनियादी और उपयोगी अवधारणा है, जिसे हर निवेशक को जानना चाहिए।</p>
+</div>

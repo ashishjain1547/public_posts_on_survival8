@@ -1,0 +1,415 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        .main-inner .column-center-inner .section { margin: 5px; }
+
+        .content-inner { padding: 0; }
+
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#CUSTOM_SECTION_ID" target="_blank">See All Articles</a>
+<br>
+
+<div class="customOuterWrapper">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Rm6UdfRs3gw" frameborder="0" allowfullscreen></iframe>
+<h1>चक्रवृद्धि ब्याज और 72 का नियम: पैसा दोगुना होने का आसान हिसाब</h1>
+
+<p>जब आप बैंक में पैसा जमा करते हैं, तो ब्याज की दो मुख्य किस्में होती हैं: साधारण ब्याज और चक्रवृद्धि ब्याज। चक्रवृद्धि ब्याज को अक्सर "दुनिया का आठवां अजूबा" कहा जाता है, क्योंकि इसमें आपको सिर्फ अपनी मूल राशि पर ही नहीं, बल्कि पहले से अर्जित ब्याज पर भी ब्याज मिलता है। यही प्रक्रिया समय के साथ आपकी संपत्ति को तेजी से बढ़ाती है। लेकिन जब यह सवाल आता है कि "मेरा पैसा कितने साल में दोगुना होगा?", तो सटीक गणना करना आसान नहीं होता। यहीं पर 72 का नियम (Rule of 72) काम आता है, जो एक सरल और तेज़ अनुमान देता है। इस ब्लॉग पोस्ट में हम चक्रवृद्धि ब्याज की मूल बातें समझेंगे, इसकी गणना की जटिलता देखेंगे, और फिर 72 के नियम की उपयोगिता और सीमाओं पर चर्चा करेंगे।</p>
+
+<h2>चक्रवृद्धि ब्याज कैसे काम करता है?</h2>
+<p>मान लीजिए आपने किसी बैंक खाते में $100 जमा किए हैं, और बैंक आपको 10% वार्षिक चक्रवृद्धि ब्याज देता है। इसका मतलब है कि हर साल आपकी जमा राशि पर 10% ब्याज जुड़ता है, और अगले साल उस बढ़ी हुई राशि पर ब्याज मिलता है। आइए इसे चरण-दर-चरण देखें:</p>
+
+<ul>
+<li>पहले साल के अंत में: आपकी राशि $100 + ($100 का 10%) = $100 + $10 = $110 हो जाती है।</li>
+<li>दूसरे साल के अंत में: अब 10% ब्याज $110 पर मिलेगा, न कि सिर्फ $100 पर। यह $110 का 10% = $11 होगा। कुल राशि $110 + $11 = $121 हो जाती है।</li>
+<li>तीसरे साल में: $121 पर 10% ब्याज मिलेगा, जो $12.10 होगा, और कुल $133.10 हो जाएगा।</li>
+</ul>
+
+<p>ध्यान दें कि हर साल ब्याज की राशि पिछले साल से थोड़ी अधिक होती जाती है, भले ही ब्याज दर 10% ही रहे। यही चक्रवृद्धि का जादू है: आपको ब्याज पर ब्याज मिलता है। सामान्य सूत्र के रूप में, यदि आपकी मूल राशि P है, वार्षिक ब्याज दर r है (दशमलव में), और समय n वर्ष है, तो अंतिम राशि A इस प्रकार निकाली जाती है:</p>
+
+<p><strong>A = P × (1 + r)^n</strong></p>
+
+<p>उदाहरण के लिए, $100 को 10% दर पर 3 साल के लिए जमा करने पर: A = 100 × (1.10)^3 = 100 × 1.331 = $133.10। यह वही परिणाम है जो हमने ऊपर चरण-दर-चरण निकाला। यह सूत्र बहुत उपयोगी है, लेकिन जब n बड़ा होता है या दर अजीब होती है, तो हाथ से गणना कठिन हो जाती है।</p>
+
+<h2>पैसा दोगुना होने में कितना समय लगेगा? एक कठिन सवाल</h2>
+<p>अब मान लीजिए आप जानना चाहते हैं कि 10% वार्षिक चक्रवृद्धि ब्याज पर आपका $100 कितने साल में $200 (दोगुना) हो जाएगा। हम सूत्र का उपयोग करके समीकरण बनाते हैं:</p>
+
+<p>100 × (1.10)^x = 200</p>
+
+<p>दोनों तरफ 100 से भाग देने पर: (1.10)^x = 2</p>
+
+<p>अब x निकालने के लिए हमें logarithm (लघुगणक) का सहारा लेना पड़ेगा। दोनों तरफ log base 1.10 लेने पर हमें मिलता है:</p>
+
+<p>x = log₁.₁₀(2)</p>
+
+<p>यह मान लगभग 7.27 वर्ष होता है। लेकिन अधिकांश लोग अपने दिमाग में log base 1.10 की गणना नहीं कर सकते। अगर ब्याज दर 9.3% या 6.5% हो, तो यह और भी जटिल हो जाता है। बेशक, आप एक साधारण calculator में हर साल की राशि जोड़कर देख सकते हैं कि कब राशि दोगुनी होती है, लेकिन यह समय लेने वाला और असुविधाजनक है। इसीलिए एक सरल अनुमानित नियम की आवश्यकता महसूस हुई, और वह है 72 का नियम।</p>
+
+<h2>72 का नियम: त्वरित अनुमान का जादू</h2>
+<p>72 का नियम (Rule of 72) एक बहुत पुराना और व्यापक रूप से इस्तेमाल किया जाने वाला वित्तीय उपकरण है। यह कहता है:</p>
+
+<p><strong>अपना पैसा दोगुना होने में लगने वाले वर्षों की संख्या ज्ञात करने के लिए 72 को वार्षिक ब्याज दर (प्रतिशत में) से भाग दें।</strong></p>
+
+<p>सूत्र: <strong>वर्ष = 72 / ब्याज दर (प्रतिशत में)</strong></p>
+
+<p>उदाहरण के लिए, 10% ब्याज दर पर:</p>
+<p>वर्ष = 72 / 10 = 7.2 वर्ष</p>
+<p>यह सटीक उत्तर 7.27 वर्ष के बहुत करीब है। अंतर केवल 0.07 वर्ष यानी लगभग 25 दिन का है।</p>
+
+<p>इसी तरह, 7% ब्याज दर पर:</p>
+<p>वर्ष = 72 / 7 = 10.29 वर्ष</p>
+<p>सटीक गणना (logarithm से) लगभग 10.24 वर्ष देती है। फिर से बहुत करीब।</p>
+
+<p>72 का नियम इसलिए काम करता है क्योंकि प्राकृतिक logarithm 2 का मान लगभग 0.693 है। जब ब्याज दर कम हो, तो (1 + r)^x ≈ e^(rx) होता है, और दोगुना होने के लिए x ≈ ln(2)/r = 0.693/r। चूंकि r को प्रतिशत में व्यक्त करने के लिए 100 से गुणा करते हैं, तो अंश 69.3 बनता है। लेकिन 72 अधिक सुविधाजनक है क्योंकि यह 2, 3, 4, 6, 8, 9, 12, 18, 24, 36 जैसे कई भाजकों से विभाज्य है, जिससे मानसिक गणना आसान हो जाती है।</p>
+
+<h2>72 के नियम बनाम सटीक गणना: एक तुलना</h2>
+<p>नीचे दी गई तालिका विभिन्न ब्याज दरों पर 72 के नियम से प्राप्त अनुमान और logarithm से प्राप्त सटीक वर्षों की तुलना दिखाती है। सटीक मान सूत्र x = ln(2) / ln(1 + r) से निकाला गया है, जहाँ r दशमलव में ब्याज दर है।</p>
+
+<table border="1" cellpadding="5" cellspacing="0">
+<tr>
+<th>ब्याज दर (% वार्षिक)</th>
+<th>72 के नियम से अनुमान (वर्ष)</th>
+<th>सटीक गणना (वर्ष)</th>
+<th>अंतर (वर्ष)</th>
+</tr>
+<tr>
+<td>2%</td>
+<td>72/2 = 36.00</td>
+<td>35.00</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>4%</td>
+<td>72/4 = 18.00</td>
+<td>17.67</td>
+<td>0.33</td>
+</tr>
+<tr>
+<td>6%</td>
+<td>72/6 = 12.00</td>
+<td>11.90</td>
+<td>0.10</td>
+</tr>
+<tr>
+<td>8%</td>
+<td>72/8 = 9.00</td>
+<td>9.01</td>
+<td>-0.01</td>
+</tr>
+<tr>
+<td>10%</td>
+<td>72/10 = 7.20</td>
+<td>7.27</td>
+<td>-0.07</td>
+</tr>
+<tr>
+<td>12%</td>
+<td>72/12 = 6.00</td>
+<td>6.12</td>
+<td>-0.12</td>
+</tr>
+<tr>
+<td>20%</td>
+<td>72/20 = 3.60</td>
+<td>3.80</td>
+<td>-0.20</td>
+</tr>
+</table>
+
+<p>तालिका से स्पष्ट है कि 6% से 10% की दरों के बीच 72 का नियम बहुत सटीक बैठता है। बहुत कम दरों (जैसे 2%) पर यह थोड़ा अधिक आकलन करता है, और बहुत अधिक दरों (जैसे 20%) पर थोड़ा कम आकलन करता है। फिर भी, अधिकांश व्यावहारिक निवेश स्थितियों में यह काफी उपयोगी है।</p>
+
+<h2>72 के नियम की सीमाएं और सावधानियां</h2>
+<p>हालांकि 72 का नियम बेहद काम का है, लेकिन इसकी कुछ सीमाएं भी हैं:</p>
+
+<ul>
+<li>यह केवल एक अनुमान है, सटीक उत्तर नहीं। यदि आपको बैंक या निवेश के लिए कानूनी दस्तावेजों में सटीक समय चाहिए, तो logarithm से गणना करें या वित्तीय calculator का उपयोग करें।</li>
+<li>यह मानता है कि ब्याज दर स्थिर रहती है। वास्तविक दुनिया में ब्याज दरें बदलती रहती हैं, इसलिए यह केवल एक स्थिर दर की धारणा पर आधारित है।</li>
+<li>यह वार्षिक चक्रवृद्धि के लिए सबसे सटीक है। यदि ब्याज अर्धवार्षिक, त्रैमासिक, या निरंतर (continuous) चक्रवृद्धि होता है, तो दोगुना होने का समय थोड़ा कम होगा। निरंतर चक्रवृद्धि के लिए अधिक सटीक नियम 69.3 का नियम है, लेकिन 72 फिर भी नजदीकी अनुमान देता है।</li>
+<li>यह मुद्रास्फीति और करों को ध्यान में नहीं रखता। वास्तविक क्रय शक्ति में दोगुना होने का समय मुद्रास्फीति दर को घटाने के बाद अलग हो सकता है।</li>
+</ul>
+
+<h2>72 के नियम का व्यावहारिक उपयोग</h2>
+<p>निवेशक और वित्तीय योजनाकार अक्सर 72 के नियम का उपयोग निम्नलिखित स्थितियों में करते हैं:</p>
+
+<ul>
+<li><strong>निवेश योजना:</strong> यदि आप जानते हैं कि आपको 10 साल में पैसा दोगुना करना है, तो आपको कितनी ब्याज दर चाहिए? 72 / 10 = 7.2%। यानी लगभग 7.2% वार्षिक चक्रवृद्धि दर की आवश्यकता होगी।</li>
+<li><strong>मुद्रास्फीति का प्रभाव:</strong> यदि मुद्रास्फीति दर 6% है, तो आपकी मौजूदा राशि की क्रय शक्ति आधी होने में 72/6 = 12 वर्ष लगेंगे। इससे आपको समझ आता है कि मुद्रास्फीति कितनी तेजी से आपकी बचत को खा जाती है।</li>
+<li><strong>कर्ज का बोझ:</strong> यदि आपके पास 18% ब्याज दर वाला क्रेडिट कार्ड ऋण है, तो ब्याज भुगतान न करने पर ऋण 72/18 = 4 वर्षों में दोगुना हो जाएगा। यह उच्च ब्याज ऋण के खतरे को दर्शाता है।</li>
+</ul>
+
+<p>यह नियम इतना सरल है कि इसे कोई भी बिना calculator के मानसिक रूप से कर सकता है, और यही इसकी सबसे बड़ी ताकत है।</p>
+
+<h2>निष्कर्ष</h2>
+<p>चक्रवृद्धि ब्याज एक शक्तिशाली वित्तीय अवधारणा है जो आपके पैसे को समय के साथ तेजी से बढ़ा सकती है, लेकिन इसकी सटीक गणना में logarithm जैसे जटिल गणित की आवश्यकता होती है। 72 का नियम इस जटिलता को दूर कर एक आसान, त्वरित और अधिकतर सटीक अनुमान प्रदान करता है। यह न केवल निवेशकों के लिए, बल्कि आम आदमी के लिए भी एक उपयोगी उपकरण है, जो बचत, निवेश, मुद्रास्फीति और ऋण के प्रभाव को समझने में मदद करता है। अगली बार जब आप सोचें कि आपका पैसा कब दोगुना होगा, तो बस 72 को ब्याज दर से भाग दें और जवाब पाएं। लेकिन याद रखें, यह केवल एक अनुमान है, और वास्तविक परिणाम ब्याज दर में बदलाव, कर, और चक्रवृद्धि की आवृत्ति पर निर्भर करेगा। फिर भी, वित्तीय साक्षरता की दिशा में यह पहला और सबसे सरल कदम है।</p>
+</div>
