@@ -1,0 +1,340 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        .main-inner .column-center-inner .section { margin: 5px; }
+
+        .content-inner { padding: 0; }
+
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/2025/05/lessons-in-investing.html#customKhanAcademyPersonalFinanceHeader" target="_blank">See All Articles</a>
+<br>
+<!-- post-navigation:header:start -->
+<div class="postNavigation postNavigationHeader"><a href="https://survival8.blogspot.com/2026/11/how-to-save-money-on-everyday-expenses.html" target="_blank" class="customLink" rel="noopener noreferrer">&laquo; Previous</a></div>
+<!-- post-navigation:header:end -->
+
+<div class="customOuterWrapper">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ijLVDf8fOB8" frameborder="0" allowfullscreen></iframe>
+<h1>Why Do Interest Rates Rise and Fall?</h1>
+<p>Have you ever noticed that the interest rate on a car loan or a savings account can be different from one year to the next? You might pay one rate now, and then see a rate several percentage points higher or lower the next time you shop. These changes are not random. In the United States, they often trace back to actions taken by the Federal Reserve, commonly called the Fed, to keep the economy stable.</p>
+<p>Before we go further, let's define two terms. An <strong>interest rate</strong> is the cost of borrowing money, usually shown as a percentage of the loan amount. A <strong>central bank</strong> is an institution that manages a country's money supply and banking system. The Federal Reserve is the central bank of the United States.</p>
+
+<h2>The Fed's Two Main Goals</h2>
+<p>The Fed has two big jobs. First, it works to keep prices stable, which means it tries to prevent <strong>inflation</strong>, or the speed at which prices for goods and services rise, from getting out of control. Second, it works to encourage job creation when employment is low. These two goals explain a lot about why interest rates move up or down.</p>
+
+<h2>When Rates Fall: Encouraging Jobs</h2>
+<p>When many people are out of work, the Fed may try to encourage job creation by pushing interest rates down. Lower interest rates make it cheaper to borrow money. When borrowing is cheaper, people and companies are more likely to take out <strong>loans</strong>, which are sums of money they borrow and agree to pay back, usually with interest. As a result, they spend more money.</p>
+<p>That increased spending fuels the economy and can lead to more jobs. Think about buying a home. You might hire movers and painters, buy new furniture, and plant flowers from the garden center. The person who sold you the home then needs a new place to live, so they might do the same. All of that spending across many buyers and sellers helps create new jobs.</p>
+
+<h2>When Rates Rise: Taming Inflation</h2>
+<p>On the other hand, if inflation is high and prices are rising too fast, the Fed may try to slow down the economy and steady prices by pushing interest rates up. Higher interest rates make it more expensive to take out a loan. In turn, people become less likely to borrow money and buy fewer things.</p>
+<p>That means there is less <strong>demand</strong>, or willingness and ability to buy goods and services at a given price. When demand falls, sellers may drop their prices to attract buyers. As a result, prices stabilize. This is how the Fed uses higher rates to cool down rapid price increases.</p>
+
+<h2>A Simple Side-by-Side Comparison</h2>
+<table border="1" cellpadding="8" cellspacing="0">
+<thead>
+<tr><th>Factor</th><th>When the Fed Pushes Rates Down</th><th>When the Fed Pushes Rates Up</th></tr>
+</thead>
+<tbody>
+<tr><td>Cost of borrowing</td><td>Becomes cheaper</td><td>Becomes more expensive</td></tr>
+<tr><td>Likely borrowing and spending</td><td>Increases</td><td>Decreases</td></tr>
+<tr><td>Main economic goal</td><td>Encourage job creation</td><td>Stabilize prices and slow inflation</td></tr>
+<tr><td>Typical result</td><td>More spending fuels the economy</td><td>Lower demand encourages sellers to drop prices</td></tr>
+</tbody>
+</table>
+<p>This table is a simplification, but it shows the basic chain reaction the Fed aims for.</p>
+
+<h2>Key Takeaways</h2>
+<ul>
+<li>Interest rates are not set by chance; the Federal Reserve plays a major role in nudging them up or down.</li>
+<li>The Fed's two main goals are stable prices and job creation.</li>
+<li>Lower interest rates make borrowing cheaper, encourage spending, and can help create jobs.</li>
+<li>Higher interest rates make borrowing more expensive, reduce spending, and can help stabilize prices.</li>
+<li>The Fed does not directly set every loan rate, but its actions strongly influence the overall interest rate environment.</li>
+</ul>
+
+<h2>What You Can Do Next</h2>
+<ul>
+<li>When shopping for a car loan, mortgage, or savings account, ask how today's rate compares with rates over the past year or two. This can help you understand the current environment.</li>
+<li>Read the Federal Reserve's plain-language summaries of interest rate decisions. They explain why the Fed chose to act or hold steady.</li>
+<li>Remember that a lower rate can reduce your borrowing costs, while a higher rate may mean your savings account pays more interest. Keep both sides in mind before making a move.</li>
+<li>Watch for signs of inflation or job market changes in the news so you can connect economic events to the interest rates you see.</li>
+</ul>
+
+<p><strong>Reference:</strong> U.S. Federal Reserve System, "About the Fed."</p>
+</div>
+<!-- post-navigation:footer:start -->
+<div class="postNavigation postNavigationFooter"><a href="https://survival8.blogspot.com/2026/11/how-to-save-money-on-everyday-expenses.html" target="_blank" class="customLink" rel="noopener noreferrer">&laquo; Previous</a></div>
+<!-- post-navigation:footer:end -->

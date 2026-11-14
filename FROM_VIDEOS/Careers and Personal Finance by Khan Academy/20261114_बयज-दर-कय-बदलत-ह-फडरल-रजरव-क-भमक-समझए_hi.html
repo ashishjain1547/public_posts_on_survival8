@@ -1,0 +1,364 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        .main-inner .column-center-inner .section { margin: 5px; }
+
+        .content-inner { padding: 0; }
+
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/2025/05/lessons-in-investing.html#customKhanAcademyPersonalFinanceHeader" target="_blank">See All Articles</a>
+<br>
+<!-- post-navigation:header:start -->
+<div class="postNavigation postNavigationHeader"><a href="https://survival8.blogspot.com/2026/11/blog-post_408.html" target="_blank" class="customLink" rel="noopener noreferrer">&laquo; Previous</a></div>
+<!-- post-navigation:header:end -->
+
+<div class="customOuterWrapper">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ijLVDf8fOB8" frameborder="0" allowfullscreen></iframe>
+<h1>ब्याज दरें क्यों बदलती हैं? फेडरल रिजर्व की भूमिका समझिए</h1>
+
+<p>क्या आपने कभी ध्यान दिया है कि लोन और बचत खातों पर ब्याज दरें समय-समय पर बदलती रहती हैं? जैसे, हो सकता है कि एक साल आप कार लोन पर एक खास ब्याज दर चुका रहे हों, लेकिन अगली बार जब आप कार खरीदने जाएं, तो वह दर कई प्रतिशत अंक ऊपर या नीचे हो चुकी हो। तो आखिर ब्याज दरें ऊपर-नीचे क्यों होती हैं? यह समझने के लिए हमें फेडरल रिजर्व के काम करने का तरीका जानना होगा।</p>
+
+<h2>फेडरल रिजर्व क्या है?</h2>
+
+<p>असल प्रक्रिया कहीं ज्यादा जटिल है, लेकिन मोटे तौर पर कहें तो ब्याज दरों में उतार-चढ़ाव मुख्य रूप से फेडरल रिजर्व की उन कोशिशों का नतीजा होता है, जो वह अर्थव्यवस्था को स्थिर रखने के लिए करता है। फेडरल रिजर्व, जिसे आम तौर पर 'फेड' कहा जाता है, अमेरिका का केंद्रीय बैंक है। केंद्रीय बैंक का मतलब है किसी देश की मौद्रिक नीति चलाने वाला मुख्य बैंक। फेड के दो प्रमुख लक्ष्य होते हैं:</p>
+
+<ul>
+<li>कीमतों को स्थिर रखना, यानी महंगाई को नियंत्रण से बाहर नहीं जाने देना।</li>
+<li>जब रोजगार कम हो, तब नई नौकरियां पैदा करने को बढ़ावा देना।</li>
+</ul>
+
+<p>महंगाई का मतलब है समय के साथ चीजों की कीमतों का तेजी से बढ़ना। फेड का काम यह सुनिश्चित करना है कि न तो महंगाई बहुत तेज दौड़े और न ही लोगों के पास काम की कमी रहे।</p>
+
+<h2>जब ब्याज दरें नीचे जाती हैं</h2>
+
+<p>जब बहुत सारे लोग बेरोजगार होते हैं, तो फेड ब्याज दरों को नीचे धकेलकर रोजगार बढ़ाने की कोशिश कर सकता है। जब ब्याज दरें गिरती हैं, तब पैसा उधार लेना सस्ता हो जाता है। इसका मतलब है कि लोग और कंपनियां लोन लेने के लिए ज्यादा तैयार होंगी और नतीजतन, वे ज्यादा पैसा खर्च करेंगी। यह बढ़ा हुआ खर्च अर्थव्यवस्था को गति देगा और उम्मीद है कि इससे नई नौकरियां पैदा होंगी।</p>
+
+<p>इसे ऐसे समझिए। मान लीजिए आप एक घर खरीदते हैं। तब आप शायद सामान उठाने वाले और पेंटर भी बुलाएं, कुछ नया फर्नीचर खरीदें और गार्डन सेंटर से कुछ फूल लगवाएं। और जिस व्यक्ति ने आपको घर बेचा है, उसे भी रहने के लिए नई जगह चाहिए होगी, इसलिए वह भी ऐसा ही कर सकता है। इस सारे खर्च का कुल असर नई नौकरियां पैदा करने में मदद करता है।</p>
+
+<h2>जब ब्याज दरें ऊपर जाती हैं</h2>
+
+<p>दूसरी तरफ, अगर महंगाई ज्यादा है और कीमतें बहुत तेजी से बढ़ रही हैं, तो फेड ब्याज दरों को ऊपर चढ़ाकर अर्थव्यवस्था को धीमा करने और कीमतों को स्थिर करने की कोशिश कर सकता है। जब ब्याज दरें बढ़ती हैं, तब लोन लेना महंगा हो जाता है। इसके चलते लोग उधार लेने से कतराने लगते हैं और कम चीजें खरीदते हैं। नतीजा यह होता है कि वस्तुओं और सेवाओं की मांग घट जाती है, जिससे विक्रेताओं को अपनी कीमतें घटानी पड़ती हैं। और इस तरह कीमतें स्थिर हो जाती हैं।</p>
+
+<h2>तुलना: दरें नीचे बनाम दरें ऊपर</h2>
+
+<table border="1" cellpadding="5">
+<tr>
+<th>स्थिति</th>
+<th>फेड की चाल</th>
+<th>लोन लेना</th>
+<th>खर्च और मांग</th>
+<th>नतीजा</th>
+</tr>
+<tr>
+<td>बेरोजगारी ज्यादा, रोजगार कम</td>
+<td>ब्याज दरें घटाता है</td>
+<td>सस्ता</td>
+<td>खर्च बढ़ता है</td>
+<td>अर्थव्यवस्था को बल, नई नौकरियां</td>
+</tr>
+<tr>
+<td>महंगाई ज्यादा, कीमतें तेजी से बढ़ रही हैं</td>
+<td>ब्याज दरें बढ़ाता है</td>
+<td>महंगा</td>
+<td>मांग घटती है</td>
+<td>कीमतें स्थिर, अर्थव्यवस्था धीमी</td>
+</tr>
+</table>
+
+<h2>मुख्य बातें</h2>
+
+<ul>
+<li>ब्याज दरों का उतार-चढ़ाव मुख्य रूप से फेडरल रिजर्व की अर्थव्यवस्था स्थिर रखने की कोशिशों से जुड़ा है।</li>
+<li>फेड के दो लक्ष्य: महंगाई को काबू में रखना और रोजगार को बढ़ावा देना।</li>
+<li>दरें नीचे जाएं तो लोन सस्ता होता है, खर्च बढ़ता है और रोजगार बनता है।</li>
+<li>दरें ऊपर जाएं तो लोन महंगा होता है, मांग घटती है और कीमतें स्थिर होती हैं।</li>
+<li>समय के हिसाब से दरों को घटा-बढ़ाकर फेड कीमतें स्थिर रखने, रोजगार बनाने और अर्थव्यवस्था को सुरक्षित रखने की कोशिश करता है।</li>
+</ul>
+
+<h2>अब आप क्या कर सकते हैं</h2>
+
+<ul>
+<li>अपने लोन और बचत खातों की ब्याज दरों पर नजर रखें, ताकि बदलाव का असर अपने बजट पर समझ सकें।</li>
+<li>जब दरें कम हों, तो लोन की कुल लागत की तुलना करें और बचत से होने वाले रिटर्न को दोबारा जांचें।</li>
+<li>महंगाई के दौर में अपने खर्चों की योजना बनाएं, क्योंकि दरें बढ़ने पर उधार लेना महंगा पड़ सकता है।</li>
+<li>किसी भी बड़े वित्तीय फैसले से पहले किसी योग्य वित्तीय सलाहकार से बात करें, क्योंकि हर व्यक्ति की स्थिति अलग होती है।</li>
+</ul>
+
+<p>संदर्भ: यह जानकारी फेडरल रिजर्व के दोहरे जनादेश यानी कीमत स्थिरता और अधिकतम रोजगार की अवधारणा पर आधारित है, जो फेडरल रिजर्व के आधिकारिक संचार में वर्णित है।</p>
+</div>
+<!-- post-navigation:footer:start -->
+<div class="postNavigation postNavigationFooter"><a href="https://survival8.blogspot.com/2026/11/blog-post_408.html" target="_blank" class="customLink" rel="noopener noreferrer">&laquo; Previous</a></div>
+<!-- post-navigation:footer:end -->

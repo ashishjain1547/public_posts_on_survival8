@@ -1,0 +1,371 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        .main-inner .column-center-inner .section { margin: 5px; }
+
+        .content-inner { padding: 0; }
+
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/2025/05/lessons-in-investing.html#customPostsByAnkurWarikooHeader" target="_blank">See All Articles</a>
+<br>
+<!-- post-navigation:header:start -->
+<div class="postNavigation postNavigationHeader"><a href="https://survival8.blogspot.com/2026/09/the-right-age-to-buy-health-insurance.html" target="_blank" class="customLink" rel="noopener noreferrer">&laquo; Previous</a></div>
+<!-- post-navigation:header:end -->
+
+<div class="customOuterWrapper">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Gz-eFQPGBVU" frameborder="0" allowfullscreen></iframe>
+<h1>10 Money Challenges to Fix Your Finances Before 2025</h1>
+<p>As the calendar moves toward the end of 2024, we have roughly 60 days left. That may not sound like much, but in the world of money, 60 days is enough time to build awareness, break bad habits, and set up systems that can change the rest of your financial life. The idea here is simple: instead of waiting for January 1 to make vague resolutions, start now with concrete, actionable money challenges. These are not about getting rich overnight. They are about discipline, awareness, and small wins that compound over time.</p>
+<p>This is not a sponsored post. No brand has paid for a mention. Every tool or fund mentioned here is something that has worked in real life. The goal is to give you a practical framework you can start today and finish before the new year begins.</p>
+
+<h2>Challenge 1: Expense Tracking Challenge</h2>
+<p>Most people have no idea where their money goes. They earn, they spend, and by the end of the month, the bank balance is lower, but they cannot pinpoint exactly why. Before you can grow your money, you need to know where it is leaking. That is the whole point of the first challenge.</p>
+<p>For the next 60 days, track every single rupee that comes in and goes out. Every expense, every bill, every small UPI payment. Download your bank statement and go through it line by line. Put it into a simple spreadsheet or even a notebook. For each transaction, note the amount, the date, the category, and whether it was a need or a want. Yes, this is tedious. But think of it like a diagnostic test. You cannot fix a problem you cannot see.</p>
+<p>One practical tip: do not just look at the big expenses. The small ones matter more than you think. The daily tea, the impulse online order, the subscription you forgot about. These small leaks add up to a flood over time. When you see the full picture, you will feel a sense of control that most people never experience.</p>
+<p>At the end of this challenge, you should be able to answer one question clearly: where did every rupee go? If you can answer that, you are already ahead of 90 percent of people.</p>
+
+<h2>Challenge 2: The No New Things Pledge</h2>
+<p>Tracking is step one. Step two is freezing unnecessary spending. For the next 60 days, challenge yourself to bring every non-essential purchase down to zero. No new gadgets, no new clothes, no new shoes, no impulse buys of any kind. If something is not a genuine need for survival or basic functioning, do not buy it.</p>
+<p>This may sound extreme, but it is incredibly freeing. A few years ago, my wife made a resolution that stayed with me. She said, "This year, I will not buy anything for myself, and I will not accept anything new from anyone else." At first it sounded difficult, but she stuck to it, and it changed the way our whole household thought about consumption. When you pause before every purchase and ask, "Do I really need this?" you break the autopilot that drives so much spending.</p>
+<p>Needs are things like food, rent, utilities, transport, and medicine. Wants are everything else. For these 60 days, wants go to zero. It is not about punishment. It is about resetting your relationship with money and realising that you already have enough.</p>
+
+<h2>Challenge 3: Investment Acceleration Challenge</h2>
+<p>Once you have cut unnecessary spending, you will find money left over. The next challenge is to put that money to work aggressively. The concept is simple: accelerate your investments every week.</p>
+<p>Let us say you currently invest Rs 6,000 per month. Divide that by four, and you get Rs 1,500 per week. Now, instead of keeping it flat, increase it by 10 percent every week. Week one you invest Rs 1,500. Week two you invest Rs 1,650. Week three becomes Rs 1,815. Week four becomes about Rs 2,000. Instead of investing Rs 6,000 for the month, you end up investing around Rs 6,965. That is almost Rs 1,000 extra every month. Over a year, that extra amount becomes significant.</p>
+<p>The beauty is that a 10 percent weekly increase feels small, so your brain does not resist it. You are not doubling your investment overnight. You are just nudging it up step by step. And if you have saved money from the spending freeze in Challenge 2, you can direct that into this acceleration too. The same approach works for loan repayment. If you have an EMI or any debt, increase your payment by 10 percent every month. The goal is not to clear the loan overnight, but to build a mindset that says, "My priorities are serious enough that I will prove it with my money."</p>
+
+<h2>Challenge 4: Loan Acceleration Challenge</h2>
+<p>Debt can feel like a heavy backpack. The longer you carry it, the more interest you pay, and the slower your wealth grows. This challenge is for anyone who has a personal loan, home loan, car loan, education loan, or any outstanding debt. Instead of paying only the minimum EMI, accelerate your repayment.</p>
+<p>Use the same 10 percent rule. If your monthly EMI is Rs 20,000, try to pay Rs 22,000 next month, then Rs 24,200, and so on. The extra amount goes directly toward the principal, which reduces the total interest over time. Even a small extra payment can shorten your loan tenure by months or even years.</p>
+<p>This challenge is not just about the math. It is about proving to yourself that you are serious about becoming debt-free. Every extra rupee you pay is a vote for your future freedom. You will not see instant results, but the discipline will stay with you long after the loan is gone.</p>
+
+<h2>Challenge 5: Index Fund Challenge</h2>
+<p>If you have never invested in the stock market, this is your starting point. The challenge is to make your first investment in a Nifty 50 index mutual fund through a systematic investment plan, or SIP, before the new year begins.</p>
+<p>Let me explain what a Nifty 50 index fund is in plain language. The Nifty 50 is an index that tracks the top 50 companies listed on the National Stock Exchange of India. Think of it as a basket of India's biggest and most established companies like Reliance, Tata, Wipro, and TCS. When you invest in a Nifty 50 index mutual fund, you are indirectly investing in all 50 of those companies at once. You do not need to research individual stocks or time the market. The fund simply mirrors the index.</p>
+<p>Why choose an index fund over an actively managed fund? The biggest reason is cost. Because the fund does not need a team of analysts to pick stocks, the expense ratio is very low. For example, one popular Nifty 50 index fund has an expense ratio of just 0.18 percent. That means if you invest Rs 100, only 18 paise goes toward fund management, and Rs 99.82 is actually invested. Many active funds charge much more. There is also no exit load, and in many cases, you can start with as little as Rs 1,000.</p>
+<p>Historical returns for Nifty 50 index funds have been around 12.65 percent CAGR over the long term. Let me show you how powerful that can be. If you invest Rs 10,000 per month for 10 years at 12.65 percent, you put in Rs 12 lakh and earn roughly another Rs 12 lakh, ending with about Rs 24 lakh. Over 20 years, you invest Rs 24 lakh and earn around Rs 85 lakh on top of it. Over 30 years, you invest Rs 36 lakh, and the compounding gives you about Rs 3.7 crore in gains, leaving you with a total corpus of over Rs 4 crore. That is the power of starting early and staying invested.</p>
+<p>This challenge is not about finding the best fund. It is about taking the first step. Open an account with any trusted platform, pick a Nifty 50 index fund with a low expense ratio, and set up an SIP of any amount you can afford. Consistency beats perfection.</p>
+
+<h2>Challenge 6: Financial Ratios Challenge</h2>
+<p>If you were a company, would you invest in yourself? That is the core question of this challenge. In the stock market, investors look at a company's revenue growth, profit growth, debt-to-income ratio, and earnings per share. Before they put money in, they check the numbers. You should do the same for your own financial life.</p>
+<p>Here is what you need to calculate for yourself over the next 60 days. First, check your income growth. How has your income grown in the last one year, three years, and five years? Plot it on a simple chart. Second, look at your net taxable income, which is like your personal EBITDA. Is it growing or stagnant? Third, calculate your debt-to-income ratio. Divide your total monthly debt payments by your monthly take-home pay. If that number is high, you are carrying too much risk. Fourth, calculate your investment ratio. What percentage of your income do you invest every month? A healthy number is at least 20 to 30 percent, but any number above zero is a start.</p>
+<p>When you see these ratios in black and white, you gain self-awareness. You may realise that if you were a company, you would not invest in yourself yet. That is not a reason to feel bad. It is a map for improvement. Maybe your debt-to-income ratio is too high, so you need to focus on repaying loans. Maybe your investment ratio is too low, so you need to automate savings. Whatever the case, this challenge gives you clarity.</p>
+
+<h2>Challenge 7: Automated Investments Challenge</h2>
+<p>This challenge is a bit administrative, but it can be a game changer. The goal is to make investing automatic so that your future self is taken care of before your present self gets a chance to spend.</p>
+<p>Here is how it works. Step one: open a new bank account that is separate from your regular salary or spending account. Step two: set up an auto sweep from your salary account to this new account. Decide a fixed percentage or amount that you want to invest every month, and have it transferred automatically on the day your salary arrives. Step three: do not get a UPI app or debit card linked to this new account for spending. The only purpose of this account is to fund your investments.</p>
+<p>Recent research on UPI spending habits showed that many young people, especially Gen Z, ended up spending more after UPI became popular. Why? Because paying is so easy. Tap, tap, tap, and the money is gone before you feel the pain. When money is accessible in the same account you use for daily spending, it gets spent. But when it is moved automatically into a separate investment account with no UPI access, you are forced to think before you withdraw.</p>
+<p>This account becomes your war chest for SIPs, mutual funds, gold, stocks, or any other investment you choose. The rule is simple: investment money is only for investments. Not for shopping, not for dining, not for impulse buys. Automating this process removes willpower from the equation. You do not have to remember to invest every month; the system does it for you.</p>
+
+<h2>Challenge 8: The New Asset Class Challenge</h2>
+<p>Many experienced investors fall into a comfort zone. If they started with mutual funds, they stay with mutual funds. If they love fixed deposits, they keep buying FDs. If real estate worked once, they want more real estate. There is nothing wrong with any single asset class, but putting all your eggs in one basket is risky.</p>
+<p>This challenge is for people who have been investing for a while. Over the next 60 days, find one new asset class that you have never invested in before and start investing in it. The options are wide open. You could try gold as a hedge against inflation, either digital or physical. You could look at REITs, or real estate investment trusts, which let you invest in property without buying a whole building. You could explore crypto, peer-to-peer lending, or even a different category of mutual funds like flexi cap or mid cap if you have only ever bought Nifty 50.</p>
+<p>The key word here is diversification. Diversification does not mean buying the same type of fund from a different brand. It means choosing a new category or industry where the growth and risk profile is different from what you already own. For example, if your portfolio is all small-cap equity, adding some Nifty 50 or debt funds reduces your overall risk. If your portfolio is all fixed deposits, adding a small equity fund gives you growth potential.</p>
+<p>The amount does not have to be huge. Start small, learn the asset class, and let it complement your existing portfolio. The goal is to reduce risk over time, not to chase the latest trend. You should only choose something you understand and that fits your risk profile.</p>
+
+<h2>Challenge 9: Declutter and Sell - The Diwali Cleaning Challenge</h2>
+<p>This challenge has a fancy name but a very desi heart. As Diwali approaches, we all clean our homes, remove the cobwebs, and rearrange our belongings. The same principle applies to your stuff. Over the next 60 days, go through your clothes, books, gadgets, shoes, and every other possession. Ask yourself honestly: do I use this? Do I need this? When was the last time I wore it, read it, or turned it on?</p>
+<p>If the answer is no, it is time to get rid of it. You can sell working items on platforms like OLX. You can gift them to friends or family. You can donate them to organisations like Goonj, which regularly collects usable clothes, books, and household items and gives them to people who need them. The only condition is that anything you dispose of should be in working condition and useful to someone else.</p>
+<p>This is not just about making space at home. It is about changing your mindset. More clothes will not make you more beautiful. More shoes will not make you run faster. More gadgets will not make you smarter. In fact, a minimalist approach often brings more happiness because you stop chasing things and start valuing what you already have. In our family, we do this decluttering every three months, and it has become a habit that keeps our spending and our minds clutter-free.</p>
+
+<h2>Challenge 10: Retirement Planning Challenge</h2>
+<p>The final challenge is the most important long-term one. For the next 60 days, you will calculate exactly what you need to retire on your terms. Most people never do this, which is why retirement feels like a distant, fuzzy dream. This challenge makes it concrete.</p>
+<p>Start with a few basics. How old are you? At what age do you want to retire? How long do you expect to live after retirement? For example, if you are 28 now and want to retire at 45, you need your retirement corpus to last from age 45 to age 85. Next, decide how much monthly income you would need in today's money if you retired today. Let us say that number is Rs 1 lakh per month. Then factor in inflation, which we can assume at around 7 percent per year. Also assume your post-retirement investments will earn around 12 percent per year.</p>
+<p>Now use a retirement calculator or a simple spreadsheet to find your required monthly investment. The numbers can be eye-opening. If you invest Rs 35,000 per month from age 28 to 45, you might end up with a corpus of around Rs 3.6 crore, but that money could run out by age 60 because your monthly withdrawals are increasing with inflation. If you increase your monthly investment to Rs 45,000, the corpus lasts till age 67. At Rs 55,000, it lasts till age 75. Somewhere around Rs 61,000 per month may be needed to ensure the money survives till age 85 without running out.</p>
+<p>Here is the hopeful part: small changes make a huge difference. If you retire five years later, the required monthly amount drops sharply. If you start investing at 25 instead of 28, the required amount drops further. The earlier you start, the less you have to invest per month, thanks to compounding. This challenge is not about making you feel behind. It is about giving you a target number. Because once you know the number, you can plan your income, expenses, and investments around it. A goal without a number is just a wish.</p>
+
+<h2>Citations and References</h2>
+<p>- UTI Nifty 50 Index Fund - Direct Plan factsheet, Association of Mutual Funds in India (AMFI) website. Expense ratio 0.18 percent, exit load 0, minimum investment Rs 1,000, accessed October 2024.</p>
+<p>- Historical Nifty 50 Total Return Index data, National Stock Exchange of India. Long-term CAGR of approximately 12.65 percent based on 3-year and 5-year fund returns.</p>
+<p>- A 2023 survey on UPI and spending behaviour among Gen Z users, LocalCircles, found that a majority of young respondents reported an increase in spending after adopting UPI due to ease of transactions.</p>
+<p>- "Do you hustle to prove what your priority truly is?" concept based on personal finance discipline principles commonly discussed by Ankur Warikoo in public talks and writings.</p>
+<p>- Goonj, a non-profit organisation in India, accepts donations of usable clothes, books, and household items for redistribution to communities in need.</p>
+
+<h2>Conclusion</h2>
+<p>- Track every rupee for 60 days to see where your money is actually going.</p>
+<p>- Freeze all non-essential spending and bring wants down to zero.</p>
+<p>- Accelerate your investments and loan repayments by 10 percent every week or month.</p>
+<p>- Start your first Nifty 50 index fund SIP with a low expense ratio.</p>
+<p>- Treat yourself like a company and calculate your income growth, debt-to-income ratio, and investment ratio.</p>
+<p>- Automate your investments by moving money to a separate account with no UPI access.</p>
+<p>- Diversify into at least one new asset class you have never tried before.</p>
+<p>- Declutter your home, sell or donate what you do not use, and embrace minimalism.</p>
+<p>- Calculate your retirement number and work backwards to know your monthly investment target.</p>
+<p>- Start today, because 60 days is enough to build a habit that can last a lifetime.</p>
+</div>
+<!-- post-navigation:footer:start -->
+<div class="postNavigation postNavigationFooter"><a href="https://survival8.blogspot.com/2026/09/the-right-age-to-buy-health-insurance.html" target="_blank" class="customLink" rel="noopener noreferrer">&laquo; Previous</a></div>
+<!-- post-navigation:footer:end -->

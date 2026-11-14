@@ -1,0 +1,392 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        .main-inner .column-center-inner .section { margin: 5px; }
+
+        .content-inner { padding: 0; }
+
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+
+<a class="customLink" href="https://survival8.blogspot.com/p/personal-posts-index.html#customKhanAcademyHeader" target="_blank">See All Articles</a>
+<br>
+<!-- post-navigation:header:start -->
+<div class="postNavigation postNavigationHeader"><a href="https://survival8.blogspot.com/2026/11/simple-vs-compound-interest-why.html" target="_blank" class="customLink" rel="noopener noreferrer">&laquo; Previous</a></div>
+<!-- post-navigation:header:end -->
+
+<div class="customOuterWrapper">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8AtM1R9NmwM" frameborder="0" allowfullscreen></iframe>
+<h1>What Is a FICO Score? A Clear Guide to Credit Scores for Beginners</h1>
+
+<p>If you have ever wondered how a bank decides whether you are safe to lend money to, you are not alone. For as long as people have been lending things to other people, there has always been one big question: how likely is this person to give it back? In other words, is this person a good credit risk? In 1956, two men decided to answer that question with mathematics. The result is what we now call the FICO score.</p>
+
+<h2>The Problem: Who Is Creditworthy?</h2>
+<p>Before formal credit scores existed, lenders had to rely on rough guesses. They might ask how much money you had or what kind of income you earned. But those answers were incomplete. <strong>Creditworthiness</strong> is the term lenders use to describe how likely you are to repay a loan. The challenge was finding a consistent, scientific way to measure it.</p>
+
+<h2>The Birth of the FICO Score</h2>
+<p>In 1956, Bill Fair, an engineer, and Earl Isaac, a mathematician, started the Fair Isaac Corporation. Today the company is often known simply as FICO. Their idea was to use statistics and mathematics to turn information about a borrower into a single number that represents creditworthiness.</p>
+<p>A <strong>FICO score</strong> is a three-digit number that summarizes your credit risk. The algorithm used to calculate it has changed over time as technology and statistical understanding have improved, but the core idea remains the same: take inputs about someone's borrowing behaviour and produce a score.</p>
+
+<h2>What Goes Into a FICO Score</h2>
+<p>The FICO algorithm considers several pieces of information:</p>
+<ul>
+<li><strong>Total debt compared to available credit:</strong> how much you owe versus how much credit you could access.</li>
+<li><strong>Payment history:</strong> whether you have paid your debts on time.</li>
+<li><strong>Length of credit history:</strong> how long you have been using credit.</li>
+<li><strong>Types of credit:</strong> the mix of loans, credit cards, and other credit accounts you hold.</li>
+<li><strong>Number of inquiries:</strong> how many lenders have recently asked about your credit.</li>
+</ul>
+
+<h2>The FICO Score Range: 300 to 850</h2>
+<p>A modern FICO score falls between 300 and 850. The higher the number, the safer you look to a lender. Here is how the ranges are generally viewed:</p>
+
+<table border="1" cellpadding="8" cellspacing="0">
+<thead>
+<tr>
+<th>Score Range</th>
+<th>Rating</th>
+<th>What It Means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>780 to 850</td>
+<td>Excellent</td>
+<td>You are seen as one of the best credit risks and very likely to repay a loan.</td>
+</tr>
+<tr>
+<td>720 to 780</td>
+<td>Very good</td>
+<td>Above average. You are still considered a strong borrower.</td>
+</tr>
+<tr>
+<td>650 to 720</td>
+<td>Fair or average</td>
+<td>You are an acceptable risk, but not outstanding.</td>
+</tr>
+<tr>
+<td>Below 650</td>
+<td>Subprime</td>
+<td>Lenders see you as riskier to lend money to.</td>
+</tr>
+</tbody>
+</table>
+
+<p>The term <strong>prime</strong> is used for borrowers with excellent, good, or OK credit. A <strong>subprime</strong> borrower is someone considered riskier. That does not mean you can never borrow money, but it often means you will pay higher interest rates or be denied credit altogether.</p>
+
+<h2>Who Collects Your Data: The Credit Bureaus</h2>
+<p>The FICO company is most famous for creating the algorithm, but it is not the only organisation in the picture. <strong>Credit bureaus</strong> are companies that actually gather your financial data, apply the FICO algorithm, and produce your credit score.</p>
+<p>The three major credit bureaus are:</p>
+<ul>
+<li>TransUnion</li>
+<li>Experian</li>
+<li>Equifax</li>
+</ul>
+<p>Each bureau may hold slightly different information about you, so your FICO score from each one can be a little different. When a bank, credit card company, or car lender wants to know your credit score, they go to one of these bureaus and request an inquiry.</p>
+
+<h2>How Lenders Use Your Score</h2>
+<p>Imagine you walk into a bank and ask for a mortgage, or you apply for a credit card or a car loan. Here is what typically happens:</p>
+<ul>
+<li>If you have <strong>excellent credit</strong>, you are very likely to get the loan and you may receive a low interest rate.</li>
+<li>If you have a <strong>good credit score</strong>, you will probably get the loan, but at a slightly higher interest rate.</li>
+<li>If you have <strong>bad credit</strong>, you are probably not going to get the loan at all.</li>
+</ul>
+
+<h2>How Credit Bureaus Get Your Information</h2>
+<p>You may wonder how the bureaus know about your debts and payment history. The answer is a two-way exchange with lenders. When a bank pays a credit bureau to look up your score, the bank also agrees to share information back. If the bank gives you a loan, it tells the credit bureau about that loan. If you pay on time, the bureau records that. If you miss payments, the bureau records that too. All of that information feeds into your FICO score.</p>
+
+<h2>Key Takeaways</h2>
+<ul>
+<li>A FICO score is a number from 300 to 850 that measures how likely you are to repay a loan.</li>
+<li>The Fair Isaac Corporation was started in 1956 by Bill Fair and Earl Isaac.</li>
+<li>The score is based on total debt, available credit, payment history, length of credit history, types of credit, and inquiries.</li>
+<li>780 to 850 is excellent, 720 to 780 is very good, 650 to 720 is average, and below 650 is subprime.</li>
+<li>Three major credit bureaus collect your data and calculate your score: TransUnion, Experian, and Equifax.</li>
+<li>Lenders share your payment data back to the bureaus in exchange for checking your score.</li>
+</ul>
+
+<h2>What You Can Do Next</h2>
+<ul>
+<li>Check your own credit score with each of the three major bureaus. You are allowed to do this as an individual.</li>
+<li>Review your payment history and make a plan to pay every bill on time from now on.</li>
+<li>Keep an eye on how much of your available credit you are using. Owing less compared to your credit limit can help your score.</li>
+<li>Avoid too many credit inquiries in a short period. Each inquiry can affect your score.</li>
+<li>If your score is below 650, focus on steady, on-time payments. Over time, your score can improve.</li>
+</ul>
+
+<p>References: Fair Isaac Corporation (FICO); TransUnion; Experian; Equifax.</p>
+</div>
+<!-- post-navigation:footer:start -->
+<div class="postNavigation postNavigationFooter"><a href="https://survival8.blogspot.com/2026/11/simple-vs-compound-interest-why.html" target="_blank" class="customLink" rel="noopener noreferrer">&laquo; Previous</a></div>
+<!-- post-navigation:footer:end -->
