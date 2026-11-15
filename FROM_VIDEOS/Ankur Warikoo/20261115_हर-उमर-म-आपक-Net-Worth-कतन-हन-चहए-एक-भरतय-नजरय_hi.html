@@ -1,0 +1,445 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        .main-inner .column-center-inner .section { margin: 5px; }
+
+        .content-inner { padding: 0; }
+
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+<!-- post-navigation:header:start -->
+<div class="postNavigation"><a class="customLink" href="https://survival8.blogspot.com/2025/05/lessons-in-investing.html#customPostsByAnkurWarikooHeader" target="_blank">See All Articles</a> &nbsp;&nbsp; <a class="customLink" href="https://survival8.blogspot.com/2026/11/30.html" target="_blank" rel="noopener noreferrer">&laquo; Previous</a></div>
+<!-- post-navigation:header:end -->
+
+
+
+<div class="customOuterWrapper">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/S60hcIVG-8k" frameborder="0" allowfullscreen></iframe>
+
+<h1>हर उम्र में आपका Net Worth कितना होना चाहिए? एक भारतीय नजरिया</h1>
+
+<p>क्या आपने कभी सोचा है कि आपकी असली संपत्ति कितनी है? हम अक्सर अपनी सैलरी, अपनी गाड़ी, अपने घर के बारे में सोचते हैं, लेकिन क्या हम जानते हैं कि सब कुछ जोड़ने और घटाने के बाद आखिर हमारे पास बचता क्या है? यही वो सवाल है जो हर साल, हर उम्र में, हर किसी को खुद से पूछना चाहिए। और इसी सवाल का जवाब एक छोटे से शब्द में छुपा है — Net Worth।</p>
+
+<p>आज हम इसी पर बात करेंगे। कोई जटिल फाइनेंशियल जार्गन नहीं, कोई उबाऊ थ्योरी नहीं। बस सीधी, सरल भाषा में ये समझेंगे कि Net Worth होता क्या है, इसे कैसे निकालते हैं, और हर उम्र में एक भारतीय के लिए ये लगभग कितना होना चाहिए।</p>
+
+<h2>Net Worth आखिर है क्या और इसे कैसे निकालें?</h2>
+
+<p>चलिए सबसे पहले एक छोटा सा एक्सरसाइज करते हैं। और हां, ये कोई शारीरिक कसरत नहीं है, ये आपकी फाइनेंशियल सेहत की कसरत है।</p>
+
+<p>एक तरफ उन सभी चीज़ों को जोड़िए जो पैसे में बदली जा सकती हैं। मतलब आपकी Assets। इसमें आपके Mutual Funds हो सकते हैं, आपका सोना हो सकता है — अगर आपको उसकी रीसेल वैल्यू पता है। आपकी गाड़ी हो सकती है, अगर आप उसे बेचने के लिए तैयार हैं। आपका घर हो सकता है। कपड़े-बर्तन तक मत जाइएगा, लेकिन मोटे तौर पर कुछ भी जो आप बेच सकते हैं और जिसकी कोई बाजार कीमत है, वो आपकी Asset है। आपका इंश्योरेंस हो गया, आपके निवेश हो गए — सब कुछ।</p>
+
+<p>अब दूसरी तरफ उन सभी चीज़ों को जोड़िए जो आप दूसरों को देते हैं। मतलब आपकी Liabilities। आपका Personal Loan जो अभी तक चुका नहीं है, आपका Credit Card का बकाया बैलेंस, दोस्तों से उठाया हुआ कोई कर्ज, या आपका घर जो लोन पर चल रहा है — यानी बैंक को कितने पैसे देने बाकी हैं, वगैरह-वगैरह।</p>
+
+<p>अब इन दोनों का अंतर निकालिए। मान लीजिए आपकी पूरी Asset की वैल्यू करीब दस लाख रुपए है, और आपको कुल सात लाख रुपए लोगों को चुकाने हैं। तो आपका Net Worth हुआ दस में से सात घटाइए — यानी तीन लाख रुपए। बस, यही आपका Net Worth है।</p>
+
+<h2>ये Net Worth नंबर इतना अहम क्यों है?</h2>
+
+<p>क्योंकि यही वो असली वैल्यू है जो आपकी अपनी है। आपकी सैलरी बड़ी हो सकती है, आपका घर महंगा हो सकता है, लेकिन अगर आपका कर्ज उससे भी ज्यादा है, तो सच यही है कि आप असल में उतने अमीर नहीं हैं जितना दिखता है। Net Worth आपको आईना दिखाता है। और यही वजह है कि हर उम्र में ये जानना जरूरी है कि आपका Net Worth लगभग कितना होना चाहिए।</p>
+
+<p>अब सवाल उठता है — हर एक उम्र में, लगभग कितना Net Worth होना चाहिए? इसे सोचने का क्या तरीका है? बहुत सारे मॉडल्स हैं, लेकिन ज्यादातर मॉडल्स विदेशी हैं। उनका संदर्भ अलग है, देश अलग है, अर्थव्यवस्था अलग है। तो मैंने सोचा कि अगर मुझे इसे भारत के माहौल में ढालना हो, तो 25 साल की उम्र में, 30 साल की उम्र में, 35 की उम्र में, 40 की उम्र में, आपका लगभग Net Worth क्या होना चाहिए? वो नंबर क्या होगा? आइए इसे समझते हैं।</p>
+
+<h2>भारत में डेटा की कमी एक बड़ी चुनौती है</h2>
+
+<p>सबसे पहले, एक थोड़ी सी दुखभरी बात से शुरुआत करते हैं। ऐसा कोई आधिकारिक डेटा ही नहीं है, जो ये बताता हो कि औसतन एक भारतीय कितना बचाता है, या कितना खुद के नाम पर रखता है। यानी Net Worth का जो Asset वाला हिस्सा है, वो कितना है, इसका कोई ताजा, विश्वसनीय सरकारी आंकड़ा मौजूद नहीं है।</p>
+
+<p>एक All India Debt and Investment Survey होता है, जिसे National Statistical Office चलाता है। उसके मुताबिक, ग्रामीण भारत में औसतन संपत्ति करीब 16 लाख रुपए है, और शहरी भारत में औसतन संपत्ति करीब 27 लाख रुपए है। लेकिन ये डेटा 30 जून 2018 का है — यानी लगभग आठ साल पुराना। अब ये नंबर बढ़ा है या घटा है, इसका कोई सत्यापित सरकारी आंकड़ा 2026 या उसके आसपास के सालों का नहीं है।</p>
+
+<p>हां, हमें ये जरूर पता है कि लोग औसतन कमाते कितने हैं। एक नियमित पुरुष वेतनभोगी कर्मचारी की तनख्वाह करीब 24,417 रुपए प्रति माह है, और एक नियमित महिला वेतनभोगी कर्मचारी की तनख्वाह करीब 18,350 रुपए प्रति माह है। ये सत्यापित, सरकारी, मौजूदा आंकड़े हैं।</p>
+
+<p>हमें ये भी पता है कि करीब 8.25 करोड़ लोग जो इनकम टैक्स रिटर्न फाइल करते हैं, उनमें से 80 प्रतिशत लोगों की सालाना तनख्वाह 10,00,000 रुपए से कम है। सिर्फ 1.4 प्रतिशत लोग ऐसे हैं जिनकी तनख्वाह 50,00,000 रुपए से ज्यादा है।</p>
+
+<p>और RBI के आंकड़ों से हमें ये भी पता चलता है कि भारत में औसतन बचत पिछले कुछ सालों में कम होती जा रही है। लोग पहले की तुलना में कम बचा पा रहे हैं। और इन्हीं 5-6 सालों में, खासकर Gen-Z के लिए, एक बहुत खतरनाक तरीका बोरो करने का चलन बढ़ा है — Credit Card का इस्तेमाल।</p>
+
+<h2>Credit Card: एक दोधारी तलवार</h2>
+
+<p>Credit Card से मुझे लगता है बहुत लोगों को कूल लगता है। उन्हें एयरपोर्ट लाउंजेस मिल जाते हैं, एक अलग स्टेटस गेम चल रहा है, और बहुत अंधाधुंध बोरोइंग चल रही है। मैं व्यक्तिगत रूप से इसे पसंद नहीं करता। मैं सच में मानता हूं कि Credit Card एक बहुत-बहुत स्मार्ट फाइनेंशियल इंस्ट्रूमेंट है, अगर उसे समझदारी से इस्तेमाल किया जाए। लेकिन अगर आप उसे गलत तरीके से यूज करेंगे, तो आपकी जिंदगी बर्बाद हो सकती है।</p>
+
+<p>मैंने ये अपने परिवार में खुद देखा है, जब मैंने अपने पिता को Credit Card के कर्ज में फंसते हुए देखा। वो एक बहुत कठिन अनुभव था। लेकिन अगर आप सही Credit Card चुनकर उसे सही तरीके से इस्तेमाल करें, तो ये आपके लिए सबसे अच्छी चीजों में से एक हो सकता है।</p>
+
+<p>इसीलिए मैंने अपना एक नया स्टार्टअप Monzi लॉन्च किया है। अगर आप Monzi इस्तेमाल करेंगे, तो 60 सेकंड के अंदर, 10 सवालों के जवाब देकर, आपको आपका सबसे अच्छा Credit Card हम चुनकर देंगे। कोई लंबी लिस्ट नहीं होगी — 3, 4, 5, 6 Credit Card नहीं दिखाएंगे। सिर्फ एक दिखाएंगे। आपको Apply करना है तो आपकी मर्जी, नहीं करना है तो भी कोई बात नहीं। हमें पता भी नहीं चलेगा क्योंकि कोई डेटा ट्रैक नहीं हो रहा है। कोई आपका फोन नंबर नहीं पूछा जा रहा है। कोई Credit Card आपके पीछे नहीं लगाया जा रहा है। कोई विज्ञापन नहीं है। ये एक ईमानदार आकलन है कि हमें क्या लगता है आपके लिए सबसे अच्छा Credit Card कौन सा है। तो monzi.co पर जाकर ट्राई कीजिए और मुझे बताइए कि ये आपके लिए कैसा काम करता है। आपकी प्रतिक्रिया से मुझे खुशी होगी।</p>
+
+<h2>Net Worth को एक नंबर देना इतना आसान क्यों नहीं है?</h2>
+
+<p>जब हम Net Worth की बात करते हैं, और ये कि आपका आदर्श Net Worth क्या होना चाहिए, तो इसे एक ही नंबर देना बहुत मुश्किल होगा। क्यों? क्योंकि हर 25 साल, हर 30 साल, हर 35 साल, हर 40 साल वाले की जिंदगी बहुत अलग होती है। एक 25 साल का युवा 30,000 रुपए महीना कमा रहा है, तो दूसरा 25 साल का युवा 60,000 रुपए महीना कमा रहा है। उन दोनों का Net Worth एक जैसा कैसे हो सकता है? होना भी नहीं चाहिए।</p>
+
+<p>इसीलिए आप पाएंगे कि Net Worth और आम तौर पर आपकी फाइनेंशियल हेल्थ, अक्सर आपकी सैलरी के गुणकों में या आपके खर्चों के गुणकों में मापी जाती है। क्यों? क्योंकि यही आपकी जीवनशैली को दर्शाता है। अगर आप 30,000 रुपए कमा रहे हैं, तो आपकी जीवनशैली 30,000 रुपए की आय के अनुसार होगी। 60,000 कमा रहे हैं, तो 60,000 रुपए की आय के अनुसार होगी। अगर आप 15,000 रुपए हर महीने खर्च करते हैं, तो उसके अनुसार आपकी जीवनशैली होगी। 30,000 रुपए खर्च करते हैं, तो उसके अनुसार होगी।</p>
+
+<p>तो जब मैं ये सारे बेंचमार्क आपके साथ साझा करूंगा, वो ज्यादातर आपकी सालाना आय या आपकी मासिक आय के गुणकों में होंगे। और इसी तरह आप समझ पाएंगे कि अगर किसी और की आय अलग है, तो उसका Net Worth भी अलग हो सकता है, और उसका मेरी जिंदगी या मेरी आय से कोई लेना-देना नहीं है।</p>
+
+<h2>भारतीय बेंचमार्क बनाते समय चार बड़ी बातें ध्यान में रखनी होंगी</h2>
+
+<p>अच्छा, अब वो कौन-कौन सी चीजें थीं जिन्हें मैंने ध्यान में रखते हुए ये भारतीय बेंचमार्क तय किए? चार चीजें बहुत अहम हैं, और ये चारों भारत को पश्चिम से अलग बनाती हैं।</p>
+
+<h3>नंबर एक: हमारे देश में Social Security नहीं है</h3>
+
+<p>खासकर Private Employees के लिए। Social Security का मतलब क्या होता है? वो ये कि जब आप काम करना बंद कर देते हैं, तो कुछ देशों में सरकार आपका ख्याल रखती है। वो आपको मुफ्त स्वास्थ्य सेवा देगी, आपके बच्चों को मुफ्त शिक्षा देगी। ये सारी चीजें सरकारी कर्मचारियों के लिए तो होती हैं, लेकिन Private Employees के लिए नहीं हैं। तो Private Employees जब काम करना बंद कर देते हैं, वो अकेले होते हैं और उन्हें खुद की देखभाल खुद करनी पड़ती है। इसलिए अपने Net Worth की जरूरत एक निश्चित उम्र में आपके लिए पश्चिमी मॉडल्स से भी ज्यादा हो जाती है।</p>
+
+<h3>नंबर दो: हमारे Parents का रिटायरमेंट प्लान होते हैं उनके बच्चे</h3>
+
+<p>हमारे ऊपर सिर्फ हमारी जिंदगी, हमारे बच्चों की जिंदगी, और हमारी पत्नी या पति की जिंदगी की जिम्मेदारी नहीं है। माता-पिता की जिम्मेदारी भी है। जो पश्चिम में इतनी नहीं है। वहां के जो Net Worth मॉडल्स होते हैं, उनमें ये शामिल नहीं होता कि आपको 40 साल की उम्र में अपने माता-पिता की भी देखभाल करनी पड़ेगी। जैसे कि मेरे Parents रिटायर्ड हैं। उनके पास कोई बचत नहीं है, कोई रिटायरमेंट कॉर्पस नहीं है। तो मैं उनकी जिंदगी का खर्च उठाता हूं। और ये एक ऐसी चीज है जिसका हिसाब मुझे अपने Net Worth में रखना पड़ता है।</p>
+
+<h3>नंबर तीन: Healthcare की लागत बहुत तेजी से बढ़ रही है</h3>
+
+<p>हमारे देश में Health Care बहुत तेजी से महंगा होता जा रहा है। फिर से, सरकारी कर्मचारियों के लिए स्थिति बहुत अलग है। लेकिन सामान्य वर्ग के Private Employees के लिए ये इसलिए बढ़ रहा है क्योंकि बीमा की पहुंच बढ़ रही है, और जहां-जहां बीमा की पहुंच बढ़ी है, वहां ऐतिहासिक रूप से स्वास्थ्य सेवा की लागत भी बढ़ी है। क्योंकि अस्पताल और बीमा प्रदाता दोनों जानते हैं कि अगर मरीज सीधे भुगतान नहीं कर पा रहा है, तो हम कुछ ज्यादा चार्ज कर सकते हैं, और वो बिल बीमा कंपनी दे देगी।</p>
+
+<p>तो आपको जानकर हैरानी होगी, अगर आप नहीं जानते, कि हमारे देश में सामान्य महंगाई दर करीब 6 से 7 प्रतिशत है। लेकिन Health Care की महंगाई दर पिछले 10 सालों से औसतन करीब 13 प्रतिशत है। तेरह प्रतिशत! और इसका मतलब ये है कि हर 6 साल में औसतन, स्वास्थ्य सेवाओं की कीमत दोगुनी होती जा रही है। ये लागत में बहुत तेज बढ़ोतरी है। अब सोचिए कि जब आप 50 साल के होंगे, 60 साल के होंगे, जब आपको Health Care की सबसे ज्यादा जरूरत होगी, उस समय उन चीजों की कीमत क्या होगी जिनकी आपको जरूरत पड़ेगी? वो पागलों जैसी ऊंची होगी। 13 प्रतिशत की महंगाई शायद 10 प्रतिशत हो जाए, जो फिर भी बहुत है। 8 प्रतिशत हो जाए, जो अभी भी बहुत है। क्या कभी 3 या 4 प्रतिशत होगा? मेरे ख्याल से नहीं।</p>
+
+<h3>नंबर चार: हमारी संपत्ति ज्यादातर Physical है</h3>
+
+<p>और आखिरी चीज जो पश्चिम से बहुत अलग है — हमारी Assets ज्यादातर Physical Assets होती हैं। ज्यादातर Real Estate और सोना। भारत की 88 प्रतिशत संपत्ति Real Estate और सोने में है। Stocks की पहुंच बहुत कम है, Mutual Funds की पहुंच बहुत कम है, Digital Assets की पहुंच बहुत कम है।</p>
+
+<p>तो ये अलग क्यों है? क्योंकि जब कभी भगवान न करे, बुरा वक्त आएगा, तो घर बेचना उतना आसान नहीं होता जितना Stocks बेचना होता है। सोना बेचना या उसे गिरवी रखवाना इतना आसान नहीं होता जितना Mutual Funds बेचना होता है। तो आपके Net Worth की तरलता भी एक मजबूत कारक है। आप जिस घर में रह रहे हैं, उसी को अगर Asset मानेंगे, तो अगर खुदा न खास्ता वो घर बेचना पड़ गया, तो आप कहां जाएंगे? कितनी जल्दी जा पाएंगे? उसे बेचकर कितना पैसा तुरंत ला पाएंगे? ये बहुत महत्वपूर्ण सवाल हैं।</p>
+
+<p>लेकिन अगर वही पैसा आपके Demat Account में Mutual Fund या Stocks के रूप में पड़ा हुआ है, तो आज बेचिए, दो दिन बाद आपके Bank Account में पैसा आ सकता है। यही फर्क है Liquidity का।</p>
+
+<h2>उम्र के हिसाब से Net Worth और वित्तीय बेंचमार्क</h2>
+
+<h3>25 साल की उम्र में</h3>
+
+<p>25 साल की उम्र में मैं आपसे तीन चीजें उम्मीद करूंगा। पहली बात — आपका Net Worth इस उम्र में ज्यादा होना ही नहीं चाहिए। अगर है, तो आप कुछ गलत कर रहे हैं। क्योंकि 25 की उम्र में आपके पास दो सबसे कीमती चीजें होती हैं — समय और ऊर्जा। इस उम्र में आपको अपने आप में, अपनी स्किल्स में, अपनी पढ़ाई में निवेश करना चाहिए।</p>
+
+<p>सोचिए — अगर आप 25 की उम्र में 5,000 रुपए बचाने की कोशिश कर रहे हैं और अपनी ग्रोथ को रोक दिया, तो उन 5,000 रुपए से आप कभी करोड़पति तो नहीं बनेंगे, लेकिन आप कभी ज्यादा पैसे भी नहीं कमा पाएंगे, क्योंकि आपने अपनी स्किल्स में निवेश नहीं किया।</p>
+
+<p>तो 25 की उम्र में आपके लिए बेंचमार्क क्या हैं? किसी भी समय एक महीने की सैलरी आपके बैंक खाते में होनी चाहिए। एक नियमित सैलरी आपके पास आती रहनी चाहिए। आपके पास तीन से छह महीने के खर्च के बराबर Emergency Fund होना चाहिए। आपके पास एक Term Life Insurance होना चाहिए जो आपकी सालाना सैलरी का दस से पंद्रह गुना कवर करता हो। और आपके पास एक Health Cover होना चाहिए, आपकी Corporate Health Insurance के अलावा।</p>
+
+<p>हां, ये भी वो उम्र है जहां आपके पास शायद घर के लोन का कर्ज हो, शादी के लोन का कर्ज हो, शायद आपकी पढ़ाई के लोन का कर्ज हो। और अगर इनमें से कोई भी कर्ज है, तो ये कोई बुरी जगह नहीं है, बशर्ते कि आपके पास एक साल का Invested Asset बन चुका हो।</p>
+
+<h3>35 साल की उम्र में</h3>
+
+<p>इस उम्र तक आते-आते आपको गंभीरता से अपनी रिटायरमेंट के लिए बचत शुरू कर देनी चाहिए। सोचिए — कोई Social Security नहीं है, खुद के खर्चे खुद उठाने पड़ेंगे, माता-पिता की जिम्मेदारी धीरे-धीरे आनी शुरू हो चुकी है, बच्चों की जिम्मेदारी आनी शुरू हो चुकी है। इन सारी चीजों की योजना आप तभी बना पाएंगे जब आपके पास 2 से 3 साल की आय के बराबर Invested Asset होगा — यानी वो राशि जो आपने सालों में निवेश करके बनाई है।</p>
+
+<p>किसी भी समय, कम से कम 6 महीने का Emergency Fund होना चाहिए। एक चालू SIP होनी चाहिए। Credit Card का कोई कर्ज नहीं होना चाहिए। और आपके सिर पर ज्यादा से ज्यादा एक लोन होना चाहिए। बाकी सारे लोन, आदर्श रूप से, इस उम्र तक चुक चुके होने चाहिए।</p>
+
+<h3>40 साल की उम्र में</h3>
+
+<p>40 साल की उम्र में, आपके पास आदर्श रूप से आपकी सालाना आय का 4 से 6 गुना Invested Amount होना चाहिए। आपके पास आदर्श रूप से 9 से 12 महीने का Emergency Fund होना चाहिए — कम से कम 6 महीने का तो बिल्कुल ही। एक चालू SIP चलती रहनी चाहिए। ज्यादा से ज्यादा एक लोन हो सकता है। अपना खुद का Health Cover होना चाहिए। खुद की Life Insurance होनी चाहिए।</p>
+
+<p>ये वो उम्र है जहां आपकी कमाई अपने चरम पर पहुंच रही होती है, और आपको सबसे तेज गति से संपत्ति बनानी चाहिए। 40 के बाद जिम्मेदारियां और बढ़ जाती हैं, और अगर आपने 40 तक एक मजबूत नींव नहीं रखी, तो आगे चलकर मुश्किलें बढ़ सकती हैं।</p>
+
+<h2>अगर इन बेंचमार्क्स से डर लग रहा है, तो तीन बातें आपके पक्ष में काम करती हैं</h2>
+
+<p>अगर आपको इस आकलन से डर लग रहा है, तो मैं आपको 2-3 चीजें बताता हूं जो आपके पक्ष में काम करती हैं।</p>
+
+<h3>पहली बात: भारत में सैलरी Backloaded होती है</h3>
+
+<p>डेटा यह दिखाता है कि भारत में सैलरीज Backloaded होती हैं। इसका मतलब क्या है? शुरू-शुरू में हम ज्यादा पैसे नहीं कमाते हैं। आपके 20 के दशक में, सैलरी और सैलरी की वृद्धि बहुत पतली होती है। लेकिन वो बहुत तेजी से Compound होती है — आपके 30 के दशक में और 40 के दशक में। तो अगर आपको डर लग रहा है कि 35-40 तक मैं इतना Invested Amount कहां से जुटा पाऊंगा, तो आपको इस तथ्य पर भरोसा करना होगा कि जैसे-जैसे आपकी स्किल्स और अनुभव बढ़ेंगे, आपकी आय भी उसी के अनुसार बढ़ेगी।</p>
+
+<h3>दूसरी बात: Compounding का जादू</h3>
+
+<p>ये आपकी गलती नहीं है, लेकिन आपके पास कोई और विकल्प भी नहीं है। आपको मानना पड़ेगा कि Compounding जादुई है। इसका मतलब क्या है? जब आप 25 साल के हैं, तो आपने Compounding को सिर्फ सैद्धांतिक रूप से समझा है, आपने उसका अनुभव नहीं किया है। Compounding का अनुभव करने के लिए सबसे जरूरी चीज होती है — वक्त। 10 से 20 साल।</p>
+
+<p>25 साल की उम्र में आपको वो 10-20 साल मिले नहीं हैं। लेकिन जब आप 40-45 साल के होंगे, आप खुद देख पाएंगे कि 10-15 साल, 20 साल की निरंतरता क्या रंग लाती है। सिर्फ आपके अनुभव में ही नहीं, आपके निवेश में भी। वो 500 रुपए की SIP जो आपने 25 साल की उम्र में शुरू की थी, वो आज जाकर 50,000 रुपए प्रति महीने की होती जा रही है, और आपका पैसा हर साल 12-13 प्रतिशत की दर से Compound हो रहा है। मतलब हर 5-6 साल में आपका पैसा दोगुना हो रहा है।</p>
+
+<p>ये जादू आपको तभी दिखेगा जब आप 35-40 की उम्र तक पहुंचना शुरू करेंगे।</p>
+
+<h3>तीसरी बात: हमारे बच्चे ज्यादा स्वतंत्र होंगे</h3>
+
+<p>हमारे बच्चे बहुत ज्यादा स्वतंत्र होंगे। उन्हें हमारी उतनी जरूरत नहीं होगी जितनी हमें अपने माता-पिता की थी। और आपको उनकी भी उतनी जरूरत नहीं होगी जितनी आपके माता-पिता को आपकी थी। आपको सिर्फ अपने और अपने जीवनसाथी के लिए सोचना होगा। उनकी देखभाल आगे जाकर उनके अपने हाथों में होगी। आपको अपने पोते-पोतियों के लिए जिम्मेदार नहीं होना पड़ेगा या उनकी देखभाल नहीं करनी होगी। और ये आपके लिए एक बड़ी राहत की बात है।</p>
+
+<h2>आखिरी सोच</h2>
+
+<p>अगर आप इन बेंचमार्क्स को ध्यान में रखकर अपनी जिंदगी की योजना बनाएंगे, तो आप एक ऐसी दुनिया में — जो इतनी तेजी से बदल रही है, जहां खर्चे बहुत तेजी से बढ़ रहे हैं — आप स्वयं को सुरक्षित महसूस करेंगे। और अगर आप इन्हें ध्यान में रखकर चलेंगे, तो आपको चिंता करने की जरूरत नहीं है।</p>
+
+<p>और अगर आप अपने करियर में आगे बढ़ने के लिए सीखना चाहते हैं, तो Vaave एक ऐसा प्लेटफॉर्म है जहां आपको ना सिर्फ कोर्सेस मिलेंगे, बल्कि एक Community भी मिलेगी, और Personalized Jobs भी मिलेंगी — आपके स्किल्स और कोर्सेस के अनुसार। सारे कोर्सेस एक ही दाम पर हैं — जो अभी हैं और जो आने वाले हैं। जो आपके Resume और Skills के आधार पर जुड़ेंगे। Vaave Subscription आपके करियर के लिए Personalized Jobs, एक Community, और बहुत कुछ लेकर आता है।</p>
+
+<h2>Citations and References</h2>
+
+<ul>
+<li>All India Debt and Investment Survey, National Statistical Office, Government of India — Asset and Liability data for rural and urban India (2018).</li>
+<li>Periodic Labour Force Survey (PLFS), National Statistical Office — Average monthly salary data for regular male and female salaried workers.</li>
+<li>Income Tax Department, Government of India — Income Tax Return filing data, distribution of annual income slabs.</li>
+<li>Reserve Bank of India (RBI) — Household savings rate trends and credit card outstanding data.</li>
+<li>Insurance Regulatory and Development Authority of India (IRDAI) — Health insurance penetration data and healthcare inflation trends.</li>
+<li>Ministry of Statistics and Programme Implementation (MoSPI) — Consumer Price Index and healthcare inflation data.</li>
+</ul>
+
+<h2>निष्कर्ष: याद रखने योग्य बातें</h2>
+
+<ul>
+<li>- Net Worth वो असली संपत्ति है जो आपकी कुल Assets में से कुल Liabilities घटाने के बाद बचती है।</li>
+<li>- भारत में Net Worth और बचत पर कोई ताजा, विश्वसनीय सरकारी डेटा उपलब्ध नहीं है — उपलब्ध आंकड़े 2018 के हैं।</li>
+<li>- Net Worth को सैलरी या खर्च के गुणकों में मापना सबसे व्यावहारिक तरीका है, क्योंकि यही जीवनशैली को दर्शाता है।</li>
+<li>- 25 की उम्र में Net Worth ज्यादा होना जरूरी नहीं है — स्किल्स और खुद में निवेश ज्यादा महत्वपूर्ण है।</li>
+<li>- 35 की उम्र तक 2-3 साल की आय के बराबर Invested Asset, 6 महीने का Emergency Fund, और कोई Credit Card कर्ज नहीं होना चाहिए।</li>
+<li>- 40 की उम्र तक 4-6 गुना सालाना आय का Invested Amount और 9-12 महीने का Emergency Fund होना चाहिए।</li>
+<li>- भारत में Social Security की कमी, माता-पिता की जिम्मेदारी, 13 प्रतिशत Healthcare Inflation, और Physical Assets की अधिकता नेट वर्थ की जरूरत को पश्चिम से ज्यादा बनाती है।</li>
+<li>- भारत में सैलरीज Backloaded होती हैं — 30 और 40 के दशक में तेजी से बढ़ती हैं, इसलिए शुरुआती डर से घबराना नहीं चाहिए।</li>
+<li>- Compounding का जादू दिखने में 10-20 साल लगते हैं — धैर्य और निरंतरता सबसे बड़ा हथियार है।</li>
+<li>- Credit Card एक स्मार्ट टूल है, लेकिन गलत इस्तेमाल जिंदगी बर्बाद कर सकता है — हमेशा सोच-समझकर यूज करें।</li>
+</ul>
+
+</div>
+<!-- post-navigation:footer:start -->
+<div class="postNavigation"><a class="customLink" href="https://survival8.blogspot.com/2025/05/lessons-in-investing.html#customPostsByAnkurWarikooHeader" target="_blank">See All Articles</a> &nbsp;&nbsp; <a class="customLink" href="https://survival8.blogspot.com/2026/11/30.html" target="_blank" rel="noopener noreferrer">&laquo; Previous</a></div>
+<!-- post-navigation:footer:end -->

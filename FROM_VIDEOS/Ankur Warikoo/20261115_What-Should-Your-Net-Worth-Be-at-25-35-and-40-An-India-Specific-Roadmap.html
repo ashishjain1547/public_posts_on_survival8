@@ -1,0 +1,411 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        .main-inner .column-center-inner .section { margin: 5px; }
+
+        .content-inner { padding: 0; }
+
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+<!-- post-navigation:header:start -->
+<div class="postNavigation"><a class="customLink" href="https://survival8.blogspot.com/2025/05/lessons-in-investing.html#customPostsByAnkurWarikooHeader" target="_blank">See All Articles</a> &nbsp;&nbsp; <a class="customLink" href="https://survival8.blogspot.com/2026/11/the-30-day-experiment-that-could-change.html" target="_blank" rel="noopener noreferrer">&laquo; Previous</a></div>
+<!-- post-navigation:header:end -->
+
+
+
+<div class="customOuterWrapper">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/S60hcIVG-8k" frameborder="0" allowfullscreen></iframe>
+
+<h1>What Should Your Net Worth Be at 25, 35, and 40? An India-Specific Roadmap</h1>
+
+<p>Before we get into the numbers, let me give you a small exercise. It takes about two minutes, and it might just change the way you think about money.</p>
+
+<p>Grab a pen and paper. Or open a notes app on your phone. Now, list down everything you own that can be translated into money. Your mutual funds. Your gold, if you know its current resale value. Your car, if you are willing to sell it. Your house, maybe. Do not go as far as clothes and random household items, but basically anything of real value. These are your assets. Write down the total number.</p>
+
+<p>Now, list down everything you owe to others. The loan you have not finished repaying yet. The credit card balance that is still due. Any money you borrowed from friends. The home loan that is still running, and how much you still owe the bank. These are your liabilities. Write down that total too.</p>
+
+<p>Now subtract the second number from the first. If your total assets are worth, say, ten lakh rupees, and you owe around seven lakh rupees to various people and institutions, then your net worth is three lakh rupees. That is the real value that you own. Everything else is borrowed, leveraged, or already spoken for.</p>
+
+<h2>Why This Net Worth Number Matters</h2>
+
+<p>The reason net worth deserves your attention is simple: it is the most honest snapshot of your financial life. Your salary tells people how much you earn. Your lifestyle tells people how much you spend. But your net worth tells you how much you actually own. It strips away the noise. A person earning fifty thousand rupees a month who has saved nothing for five years has a lower net worth than someone earning thirty thousand who has consistently invested for the same period. The salary number is seductive. The net worth number is real.</p>
+
+<p>So the obvious question follows: at every age, approximately how much net worth should you have? What is the right way to think about it? There are plenty of models out there. But most of them are Western models, built in a different context, for a different economy, with different social structures. So I thought, let me try to localize this. In the Indian environment, at age 25, at age 30, at age 35, at age 40, what should your approximate net worth be? What would that number look like? That is what we are going to figure out.</p>
+
+<h2>The Data Problem: What Do We Actually Know About Indian Wealth?</h2>
+
+<p>Let me start with a slightly disappointing truth. There is no official, verified data that tells us how much an average Indian saves or how much an average Indian owns. The asset side of net worth is largely undocumented at a granular level. We do have the All India Debt and Investment Survey conducted by the National Statistical Office, which tells us that in rural India, average assets are around sixteen lakh rupees, and in urban India, average assets are around twenty-seven lakh rupees. But here is the catch: that data is from June 30, 2018. It is eight years old. We do not know if that number has grown, shrunk, or stagnated. There is no verified government data for 2026 or the years around it.</p>
+
+<p>What we do know is income data, and that is reasonably current. A regular male salaried worker in India earns approximately 24,417 rupees per month. A regular female salaried employee earns approximately 18,350 rupees per month. These are verified government figures. We also know from income tax return data that out of roughly 8.25 crore people who file returns, about 80 percent have an annual salary below ten lakh rupees. Only about 1.4 percent of filers earn above fifty lakh rupees annually.</p>
+
+<p>There is also RBI data that tells us something interesting: average household expenditure in India has been declining over the past few years. People are spending less as a share of income. But at the same time, we are seeing a very dangerous borrowing pattern emerge, especially among Gen Z, especially through credit cards.</p>
+
+<h2>The Credit Card Trap No One Is Talking About Enough</h2>
+
+<p>Credit cards have become a status game. The airport lounge access. The eligibility tag. The feeling of having made it because a bank gave you a metal card. It feels cool. And so there is a blind borrowing wave happening, and I genuinely do not like it.</p>
+
+<p>Here is my honest view: a credit card is an incredibly smart financial instrument if you use it wisely. Used recklessly, it can ruin your life. I have seen this personally in my own family. I watched my father get trapped in credit card debt, and the consequences of that stay with you for years. But if you choose the right credit card and use it with discipline, it can be one of the best tools you ever have. That is actually why I started a small project called Monzi. You answer ten questions in sixty seconds, and it recommends the single best credit card for your specific situation. Not a list of five confusing options. Just one honest recommendation. No phone number collected. No data tracked. No cards pushed at you. No ads. Just an honest assessment. It is at monzi.co if you want to try it.</p>
+
+<p>But credit cards are just one piece of a much larger puzzle. The bigger question remains net worth, and how much you should have at different stages of life.</p>
+
+<h2>Why Indian Benchmarks Cannot Simply Be Imported From the West</h2>
+
+<p>Western financial benchmarks assume a particular kind of life. They assume a particular kind of state support. They assume a particular kind of family structure. India is different in at least four critical ways, and I kept these in mind while building these Indian benchmarks.</p>
+
+<h3>Factor One: There Is No Social Security for Private Employees</h3>
+
+<p>In many Western countries, when you stop working, the government takes care of you. Free healthcare. Free education for your kids. A basic safety net. In India, if you are a government employee, you enjoy several of these protections. But for private employees, there is no such support. When you stop working, you are on your own. This means your need for a personal net worth at any given age is much higher than what Western models would suggest. You are not building a cushion. You are building the entire floor, walls, and roof yourself.</p>
+
+<h3>Factor Two: Your Parents Are Your Responsibility</h3>
+
+<p>In much of the West, parents save for their own retirement. In India, the retirement plan for a large number of parents is their children. You are not just responsible for your own life, your partner's life, and your children's lives. You are also responsible for your parents. My own parents are retired. They do not have savings or a retirement corpus. I fund their life. That is a reality I have to account for, and millions of Indians are in the same position. So when you look at a Western net worth model that says you need X amount by age forty, remember that the model is not accounting for the financial weight of your parents' healthcare, housing, and daily expenses.</p>
+
+<h3>Factor Three: Healthcare Costs Are Exploding</h3>
+
+<p>Healthcare in India is getting more expensive at a terrifying rate. Normal inflation in our country hovers around six to seven percent. Healthcare inflation for the last ten years has been averaging around thirteen percent. That means every six years, on average, healthcare costs double. Think about what that means when you are fifty or sixty years old and you actually need healthcare. The costs will be staggeringly high. Even if healthcare inflation cools down from thirteen percent to ten percent or even eight percent, that is still several times faster than general inflation. Will it ever come down to three or four percent? I do not think so. This is partly because insurance penetration is growing, and where insurance penetration grows, healthcare costs historically rise too. Hospitals and insurers both know that if the patient cannot pay directly, the insurance company will. So prices rise accordingly.</p>
+
+<h3>Factor Four: Indian Wealth Is Stuck in Illiquid Assets</h3>
+
+<p>Roughly 88 percent of India's wealth is held in real estate and gold. Penetration of stocks, mutual funds, and digital assets remains extremely low. Why does this matter? Because when a bad time comes, selling a house is not as easy as selling stocks. Selling gold, or even holding it as collateral, is not as simple as redeeming mutual funds. The liquidity of your net worth is a major factor. If you count the house you live in as an asset, and a crisis hits, where will you go if you sell it? How quickly can you sell it? How much money can you actually extract from it instantly? These are uncomfortable but essential questions. If the same money were sitting in a demat account as mutual funds or stocks, you could sell today and have cash in your bank account within two to three days.</p>
+
+<h2>The Right Way to Measure: Multiples, Not Absolute Numbers</h2>
+
+<p>Now here is the challenge. Assigning a single absolute number as the ideal net worth for every 25-year-old, every 30-year-old, or every 40-year-old is nearly impossible. Because a 25-year-old earning thirty thousand rupees a month and another 25-year-old earning sixty thousand rupees a month cannot and should not have the same net worth. Their lifestyles are different. Their obligations are different. Their cities are different.</p>
+
+<p>This is why good financial benchmarks are expressed in multiples of your salary or multiples of your expenses. These multiples reflect your lifestyle. If you earn thirty thousand rupees, your lifestyle is built around that income. If you earn sixty thousand, your lifestyle scales accordingly. If you spend fifteen thousand rupees every month, your benchmark is based on that. If you spend thirty thousand, it scales up. So all the benchmarks I am going to share are in multiples of your yearly income, your monthly income, or your monthly expenses. That is the only way a single framework can work for everyone.</p>
+
+<h2>The Indian Net Worth Roadmap</h2>
+
+<h3>Age 25: The Foundation Phase</h3>
+
+<p>At 25, let me be honest about what I expect from you. Your net worth should not be large. If it is, something is probably wrong, because that means you did not invest in yourself in your early twenties. At this age, the most important investment you can make is in your skills. Do not chase a few thousand rupees of savings at the cost of a course, a certification, or an experience that could multiply your earning capacity. That said, there are minimums you should start building from this age.</p>
+
+<p>By 25, aim to have approximately one year of your invested assets built. By invested assets, I mean money working for you in mutual funds, stocks, or other growth instruments, not money sitting idle in a savings account. At any given point, one month of your regular salary should be sitting in your bank account as a buffer. You should have between three to six months of expenses saved as your emergency fund. You should have a term life insurance policy that covers ten to fifteen times your annual salary. And you should have a health cover of your own, in addition to whatever corporate health insurance your employer provides.</p>
+
+<p>This is also the age where you may have a home loan, a wedding loan, or an education loan hanging over you. Having any of these is not a bad place to be, as long as you have built that one year of invested assets alongside. Debt is acceptable at 25. Ignorance is not.</p>
+
+<h3>Age 35: The Acceleration Phase</h3>
+
+<p>By 35, you need to get serious about retirement. There is no social security waiting for you. Your own expenses will have to be borne by you alone. Your parents' responsibilities are gradually landing on your shoulders. Your children's responsibilities are beginning as well. You can only plan for all of this if you have built two to three years of invested asset value cumulatively over the years. This is not money you save. This is money that has been systematically invested and is now working for you.</p>
+
+<p>At any point in time at this age, you should have at least six months of expenses as an emergency fund. A running SIP should be active, no matter how small. There should be zero credit card debt. Not a revolving balance. Not a minimum payment habit. Zero. And at most, one loan on your head. All other loans should ideally be cleared by this age. If you have a home loan, that is understandable and acceptable. But a car loan on top of a home loan on top of a personal loan is a warning sign.</p>
+
+<h3>Age 40: The Consolidation Phase</h3>
+
+<p>At 40, you should ideally have between four to six times your yearly income as your invested amount. If you earn twelve lakh rupees a year, your invested corpus should be somewhere between forty-eight lakh and seventy-two lakh rupees. Not your net worth, mind you, but your invested amount. Your emergency fund should be between nine to twelve months of expenses, with six months as the absolute minimum. A running SIP should continue. At most one loan should remain. You should have your own health cover and your own life insurance, independent of what your employer provides.</p>
+
+<p>This is the age where the compounding engine starts becoming visible. If you have been consistent, the numbers stop feeling theoretical and start feeling real.</p>
+
+<h2>Why You Should Not Panic: Three Factors in Your Favor</h2>
+
+<p>If this assessment is scaring you, let me tell you two or three things that work in your favor in the Indian context.</p>
+
+<p>First, data shows that Indian salaries are backloaded. What does that mean? It means that in the early years of your career, your salary and your salary growth are relatively thin. Your twenties do not pay much. But the curve is steep. In your thirties and forties, your income compounds rapidly as your skills, experience, and network mature. So if you look at these benchmarks and wonder how you will ever reach them by 35 or 40, remember that the income you earn at 40 is going to be dramatically different from the income you earned at 25. You have to trust the trajectory.</p>
+
+<p>Second, the magic of compounding. At 25, you have only understood compounding theoretically. You have not experienced it, because experiencing it requires time, and you have not had ten to twenty years yet. But by the time you reach 40 or 45, you will see what ten or fifteen or twenty years of discipline actually produces. That five hundred rupee SIP you started at 25 has now grown into a fifty thousand rupee monthly flow, and your money is compounding at twelve to thirteen percent every year. Your money is doubling every five to six years. That is magic you only witness once you have given it enough time. You have no choice but to believe in it, because there is no other option.</p>
+
+<p>Third, our children are going to be far more independent than we were. They will not need us as much as we needed our parents. And by extension, you will not need them as much as your parents needed you. You only have to take care of yourself and your life partner. You will not have to worry about your parents the way your parents worried about theirs, and your children will not worry about you the way you worry about your parents. The burden of expectation is gradually reducing across generations. That shifts the calculation in your favor.</p>
+
+<h2>References and Citations</h2>
+
+<p>The following data points and sources inform the benchmarks discussed in this article:</p>
+
+<ul>
+<li>All India Debt and Investment Survey (AIDIS), National Statistical Office (NSO), Government of India, data as of June 30, 2018: average rural assets approximately 16 lakh rupees, average urban assets approximately 27 lakh rupees.</li>
+<li>Periodic Labour Force Survey (PLFS), Government of India: regular male salaried worker average monthly earnings approximately 24,417 rupees; regular female salaried employee average monthly earnings approximately 18,350 rupees.</li>
+<li>Income Tax Department, Government of India: approximately 8.25 crore income tax return filers, of which approximately 80 percent report annual salary below 10 lakh rupees, and approximately 1.4 percent report salary above 50 lakh rupees.</li>
+<li>Reserve Bank of India (RBI) household finance and expenditure data: declining average household expenditure trends over recent years.</li>
+<li>RBI and industry estimates: healthcare inflation in India averaging approximately 13 percent over the last decade, compared to general CPI inflation of approximately 6 to 7 percent.</li>
+<li>Household wealth composition estimates: approximately 88 percent of Indian household wealth held in real estate and gold, with limited penetration of equities, mutual funds, and digital assets.</li>
+</ul>
+
+<h2>Conclusion</h2>
+
+<ul>
+<li>Net worth is the single most honest reflection of your financial life: subtract your total liabilities from your total assets to find what you truly own.</li>
+<li>India lacks current official data on average savings and asset ownership; the most recent comprehensive survey is from 2018, making age-wise benchmarks a matter of reasoned estimation rather than precise government statistics.</li>
+<li>Indian net worth benchmarks must be rooted in Indian realities: no social security for private employees, financial responsibility for aging parents, healthcare inflation at roughly twice the general inflation rate, and a heavy concentration of wealth in illiquid physical assets.</li>
+<li>Absolute net worth targets are misleading; the correct approach is to use multiples of your annual income, monthly income, and monthly expenses to account for differing lifestyles.</li>
+<li>At age 25, focus on building skills and a modest foundation: one year of invested assets, one month of salary as a bank buffer, three to six months of expenses as an emergency fund, term life insurance of ten to fifteen times annual salary, and personal health cover.</li>
+<li>At age 35, target two to three years of invested asset value, at least six months of emergency fund, a running SIP, zero credit card debt, and no more than one outstanding loan.</li>
+<li>At age 40, target four to six times your yearly income as invested amount, nine to twelve months of emergency fund, a running SIP, maximum one loan, and independent health and life insurance coverage.</li>
+<li>Credit card debt is a growing crisis among younger Indians, and while credit cards can be powerful tools when used wisely, reckless use can be financially devastating.</li>
+<li>Three factors work in your favor over time: backloaded Indian salary growth, the compounding of long-term investments, and increasing generational independence that reduces future financial obligations.</li>
+<li>Planning your financial life around these India-specific benchmarks is not about perfection; it is about building a system that keeps you from falling behind in a country where expenses are rising faster than incomes for most people.</li>
+</ul>
+
+</div>
+<!-- post-navigation:footer:start -->
+<div class="postNavigation"><a class="customLink" href="https://survival8.blogspot.com/2025/05/lessons-in-investing.html#customPostsByAnkurWarikooHeader" target="_blank">See All Articles</a> &nbsp;&nbsp; <a class="customLink" href="https://survival8.blogspot.com/2026/11/the-30-day-experiment-that-could-change.html" target="_blank" rel="noopener noreferrer">&laquo; Previous</a></div>
+<!-- post-navigation:footer:end -->
