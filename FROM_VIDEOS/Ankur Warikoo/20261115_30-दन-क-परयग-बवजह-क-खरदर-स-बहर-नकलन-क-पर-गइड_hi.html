@@ -1,0 +1,393 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        .main-inner .column-center-inner .section { margin: 5px; }
+
+        .content-inner { padding: 0; }
+
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+<!-- post-navigation:header:start -->
+<div class="postNavigation"><a class="customLink" href="https://survival8.blogspot.com/2025/05/lessons-in-investing.html#customPostsByAnkurWarikooHeader" target="_blank">See All Articles</a> &nbsp;&nbsp; <a class="customLink" href="https://survival8.blogspot.com/2026/11/1000.html" target="_blank" rel="noopener noreferrer">&laquo; Previous</a></div>
+<!-- post-navigation:header:end -->
+
+
+
+<div class="customOuterWrapper">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/E9-lFXMmAKA" frameborder="0" allowfullscreen></iframe>
+<h1>30 दिन का प्रयोग: बेवजह की खरीदारी से बाहर निकलने की पूरी गाइड</h1>
+
+<p>कल्पना कीजिए कि आप दूध खरीदने के लिए अपना कोई App खोलते हैं। Quick Commerce का कोई App। और पता चला कि दूध खरीदते-खरीदते आपने बटर भी खरीद लिया, कुछ बिस्किट्स भी खरीद लिए, चिप्स भी ले लिए, कोई आइसक्रीम की लॉलीपॉप भी ले ली, इधर-उधर कुछ चुइंगम भी ले ली, और ये जो नया प्रोटीन शेक निकला था वो भी ले लिया। अब ऐसा नहीं है कि आप गरीब हैं या आप ये सारी चीजें अफोर्ड नहीं कर सकते। सवाल ये है कि खरीदना क्या था, और खरीद क्या बैठे? इस सवाल का जवाब ढूंढने के लिए एक बहुत ही दिलचस्प प्रयोग रचा गया है। अगर हम अगले 30 दिनों तक उन चीजों को खरीदने के लिए कोई रुकावट डाल दें, जो हमने प्लान नहीं की थीं, तो क्या होगा? क्या होगा कि आप उन चीजों को खरीदेंगे ही नहीं, या फिर ऐसा होगा कि आप उन्हें उस समय नहीं बल्कि कभी बाद में खरीद लेंगे? और ये सब आपके बारे में, आपकी खरीदारी की आदतों के बारे में क्या बताता है?</p>
+
+<h2>प्राइमरी बनाम सेकेंडरी खरीदारी को समझें</h2>
+
+<p>इस प्रयोग को समझने से पहले हमें दो बुनियादी चीजों को समझना होगा। पहली चीज है <strong>Primary Purchase</strong> यानी प्राइमरी खरीदारी। ये वो खरीदारी है जिसके लिए आपने सोच-समझकर कदम बढ़ाया, App खोला, दुकान में गए, या क्लिक किया। जैसे दूध खरीदने के लिए App खोलना एक प्राइमरी पर्चेज का इरादा था। दूसरी चीज है <strong>Secondary Purchase</strong> यानी सेकेंडरी खरीदारी। ये वो चीजें हैं जो आपने बीच में ही बहककर खरीद लीं। जैसे दूध के साथ बटर, बिस्किट्स, चिप्स, आइसक्रीम, चुइंगम और प्रोटीन शेक। ये सब सेकेंडरी पर्चेज थे।</p>
+
+<p>अब सवाल ये उठता है कि हम ऐसा क्यों करते हैं? क्यों एक चीज खरीदने जाते हैं और तीन चीजें लेकर लौटते हैं? इसका जवाब ढूंढने के लिए हमें पहले अपनी खर्च करने की आदतों को समझना होगा। और इसके लिए एक बहुत ही व्यवस्थित तरीका अपनाना होगा।</p>
+
+<h2>क्रेडिट कार्ड और खर्च की समझ</h2>
+
+<p>शुरू करने से पहले, बहुत से लोगों को यह लगता है कि क्रेडिट कार्ड पर खर्च करना एक पेमेंट कैटेगरी है। लेकिन ऐसा नहीं है। क्रेडिट कार्ड पर भी आप कुछ खरीद रहे हैं - ग्रॉसरी खरीद रहे हैं, मूवी की टिकट खरीद रहे हैं, फोन खरीद रहे हैं, पेट्रोल का बिल भर रहे हैं। कुछ न कुछ तो हो ही रहा है। तो ये बहुत जरूरी है कि आपका क्रेडिट कार्ड आपको साफ-साफ बताए कि आपके खर्चे किस तरह से हो रहे हैं। अगर आपका क्रेडिट कार्ड का बिल बस आपके हाथ में थमा देता है और कहता है कि मिनिमम अमाउंट पे कर दो, तो वो आपके लिए गलत क्रेडिट कार्ड है।</p>
+
+<p>अब सवाल ये है कि सही क्रेडिट कार्ड आपके लिए कौन सा है? इस देश में 400 से ज्यादा क्रेडिट कार्ड मौजूद हैं। इस सवाल का जवाब देने के लिए <strong>monzi.co</strong> को लॉन्च किया गया है। सिर्फ 60 सेकंड के अंदर, बिना आपका कोई personal data लिए, बिना आपको spam किए, बिना कोई ad दिखाए, आपको कुछ ही सवालों में ये बता दिया जाएगा कि आपका सबसे बेस्ट क्रेडिट कार्ड कौन सा है। आप दूसरे क्रेडिट कार्ड्स को evaluate करके compare भी कर सकते हैं। सबसे अच्छी बात ये है कि इस प्लेटफॉर्म से कोई पैसा नहीं कमाया जा रहा है। ये सिर्फ और सिर्फ आपकी मदद करने के लिए बनाया गया है।</p>
+
+<h2>कसूरवार कौन है? एप्स या हम खुद?</h2>
+
+<p>जब लोगों से पूछा गया कि क्या उन्हें लगता है कि महीने में जरूरत से ज्यादा खर्चा हो जाता है, तो ज्यादातर लोगों ने हां कहा। और जब पूछा गया कि इसके लिए कौन कसूरवार है, तो जवाब मिला - फोन, Apps, और notification। क्योंकि हर समय notification आते रहते हैं, सेल पे सेल आती रहती हैं, discount दिखता रहता है, कभी कोई coupon, कभी कुछ और। लेकिन यहां एक बहुत जरूरी बात समझनी होगी।</p>
+
+<p>हम этот video में फोन को या Apps को दोष नहीं देंगे। वो अपना काम कर रहे हैं। यही वजह है कि मैं कभी Instagram को blame नहीं करूंगा या YouTube को blame नहीं करूंगा कि आपको घटिया content दिखता है। मैं ये नहीं कह रहा कि आप घटिया हैं इसलिए आपको घटिया content दिखता है। मैं ये कह रहा हूं कि algorithm वही दिखाता है जो इंसान देखना चाहता है। अगर आप motivational content देखना चाहते हैं तो वही दिखेगा। बढ़िया high quality content देखना चाहते हैं तो वही दिखेगा। Personal finance सीखना चाहते हैं तो वही दिखेगा। Random बेकार content देखना चाहते हैं तो वो भी दिखेगा। दुनिया में content की कमी नहीं है।</p>
+
+<p>जिम्मेदारी से शुरुआत करना बहुत जरूरी है अगर हमें पूरी यात्रा पूरी करनी है। अगर आप वजन घटाना चाहते हैं तो सबसे पहले अपना वजन नापना पड़ेगा। तभी पता चलेगा कि अभी कितने किलो हैं और कितने तक पहुंचना है। ये अंतर ही आपकी यात्रा की दिशा तय करेगा। ठीक वैसे ही, अगर आप अपनी खरीदारी की आदतों को सुधारना चाहते हैं, तो सबसे पहले आपको ये पता होना चाहिए कि अभी आपकी स्थिति क्या है।</p>
+
+<h2>30 दिन का प्रयोग: तीन चरणों में</h2>
+
+<h3>Step 1: पिछले 30 दिनों का बैंक स्टेटमेंट देखें</h3>
+
+<p>इस प्रयोग का पहला चरण है अपना पिछले तीस दिनों का बैंक स्टेटमेंट download करना। फिर हर एक पेमेंट को ध्यान से चेक करना है और उसे categorize करना है। खुद से पूछना है - क्या ये मेरी प्राइमरी पेमेंट थी? मतलब इसी चीज को खरीदने के लिए मैंने हाथ बढ़ाया था, क्लिक किया था, बाहर निकला था? या फिर ये कोई अचानक से हो गई खरीदारी थी? जैसे रात को भूख लग रही थी और कुछ order कर दिया।</p>
+
+<p>ये बिल्कुल possible है कि आपको सारी चीजें याद नहीं रहेंगी। ये perfectly fine है। बिल्कुल accurate decimal point तक होना जरूरी नहीं है। लेकिन मोटा-मोटा एक हिसाब बनाना जरूरी है। आपको पता चलेगा कि कुछ चीजें हैं जो जरूरी हैं - बिजली, पानी, rent वगैरह। उनको ignore कर दीजिए। बाकी जो हमने अपनी ख्वाहिशों पर या randomly पैसा खर्च किया है, उसमें से कितना प्राइमरी पर्चेज था - मतलब इस चीज को खरीदने के लिए हम निकले थे - और कितना सेकेंडरी पर्चेज निकला जिसमें हम बहक गए। इससे एक ratio निकालिए। मान लीजिए आपका ratio 60:40 है - 60% प्राइमरी और 40% सेकेंडरी।</p>
+
+<h3>Step 2: बिना बदलाव के 7 दिन ट्रैक करें</h3>
+
+<p>दूसरा चरण है अगले 7 दिनों तक अपना खर्चा track करना। लेकिन ध्यान रहे - इस दौरान कुछ भी बदलने की कोशिश मत कीजिए। Mindful मत रहिए कि अब मुझे सेकेंडरी पर्चेज नहीं करना है, अब मुझे बचना है। ऐसा बिल्कुल नहीं। जैसे आप जीते हैं, जो आपकी personality है, जो आपका वजूद है, जो आपकी फितरत है, please उसे बनाए रखिए। क्योंकि ये important है कि बदलाव किस state से हो रहा है। आप जैसे हैं वैसे ही रहिए। जो आप बदलेंगे, उससे खुद को compare करेंगे।</p>
+
+<p>तो 7 दिन तक जैसे भी आप पैसे खर्च कर रहे हैं, उसको record करते रहिए। और फिर इस 7 दिन के analysis को original 30 day analysis से compare कीजिए। मान लीजिए पहले 60% प्राइमरी था और 40% सेकेंडरी था। अब अगले 7 दिनों में 70% प्राइमरी निकला और 30% सेकेंडरी निकला। तो perfectly fine! हमें अब ballpark पता चल गया कि मोटा-मोटा 60-70% हमारा main purchase होता है और 30-40% में हम कहीं बह जाते हैं।</p>
+
+<h3>Step 3: एक रुकावट डालें</h3>
+
+<p>अब आता है तीसरा और सबसे महत्वपूर्ण चरण। ये step मैं आपको नहीं बताऊंगा। ये आपको खुद अपने लिए चुनना पड़ेगा। आपको सोचना होगा कि आप अपनी secondary खरीदारी को कम करने के लिए कौन सा एक कदम उठा सकते हैं। जहां-जहां आप बहके थे, जहां आपको पता था कि ये लेना नहीं है लेकिन पता नहीं क्यों ले बैठे, उसको रोकने के लिए एक सिर्फ एक कदम उठाना है।</p>
+
+<p>कुछ options हैं। जैसे सारे Apps के notifications बंद कर दीजिए। अगर बहुत serious condition है तो Apps से logout कर लीजिए। अगर और भी serious condition है तो App ही delete कर दीजिए। बहुत सारे options हैं जो आपकी जिंदगी में friction पैदा करेंगे, कुछ रुकावट लाएंगे, ताकि secondary purchases कम हो जाएं। ये तीन steps ले लिए। अब जहां से actual journey शुरू होगी।</p>
+
+<h2>असली सफर अब शुरू होता है</h2>
+
+<p>अब ऐसा नहीं है कि steps लेने से सारी ख्वाहिशें मर जाएंगी या सारी conditions जो secondary purchase के लिए उत्सुकता जगाती थीं वो हट जाएंगी। नहीं, सब रहेंगी। अब अगली बार जब आपका मन किसी secondary purchase की तरफ थोड़ा सा भी आकर्षित होगा, जैसे आप कुछ order कर रहे हैं और दिखता है कि कुछ और भी add to cart कर लो तो delivery free मिल जाएगी, या 50% off पर कुछ मिल रहा है, या कोई offer है - whatever it may be - लोग तो लगे रहेंगे। लेकिन जैसा हमने शुरुआत में कहा, हम फोन को Apps को blame नहीं करेंगे। खुद का decision हम ले रहे हैं। खुद से पूछिए - ये जो एक तरीके का seduction है, एक तरीके का लालच है कि ले लेते हैं, सोचिए कितना मजा आएगा - क्या वो सच में कम हुआ है या नहीं।</p>
+
+<p>For example, आपने notifications बंद कर दिए। लेकिन आप हर रोज वो App खुद ही खोलकर browse कर लेते हैं। दिन के अंत में थोड़ी सी window shopping कर लेते हैं, देखते हैं कि latest कौन से gadgets निकले, कौन से products launch हुए। तो आप कर रहे हैं कुछ। कुछ दिख गया, add to cart हो गया, फिर उस पर offer आ गया, बहक गए, खरीद लिया। दूसरी तरफ, अगर आप notification बंद कर देते हैं और आपको relief होता है कि दो दिन तक मैंने वो App check भी नहीं किया। पहले हर रोज notification आता था कि आपका iPhone 18 cart में waiting है, तभी मैं वहां जाता था। अब क्योंकि notification आता ही नहीं है, दिमाग में आता ही नहीं है। जिंदगी बाकी चीजों में बदल गई, आसान हो गई। आपको answer मिल जाएगा और आपको उस answer के प्रति ईमानदार रहना होगा।</p>
+
+<h2>7 दिन बाद खुद से ईमानदार सवाल पूछें</h2>
+
+<p>इस बदलाव को करीब 7 दिन तक test करना है, analyze करना है, खुद से झूठ नहीं बोलना है। और 7 दिन बाद खुद से एक ईमानदार सवाल पूछना है। सवाल नंबर एक - क्या उस एक बदलाव से कुछ फर्क पड़ा या नहीं? अगर पड़ा तो बहुत बढ़िया, उसे जारी रखिए। अगर नहीं पड़ा तो पूछिए कि फिर हमने वो बदलाव चुना ही क्यों था? हो सकता है आपने इसलिए चुना क्योंकि आपको लगता था कि उससे कुछ खास होने वाला नहीं है। या फिर हो सकता है कि आपको लगता था बहुत कुछ होने वाला है लेकिन असली problem कहीं और है। तो फिर एक और condition डालिए, जहां आपको लगता है कि सच में impact आएगा।</p>
+
+<h2>क्या आपने फैसला टाला या मना किया?</h2>
+
+<p>इस पूरी यात्रा में एक बहुत महत्वपूर्ण सवाल ये है - जहां-जहां भी मैं बहका, जहां भी मेरी थोड़ी सी इच्छा हुई कि अरे खरीद लेते हैं, लेने तो वो आए थे लेकिन ये भी देख लेते हैं - क्या मैंने उस फैसले को postpone किया या refuse किया? क्या मैंने वो चीज तीन दिन बाद, चार दिन बाद खरीद ही ली, उसको primary बुलाकर? क्योंकि मेरे दिमाग में उसका इतना रुतबा बन गया था कि अब तो ये चीज primary बन चुकी है, अब मुझे इसे खरीदना ही है। या फिर आपने वो चीज अपनी जिंदगी से drop ही कर दी, ये realize करते हुए कि आपको शायद उसकी जरूरत ही नहीं थी?</p>
+
+<p>ये बहुत गहरी बात है। क्योंकि जब भी आप एक चीज खरीदने जाते हैं और आपको एक दूसरी चीज दिख जाती है, और वो चीज आपको इतनी अच्छी लगती है कि अगर आप उस समय नहीं भी खरीदते, तो आप बाद में उस चीज को खरीद लेते हैं। क्यों? क्योंकि आप उसको primary में shift कर देते हैं। और अपने आपको convince कर देते हैं कि आपकी जिंदगी उस चीज के बिना incomplete है। आपका दिमाग आप पर हावी हो चुका होता है। वो मनगढ़ंत कहानियां बना रहा होता है आपको ये बताने के लिए कि इस चीज के बिना आपकी जिंदगी अधूरी है, आपके पास वो status नहीं है, वो खुशी नहीं है, वो FOMO है, हजार और चीजें हैं। और वो कहानियां आपको इतनी जकड़ के रखती हैं कि आप मना नहीं कर पाते।</p>
+
+<h2>तीन जरूरी सवाल</h2>
+
+<p>30 दिन की इस पूरी यात्रा के बाद, अपनी bank statement के साथ बैठिए, और खुद से कुछ सवाल पूछिए।</p>
+
+<p><strong>पहला सवाल:</strong> क्या मैंने कोई ऐसी चीज खुद को खरीदने से रोकी, जो बाद में पता चला कि जिंदगी में जरूरी नहीं थी? जवाब शायद हां होगा। और ऐसे बहुत सारे हां आप जीतेंगे। 70-30 ratio उतना जरूरी नहीं है। जरूरी ये है कि आपने actually realize किया कि इस चीज की आपको वाकई में जरूरत नहीं थी और आपने खुद को उसे खरीदने से रोका।</p>
+
+<p><strong>दूसरा सवाल:</strong> क्या मैंने ऐसी चीज खुद को खरीदने से रोकी, जो बाद में लगा कि यार खरीद लेना चाहिए था? थोड़ा सा दुख हो रहा है कि नहीं खरीदी। क्योंकि आप वो जिंदगी भी नहीं जीना चाहते कि हर चीज में बचत करते रहें और कुछ enjoy ही न करें। मैं नहीं चाहता कि कोई खडूस अंकल बन जाए जो हर चीज पर बोले कि यार जिंदगी में बस बचत करो, future के लिए plan करते रहो, अभी कुछ enjoy मत करो, कुछ मत खरीदो, साधु-संत बन जाओ। नहीं! आपको enjoy करना चाहिए। हम इतनी मेहनत से, इतनी मुश्किल से काम करते हैं, तो जरूर enjoy करना चाहिए। तो अगर कभी ऐसा regret हो कि यार ले लेना चाहिए था, तो ले लीजिए दोस्त। दिल मार के नहीं, खोल के अपनी जिंदगी जीइए। जहां आप मन मार के अपने लिए पैसे बचा रहे हैं, उस पैसे का करेंगे क्या? आचारी डालेंगे?</p>
+
+<p><strong>तीसरा सवाल:</strong> कौन सी चीजें हैं जो मैंने नहीं खरीदीं और मुझे बिल्कुल भी अफसोस नहीं है? ये सबसे ज्यादा आत्म-ज्ञान देने वाला सवाल है। इससे आपको पता चलता है कि किन-किन चीजों पर आपको अफसोस नहीं करना चाहिए। ये एक ऐसी जीवन-चर्या है जो जिंदगी में बहुत काम आती है।</p>
+
+<h2>अमीरी और गरीबी के बीच का फासला</h2>
+
+<p>इस प्रयोग के जरिए आपको पता चलेगा कि आप किन चीजों पर सच में पैसे खर्च करना चाहते हैं और किन पर नहीं। जैसे कई लोग किताबों पर बहुत पैसे खर्च करते हैं, experiences पर बहुत पैसे खर्च करते हैं, अच्छे खाने पर बहुत पैसे खर्च करते हैं। वहीं बचपन में जो चीजें बहुत अच्छी लगती थीं - लंबी गाड़ी, बहुत सारे घर, महंगे फोन, ब्रांडेड कपड़े, जूते - अब उनकी जरूरत बिल्कुल महसूस नहीं होती। कभी भी ऐसा नहीं होता कि mall में जा रहे हैं और दिमाग भटक जाए कि ये जूते खरीद लेते हैं, ये फोन खरीद लेते हैं। नहीं। आप अपने पैसे में बड़ी सूझ-बूझ से खर्च करना शुरू करते हैं। उसको वाकई में अपनी खुशी के लिए खर्च करते हैं। आप पैसे इसलिए खर्च नहीं करते कि दूसरों को दिखा सकें कि मैं कितना अमीर हूं, कितना successful हूं। आप सिर्फ इसलिए खर्च करते हैं क्योंकि आपको पता है कि इससे आपको खुशी मिलेगी और आप उसे enjoy करेंगे।</p>
+
+<p>यही वो मुकाम है जहां हर किसी को पहुंचना चाहिए। क्योंकि जब आप वहां पहुंच जाते हैं, तो बड़ी बाजीगरी होती है। अक्सर कहा जाता है कि गरीबी और अमीरी में बहुत बड़ा फासला है। मैं चाहूंगा कि हर कोई wealthy महसूस करे और जाने कि पैसा होने का मतलब क्या होता है। कई लोगों ने गरीबी देखी है - उस हद तक जहां जिंदगी मुश्किल थी। और फिर अमीरी देखी है - और पता चलता है कि कितना बड़ा अंतर है। जिंदगी में खुशियां ज्यादा हैं, सेहत ज्यादा है, रिश्ते ज्यादा हैं, सब कुछ ज्यादा है - अगर आपके पास पैसा है। वो इंसान जो कहता है कि पैसा आपको खुशी नहीं दिला सकता, वो गलत कहता है। दावे के साथ कहता हूं - आपकी जिंदगी बेहतर बनती है अगर आपके पास पैसा आता है, 100 फीसदी।</p>
+
+<p>लेकिन अमीरी और और अमीरी में उतना बड़ा अंतर नहीं है। तो आपको उस point तक पहुंचना है जहां आप अमीर बनें, आपके पास enough पैसा हो कि आप जानते हों कि किस पर खर्च करना है, किस पर नहीं, और आपको पता हो कि जो पैसा आपके पास है वो उस जिंदगी के लिए काफी है। वहां से आपकी incredible journey शुरू हो जाती है। ये video एक छोटा सा experiment था जो आपको उस दिशा में आगे बढ़ाएगा।</p>
+
+<h2>निष्कर्ष</h2>
+
+<p>इस पूरे 30 दिन के प्रयोग से हमने जो सीखा, उसे संक्षेप में समझते हैं:</p>
+
+<p>- प्राइमरी और सेकेंडरी खरीदारी के बीच का फर्क समझना ही इस यात्रा की शुरुआत है।</p>
+<p>- पिछले 30 दिनों का बैंक स्टेटमेंट देखकर अपना खर्च पैटर्न समझें और ratio निकालें।</p>
+<p>- 7 दिनों तक बिना किसी बदलाव के अपनी खरीदारी को track करें और original ratio से compare करें।</p>
+<p>- अपनी secondary खरीदारी को कम करने के लिए सिर्फ एक रुकावट चुनें - जैसे notifications बंद करना, logout करना, या App delete करना।</p>
+<p>- 7 दिनों बाद खुद से ईमानदारी से पूछें कि क्या चुना हुआ बदलाव काम कर रहा है या नहीं, और जरूरत पड़े तो दूसरा बदलाव चुनें।</p>
+<p>- ये समझें कि क्या आप किसी purchase को postpone कर रहे हैं या refuse - दोनों में बहुत बड़ा अंतर है।</p>
+<p>- तीन सवालों के जवाब खोजें: क्या मैंने बेकार चीज खुद को रोकी? क्या मैंने जरूरी चीज गलती से छोड़ दी? क्या मैंने ऐसी चीजें छोड़ीं जिनका कोई अफसोस नहीं?</p>
+<p>- पैसा खुशी लाता है, लेकिन सिर्फ उन चीजों पर खर्च करने से जो सच में मायने रखती हैं - दिखावे के लिए खर्च करना बंद करें।</p>
+<p>- गरीबी और अमीरी में बहुत बड़ा फासला है, लेकिन अमीरी और और अमीरी में उतना नहीं - सही balance ढूंढना ही असली wealth है।</p>
+<p>- सबसे बड़ी जीत ये है कि आप जान जाएं कि आपके पास enough है और उसी में खुश रहना सीख लें।</p>
+
+<h2>संदर्भ और उद्धरण</h2>
+
+<p>- यह लेख Ankur Warikoo के 30-दिवसीय खरीदारी प्रयोग पर आधारित है, जो personal finance और mindful spending के विषय में उनकी original research और content series का हिस्सा है।</p>
+<p>- Credit card comparison के लिए बताया गया प्लेटफॉर्म: monzi.co - यह एक free, no-ads, no-spam टूल है जो 60 सेकंड में बेस्ट क्रेडिट कार्ड चुनने में मदद करता है।</p>
+<p>- Webveda subscription - 1,999 रुपये प्रति वर्ष की दर पर सभी courses, exclusive community, और personalized jobs तक पहुंच प्रदान करता है। यह career development के लिए एक smart investment है।</p>
+<p>- Primary Purchase और Secondary Purchase की अवधारणा behavioral economics और consumer psychology के सिद्धांतों पर आधारित है, जिसमें impulse buying और friction के प्रभाव को रेखांकित किया गया है।</p>
+<p>- FOMO यानी Fear Of Missing Out एक मनोवैज्ञानिक स्थिति है जो online shopping और notification-driven प्रोमोशन से और भी प्रबल हो जाती है।</p>
+
+</div>
+<!-- post-navigation:footer:start -->
+<div class="postNavigation"><a class="customLink" href="https://survival8.blogspot.com/2025/05/lessons-in-investing.html#customPostsByAnkurWarikooHeader" target="_blank">See All Articles</a> &nbsp;&nbsp; <a class="customLink" href="https://survival8.blogspot.com/2026/11/1000.html" target="_blank" rel="noopener noreferrer">&laquo; Previous</a></div>
+<!-- post-navigation:footer:end -->

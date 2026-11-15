@@ -1,0 +1,404 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        .main-inner .column-center-inner .section { margin: 5px; }
+
+        .content-inner { padding: 0; }
+
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+<!-- post-navigation:header:start -->
+<div class="postNavigation"><a class="customLink" href="https://survival8.blogspot.com/2025/05/lessons-in-investing.html#customPostsByAnkurWarikooHeader" target="_blank">See All Articles</a> &nbsp;&nbsp; <a class="customLink" href="https://survival8.blogspot.com/2026/11/from-debt-trap-to-financial-freedom.html" target="_blank" rel="noopener noreferrer">&laquo; Previous</a> &nbsp;&nbsp; <a class="customLink" href="https://survival8.blogspot.com/2026/11/the-30-day-experiment-that-could-change.html" target="_blank" rel="noopener noreferrer">Next &raquo;</a></div>
+<!-- post-navigation:header:end -->
+
+
+
+<div class="customOuterWrapper">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/f5cUWWoIjjs" frameborder="0" allowfullscreen></iframe>
+<h1>Can You Spend 1,000 Rupees in a Day Without Making a Billionaire Richer?</h1>
+
+<p>Let me offer you a small game. It is not a trick, but it may make you slightly uncomfortable. The next time you are having a normal day, whatever you are doing, imagine this: you are working, studying, relaxing, running a startup, freelancing, or simply chilling. Now I hand you one thousand rupees. The only job is to spend that money on your regular needs. No big ambition, no land, no property, no investments. Just basic things such as a phone recharge, groceries, food, travel, or a little entertainment.</p>
+
+<p>But there is one condition. You cannot spend this one thousand rupees on any business in which an Indian billionaire has ownership. Not Mukesh Ambani, not Sunil Mittal, not Radhakishan Damani, not any other billionaire promoter family in this country. You cannot buy from any business where a billionaire owns a meaningful stake or controls the company. The moment someone says billionaire, most of us think of huge industrial empires. But here is the strange part: this simple rule turns everyday life into a puzzle. The question is no longer about what you want to buy. The question becomes whether you can buy anything at all.</p>
+
+<p>Before we start, I should make the rules clear. First, this is a ceiling, not a compulsion. You do not have to spend the full one thousand rupees. You can spend less if you want. The point is to try to live a normal day under this constraint and see where your money actually goes. Second, I am setting this thought experiment in Delhi because every city has slightly different pricing, brands, and local alternatives. If you live in Mumbai, Chennai, Kolkata, or a smaller town, your list may look different, but the underlying pattern will mostly remain the same.</p>
+
+<h2>The Morning Test: Biscuits and Milk</h2>
+
+<p>Most Indian mornings begin with tea, biscuits, milk, or some kind of breakfast. So let us start there. You want biscuits. The first instinct is to reach for a familiar packet. The premium biscuit brands are owned by wealthy business families. The budget biscuit brands are also owned by wealthy business families. You think you are saving money by buying a cheaper brand, but the ownership condition does not care about price. It only cares about who is on the other side of the transaction.</p>
+
+<p>Then you remember that Amul makes biscuits. This surprises many people because we tend to think of Amul only as a milk and butter brand. But Amul does have a biscuit range. The good thing is that Amul is a cooperative, not a private billionaire family. The structure of Amul is different. It is owned by millions of dairy farmers through the Gujarat Cooperative Milk Marketing Federation. So Amul biscuits pass the test.</p>
+
+<p>Now you need milk. Amul milk seems safe because the brand is cooperative. But here the thought experiment becomes tricky. If you buy Amul milk in a Tetra Pak carton, who makes the packaging? Tetra Pak is owned by Tetra Laval, a privately owned global group. The milk inside may be from a cooperative, but the packaging belongs to a private business that is certainly not a small local player. If you are extremely strict, the Tetra Pak carton violates the spirit of the rule because your money is also paying for packaging controlled by a massive private group.</p>
+
+<p>The solution takes you back to an older India. You go to a Mother Dairy booth, carry your own steel canister or a reusable container, and buy milk from a machine. I remember doing this in childhood. You would stand in line with your container, drop coins into the booth, and milk would pour out. There was no plastic pouch, no Tetra Pak, no retail packaging. Mother Dairy is under the National Dairy Development Board, so it is not owned by an individual billionaire family. Even if you buy packaged Mother Dairy milk, the core ownership is not billionaire-linked in the same way as many private dairy or consumer companies.</p>
+
+<p>So breakfast is sorted out, but only after you have changed your normal habits. You are no longer picking up a packet of biscuits from a supermarket shelf. You are actively seeking out a cooperative brand. You are no longer buying milk in an easy carton. You are standing at a public dairy booth with a steel canister. This is a small inconvenience, and the day has just begun.</p>
+
+<h2>Heading to Work: The Commute</h2>
+
+<p>Now you have to travel. You can choose a DTC bus. The Delhi Transport Corporation is a government body, so the core service is not owned by a billionaire. But what about the bus itself? The bus may be manufactured by Tata or Mahindra. Both are large business groups with billionaire promoter families. The tyres may be JK Tyre or MRF, and those companies also have wealthy owners. If you start examining every nut, bolt, and component, you will never be able to step into any vehicle. So the practical rule becomes this: avoid the direct ownership of the service. Do not punish yourself for every ancillary component, because then you cannot even walk on a road built by a contractor.</p>
+
+<p>Under this practical rule, DTC passes. The Delhi Metro also passes. The Metro is a government-run service. The trains and signalling systems may come from private manufacturers, many of them giant corporations, but the core transportation service is public. If you want to be extremely strict, you would have to abandon modern transport altogether. The point of the game is not to make you a monk; it is to show how deep the corporate web goes.</p>
+
+<p>Now consider app-based cabs. Uber cannot be used because Uber has billionaire founders and billionaire investors. Travis Kalanick, the co-founder, is a billionaire. Even if he is no longer running the company day-to-day, his wealth is tied to the business. Ola also has issues if its founders or large investors fall into the billionaire category. So the cab apps are out. Auto rickshaws and cycle rickshaws start looking more acceptable because the owner-driver is usually not a billionaire. But what about the auto manufacturer? Bajaj is a billionaire family. TVS also has wealthy promoters. So even your humble auto ride comes from a supply chain linked to large industrial families.</p>
+
+<p>The honest solution is that commuting becomes difficult. You can use public buses and the Metro, but you are still indirectly paying private manufacturers. What changes is not that you escape billionaires altogether, but that you become more aware of the difference between a core public service and a private platform.</p>
+
+<h2>Grocery Shopping: The D-Mart Illusion</h2>
+
+<p>Most people think D-Mart is a cheap store. It has wide aisles, discounted prices, and huge volumes. But D-Mart is not a government fair-price shop. It is owned by Avenue Supermarts, and its founder Radhakishan Damani is one of the richest people in India. So D-Mart fails the rule immediately. Reliance Retail also fails because Reliance Industries is controlled by Mukesh Ambani. The big retail chains are almost all billionaire-owned.</p>
+
+<p>So you decide to go to a local kirana store. That feels better because the shopkeeper is not a billionaire. But here is the next layer. You enter the local kirana store and look at the shelves. The shelf is full of Parle, Britannia, Nestle, Hindustan Unilever, and other brands owned by giant companies and wealthy promoter families. The shopkeeper may be small, but the distribution system behind the shelf is huge. You ask for Amul biscuits, and the shopkeeper may not even stock them. You ask for a local brand, and it may not be available. So even your local kirana store is locked into the same distribution network that favours large private brands.</p>
+
+<p>The challenge becomes clear. It is not enough to shop at an independent store. You also have to buy independent products. The store may be local, but the product may not be. If you want vegetables, fruits, or loose grains from a local market, you may pass the test. But if you want packaged snacks, biscuits, or processed food, your options shrink dramatically.</p>
+
+<h2>Thirst and Snacks: The Bottled Water Trap</h2>
+
+<p>Now you are thirsty. You pick up a bottle of water. Bisleri is a trusted name, but it is owned by a very wealthy business family. You try a soft drink. Campa Cola is now owned by Reliance, so that fails. Pepsi is a global company, but the bottling in many regions is done by Varun Beverages, which is controlled by the RJ Corp group and its billionaire family. Coca-Cola also works through franchise bottlers, many of which are large private businesses. Even a branded coffee chain can be owned by a billionaire promoter or private equity funds.</p>
+
+<p>The funny conclusion is that you end up drinking water from a public tap, a roadside clay pot, or a local tea stall. This is not because you cannot afford a bottle of water. It is because every convenient packaged option routes money to a large private owner. The game does not care about your income. It only cares about the ownership structure.</p>
+
+<h2>Phone Recharge: The Telecom Puzzle</h2>
+
+<p>You need to recharge your phone. Jio is owned by Reliance. Airtel belongs to the Bharti Group, whose chairman Sunil Mittal is a billionaire. Vodafone Idea has a large government shareholding, but the dominant private ownership includes the Aditya Birla Group, another billionaire family. So the three big private telecom operators are all disqualified.</p>
+
+<p>The only remaining option is BSNL. BSNL is a government-owned telecom company, and there is no individual billionaire promoter sitting on top of it. So under the rules of the game, you will walk into a BSNL office or use a BSNL recharge. This is a surprising result because most urban users have shifted to private operators for better speeds and network quality. But the thought experiment forces you to accept a public sector option because the private alternatives are all billionaire-controlled.</p>
+
+<h2>Evening Entertainment: The Streaming Problem</h2>
+
+<p>After a long day, you want to relax. You open your phone and look at streaming apps. Amazon Prime is out because Jeff Bezos is a billionaire. Netflix is out because the company has billionaire founders and large institutional owners. JioHotstar is out because it is a Reliance-linked platform. SonyLIV is out because Sony is a massive private corporation. Even if you just watch YouTube for free, YouTube is owned by Alphabet, which is one of the largest private companies in the world. The free version does not cost you money, but the platform is billionaire-owned. If you pay for YouTube Premium, the money directly goes to Alphabet. So even free entertainment is not free from the ownership question.</p>
+
+<p>What remains? You can watch Doordarshan, which is a public broadcaster. You can listen to All India Radio. You can read a library book or visit a public park. These options are not bad, but they are not what most of us choose when we have a smartphone in our pocket. The game pushes you toward public services and old-school entertainment because the private entertainment industry is dominated by a handful of very large companies.</p>
+
+<h2>The Real Point of This Experiment</h2>
+
+<p>Now you might be thinking that this whole exercise is silly. After all, nobody is forcing you to avoid billionaire-owned businesses in real life. That is true. This is not a lifestyle prescription, and it is not a call for a boycott. You will not be judged by anyone if you buy a packet of biscuits from a big brand. The purpose of the game is different.</p>
+
+<p>The real purpose is to ask a simple set of questions before every purchase. Who owns this product? How does this company make money? Is the interest of the company aligned with my interest? What is the incentive structure behind the brand? When you start digging into these questions, you realise something uncomfortable. The entire consumer economy is designed to make you believe that you are in control. Advertisements tell you that you have a choice. Shelves are full of colourful packets. Apps offer endless scrolling. But if you look closely, a few large companies control a huge portion of what you buy, eat, watch, and use. They give you the impression of choice, but the choice may be narrower than it appears.</p>
+
+<p>This is not a conspiracy theory. It is just a market structure. Distribution networks, retail shelves, streaming platforms, telecom towers, and payment systems are all built by a small number of private players. They compete with each other, but their combined control over everyday life is enormous. The thought experiment makes this visible because it forces you to look for alternatives. When you struggle to find a biscuit that is not linked to a billionaire, the problem is not the biscuit. The problem is the concentration of ownership in the food industry.</p>
+
+<h2>An Independent Option in Insurance: The Ditto Example</h2>
+
+<p>This is exactly why I find independent advice valuable. Let me give you an example from insurance. When you search for health insurance or life insurance online, the top results are often sponsored posts. Platforms, search engines, and comparison websites make money by pushing specific products. The brand that spends the most on distribution often appears first. This is not necessarily the best policy for you. It is just the best marketed policy for you.</p>
+
+<p>Ditto is an insurance advisory service that tries to solve this problem. It is not a charity, and it does not pretend to be one. It is a business. It makes money when you buy insurance through it. But the crucial difference is that Ditto does not push you toward a specific insurance company because of a higher commission or a back-end deal. It first tries to understand your context, your health condition, your family situation, and your actual requirements. Then it recommends a policy based on that understanding. The 31-minute consultation call is designed to ask questions, not to close a sale in the first five minutes.</p>
+
+<p>If you do not buy through Ditto, they will not spam you or chase you with repeated calls. This may sound small, but it is actually a big difference. Most insurance sales are driven by pressure. Ditto's model assumes that if they give you the right recommendation, you will buy. They do not need to force you because their own business works better when customers trust them. They earn from the insurance company when you buy, so their incentive is not to push a single brand but to make you confident enough to purchase the right policy. They also help later with claims and renewals, which is where the real value of insurance comes out.</p>
+
+<p>In a world where a few big platforms control your choices, an independent point of view matters. The same principle applies to insurance, investments, food, entertainment, and even phone recharge. The question is not whether a brand is popular. The question is whether the person recommending it has an incentive to be honest.</p>
+
+<h2>The Trust Factor: Why We Buy From Certain Businesses</h2>
+
+<p>There is a deeper lesson here as well. Nobody wakes up in the morning and says, "Please sell me something." People wake up with needs. They want food, transport, safety, health, and a little entertainment. Businesses that succeed in the long run understand this. They do not just chase transactions. They try to understand the customer first, and then the sale follows naturally.</p>
+
+<p>Take the example of Tata. The Tata name carries trust because for decades the group has been seen as a business that tries to solve problems rather than just push products. When a new Tata product is launched, people give it attention because the brand has built a reservoir of trust. This trust did not come from a single advertisement. It came from repeated experiences where the customer felt understood. The same applies to a good local shopkeeper. If a shopkeeper remembers what you usually buy, gives you honest advice, and does not push useless items, you go back to that shop again and again.</p>
+
+<p>In contrast, businesses that chase only sales lose trust quickly. If every call is a sales pitch, if every recommendation is biased, if every app notification is a trap, customers eventually switch off. The best businesses know that selling is the result of trust, not the starting point.</p>
+
+<p>This is why the ownership question is not just about ideology. It is about incentives. A large conglomerate may own five different brands in the same category. It can create the illusion of competition between its own products. It can push one brand on one platform and another brand on another platform. The customer feels like they are choosing, but the profit goes to the same pocket. The thought experiment cuts through this illusion by forcing you to look at the ultimate owner.</p>
+
+<h2>Conclusion in Bullet Points</h2>
+<ul>
+<li>The 1000-rupee thought experiment shows that avoiding billionaire-owned businesses is extremely difficult even for a single normal day.</li>
+<li>Breakfast items such as biscuits, milk, and packaged food often route money to large private groups, though cooperative brands like Amul and public dairy options like Mother Dairy can help.</li>
+<li>Commuting through DTC buses and Delhi Metro is possible, but the manufacturing supply chains still involve wealthy private companies.</li>
+<li>Local kirana stores are independent, but their shelves are dominated by big private brands, which limits real choice.</li>
+<li>Phone recharge pushes you toward BSNL because Jio, Airtel, and Vodafone Idea are all linked to billionaire promoters.</li>
+<li>Entertainment streaming services are almost all owned by billionaires, leaving public broadcasters like Doordarshan and All India Radio as the strict alternatives.</li>
+<li>The exercise is not a boycott call or a lifestyle rule; it is a tool to become aware of ownership, incentives, and the illusion of choice.</li>
+<li>A few large companies control a huge portion of everyday consumption while giving the impression that consumers are freely choosing.</li>
+<li>Before buying anything, it is useful to ask who owns the business, how it makes money, and whether its interests align with yours.</li>
+<li>Independent advisory services such as Ditto in insurance show a better model: understand the customer first, recommend honestly, and let the sale follow from trust.</li>
+<li>The ultimate goal is not to eliminate all private brands but to become a more conscious and questioning consumer.</li>
+</ul>
+
+<h2>Citations and References</h2>
+<ul>
+<li>Amul is a brand of Gujarat Cooperative Milk Marketing Federation Ltd, a dairy cooperative owned by millions of farmers.</li>
+<li>Mother Dairy is owned by the National Dairy Development Board, a public sector institution.</li>
+<li>D-Mart is operated by Avenue Supermarts Ltd, founded by Radhakishan Damani.</li>
+<li>Reliance Industries and its consumer-facing businesses are led by Mukesh Ambani.</li>
+<li>Airtel is part of the Bharti Group, chaired by Sunil Mittal.</li>
+<li>Vodafone Idea has significant private ownership from the Aditya Birla Group.</li>
+<li>BSNL is a state-owned telecommunications company under the Government of India.</li>
+<li>YouTube is a subsidiary of Alphabet Inc, a publicly traded company with large institutional ownership.</li>
+<li>The ownership information referenced here is based on publicly available company disclosures and widely reported corporate structures.</li>
+<li>The insurance advisory example discusses Ditto, which offers consultation-based insurance recommendations; details on its service model are available through its official channels.</li>
+</ul>
+</div>
+<!-- post-navigation:footer:start -->
+<div class="postNavigation"><a class="customLink" href="https://survival8.blogspot.com/2025/05/lessons-in-investing.html#customPostsByAnkurWarikooHeader" target="_blank">See All Articles</a> &nbsp;&nbsp; <a class="customLink" href="https://survival8.blogspot.com/2026/11/from-debt-trap-to-financial-freedom.html" target="_blank" rel="noopener noreferrer">&laquo; Previous</a> &nbsp;&nbsp; <a class="customLink" href="https://survival8.blogspot.com/2026/11/the-30-day-experiment-that-could-change.html" target="_blank" rel="noopener noreferrer">Next &raquo;</a></div>
+<!-- post-navigation:footer:end -->

@@ -1,0 +1,418 @@
+<head>
+    <script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Google AdSense Using Machine Learning Code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3071098372371409",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+                $.ajax({
+                        url: "https://raw.githubusercontent.com/ashishjain1547/bookSummariesAndReviews/main/links_to_book_clubs.json",
+                        success: function (result) {
+                                let grouplink = JSON.parse(result)['current book club'];
+                                $("#customWhatsAppGroupLinkWrapper").html(
+                                        `
+                <h2 class="custom_link_h2"><a href="${grouplink}" target="_blank"> 
+                    <span>Join us on:</span>
+                    <span class="customLink"><i class="fa fa-whatsapp"></i> Whatsapp </span>
+                    </a>
+                </h2>
+                `
+                                );
+                        }
+                });
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+         /* ========== BLOGGER LEVEL STYLES ========== */
+        .post-body {
+            font-size: 16px;
+        }
+
+        .main-inner .column-center-inner { padding: 0px; }
+
+        .main-inner .column-center-inner .section { margin: 5px; }
+
+        .content-inner { padding: 0; }
+
+
+        pre {
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .customLink {
+            background-color: #4CAF50;
+            border: none;
+            color: white !important;
+            padding: 8px 13px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .customLink:hover {
+            text-decoration: none;
+        }
+
+        div.code-block-decoration.footer {
+            display: none;
+        }
+
+        button.export-sheets-button-wrapper {
+            display: none;
+        }
+    </style>
+
+    <style>
+        .custom_link_h2 a {
+            color: black;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .custom_link_h2 a:hover {
+            color: black;
+        }
+
+        .custom_link_h2 a:active {
+            color: black;
+        }
+
+        .custom_link_h2 span {
+            translate: 0px -5px;
+            display: inline-block;
+        }
+
+        .custom_link_h2 img {
+            width: 100px;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+    <style>
+        .customul {
+            list-style: none;
+        }
+
+        [aria-hidden='true'] {
+            display: none;
+        }
+
+        .custom_iframe {
+            width: 100%;
+            height: 305px;
+        }
+
+        div.customOuterWrapper i.ib {
+            color: #58a6ff;
+        }
+
+        div.customOuterWrapper i.ig {
+            color: #3fb950;
+        }
+
+        div.customOuterWrapper .customTable td {
+            padding: 2px;
+        }
+
+        div.customOuterWrapper ol {
+            display: block;
+            list-style-type: decimal;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 18px;
+            unicode-bidi: isolate;
+        }
+
+        div.customOuterWrapper ol li p {
+            padding: 0px;
+            margin: 0px;
+            display: inline;
+        }
+
+        /* ========== DARK THEME — Blog Content Wrapper ========== */
+        div.customOuterWrapper {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+            line-height: 1.85;
+            margin: 0 auto;
+            padding: 1px 20px; 
+        }
+
+        div.customOuterWrapper h1 {
+            color: #f0c040;
+            font-size: 1.9rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        div.customOuterWrapper h2 {
+            color: #e3b341;
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+        }
+        div.customOuterWrapper h3,
+        div.customOuterWrapper h4 {
+            color: #d4a72c;
+        }
+
+        div.customOuterWrapper p {
+            margin: 1rem 0;
+        }
+
+        div.customOuterWrapper a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        div.customOuterWrapper a:hover {
+            text-decoration: underline;
+        }
+
+        div.customOuterWrapper strong,
+        div.customOuterWrapper b {
+            color: #f0c040;padding: 2rem 2.5rem;
+        }
+
+        div.customOuterWrapper ul {
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        div.customOuterWrapper li {
+            margin: 0.4rem 0;
+        }
+
+        div.customOuterWrapper blockquote {
+            border-left: 4px solid #f0c040;
+            margin: 1.2rem 0;
+            padding: 0.6rem 1.2rem;
+            background: #161b22;
+            border-radius: 0 6px 6px 0;
+            font-style: italic;
+        }
+
+        /* ---- Table Styles ---- */
+        div.customOuterWrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        div.customOuterWrapper thead {
+            background-color: #1a2332;
+        }
+        div.customOuterWrapper th {
+            color: #f0c040;
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 2px solid #30363d;
+        }
+        div.customOuterWrapper td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #21262d;
+        }
+        div.customOuterWrapper tr:hover {
+            background-color: #161b22;
+        }
+
+        /* ---- Video embed ---- */
+        div.video-embed {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            div.customOuterWrapper {
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.5rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.2rem;
+            }
+            .custom_iframe {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div.customOuterWrapper {
+                padding: 0.8rem;
+                font-size: 13px;
+            }
+            div.customOuterWrapper h1 {
+                font-size: 1.3rem;
+            }
+            div.customOuterWrapper h2 {
+                font-size: 1.1rem;
+            }
+            .custom_iframe {
+                height: 180px;
+            }
+        }
+    </style>
+
+</head>
+
+<div id="customWhatsAppGroupLinkWrapper"></div>
+<!-- post-navigation:header:start -->
+<div class="postNavigation"><a class="customLink" href="https://survival8.blogspot.com/2025/05/lessons-in-investing.html#customPostsByAnkurWarikooHeader" target="_blank">See All Articles</a> &nbsp;&nbsp; <a class="customLink" href="https://survival8.blogspot.com/2026/11/can-you-spend-1000-rupees-in-day.html" target="_blank" rel="noopener noreferrer">&laquo; Previous</a></div>
+<!-- post-navigation:header:end -->
+
+
+
+<div class="customOuterWrapper">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/E9-lFXMmAKA" frameborder="0" allowfullscreen></iframe>
+<h1>The 30-Day Experiment That Could Change How You Spend Money</h1>
+
+<p>Imagine this. You open a quick commerce app to buy milk. Just milk. You know exactly what you need. You tap the app, search for milk, and then something strange happens. By the time you check out, your cart has butter. Then some biscuits. Then a pack of chips. Then an ice cream lolly. Then a chewing gum. Then a new protein shake that caught your eye. Now, it is not that you cannot afford these things. You absolutely can. The real question is far simpler and far more uncomfortable: what did you intend to buy, and what did you actually end up buying?</p>
+
+<p>That tiny gap between intention and action is where a huge amount of our money quietly disappears. Not because we are poor. Not because we are foolish. But because modern shopping is designed to make that gap as wide as possible. And that is exactly what this 30-day experiment is about.</p>
+
+<h2>The Real Question: What Did You Plan to Buy?</h2>
+
+<p>Before we go further, let us name the problem clearly. Every purchase we make falls into one of two categories. The first is the primary purchase. That is the thing you actually set out to buy. You needed milk, you went to buy milk, you bought milk. Simple. The second category is the secondary purchase. These are the things that sneak into your cart along the way. You did not plan them. You did not need them at that moment. But they found their way into your life anyway because the app, the website, the store layout, the discount banner, or the notification nudged you just enough.</p>
+
+<p>For many people, secondary purchases are not occasional mistakes. They are a steady leak. Month after month, they turn a simple milk run into a basket full of unplanned items. The problem is not that you occasionally treat yourself. The problem is that most of us never actually measure how often this happens. We feel it vaguely. We know we spend more than we intended. But we do not have a number. And without a number, we cannot fix it.</p>
+
+<p>This experiment is not about blaming your phone. It is not about blaming apps. It is not about blaming notifications or sale banners. Those things are just doing their job. The algorithm shows you what you want to see. If you want to learn about personal finance, it will show you that. If you want random nonsense, it will show you that too. The same rule applies to shopping apps. They are not evil. They are simply very good at their job. The responsibility for what you buy ultimately lies with you. That is the starting point. If we cannot accept that, we cannot change anything.</p>
+
+<h2>A Quick Word on Credit Cards</h2>
+
+<p>There is a related problem that many people overlook. Many of us think of a credit card as just a payment method. But a credit card is also a tool. And like any tool, some versions are better than others. If your credit card simply hands you a bill and says, pay the minimum amount, that is the wrong card for you. The right credit card is one that actually helps you understand where your money is going and rewards you for the spending you already do.</p>
+
+<p>In this country, there are more than 400 credit cards available. Choosing the right one can feel impossible. That is why I want to mention a tool called Monzi. It is a platform that helps you find the best credit card for your specific needs. In just a few seconds, without taking your personal data, without spamming you, and without showing you ads, it asks a few simple questions and tells you which card is best for you. You can even evaluate and compare different cards on your own. The best part is that this tool is free. It is not trying to make money from you. It exists simply to help you make a better decision. You can check it out at Monzi.co.</p>
+
+<h2>The 30-Day Experiment: An Overview</h2>
+
+<p>The idea for this experiment came from a very common feeling. When I asked people whether they spend more than they need every month, almost everyone said yes. And when I asked who was responsible, almost everyone pointed to their phone. The notifications, the sales, the endless discounts, the coupons, the little red badges. One thing leads to another, and a trip to buy one item turns into three items. So the experiment is designed to test what happens if we deliberately add friction to our unplanned purchases for 30 days. Will that friction stop us from buying? Or will we just postpone the purchase and buy it later anyway? And what does either outcome tell us about ourselves?</p>
+
+<p>There are three main steps to this experiment. Each one is simple, but each one requires honesty. No cheating. No pretending. Just observation and one small change.</p>
+
+<h2>Step 1: The 30-Day Look Back</h2>
+
+<p>You cannot change what you do not measure. Just like losing weight, you first need to step on the scale. So the first step is to download your bank statement for the last 30 days. Go through every single payment. Yes, every one. Categorize each payment into two groups. Primary purchases are the things you actually intended to buy when you opened the app or walked into the store. Secondary purchases are everything else that slipped in along the way.</p>
+
+<p>Ignore your fixed costs like rent, electricity, water, and other utility bills. Those are not part of this exercise. Focus only on the money you spent on your desires, your impulses, and your unplanned wants. For some payments, you may not remember exactly why you made them. That is fine. You do not need perfect accuracy down to the decimal point. A rough estimate is enough. The goal is to get a ballpark figure.</p>
+
+<p>Once you have categorized everything, calculate a simple ratio. For example, you might find that 60 percent of your spending was primary and 40 percent was secondary. That ratio is your starting point. It is your baseline. Write it down. Do not judge it. Just note it.</p>
+
+<h2>Step 2: Seven Days of Honest Tracking</h2>
+
+<p>Now comes the observation phase. For the next seven days, do not try to change anything. I repeat, do not try to change anything. Do not stop yourself from buying unplanned items. Do not scold yourself. Do not become a monk overnight. That is not the point. The point is to observe how you actually behave when you are not trying to be on your best behavior.</p>
+
+<p>Every time you spend money, record whether it was a primary or secondary purchase. If you catch yourself adding an unplanned item to your cart, note it down. Do not stop yourself. Just record it. At the end of seven days, calculate your ratio again. You might find that it is similar to your 30-day look back. For example, if your original ratio was 60 percent primary and 40 percent secondary, your seven-day ratio might be 70 percent primary and 30 percent secondary. That is fine. The goal is simply to know your ballpark. You now have a realistic picture of how much you spend on planned versus unplanned items in a normal week.</p>
+
+<h2>Step 3: Add One Friction to Your Life</h2>
+
+<p>This is the most important step. And I am not going to tell you exactly what to do. You have to choose it for yourself. Look back at your secondary purchases. Ask yourself: where did I get pulled in? Where did I buy something I knew I did not need but somehow bought anyway? What was the trigger?</p>
+
+<p>Now choose one single step to stop that trigger. Just one. It could be turning off all notifications from shopping apps. It could be logging out of your account after every visit so that you have to enter your password each time. It could be deleting the app entirely if you feel the situation is serious enough. The exact step does not matter. What matters is that it adds friction. It creates a small obstacle between you and the unplanned purchase.</p>
+
+<p>This friction is not meant to punish you. It is meant to slow you down. It gives your brain a moment to catch up and ask, do I actually need this? That small pause is often enough to break the spell.</p>
+
+<h2>The Seven-Day Test: Does Friction Actually Work?</h2>
+
+<p>Now that you have added your single friction, live with it for seven days. Do not change anything else. Go about your normal life. Shop like you normally would. The only difference is that one small obstacle you have introduced.</p>
+
+<p>Here is what will likely happen. The triggers are still there. The sales are still there. The product recommendations are still there. The desire to add things to your cart is still there. The question is: does the friction change anything? For example, if you turned off notifications, you might find that you no longer open the app as often. Before, a notification would arrive saying something like, your cart is waiting for you, and you would tap it and start browsing. Now, without that notification, the thought does not even enter your head. Your mind is not constantly pulled back to the app. Life feels a little quieter.</p>
+
+<p>But you may also find that you still open the app on your own. You may still browse. You may still add things to your cart. And that is okay. That is information. The friction is not a magic cure. It is just a test. At the end of seven days, you have to ask yourself an honest question: did that one small change actually reduce my secondary purchases, or not?</p>
+
+<p>If it did, fantastic. You have found a useful tool. If it did not, then you need to ask why you chose that particular friction in the first place. Maybe you chose something easy that did not actually address the real trigger. Maybe your real problem is somewhere else entirely. In that case, you can choose another friction, one that actually targets the place where you are most likely to slip. The point is not to get it perfectly right on the first try. The point is to learn how your own mind works.</p>
+
+<h2>The Honest Questions You Must Ask</h2>
+
+<p>After your seven-day friction test, and again after the full 30 days, there are three questions you need to ask yourself. These questions matter more than any ratio. They are the real reward of this whole experiment.</p>
+
+<p>Question one: Did I stop myself from buying something that I later realized I did not need at all? If the answer is yes, and if you collect enough of those yeses, that is a huge win. It means you are beginning to see the difference between a momentary want and a genuine need. That clarity is worth more than any amount of saved money.</p>
+
+<p>Question two: Did I stop myself from buying something that I later regretted not buying? This is equally important. You do not want to become that miserly uncle who refuses to enjoy life and only saves for some distant future. That is not the goal. If you genuinely feel that you should have bought something, and the regret is real, then go buy it. Do not live a life of constant denial. Spend money on the things you truly love. That is the whole point of having money.</p>
+
+<p>Question three: Which things did I not buy, and I feel absolutely no regret about them? This is where the deepest learning happens. These are the items that once felt urgent but now feel completely unnecessary. Maybe it was a fancy car. Maybe it was a bigger house. Maybe it was the latest phone, the designer clothes, the expensive shoes. When you notice that you do not miss these things, you begin to understand what actually matters to you. You stop spending money to impress others and start spending money on what genuinely makes you happy.</p>
+
+<h2>The 30-Day Reckoning: Did the Ratio Improve?</h2>
+
+<p>After 30 full days, go back to your bank statement. Download the last 30 days and categorize everything again, just like you did at the start. Compare your new ratio with your old one. Maybe your old ratio was 60 percent primary and 40 percent secondary. Maybe now it is 70 percent primary and 30 percent secondary. That is a small improvement. But is it a huge improvement? Maybe not. The number itself is not the main point.</p>
+
+<p>What matters more is what happened behind that number. Did you catch yourself before making an unplanned purchase? Did you postpone a decision and then realize you did not need the item? Did you refuse a purchase entirely? These are the real changes. When you postpone a secondary purchase and then find that it never becomes primary, you have learned something essential about yourself. Your brain often creates stories to convince you that you need something. It tells you that your life is incomplete without it, that you are missing out, that you deserve it. But when you step back and wait, those stories often dissolve. The thing you thought you desperately needed turns out to be completely forgettable.</p>
+
+<p>On the other hand, if you find yourself still buying the same amount of unplanned items after 30 days, do not panic. That is also information. Maybe the friction you chose was not strong enough. Maybe your spending habits are tied to deeper emotional triggers. Maybe you need to try a different strategy. The experiment is not about getting a perfect score. It is about becoming aware.</p>
+
+<h2>Beyond the Ratio: What You Learn About Yourself</h2>
+
+<p>Here is the most valuable insight from this entire exercise. You are not just trying to reduce a percentage. You are trying to understand what money means to you. When you stop buying things out of habit or impulse, you start to see which purchases actually bring you joy and which ones were just noise. Over time, you may find that you spend a lot on books, on experiences, on good food, on tennis matches, and you feel great about it. But you may also find that you no longer care about fancy cars, multiple houses, the latest phone, or expensive clothes. Those things simply do not call out to you anymore.</p>
+
+<p>That is not deprivation. That is freedom. When you no longer feel the pull of things you do not truly want, you free up money and mental space for the things you do want. You stop spending to show off. You stop spending to prove that you have arrived. You start spending because you genuinely enjoy what the money will bring you.</p>
+
+<p>And that is the real destination. It is not about becoming rich. It is about becoming clear. Clarity about what you want, what you need, and what you can safely ignore. That clarity is worth more than any single purchase.</p>
+
+<h2>The Bigger Picture: Wealth, Happiness, and Enough</h2>
+
+<p>There is a phrase I often use: the distance between poverty and wealth is enormous. But the distance between wealth and more wealth is surprisingly small. I have seen poverty, though not to the extreme that many in this country have seen it. And I have seen wealth. The difference is staggering. Money absolutely makes life better. It improves your health, your relationships, your peace of mind, your options. Anyone who says money cannot buy happiness is not telling the truth. Money can solve a huge number of problems that cause genuine misery.</p>
+
+<p>But beyond a certain point, the returns diminish. Once you have enough money to live comfortably, to handle emergencies, to buy the things you truly love, and to not worry about basic needs, more money does not add much more happiness. The goal is not to become endlessly rich. The goal is to reach the point where you have enough. Enough to spend on what matters to you. Enough to ignore what does not matter. Enough to feel wealthy in your own life, not in comparison to others.</p>
+
+<p>When you reach that point, an incredible journey begins. You stop chasing every sale, every discount, every new gadget. You stop feeling the need to keep up with anyone. You simply enjoy your money because it serves your life, not the other way around.</p>
+
+<h2>An Invitation for Your Career</h2>
+
+<p>Before I sign off, I want to share something that might help you on the other side of life: your career. If you are interested in learning new skills, improving your resume, or finding better job opportunities, there is a subscription service called WebVeda. For just 1,999 rupees per year, you get access to all their current courses and all future courses. You also get access to an exclusive community of members and personalized job recommendations based on your resume and skills. It is a smart investment in yourself. You can join the WebVeda subscription and take a meaningful step toward building the career you want.</p>
+
+<h2>Citations and References</h2>
+
+<p>The ideas in this post draw on well-known concepts from behavioral economics and psychology. If you want to explore the science behind friction, impulse buying, and how we make purchasing decisions, here are some useful starting points:</p>
+
+<ol>
+<li>Thaler, R. H., &amp; Sunstein, C. R. (2008). Nudge: Improving Decisions About Health, Wealth, and Happiness. Yale University Press.</li>
+<li>Kahneman, D. (2011). Thinking, Fast and Slow. Farrar, Straus and Giroux.</li>
+<li>Ariely, D. (2008). Predictably Irrational: The Hidden Forces That Shape Our Decisions. HarperCollins.</li>
+<li>Epley, N., &amp; Gilovich, T. (2006). The anchoring-and-adjustment heuristic: Why the adjustments are insufficient. Psychological Science, 17(4), 311-318.</li>
+<li>Thaler, R. H. (1999). Mental accounting matters. Journal of Behavioral Decision Making, 12(3), 183-206.</li>
+</ol>
+
+<h2>Conclusion</h2>
+
+<p>This 30-day experiment is small, simple, and deeply revealing. Here are the key takeaways:</p>
+
+<ul>
+<li>Almost everyone has a gap between what they plan to buy and what they actually buy.</li>
+<li>Primary purchases are intentional; secondary purchases are the unplanned additions that leak money.</li>
+<li>Step one is to review your last 30 days of bank statements and calculate your primary to secondary spending ratio.</li>
+<li>Step two is to track your spending for seven days without changing anything, so you know your natural behavior.</li>
+<li>Step three is to add one small friction, such as turning off notifications, logging out, or deleting an app.</li>
+<li>Test that friction for seven days and honestly evaluate whether it reduced your secondary purchases.</li>
+<li>Ask yourself three questions: Did I avoid something I did not need? Did I avoid something I later regretted? What did I not buy and feel no regret about?</li>
+<li>After 30 days, reanalyze your bank statement and compare the ratios, but focus more on what you learned than on the number.</li>
+<li>True financial freedom is not about endless saving or endless earning. It is about clarity: knowing what you love, what you can ignore, and having enough for the life you want.</li>
+<li>Money does improve happiness up to a point, but beyond that point, the real victory is not more wealth but more clarity and peace of mind.</li>
+</ul>
+
+<p>Run the experiment yourself. It does not require any special tools or expertise. It only requires honesty and a willingness to notice how you spend. That small shift in awareness can change the way you see money, shopping, and ultimately yourself.</p>
+</div>
+<!-- post-navigation:footer:start -->
+<div class="postNavigation"><a class="customLink" href="https://survival8.blogspot.com/2025/05/lessons-in-investing.html#customPostsByAnkurWarikooHeader" target="_blank">See All Articles</a> &nbsp;&nbsp; <a class="customLink" href="https://survival8.blogspot.com/2026/11/can-you-spend-1000-rupees-in-day.html" target="_blank" rel="noopener noreferrer">&laquo; Previous</a></div>
+<!-- post-navigation:footer:end -->
